@@ -1,4 +1,4 @@
-# Audio-Visual Sound Source Localization with Slot Attention
+# Improving Sound Source Localization with Joint Slot Attention on Image and Audio
 
 Official implementation of **"Improving Sound Source Localization with Joint Slot Attention on Image and Audio"**.
 
