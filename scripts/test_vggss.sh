@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ "$#" -lt 1 ] || [ "$#" -gt 4 ]; then
+    echo "Usage: $0 EXPERIMENT_NAME [GPU_ID] [ALPHA] [CHECKPOINT]"
+    exit 2
+fi
+
+experiment_name=$1
+gpu=${2:-0}
+alpha=${3:-0.6}
+project_root=$(cd "$(dirname "$0")/.." && pwd)
+metadata_root="$project_root/metadata_vggss"
+test_root=${VGGSS_TEST_ROOT:-/data/wxr/datasets/ACL-SSL/VGGSound}
+python_bin=${JSA_PYTHON:-python}
+
+if [ "$#" -ge 4 ]; then
+    checkpoint=$4
+elif [ -f "$project_root/checkpoints/$experiment_name/vggss_best.pth" ]; then
+    checkpoint=vggss_best.pth
+else
+    checkpoint=final.pth
+fi
+
+log_root=${JSA_LOG_ROOT:-$project_root/checkpoints/$experiment_name/logs}
+mkdir -p "$log_root"
+timestamp=$(date +%Y%m%d_%H%M%S)
+checkpoint_label=${checkpoint%.pth}
+log_file="$log_root/${experiment_name}_test_vggss_${checkpoint_label}_${timestamp}.log"
+exec > >(tee -a "$log_file") 2>&1
+echo "Test log: $log_file"
+echo "Experiment: $experiment_name, checkpoint: $checkpoint, alpha: $alpha, GPU: $gpu"
+
+cd "$project_root"
+"$python_bin" test_model.py \
+    --experiment_name "$experiment_name" \
+    --testset vggss \
+    --test_data_path "$test_root" \
+    --test_manifest_path "$metadata_root/vggss_test.csv" \
+    --test_gt_path "$metadata_root/vggss.json" \
+    --checkpoint "$checkpoint" \
+    --gpu "$gpu" \
+    --alpha "$alpha"

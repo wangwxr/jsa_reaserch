@@ -1,7 +1,9 @@
 __pycache__
 wandb
+logs
 checkpoints
 final
+prepared
 *.tar
 *.wav
 *.jpg

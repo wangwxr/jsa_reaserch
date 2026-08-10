@@ -13,6 +13,7 @@ from tqdm import tqdm
 import shutil
 from datetime import datetime
 import model_slot
+import model_baseline
 import json
 import random
 
@@ -20,27 +21,32 @@ def get_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_dir', type=str, default='./checkpoints', help='path to save trained model weights')
     parser.add_argument('--experiment_name', type=str, default='noname', help='experiment name (used for checkpointing and logging)')
+    parser.add_argument('--model', default=None, choices=['jsa', 'av_mil'])
 
-    parser.add_argument('--testset', default='vggss', type=str, help='testset,(flickr or vggss)')
-    parser.add_argument('--test_data_path', default='', type=str, help='Root directory path of test data')
-    parser.add_argument('--test_gt_path', default='', type=str)
+    parser.add_argument('--testset', default=None, type=str, help='testset,(flickr or vggss)')
+    parser.add_argument('--test_data_path', default=None, type=str, help='Root directory path of test data')
+    parser.add_argument('--test_manifest_path', default=None, type=str,
+                        help='Optional CSV file listing test sample IDs')
+    parser.add_argument('--test_gt_path', default=None, type=str)
+    parser.add_argument('--checkpoint', default=None, type=str,
+                        help='Checkpoint filename inside the experiment directory')
     
     # hyper-params
-    parser.add_argument('--aud_length', default=5.0, type=float)
+    parser.add_argument('--aud_length', default=None, type=float)
 
     # training/evaluation parameters
-    parser.add_argument('--batch_size', default=128, type=int, help='Batch Size')
-    parser.add_argument("--infer_sharpening", type=float, default=0.1)
-    parser.add_argument("--num_slots", type=int, default=3)
-    parser.add_argument("--iters", type=int, default=5)
-    parser.add_argument('--wandb', type=str, default='false')
+    parser.add_argument('--batch_size', default=None, type=int, help='Batch Size')
+    parser.add_argument("--infer_sharpening", type=float, default=None)
+    parser.add_argument("--num_slots", type=int, default=None)
+    parser.add_argument("--iters", type=int, default=None)
+    parser.add_argument('--wandb', type=str, default=None)
 
     # Distributed params
-    parser.add_argument('--workers', type=int, default=2)
+    parser.add_argument('--workers', type=int, default=None)
     parser.add_argument('--gpu', type=int, default=None)
 
     # Evaluation
-    parser.add_argument('--alpha', default=0.4, type=float, help='alpha')
+    parser.add_argument('--alpha', default=None, type=float, help='alpha')
 
     args = parser.parse_args()
 
@@ -49,7 +55,8 @@ def get_arguments():
     config_namespace = argparse.Namespace(**config_dict)
 
     for key, value in vars(args).items():
-        setattr(config_namespace, key, value)
+        if value is not None:
+            setattr(config_namespace, key, value)
     
     return config_namespace
 
@@ -80,19 +87,25 @@ def main(args):
         Unsqueeze(1)
     )
 
-    audio_visual_model = model_slot.mymodel(args)
+    if getattr(args, 'model', 'jsa') == 'jsa':
+        audio_visual_model = model_slot.mymodel(args)
+    else:
+        audio_visual_model = model_baseline.AudioVisualMIL(args)
     audio_visual_model.cuda(args.gpu)
     object_saliency_model.cuda(args.gpu)
 
     # Load weights
-    ckp_fn = os.path.join(model_dir, '%s_best.pth' %(args.testset))
-    # ckp_fn = os.path.join(model_dir, 's4_best.pth')
+    checkpoint = getattr(args, 'checkpoint', None)
+    if checkpoint is None:
+        checkpoint = 'final.pth' if os.path.exists(os.path.join(model_dir, 'final.pth')) \
+            else '%s_best.pth' % args.testset
+    ckp_fn = os.path.join(model_dir, checkpoint)
     if os.path.exists(ckp_fn):
-        ckp = torch.load(ckp_fn, map_location='cpu')
+        ckp = torch.load(ckp_fn, map_location='cpu', weights_only=False)
         audio_visual_model.load_state_dict({k.replace('module.', ''): ckp['model'][k] for k in ckp['model']})
         print(f'loaded from {ckp_fn}')
     else:
-        print(f"Checkpoint not found: {ckp_fn}")
+        raise FileNotFoundError(f"Checkpoint not found: {ckp_fn}")
 
     # Dataloader
     if args.testset == 'ms3':
@@ -104,20 +117,20 @@ def main(args):
     testdataloader = DataLoader(testdataset, batch_size=args.batch_size, shuffle=False, num_workers=args.workers)
     print("Loaded dataloader.")
 
-    mAP, auc, \
-    mAP_img, auc_img, \
+    mAP_aud, auc_aud, \
+    mAP_img_query, auc_img_query, \
+    mAP_iqr, auc_iqr, \
+    mAP_obj_prior, auc_obj_prior, \
     mAP_ogl, auc_ogl, \
-    mAP_orig_obj, auc_orig_obj, \
-    mAP_aud_orig_obj, auc_aud_orig_obj, \
-    mAP_all_combined, auc_all_combined = \
+    mAP_extra_iqr_ogl, auc_extra_iqr_ogl = \
     validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, viz_dir, args.testset, -1, args)
     
-    print('AUD_%s/cIoU, auc' %(args.testset), f'{mAP:.4f}', f'{auc:.4f}')
-    print('OBJ_%s/cIoU, auc' %(args.testset), f'{mAP_img:.4f}', f'{auc_img:.4f}')
+    print('AUD_%s/cIoU, auc' %(args.testset), f'{mAP_aud:.4f}', f'{auc_aud:.4f}')
+    print('IMG_QUERY_%s/cIoU, auc' %(args.testset), f'{mAP_img_query:.4f}', f'{auc_img_query:.4f}')
+    print('IQR_%s/cIoU, auc' %(args.testset), f'{mAP_iqr:.4f}', f'{auc_iqr:.4f}')
+    print('OBJ_PRIOR_%s/cIoU, auc' %(args.testset), f'{mAP_obj_prior:.4f}', f'{auc_obj_prior:.4f}')
     print('OGL_%s/cIoU, auc' %(args.testset), f'{mAP_ogl:.4f}', f'{auc_ogl:.4f}')
-    print('ORIG_OBJ_%s/cIoU, auc' %(args.testset), f'{mAP_orig_obj:.4f}', f'{auc_orig_obj:.4f}')
-    print('AUD_ORIG_OBJ_%s/cIoU, auc' %(args.testset), f'{mAP_aud_orig_obj:.4f}', f'{auc_aud_orig_obj:.4f}')
-    print('ALL_COMBINED_%s/cIoU, auc' %(args.testset), f'{mAP_all_combined:.4f}', f'{auc_all_combined:.4f}')
+    print('EXTRA_IQR_OGL_%s/cIoU, auc' %(args.testset), f'{mAP_extra_iqr_ogl:.4f}', f'{auc_extra_iqr_ogl:.4f}')
     return
 
 @torch.no_grad()
@@ -126,11 +139,11 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
     object_saliency_model.eval()
 
     evaluator_aud = utils.Evaluator()
-    evaluator_img = utils.Evaluator()
-    evaluator_aud_img = utils.Evaluator()
-    evaluator_orig_obj = utils.Evaluator()
-    evaluator_aud_orig_obj = utils.Evaluator()
-    evaluator_all_combined = utils.Evaluator()
+    evaluator_img_query = utils.Evaluator()
+    evaluator_iqr = utils.Evaluator()
+    evaluator_obj_prior = utils.Evaluator()
+    evaluator_ogl = utils.Evaluator()
+    evaluator_extra_iqr_ogl = utils.Evaluator()
 
     for step, (image, spec, bboxes, name, label) in enumerate(tqdm(testdataloader)):
         # Handle 5D image tensor by combining first two dimensions
@@ -158,39 +171,40 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
             image = image.cuda(args.gpu, non_blocking=True)
         
         with torch.no_grad():
-            heatmap_img, heatmap_aud = audio_visual_model(image.float(), spec.float())
-            img_feat = object_saliency_model(image)
+            heatmap_img_query, heatmap_aud = audio_visual_model(image.float(), spec.float())
+            obj_prior_feat = object_saliency_model(image)
 
         heatmap_aud = F.interpolate(heatmap_aud, size=(224, 224), mode='bicubic', align_corners=False)
         heatmap_aud = heatmap_aud.data.cpu().numpy()
 
-        # Compute S_OBJ
-        heatmap_img = F.interpolate(heatmap_img, size=(224, 224), mode='bicubic', align_corners=False)
-        heatmap_img = heatmap_img.data.cpu().numpy()
+        # Image target-query prior used by IQR.
+        heatmap_img_query = F.interpolate(heatmap_img_query, size=(224, 224), mode='bicubic', align_corners=False)
+        heatmap_img_query = heatmap_img_query.data.cpu().numpy()
 
-        original_obj = F.interpolate(img_feat, size=(224, 224), mode='bicubic', align_corners=False)
-        original_obj = original_obj.data.cpu().numpy()
+        # External object-saliency prior used by OGL.
+        heatmap_obj_prior = F.interpolate(obj_prior_feat, size=(224, 224), mode='bicubic', align_corners=False)
+        heatmap_obj_prior = heatmap_obj_prior.data.cpu().numpy()
 
         bboxes = bboxes.data.cpu().numpy()
 
         # Compute eval metrics and save visualizations
         for i in range(spec.shape[0]):
             pred_aud = utils.normalize_img(heatmap_aud[i, 0])
-            pred_img = utils.normalize_img(heatmap_img[i, 0])
-            pred_aud_img = utils.normalize_img(pred_aud * args.alpha + pred_img * (1 - args.alpha))
-            pred_orig_obj = utils.normalize_img(original_obj[i, 0])
-            pred_aud_orig_obj = utils.normalize_img(pred_aud * args.alpha + pred_orig_obj * (1 - args.alpha))
-            pred_all_combined = utils.normalize_img(pred_aud * args.alpha + pred_img * (1 - args.alpha) * 0.5 + pred_orig_obj * (1 - args.alpha) * 0.5)
+            pred_img_query = utils.normalize_img(heatmap_img_query[i, 0])
+            pred_iqr = utils.normalize_img(pred_aud * args.alpha + pred_img_query * (1 - args.alpha))
+            pred_obj_prior = utils.normalize_img(heatmap_obj_prior[i, 0])
+            pred_ogl = utils.normalize_img(pred_aud * args.alpha + pred_obj_prior * (1 - args.alpha))
+            pred_extra_iqr_ogl = utils.normalize_img(pred_aud * args.alpha + pred_img_query * (1 - args.alpha) * 0.5 + pred_obj_prior * (1 - args.alpha) * 0.5)
 
             gt_map = bboxes[i]
             threshold = 0.6
 
             _, _, _, aud_infer_map = evaluator_aud.cal_CIOU(pred_aud, gt_map, name[i], threshold)
-            _, _, _, img_infer_map = evaluator_img.cal_CIOU(pred_img, gt_map, name[i], threshold)
-            _, _, _, aud_img_infer_map = evaluator_aud_img.cal_CIOU(pred_aud_img, gt_map, name[i], threshold)
-            _, _, _, orig_obj_infer_map = evaluator_orig_obj.cal_CIOU(pred_orig_obj, gt_map, name[i], threshold)
-            _, _, _, aud_orig_obj_infer_map = evaluator_aud_orig_obj.cal_CIOU(pred_aud_orig_obj, gt_map, name[i], threshold)
-            _, _, _, all_combined_infer_map = evaluator_all_combined.cal_CIOU(pred_all_combined, gt_map, name[i], threshold)
+            _, _, _, img_query_infer_map = evaluator_img_query.cal_CIOU(pred_img_query, gt_map, name[i], threshold)
+            _, _, _, iqr_infer_map = evaluator_iqr.cal_CIOU(pred_iqr, gt_map, name[i], threshold)
+            _, _, _, obj_prior_infer_map = evaluator_obj_prior.cal_CIOU(pred_obj_prior, gt_map, name[i], threshold)
+            _, _, _, ogl_infer_map = evaluator_ogl.cal_CIOU(pred_ogl, gt_map, name[i], threshold)
+            _, _, _, extra_iqr_ogl_infer_map = evaluator_extra_iqr_ogl.cal_CIOU(pred_extra_iqr_ogl, gt_map, name[i], threshold)
 
             if epoch == -2: # drawing tool
                 os.makedirs(os.path.join(viz_dir, name[i]), exist_ok=True)
@@ -210,17 +224,17 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
                 overlay = np.zeros_like(denorm_image)
                 overlay[aud_infer_map == 1] = [0, 255, 0]
                 highlighted_image = cv2.addWeighted(gt_boxes_img, 1, overlay, 0.7, 0)
-                cv2.imwrite(os.path.join(viz_dir, name[i], 'mask_av.jpg'), highlighted_image)
+                cv2.imwrite(os.path.join(viz_dir, name[i], 'mask_aud.jpg'), highlighted_image)
 
                 overlay = np.zeros_like(denorm_image)
-                overlay[img_infer_map == 1] = [0, 255, 0]
+                overlay[img_query_infer_map == 1] = [0, 255, 0]
                 highlighted_image = cv2.addWeighted(gt_boxes_img, 1, overlay, 0.7, 0)
-                cv2.imwrite(os.path.join(viz_dir, name[i], 'mask_obj.jpg'), highlighted_image)
+                cv2.imwrite(os.path.join(viz_dir, name[i], 'mask_img_query.jpg'), highlighted_image)
 
                 overlay = np.zeros_like(denorm_image)
-                overlay[aud_img_infer_map == 1] = [0, 255, 0]
+                overlay[iqr_infer_map == 1] = [0, 255, 0]
                 highlighted_image = cv2.addWeighted(gt_boxes_img, 1, overlay, 0.7, 0)
-                cv2.imwrite(os.path.join(viz_dir, name[i], 'mask_aud_img.jpg'), highlighted_image)
+                cv2.imwrite(os.path.join(viz_dir, name[i], 'mask_iqr.jpg'), highlighted_image)
 
                 # visualize heatmaps
                 heatmap_pred_aud = np.uint8(pred_aud*255)
@@ -228,15 +242,15 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
                 fin = cv2.addWeighted(heatmap_pred_aud, 0.6, np.uint8(denorm_image), 0.4, 0)
                 cv2.imwrite(os.path.join(viz_dir, name[i], 'pred_aud.jpg'), fin)
 
-                heatmap_pred_img = np.uint8(pred_img*255)
+                heatmap_pred_img = np.uint8(pred_img_query*255)
                 heatmap_pred_img = cv2.applyColorMap(heatmap_pred_img[:, :, np.newaxis], cv2.COLORMAP_JET)
                 fin = cv2.addWeighted(heatmap_pred_img, 0.6, np.uint8(denorm_image), 0.4, 0)
-                cv2.imwrite(os.path.join(viz_dir, name[i], 'pred_img.jpg'), fin)
+                cv2.imwrite(os.path.join(viz_dir, name[i], 'pred_img_query.jpg'), fin)
 
-                heatmap_pred_aud_img = np.uint8(pred_aud_img*255)
-                heatmap_pred_aud_img = cv2.applyColorMap(heatmap_pred_aud_img[:, :, np.newaxis], cv2.COLORMAP_JET)
-                fin = cv2.addWeighted(heatmap_pred_aud_img, 0.6, np.uint8(denorm_image), 0.4, 0)
-                cv2.imwrite(os.path.join(viz_dir, name[i], 'pred_aud_img.jpg'), fin)
+                heatmap_pred_iqr = np.uint8(pred_iqr*255)
+                heatmap_pred_iqr = cv2.applyColorMap(heatmap_pred_iqr[:, :, np.newaxis], cv2.COLORMAP_JET)
+                fin = cv2.addWeighted(heatmap_pred_iqr, 0.6, np.uint8(denorm_image), 0.4, 0)
+                cv2.imwrite(os.path.join(viz_dir, name[i], 'pred_iqr.jpg'), fin)
 
     def compute_stats(eval):
         mAP = eval.finalize_AP50()
@@ -244,22 +258,30 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
         auc = eval.finalize_AUC()
         return mAP, ciou, auc
     
-    mAP, _, auc = compute_stats(evaluator_aud)
-    mAP_img, _, auc_img = compute_stats(evaluator_img)
-    mAP_ogl, _, auc_ogl = compute_stats(evaluator_aud_img)
-    mAP_obj, _, auc_obj = compute_stats(evaluator_orig_obj)
-    mAP_aud_orig_obj, _, auc_aud_orig_obj = compute_stats(evaluator_aud_orig_obj)
-    mAP_all_combined, _, auc_all_combined = compute_stats(evaluator_all_combined)
+    mAP_aud, _, auc_aud = compute_stats(evaluator_aud)
+    mAP_img_query, _, auc_img_query = compute_stats(evaluator_img_query)
+    mAP_iqr, _, auc_iqr = compute_stats(evaluator_iqr)
+    mAP_obj_prior, _, auc_obj_prior = compute_stats(evaluator_obj_prior)
+    mAP_ogl, _, auc_ogl = compute_stats(evaluator_ogl)
+    mAP_extra_iqr_ogl, _, auc_extra_iqr_ogl = compute_stats(evaluator_extra_iqr_ogl)
     if epoch == -1:
         model_dir = os.path.join(args.model_dir, args.experiment_name)
-        save_all_metrics(evaluator_aud, evaluator_img, evaluator_aud_img, model_dir)
+        save_all_metrics(
+            evaluator_aud,
+            evaluator_img_query,
+            evaluator_iqr,
+            evaluator_obj_prior,
+            evaluator_ogl,
+            evaluator_extra_iqr_ogl,
+            model_dir,
+        )
 
-    return mAP, auc, \
-           mAP_img, auc_img, \
+    return mAP_aud, auc_aud, \
+           mAP_img_query, auc_img_query, \
+           mAP_iqr, auc_iqr, \
+           mAP_obj_prior, auc_obj_prior, \
            mAP_ogl, auc_ogl, \
-           mAP_obj, auc_obj, \
-           mAP_aud_orig_obj, auc_aud_orig_obj, \
-           mAP_all_combined, auc_all_combined  
+           mAP_extra_iqr_ogl, auc_extra_iqr_ogl
 
 def save_sorted_metrics(evaluator, output_path):
     """Save sorted metrics cIoU for each file to a text file"""
@@ -276,14 +298,19 @@ def save_sorted_metrics(evaluator, output_path):
         for filename, ciou, infer_ratio in metrics:
             f.write(f'{filename}\t{ciou:.4f}\t{infer_ratio:.4f}\n')
 
-def save_all_metrics(evaluator_av, evaluator_obj, evaluator_av_obj, viz_dir):
+def save_all_metrics(evaluator_aud, evaluator_img_query, evaluator_iqr,
+                     evaluator_obj_prior, evaluator_ogl,
+                     evaluator_extra_iqr_ogl, viz_dir):
     """Save sorted metrics cIoU for each model's predictions"""
     os.makedirs(viz_dir, exist_ok=True)
     
     # Save metrics for each model
-    save_sorted_metrics(evaluator_av, os.path.join(viz_dir, 'av_metrics.txt'))
-    save_sorted_metrics(evaluator_obj, os.path.join(viz_dir, 'obj_metrics.txt'))
-    save_sorted_metrics(evaluator_av_obj, os.path.join(viz_dir, 'av_obj_metrics.txt'))
+    save_sorted_metrics(evaluator_aud, os.path.join(viz_dir, 'aud_metrics.txt'))
+    save_sorted_metrics(evaluator_img_query, os.path.join(viz_dir, 'img_query_metrics.txt'))
+    save_sorted_metrics(evaluator_iqr, os.path.join(viz_dir, 'iqr_metrics.txt'))
+    save_sorted_metrics(evaluator_obj_prior, os.path.join(viz_dir, 'obj_prior_metrics.txt'))
+    save_sorted_metrics(evaluator_ogl, os.path.join(viz_dir, 'ogl_metrics.txt'))
+    save_sorted_metrics(evaluator_extra_iqr_ogl, os.path.join(viz_dir, 'extra_iqr_ogl_metrics.txt'))
 
 class NormReducer(nn.Module):
     def __init__(self, dim):
@@ -305,4 +332,3 @@ if __name__ == "__main__":
     args = get_arguments()
     print(args)
     main(args)
-

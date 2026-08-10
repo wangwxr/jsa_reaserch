@@ -411,15 +411,5 @@ class mymodel(nn.Module):
     
     def train(self, mode=True):
         super().train(mode)
-        self.mode = 'train'
-        return
-    
-def eval(self):
-        def set_bn_to_eval(m): 
-            classname = m.__class__.__name__
-            if classname.find('BatchNorm') != -1:
-                m.eval()
-        self.apply(set_bn_to_eval)
-        super().eval()
-        self.mode = 'eval'
-        return
+        self.mode = 'train' if mode else 'eval'
+        return self

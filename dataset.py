@@ -39,7 +39,7 @@ class FrequencyMask(object):
         Returns:
             Tensor: Transformed image with Frequency Mask.
         """
-        start = random.randrange(0, tensor.shape[2])
+        start = random.randrange(0, tensor.shape[1])
         end = start + random.randrange(0, self.max_width)
         if self.use_mean:
             tensor[:, start:end, :] = tensor.mean()
@@ -75,7 +75,7 @@ class TimeMask(object):
         Returns:
             Tensor: Transformed image with Time Mask.
         """
-        start = random.randrange(0, tensor.shape[1])
+        start = random.randrange(0, tensor.shape[2])
         end = start + random.randrange(0, self.max_width)
         if self.use_mean:
             tensor[:, :, start:end] = tensor.mean()
@@ -121,6 +121,8 @@ def load_spectrogram_torchaudio(path, dur=3.0, rand=False, transformations=None)
     waveform, sample_rate = torchaudio.load(path)
     new_sample_rate = 16000
 
+    waveform = waveform.mean(dim=0, keepdim=True)
+
     if sample_rate != new_sample_rate:
         resampler = torchaudio.transforms.Resample(orig_freq=sample_rate, new_freq=new_sample_rate)
         waveform = resampler(waveform)
@@ -154,12 +156,14 @@ def load_spectrogram_torchaudio(path, dur=3.0, rand=False, transformations=None)
     spectrogram = torch.log(spectrogram + 1e-7)
     return spectrogram, start / sample_rate
 
-def load_all_bboxes(annotation_dir, format='flickr'):
+def load_all_bboxes(annotation_dir, format='flickr', wanted_ids=None):
     gt_bboxes = {}
     if format == 'flickr':
         anno_files = os.listdir(annotation_dir)
         for filename in anno_files:
             file = filename.split('.')[0]
+            if wanted_ids is not None and file not in wanted_ids:
+                continue
             gt = ET.parse(f"{annotation_dir}/{filename}").getroot()
             bboxes = []
             for child in gt:
@@ -174,9 +178,11 @@ def load_all_bboxes(annotation_dir, format='flickr'):
             gt_bboxes[file] = bboxes
 
     elif format == 'vggss':
-        with open('metadata/vggss.json') as json_file:
+        with open(annotation_dir) as json_file:
             annotations = json.load(json_file)
         for annotation in annotations:
+            if wanted_ids is not None and annotation['file'] not in wanted_ids:
+                continue
             bboxes = [(np.clip(np.array(bbox), 0, 1) * 224).astype(int) for bbox in annotation['bbox']]
             gt_bboxes[annotation['file']] = bboxes
 
@@ -282,7 +288,7 @@ class AudioVisualDataset(Dataset):
     
     def getitem_train(self, idx):
         file = self.image_files[idx]
-        file_id = file.split('.')[0]
+        file_id = os.path.splitext(os.path.basename(file))[0]
 
         # Image
         img_fn = os.path.join(self.image_path, self.image_files[idx])
@@ -291,9 +297,13 @@ class AudioVisualDataset(Dataset):
 
         # Audio
         audio_fn = os.path.join(self.audio_path, self.audio_files[idx])
-        spectrogram = np.load(audio_fn)
-        spectrogram = np.log(spectrogram + 1e-8)
-        spectrogram = torch.from_numpy(spectrogram)
+        if audio_fn.endswith('.npy'):
+            spectrogram = np.load(audio_fn)
+            spectrogram = np.log(spectrogram + 1e-8)
+            spectrogram = torch.from_numpy(spectrogram)
+        else:
+            spectrogram, _ = load_spectrogram_torchaudio(
+                audio_fn, dur=self.audio_dur, rand=self.rand_aud)
         spectrogram = self.aud_transform(spectrogram)
 
         bboxes = {}
@@ -306,7 +316,7 @@ class AudioVisualDataset(Dataset):
     
     def getitem_eval(self, idx):
         file = self.image_files[idx]
-        file_id = file.split('.')[0]
+        file_id = os.path.splitext(os.path.basename(file))[0]
 
         # Image
         img_fn = os.path.join(self.image_path, self.image_files[idx])
@@ -338,29 +348,44 @@ def get_train_dataset(args, hard_img, hard_aud, rand_aud):
     audio_length = args.aud_length
 
     # List directory
-    audio_files = {fn.split('.npy')[0] for fn in os.listdir(audio_path) if fn.endswith('.npy')} # numpy load
-    # audio_files = {fn.split('.wav')[0] for fn in os.listdir(audio_path) if fn.endswith('.wav')} # torchaudio load
-    image_files = {fn.split(img_format)[0] for fn in os.listdir(image_path) if fn.endswith(img_format)}
-    avail_files = audio_files.intersection(image_files)
-    csv_dir = os.path.join('metadata_temp/vggsound.csv')
+    audio_files = {}
+    for extension in ('.npy', '.wav', '.mp3'):
+        for filename in os.listdir(audio_path):
+            if filename.lower().endswith(extension):
+                audio_files.setdefault(os.path.splitext(filename)[0], filename)
+    image_files = {os.path.splitext(fn)[0]: fn for fn in os.listdir(image_path)
+                   if fn.lower().endswith(img_format)}
+    avail_files = set(audio_files).intersection(image_files)
 
     # Subsample if specified
     if args.trainset.lower() in {'vggss', 'flickr'}:
         pass    # use full dataset
     else:
-        subset = set(open(f"metadata/{args.trainset}.txt").read().splitlines())
+        manifest_path = args.train_manifest_path or f"metadata/{args.trainset}.txt"
+        subset = {line.strip().split(',')[0] for line in open(manifest_path)
+                  if line.strip()}
+        missing = subset.difference(avail_files)
+        if missing:
+            examples = ', '.join(sorted(missing)[:5])
+            raise RuntimeError(
+                f"Training data is incomplete: {len(missing)}/{len(subset)} "
+                f"manifest IDs have no image/audio pair. Examples: {examples}"
+            )
         avail_files = avail_files.intersection(subset)
         # print(f"{len(avail_files)} valid subset files")
     avail_files = sorted(list(avail_files))
-    audio_files = [dt+'.npy' for dt in avail_files]
-    # audio_files = [dt+'.wav' for dt in avail_files]
-    image_files = [dt+img_format for dt in avail_files]
+    selected_audio_files = [audio_files[dt] for dt in avail_files]
+    selected_image_files = [image_files[dt] for dt in avail_files]
 
-    label_dict = {item[0]: item[2] for item in csv.reader(open(csv_dir))}
+    label_dict = {}
+    if args.train_metadata_path:
+        for item in csv.reader(open(args.train_metadata_path)):
+            if len(item) >= 2:
+                label_dict[item[0]] = item[-1]
 
     return AudioVisualDataset(
-        image_files=image_files,
-        audio_files=audio_files,
+        image_files=selected_image_files,
+        audio_files=selected_audio_files,
         label_dict=label_dict,
         image_path=image_path,
         audio_path=audio_path,
@@ -372,29 +397,36 @@ def get_train_dataset(args, hard_img, hard_aud, rand_aud):
     )
 
 def get_test_dataset(args, test_set):
-    root_dir = '/data04/inho/preprocessed_dataset/'
     if test_set == 'flickr':
         testcsv = 'metadata/flickr_test_SLAVC.csv'
-        audio_path = os.path.join(root_dir, "Flickr/test/audio/")
-        image_path = os.path.join(root_dir, "Flickr/test/frames/")
-        test_gt_path = os.path.join(root_dir, "Flickr/test/Annotations/")
+        root_dir = args.test_data_path
+        nested_data_path = os.path.join(root_dir, 'Data')
+        if os.path.isdir(nested_data_path):
+            audio_path = image_path = nested_data_path
+            test_gt_path = args.test_gt_path or os.path.join(root_dir, 'Annotations')
+        else:
+            audio_path = os.path.join(root_dir, 'audio')
+            image_path = os.path.join(root_dir, 'frames')
+            test_gt_path = args.test_gt_path or os.path.join(root_dir, 'Annotations')
     elif test_set == 'vggss':
         testcsv = 'metadata/vggss_test.csv'
-        audio_path = os.path.join(root_dir, "VGGSound/audio/")
-        image_path = os.path.join(root_dir, "VGGSound/frames/")
-        test_gt_path = "metadata/vggss.json"
+        audio_path = os.path.join(args.test_data_path, 'audio')
+        image_path = os.path.join(args.test_data_path, 'frames')
+        test_gt_path = args.test_gt_path or 'metadata/vggss.json'
     elif test_set == 'vggss_heard':
         testcsv = 'metadata/vggss_heard_test.csv'
-        audio_path = os.path.join(root_dir, "VGGSound/audio/")
-        image_path = os.path.join(root_dir, "VGGSound/frames/")
-        test_gt_path = "metadata/vggss_heard_test.json"
+        audio_path = os.path.join(args.test_data_path, 'audio')
+        image_path = os.path.join(args.test_data_path, 'frames')
+        test_gt_path = args.test_gt_path or 'metadata/vggss.json'
     elif test_set == 'vggss_unheard':
         testcsv = 'metadata/vggss_unheard_test.csv'
-        audio_path = os.path.join(root_dir, "VGGSound/audio/")
-        image_path = os.path.join(root_dir, "VGGSound/frames/")
-        test_gt_path = "metadata/vggss_unheard_test.json"
+        audio_path = os.path.join(args.test_data_path, 'audio')
+        image_path = os.path.join(args.test_data_path, 'frames')
+        test_gt_path = args.test_gt_path or 'metadata/vggss.json'
     else:
         raise NotImplementedError
+
+    testcsv = getattr(args, 'test_manifest_path', '') or testcsv
     
     bbox_format = {'flickr': 'flickr',
                    'vggss': 'vggss',
@@ -407,19 +439,36 @@ def get_test_dataset(args, test_set):
     testset = set([item[0] for item in csv.reader(open(testcsv))])
 
     # Intersect with available files
-    audio_files = {fn.split('.wav')[0] for fn in os.listdir(audio_path)}
-    image_files = {fn.split('.jpg')[0] for fn in os.listdir(image_path)}
-    avail_files = audio_files.intersection(image_files)
+    def find_files(root, extension):
+        result = {}
+        for directory, _, filenames in os.walk(root):
+            for filename in filenames:
+                if filename.lower().endswith(extension):
+                    stem = os.path.splitext(filename)[0]
+                    result[stem] = os.path.relpath(os.path.join(directory, filename), root)
+        return result
+
+    audio_files = find_files(audio_path, '.wav')
+    image_files = find_files(image_path, '.jpg')
+    avail_files = set(audio_files).intersection(image_files)
+    missing = testset.difference(avail_files)
+    if missing:
+        examples = ', '.join(sorted(missing)[:5])
+        raise RuntimeError(
+            f"Test data is incomplete: {len(missing)}/{len(testset)} manifest "
+            f"IDs have no image/audio pair. Examples: {examples}"
+        )
     testset = testset.intersection(avail_files)
 
     testset = sorted(list(testset))
-    image_files = [dt+'.jpg' for dt in testset]
-    audio_files = [dt+'.wav' for dt in testset]
+    selected_image_files = [image_files[dt] for dt in testset]
+    selected_audio_files = [audio_files[dt] for dt in testset]
 
     audio_dur = args.aud_length
 
     # Bounding boxes
-    all_bboxes = load_all_bboxes(test_gt_path, format=bbox_format)
+    all_bboxes = load_all_bboxes(test_gt_path, format=bbox_format,
+                                 wanted_ids=set(testset))
 
     if test_set == 'vggss':
         with open(test_gt_path) as f:
@@ -429,8 +478,8 @@ def get_test_dataset(args, test_set):
         label_dict = {}
 
     return AudioVisualDataset(
-        image_files=image_files,
-        audio_files=audio_files,
+        image_files=selected_image_files,
+        audio_files=selected_audio_files,
         label_dict = label_dict,
         image_path=image_path,
         audio_path=audio_path,
