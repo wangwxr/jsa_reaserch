@@ -36,7 +36,7 @@ def get_arguments():
 
     # training/evaluation parameters
     parser.add_argument('--batch_size', default=None, type=int, help='Batch Size')
-    parser.add_argument("--infer_sharpening", type=float, default=None)
+    parser.add_argument("--infer_sharpening", type=float, default=0.1)
     parser.add_argument("--num_slots", type=int, default=None)
     parser.add_argument("--iters", type=int, default=None)
     parser.add_argument('--wandb', type=str, default=None)
@@ -46,7 +46,7 @@ def get_arguments():
     parser.add_argument('--gpu', type=int, default=None)
 
     # Evaluation
-    parser.add_argument('--alpha', default=None, type=float, help='alpha')
+    parser.add_argument('--alpha', default=0.6, type=float, help='alpha')
 
     args = parser.parse_args()
 
@@ -171,8 +171,8 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
             image = image.cuda(args.gpu, non_blocking=True)
         
         with torch.no_grad():
-            heatmap_img_query, heatmap_aud = audio_visual_model(image.float(), spec.float())
-            obj_prior_feat = object_saliency_model(image)
+            heatmap_img_query, heatmap_aud = audio_visual_model(image.float(), spec.float())#heatmap_img_query是img_attn heatmap_aud是cross_attn
+            obj_prior_feat = object_saliency_model(image) #OGL专用的外部支路 图像过一个resnet全局平均成B 1 7 7
 
         heatmap_aud = F.interpolate(heatmap_aud, size=(224, 224), mode='bicubic', align_corners=False)
         heatmap_aud = heatmap_aud.data.cpu().numpy()
@@ -186,15 +186,15 @@ def validate_img_aud(testdataloader, audio_visual_model, object_saliency_model, 
         heatmap_obj_prior = heatmap_obj_prior.data.cpu().numpy()
 
         bboxes = bboxes.data.cpu().numpy()
-
+        #TODO:这种相加真的有意义吗？先norm再相加 不同 map 的绝对置信度尺度已经被人为抹掉了
         # Compute eval metrics and save visualizations
         for i in range(spec.shape[0]):
             pred_aud = utils.normalize_img(heatmap_aud[i, 0])
             pred_img_query = utils.normalize_img(heatmap_img_query[i, 0])
-            pred_iqr = utils.normalize_img(pred_aud * args.alpha + pred_img_query * (1 - args.alpha))
+            pred_iqr = utils.normalize_img(pred_aud * args.alpha + pred_img_query * (1 - args.alpha)) #IQR就是aud结果和img自己查找加权
             pred_obj_prior = utils.normalize_img(heatmap_obj_prior[i, 0])
-            pred_ogl = utils.normalize_img(pred_aud * args.alpha + pred_obj_prior * (1 - args.alpha))
-            pred_extra_iqr_ogl = utils.normalize_img(pred_aud * args.alpha + pred_img_query * (1 - args.alpha) * 0.5 + pred_obj_prior * (1 - args.alpha) * 0.5)
+            pred_ogl = utils.normalize_img(pred_aud * args.alpha + pred_obj_prior * (1 - args.alpha)) #OGL就是aud结果和图像先验加权
+            pred_extra_iqr_ogl = utils.normalize_img(pred_aud * args.alpha + pred_img_query * (1 - args.alpha) * 0.5 + pred_obj_prior * (1 - args.alpha) * 0.5) # extra就是三者加权0.6 0.2 0.2
 
             gt_map = bboxes[i]
             threshold = 0.6

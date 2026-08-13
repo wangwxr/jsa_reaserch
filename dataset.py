@@ -117,34 +117,42 @@ def load_spectrogram(path, dur=3., rand=False):
     spectrogram = np.log(spectrogram + 1e-7)
     return spectrogram, audio_ss
 
-def load_spectrogram_torchaudio(path, dur=3.0, rand=False, transformations=None):
+def load_spectrogram_torchaudio(path, dur=3.0, rand=False, transformations=None,
+                                log_spectrogram=True, crop_mode="center"):
+    if crop_mode not in {"center", "first"}:
+        raise ValueError(f"Unsupported crop_mode: {crop_mode}")
+    if rand and crop_mode != "center":
+        raise ValueError("rand=True is only supported with crop_mode='center'")
+
     waveform, sample_rate = torchaudio.load(path)
     new_sample_rate = 16000
 
-    waveform = waveform.mean(dim=0, keepdim=True)
+    waveform = waveform.mean(dim=0, keepdim=True)#转单声道 不过在prepare时就已经是单声道了
 
     if sample_rate != new_sample_rate:
         resampler = torchaudio.transforms.Resample(orig_freq=sample_rate, new_freq=new_sample_rate)
         waveform = resampler(waveform)
-
+    #这里还有对单声道 、 采样率做的保险操作 如果不是单声道 16000hz就会自动重新转成这样 不过我的数据集这些工作已经在prepare里完成了
     num_required_samples = int(new_sample_rate * dur)
     if waveform.shape[1] < num_required_samples:
         repeats = (num_required_samples // waveform.shape[1]) + 1
         waveform = waveform.repeat(1, repeats)
         waveform = waveform[:, :num_required_samples]
         start = 0.0
-
     else:
-        if rand:
+        if crop_mode == "first":
+            start = 0
+        elif rand:
             max_start = waveform.shape[1] - num_required_samples
             start = int(random.uniform(0.4, 0.6) * max_start)
         else:
             start = (waveform.shape[1] - num_required_samples) // 2
         waveform = waveform[:, start:start + num_required_samples]
 
+
     if transformations:
         waveform = transformations(waveform)
-
+    #波形怎么变成频谱：
     spectrogram_transform = torchaudio.transforms.Spectrogram(
         n_fft=512,
         win_length=512,
@@ -153,7 +161,8 @@ def load_spectrogram_torchaudio(path, dur=3.0, rand=False, transformations=None)
         power=2.0
     )
     spectrogram = spectrogram_transform(waveform)
-    spectrogram = torch.log(spectrogram + 1e-7)
+    if log_spectrogram:
+        spectrogram = torch.log(spectrogram + 1e-7)
     return spectrogram, start / sample_rate
 
 def load_all_bboxes(annotation_dir, format='flickr', wanted_ids=None):
@@ -238,7 +247,7 @@ class AudioVisualDataset(Dataset):
         self.image_files = image_files
         self.all_bboxes = all_bboxes
         self.bbox_format = bbox_format
-
+        #都用的hard增强 初始化这块就是进行了一些数据增强
         self.hard_img = hard_img
         self.hard_aud = hard_aud
         self.rand_aud = rand_aud
@@ -247,15 +256,15 @@ class AudioVisualDataset(Dataset):
         self.eval_img_transform = transforms.Compose([
             transforms.Resize((224, 224), Image.BICUBIC),
             transforms.ToTensor(),
-            transforms.Normalize(mean=[0.485, 0.456, 0.406],
-                                std=[0.229, 0.224, 0.225])])
+            transforms.Normalize(mean=[0.485, 0.456, 0.406], 
+                                std=[0.229, 0.224, 0.225])])  #Imagenet
         
         self.eval_aud_transform = transforms.Compose([
             transforms.Normalize(mean=[0.0], std=[12.0])])
         
         if self.hard_img:
             self.img_transform = transforms.Compose([
-                transforms.Resize(int(224 * 1.1), Image.BICUBIC),
+                transforms.Resize(int(224 * 1.1), Image.BICUBIC), #短边移动到
                 transforms.RandomCrop((224, 224)),
                 transforms.RandomApply([transforms.GaussianBlur(kernel_size=5)], p=0.8),
                 transforms.RandomHorizontalFlip(),
@@ -274,8 +283,8 @@ class AudioVisualDataset(Dataset):
         
         if self.hard_aud:
             self.aud_transform = transforms.Compose([
-                FrequencyMask(max_width=10, use_mean=False),
-                TimeMask(max_width=10, use_mean=False),
+                FrequencyMask(max_width=10, use_mean=False), #mask频率轴
+                TimeMask(max_width=10, use_mean=False),     #mask时间轴
                 transforms.Normalize(mean=[0.0], std=[12.0])])
         
         else:
@@ -299,8 +308,8 @@ class AudioVisualDataset(Dataset):
         audio_fn = os.path.join(self.audio_path, self.audio_files[idx])
         if audio_fn.endswith('.npy'):
             spectrogram = np.load(audio_fn)
-            spectrogram = np.log(spectrogram + 1e-8)
             spectrogram = torch.from_numpy(spectrogram)
+            spectrogram = torch.log(spectrogram + 1e-7)
         else:
             spectrogram, _ = load_spectrogram_torchaudio(
                 audio_fn, dur=self.audio_dur, rand=self.rand_aud)
@@ -381,7 +390,7 @@ def get_train_dataset(args, hard_img, hard_aud, rand_aud):
     if args.train_metadata_path:
         for item in csv.reader(open(args.train_metadata_path)):
             if len(item) >= 2:
-                label_dict[item[0]] = item[-1]
+                label_dict[item[0]] = item[-1]  #['KUzd6bUwGdE_000575', 'people eating crisps']这种格式
 
     return AudioVisualDataset(
         image_files=selected_image_files,

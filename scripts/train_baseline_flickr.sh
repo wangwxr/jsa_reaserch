@@ -9,9 +9,11 @@ fi
 split=$1
 gpu=${2:-0}
 experiment_name=${3:-baseline_av_mil_flickr_${split}}
+project_root=$(cd "$(dirname "$0")/.." && pwd)
 dataset_root=${FLICKR_ROOT:-/data/wxr/datasets/FlickrSoundNet}
 train_root="$dataset_root/prepared/jsa_flickr_${split}"
 test_root="$dataset_root/test/Dataset"
+python_bin=${JSA_PYTHON:-python}
 
 case "$split" in
     10k) epochs=100 ;;
@@ -22,7 +24,16 @@ case "$split" in
         ;;
 esac
 
-python train_slot.py \
+log_root=${JSA_LOG_ROOT:-$project_root/checkpoints/$experiment_name/logs}
+mkdir -p "$log_root"
+timestamp=$(date +%Y%m%d_%H%M%S)
+log_file="$log_root/${experiment_name}_train_${timestamp}.log"
+exec > >(tee -a "$log_file") 2>&1
+echo "Training log: $log_file"
+echo "Experiment: $experiment_name, split: $split, GPU: $gpu"
+
+cd "$project_root"
+"$python_bin" train_slot.py \
     --model av_mil \
     --train_data_path "$train_root" \
     --train_manifest_path "$train_root/available_ids.txt" \
@@ -35,7 +46,7 @@ python train_slot.py \
     --batch_size 256 \
     --init_lr 0.00005 \
     --weight_decay 0.01 \
-    --alpha 0.4 \
+    --alpha 0.6 \
     --tau 0.03 \
     --aud_length 5.0 \
     --workers 8 \

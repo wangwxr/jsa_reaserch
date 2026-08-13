@@ -1,0 +1,129 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug JSA Eval VGGSS",
+            "python": "/home/wxr/miniconda3/envs/wwww/bin/python",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_model.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--experiment_name", "jsa_vggss_10k",
+                "--testset", "vggss",
+                "--checkpoint", "final.pth",
+                "--batch_size", "1",
+                "--workers", "0",
+                "--gpu", "0"
+            ]
+        },
+
+        {
+            "name": "Debug JSA VGGSS 10k",
+            "python": "/home/wxr/miniconda3/envs/wwww/bin/python",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_slot.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--train_data_path",
+                "/data/wxr/audio_video/JSA/prepared/jsa_vggss_10k_clean",
+
+                "--train_manifest_path",
+                "/data/wxr/audio_video/JSA/metadata_vggss/vggss_10k.csv",
+
+                "--train_metadata_path",
+                "/data/wxr/audio_video/JSA/metadata_vggss/vggss_10k.csv",
+
+                "--test_data_path",
+                "/data/wxr/datasets/ACL-SSL/VGGSound",
+
+                "--test_manifest_path",
+                "/data/wxr/audio_video/JSA/metadata_vggss/vggss_test.csv",
+
+                "--test_gt_path",
+                "/data/wxr/audio_video/JSA/metadata_vggss/vggss.json",
+
+                "--trainset",
+                "vggss_10k",
+
+                "--testset",
+                "vggss",
+
+                "--epochs",
+                "1",
+
+                "--warmup",
+                "-1",
+
+                "--batch_size",
+                "32",
+
+                "--init_lr",
+                "0.00005",
+
+                "--weight_decay",
+                "0.01",
+
+                "--alpha",
+                "0.6",
+
+                "--lam1",
+                "0.1",
+
+                "--lam2",
+                "0.1",
+
+                "--lam3",
+                "100.0",
+
+                "--tau",
+                "0.03",
+
+                "--infer_sharpening",
+                "0.1",
+
+                "--num_slots",
+                "2",
+
+                "--iters",
+                "5",
+
+                "--reciprocal_k",
+                "20",
+
+                "--mask_ratio",
+                "0.1",
+
+                "--aud_length",
+                "5.0",
+
+                "--workers",
+                "0",
+
+                "--gpu",
+                "0",
+
+                "--wandb",
+                "false",
+
+                "--hard_aud",
+                "true",
+
+                "--hard_img",
+                "true",
+
+                "--rand_aud",
+                "false",
+
+                "--eval_during_training",
+                "false",
+
+                "--experiment_name",
+                "debug_vggss_10k"
+            ]
+        }
+    ]
+}

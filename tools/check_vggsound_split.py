@@ -97,7 +97,9 @@ def main():
         )
         require_complete(
             "Prepared training audio", train_ids,
-            media_ids(prepared_root / "audio", ".wav")
+            media_ids(prepared_root / "audio", ".wav").union(
+                media_ids(prepared_root / "audio", ".npy")
+            )
         )
 
     result = {

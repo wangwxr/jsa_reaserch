@@ -12,7 +12,6 @@ experiment_name=${3:-jsa_flickr_${split}}
 project_root=$(cd "$(dirname "$0")/.." && pwd)
 metadata_root="$project_root/metadata_flickr"
 dataset_root=${FLICKR_ROOT:-/data/wxr/datasets/FlickrSoundNet}
-extracted_root=${FLICKR_EXTRACTED_ROOT:-$dataset_root/extracted}
 train_root=${FLICKR_PREP_ROOT:-$project_root/prepared/jsa_flickr_${split}_metadata}
 test_root="$dataset_root/test/Dataset"
 train_manifest="$metadata_root/flickr_${split}.csv"
@@ -26,7 +25,7 @@ case "$split" in
         ;;
     144k)
         epochs=50
-        infer_sharpening=1.0
+        infer_sharpening=0.1
         ;;
     *)
         echo "split must be 10k or 144k"
@@ -50,11 +49,6 @@ exec > >(tee -a "$log_file") 2>&1
 echo "Training log: $log_file"
 echo "Experiment: $experiment_name, split: $split, GPU: $gpu"
 
-"$python_bin" "$project_root/tools/build_flickr_view.py" \
-    --manifest "$train_manifest" \
-    --extracted-dir "$extracted_root" \
-    --output-dir "$train_root"
-
 cd "$project_root"
 "$python_bin" train_slot.py \
     --train_data_path "$train_root" \
@@ -70,7 +64,7 @@ cd "$project_root"
     --batch_size 256 \
     --init_lr 0.00005 \
     --weight_decay 0.01 \
-    --alpha 0.4 \
+    --alpha 0.6 \
     --lam1 0.1 \
     --lam2 0.1 \
     --lam3 100.0 \

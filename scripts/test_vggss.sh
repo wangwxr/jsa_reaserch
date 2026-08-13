@@ -9,6 +9,7 @@ fi
 experiment_name=$1
 gpu=${2:-0}
 alpha=${3:-0.6}
+infer_sharpening=0.1
 project_root=$(cd "$(dirname "$0")/.." && pwd)
 metadata_root="$project_root/metadata_vggss"
 test_root=${VGGSS_TEST_ROOT:-/data/wxr/datasets/ACL-SSL/VGGSound}
@@ -29,7 +30,7 @@ checkpoint_label=${checkpoint%.pth}
 log_file="$log_root/${experiment_name}_test_vggss_${checkpoint_label}_${timestamp}.log"
 exec > >(tee -a "$log_file") 2>&1
 echo "Test log: $log_file"
-echo "Experiment: $experiment_name, checkpoint: $checkpoint, alpha: $alpha, GPU: $gpu"
+echo "Experiment: $experiment_name, checkpoint: $checkpoint, alpha: $alpha, infer_sharpening: $infer_sharpening, GPU: $gpu"
 
 cd "$project_root"
 "$python_bin" test_model.py \
@@ -40,4 +41,5 @@ cd "$project_root"
     --test_gt_path "$metadata_root/vggss.json" \
     --checkpoint "$checkpoint" \
     --gpu "$gpu" \
-    --alpha "$alpha"
+    --alpha "$alpha" \
+    --infer_sharpening "$infer_sharpening"

@@ -93,8 +93,8 @@ Runtime metric labels follow the paper terminology:
 - Training accepts mp3/wav directly as well as precomputed NumPy spectra.
 - Frequency and time masking now sample offsets from their intended axes.
 
-One paper/code discrepancy remains explicit: the paper states IQR alpha=0.6,
-while the released shell scripts use `--alpha 0.4` for all refinements. The
-local run scripts initially preserve the released-code value; both values
-should be reported as a small evaluation ablation before claiming exact
-reproduction.
+The paper states IQR alpha=0.6, while the released shell scripts use
+`--alpha 0.4`. Local training and test entry points consistently use the
+paper value `alpha=0.6`. They also explicitly use `infer_sharpening=0.1` for
+both 10k and 144k evaluation, matching the released test script and avoiding
+dataset-size-dependent heatmap calibration.

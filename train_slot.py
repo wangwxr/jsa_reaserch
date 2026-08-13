@@ -19,6 +19,7 @@ from datetime import datetime, timedelta
 import model_slot
 import model_baseline
 import utils
+from training_history import render_training_curves, update_history
 
 # from torch.utils.tensorboard import SummaryWriter   
 
@@ -73,7 +74,7 @@ def get_arguments():
     parser.add_argument("--lam2", type=float, default=1.0)
     parser.add_argument("--lam3", type=float, default=1.0)
     parser.add_argument("--infer_sharpening", type=float, default=0.1)
-    parser.add_argument("--num_slots", type=int, default=3)
+    parser.add_argument("--num_slots", type=int, default=3) #为啥是3
     parser.add_argument("--iters", type=int, default=5)
     parser.add_argument("--reciprocal_k", type=int, default=20)
     parser.add_argument("--mask_ratio", type=float, default=0.1)
@@ -87,7 +88,7 @@ def get_arguments():
     parser.add_argument('--gpu', type=int, default=None)
 
     # Evaluation
-    parser.add_argument('--alpha', default=0.4, type=float, help='alpha')   
+    parser.add_argument('--alpha', default=0.6, type=float, help='alpha')
     parser.add_argument('--wandb',               type=str, default='false')
     parser.add_argument('--hard_img',            type=str, default='false')
     parser.add_argument('--hard_aud',            type=str, default='false')
@@ -141,7 +142,7 @@ def main(args):
     utils.save_json(vars(args), os.path.join(model_dir, 'configs.json'), sort_keys=True, save_pretty=True)
 
     if args.model == 'jsa':
-        model = model_slot.mymodel(args)
+        model = model_slot.mymodel(args)  #注意这里进的是mymodel 而不是slot
     else:
         model = model_baseline.AudioVisualMIL(args)
     print('Model loaded.')
@@ -203,30 +204,80 @@ def main(args):
     start_epoch = 0
     best = [0.0] * 10
     run_start = time.time()
+    history_path = os.path.join(model_dir, 'epoch_metrics.csv')
+    curves_path = os.path.join(model_dir, 'training_curves.png')
 
     for epoch in range(start_epoch, args.epochs):
         epoch_start = time.time()
-        train(train_loader, model, optimizer, scaler, epoch, args)
+        train_metrics = train(train_loader, model, optimizer, scaler, epoch, args)
 
         if args.scheduler:
             scheduler.step()
         print(f"Epoch {epoch+1}, Learning rate: {optimizer.param_groups[0]['lr']}")
 
-        metrics = {
+        lr_metrics = {
             'train/lr': optimizer.param_groups[0]['lr'],
             'epoch': epoch
         }
-        wandb.log(metrics)
+        wandb.log(lr_metrics)
 
+        eval_metrics = {}
         if args.eval_during_training:
-            best = validate(test_loader, args.testset, model, object_saliency_model,
-                            epoch, best, model_dir, args)
+            best, eval_metrics = validate(
+                test_loader, args.testset, model, object_saliency_model,
+                epoch, best, model_dir, args
+            )
         # Checkpoint
         ckp = {'model': model.state_dict(),
             'optimizer': optimizer.state_dict(),
             'epoch': epoch+1}
         torch.save(ckp, os.path.join(model_dir, 'latest.pth'))
         print(f"Latest model saved to {model_dir}")
+
+        history_record = {
+            'epoch': epoch + 1,
+            'learning_rate': optimizer.param_groups[0]['lr'],
+            'epoch_seconds': time.time() - epoch_start,
+            'train_total_loss': train_metrics['train/total_loss'],
+            'train_info_loss': train_metrics['train/info_loss'],
+            'train_recon_loss': train_metrics['train/recon_loss'],
+            'train_div_loss': train_metrics['train/div_loss'],
+            'train_attention_match_loss': train_metrics['train/att_loss'],
+            'train_weighted_recon_loss': args.lam1 * train_metrics['train/recon_loss'],
+            'train_weighted_div_loss': args.lam2 * train_metrics['train/div_loss'],
+            'train_weighted_attention_match_loss': args.lam3 * train_metrics['train/att_loss'],
+        }
+        if eval_metrics:
+            metric_prefixes = {
+                'aud': 'AUD',
+                'img_query': 'IMG_QUERY',
+                'iqr': 'IQR',
+                'obj_prior': 'OBJ_PRIOR',
+                'ogl': 'OGL',
+                'extra_iqr_ogl': 'EXTRA_IQR_OGL',
+            }
+            for history_prefix, eval_prefix in metric_prefixes.items():
+                history_record[f'{history_prefix}_ciou'] = eval_metrics[
+                    f'{eval_prefix}_{args.testset}/cIoU'
+                ]
+                history_record[f'{history_prefix}_auc'] = eval_metrics[
+                    f'{eval_prefix}_{args.testset}/auc'
+                ]
+        try:
+            update_history(history_path, history_record)
+            render_training_curves(
+                history_path, curves_path, title=args.experiment_name
+            )
+            print(
+                f"Epoch history updated: {history_path}; curves: {curves_path}",
+                flush=True,
+            )
+        except Exception as exc:
+            print(
+                f"WARNING: Failed to update training curves: "
+                f"{type(exc).__name__}: {exc}",
+                flush=True,
+            )
 
         elapsed = time.time() - run_start
         completed_epochs = epoch - start_epoch + 1
@@ -262,10 +313,12 @@ def train(train_loader, model, optimizer, scaler, epoch, args):
     con_losses = AverageMeter('Con', ':.3f')
     div_losses = AverageMeter('Div', ':.3f')
     att_losses = AverageMeter('Att', ':.3f')
+    total_losses = AverageMeter('Total', ':.3f')
 
     progress = ProgressMeter(
         len(train_loader),
-        [batch_time, data_time, info_losses, con_losses, div_losses, att_losses],
+        [batch_time, data_time, info_losses, con_losses, div_losses, att_losses,
+         total_losses],
         prefix="Warmup: [{}]".format(epoch) if epoch < args.warmup else "Train: [{}]".format(epoch),
     )
 
@@ -277,8 +330,8 @@ def train(train_loader, model, optimizer, scaler, epoch, args):
         data_time.update(time.time() - end)
 
         if args.gpu is not None:
-            frame = frame.cuda(args.gpu, non_blocking=True)
-            spec  = spec.cuda(args.gpu, non_blocking=True)
+            frame = frame.cuda(args.gpu, non_blocking=True) #b,3,224,224
+            spec  = spec.cuda(args.gpu, non_blocking=True) #b,1,257,501
 
         with torch.cuda.amp.autocast():
             info_loss, recon_loss, div_loss, att_loss = model(frame.float(), spec.float())
@@ -296,6 +349,7 @@ def train(train_loader, model, optimizer, scaler, epoch, args):
         con_losses.update(recon_loss.item(), batch_size)
         div_losses.update(div_loss.item(), batch_size)
         att_losses.update(att_loss.item(), batch_size)
+        total_losses.update(loss.item(), batch_size)
 
         batch_time.update(time.time() - end)
         end = time.time()
@@ -317,10 +371,11 @@ def train(train_loader, model, optimizer, scaler, epoch, args):
         'train/recon_loss': con_losses.avg,
         'train/div_loss': div_losses.avg,
         'train/att_loss': att_losses.avg,
+        'train/total_loss': total_losses.avg,
         'epoch': epoch
     }
     wandb.log(metrics)
-    return
+    return metrics
 
 def validate(test_loader, testset, model, object_saliency_model, epoch, best, model_dir,args):
     model.eval()
@@ -395,7 +450,7 @@ def validate(test_loader, testset, model, object_saliency_model, epoch, best, mo
         'epoch': epoch
     }
     wandb.log(metrics)
-    return best
+    return best, metrics
 
 class AverageMeter(object):
     """Computes and stores the average and current value"""

@@ -29,7 +29,7 @@ case "$split" in
         ;;
     144k)
         epochs=50
-        infer_sharpening=1.0
+        infer_sharpening=0.1
         overlap_args=(--allow-source-overlap)
         ;;
     *)
@@ -62,11 +62,15 @@ echo "Experiment: $experiment_name, split: $split, GPU: $gpu"
     --test-data-root "$test_root" \
     "${overlap_args[@]}"
 
-"$python_bin" "$project_root/tools/prepare_vggsound_split.py" \
-    --manifest "$train_manifest" \
-    --video-dir "$video_root" \
-    --output-dir "$prepared_root" \
-    --workers "$prepare_workers"
+if [ -f "$prepared_root/PREPARATION_COMPLETE" ]; then
+    echo "Using completed precomputed dataset: $prepared_root"
+else
+    "$python_bin" "$project_root/tools/prepare_vggsound_split.py" \
+        --manifest "$train_manifest" \
+        --video-dir "$video_root" \
+        --output-dir "$prepared_root" \
+        --workers "$prepare_workers"
+fi
 
 "$python_bin" "$project_root/tools/check_vggsound_split.py" \
     --train-manifest "$train_manifest" \

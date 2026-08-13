@@ -30,7 +30,7 @@ def read_ids(path):
 def run(command):
     return subprocess.run(command, check=True, capture_output=True, text=True)
 
-
+#这个最重要
 def prepare_one(video_id, video_dir, audio_dir, frame_dir):
     source = video_dir / f"{video_id}.mp4"
     audio_path = audio_dir / f"{video_id}.wav"
@@ -48,8 +48,8 @@ def prepare_one(video_id, video_dir, audio_dir, frame_dir):
             "-of", "default=nw=1:nk=1", str(source),
         ])
         duration = float(probe.stdout.strip())
-        audio_start = max(0.0, (duration - 5.0) / 2.0)
-        frame_offset = min(2.5, duration / 2.0)
+        audio_start = max(0.0, (duration - 5.0) / 2.0) #取整个视频的middle frame
+        frame_offset = min(2.5, duration / 2.0) #指的是相对audio开始向后走2.5
 
         run([
             "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",

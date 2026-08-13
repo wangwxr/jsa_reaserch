@@ -60,52 +60,52 @@ class SlotAttention(nn.Module):
         self.aud_norm_slots  = nn.LayerNorm(512)
         self.aud_norm_pre_ff = nn.LayerNorm(512)
         return
-
+    #Slot att
     def forward(self, img, aud):
         # Masking img patches
-        b, n_img_patches, c = img.size()
-        _, n_aud_patches, _ = aud.size()
+        b, n_img_patches, c = img.size() #B 49 512
+        _, n_aud_patches, _ = aud.size() #B 16 512
         device = img.device
-
+        #TODO:这里可以加实验 比如这mask加上位置信息 让每个位置的mask不一样 2.让每个图独立采样来保证<0.1而不是全局<0.1 不过不是核心创新点
         if self.training:
-            # Masking patches and chunks
-            img_mask = torch.rand(b, n_img_patches, 1, device=device) < self.mask_ratio
+            # Masking patches and chunks 
+            img_mask = torch.rand(b, n_img_patches, 1, device=device) < self.mask_ratio #B 49 的随机bool mask
             img_mask = img_mask.to(dtype=img.dtype)
-            mask_token_img = self.mask_token_img.expand(b, n_img_patches, c)
+            mask_token_img = self.mask_token_img.expand(b, n_img_patches, c) #B 49 512
             img = img * (1 - img_mask) + mask_token_img * img_mask
 
-            aud_mask = torch.rand(b, n_aud_patches, 1, device=device) < self.mask_ratio
+            aud_mask = torch.rand(b, n_aud_patches, 1, device=device) < self.mask_ratio #B 16
             aud_mask = aud_mask.to(dtype=aud.dtype)
             mask_token_aud = self.mask_token_aud.expand(b, n_aud_patches, c)
             aud = aud * (1 - aud_mask) + mask_token_aud * aud_mask
+        
+        original_slots = self.slots.expand(b, -1, -1)  #TODO: B 2 512 难道不应该是B 2*49 512? 直接每个位置做定位
 
-        original_slots = self.slots.expand(b, -1, -1)  # b x n x c
-
-        img, aud = self.img_norm_input(img), self.aud_norm_input(aud)
+        img, aud = self.img_norm_input(img), self.aud_norm_input(aud) #常规操作 做linear project之前让特征更稳定
         img_k, img_v = self.img_to_k(img), self.img_to_v(img)
         aud_k, aud_v = self.aud_to_k(aud), self.aud_to_v(aud)
 
         img_slots = None
-        for iter in range(self.iters):
+        for iter in range(self.iters): #为什么迭代5遍而不是堆叠5层 类似聚类
             if img_slots is None:
                 img_slots = original_slots
             slots_prev = img_slots
             img_slots = self.img_norm_slots(img_slots)
-            img_q = self.img_to_q(img_slots)
+            img_q = self.img_to_q(img_slots) #从slot产生query B 2 512
 
             dots = torch.einsum('bid,bjd->bij', img_q, img_k) * self.scale
-            attn = dots.softmax(dim=1) + self.eps
-            attn = attn / attn.sum(dim=-1, keepdim=True)
-
+            attn = dots.softmax(dim=1) + self.eps #在2这个维度做softmax
+            attn = attn / attn.sum(dim=-1, keepdim=True)  #TODO:可以研究 attention sharpening，但不能直接 log；更合理的是 temperature 或 power sharpening。
+            #不能简单换成 softmax(dim=-1)。前面 softmax(dim=1) 已产生 token 对 slots 的竞争分配；这里仅做 token 维的 L1 normalization，保留竞争后的相对比例，并用于加权聚合 V。
             cross_dots = torch.einsum('bid,bjd->bij', img_q, aud_k) * self.scale
             cross_attn = cross_dots.softmax(dim=1) + self.eps
             cross_attn = cross_attn / cross_attn.sum(dim=-1, keepdim=True)
-            imgq_imgk_attn, imgq_audk_attn = attn, cross_attn
+            imgq_imgk_attn, imgq_audk_attn = attn, cross_attn #TODO:后面这个没用上，要不用这个去查图像？ B 2 49 , B 2 16 
 
-            updates = torch.einsum('bjd,bij->bid', img_v, attn)
-            img_slots = self.img_gru(updates.reshape(-1, c), slots_prev.reshape(-1, c))
+            updates = torch.einsum('bjd,bij->bid', img_v, attn) #B 2 512
+            img_slots = self.img_gru(updates.reshape(-1, c), slots_prev.reshape(-1, c)) #这里是更新的关键
             img_slots = img_slots.reshape(b, -1, c)
-            img_slots = img_slots + self.img_mlp(self.img_norm_pre_ff(img_slots))
+            img_slots = img_slots + self.img_mlp(self.img_norm_pre_ff(img_slots)) #ffn
 
         aud_slots = None
         for iter in range(self.iters):
@@ -123,13 +123,13 @@ class SlotAttention(nn.Module):
             cross_dots = torch.einsum('bid,bjd->bij', aud_q, img_k) * self.scale
             cross_attn = cross_dots.softmax(dim=1) + self.eps
             cross_attn = cross_attn / cross_attn.sum(dim=-1, keepdim=True)
-            audq_audk_attn, audq_imgk_attn = attn, cross_attn
+            audq_audk_attn, audq_imgk_attn = attn, cross_attn #
 
             aud_slots = self.aud_gru(updates.reshape(-1, c), slots_prev.reshape(-1, c))
             aud_slots = aud_slots.reshape(b, -1, c)
             aud_slots = aud_slots + self.aud_mlp(self.aud_norm_pre_ff(aud_slots))
-        
-        return img_slots, aud_slots, img_q, aud_q, imgq_imgk_attn, imgq_audk_attn, audq_audk_attn, audq_imgk_attn
+        #      B,2,512    B,2,512    B,2,512   B,2,512   B,2,49          B,2,16          B,2,16          B,2,49
+        return img_slots, aud_slots, img_q,    aud_q,    imgq_imgk_attn, imgq_audk_attn, audq_audk_attn, audq_imgk_attn
     
     def get_cross_attn(self, img, aud):
         b, _, c = img.size()
@@ -256,9 +256,9 @@ class mymodel(nn.Module):
         self.mask_ratio = args.mask_ratio
         self.iters = args.iters
 
-        # Student
-        self.imgnet = resnet.resnet(True, 'vision', 0.0, args.out_dim, 2)
-        self.audnet = resnet.resnet(False, 'audio', 0.0, args.out_dim, 2)
+        # Student 这个resnet写在resnet.py里
+        self.imgnet = resnet.resnet(True, 'vision', 0.0, args.out_dim, 2) #
+        self.audnet = resnet.resnet(False, 'audio', 0.0, args.out_dim, 2) #audio分支第一层和最后一层不一样 audio最后把频率维池化掉了只留下时间维
         self.slot_attn = SlotAttention(num_slots=self.num_slots,
                                        infer_sharpening=self.infer_sharpening,
                                        mask_ratio=self.mask_ratio,
@@ -307,7 +307,7 @@ class mymodel(nn.Module):
 
         _, _, reciprocal = utils.get_potential_false_negative(img_slots.detach(), aud_slots.detach(), k=self.k)
         first_sim = first_sim.masked_fill(reciprocal == False, -float('inf'))
-
+        #TODO:这里要不要改成队列的那个试试 #这个infonce指的是要求img i 在 B 个 audio 里，和第 i 个 audio 相似度最高;反过来也做
         infoNCE = self.CELoss(first_sim/self.tau, labels) + \
                   self.CELoss(first_sim.permute(1,0)/self.tau, labels)
 
@@ -322,35 +322,35 @@ class mymodel(nn.Module):
     
     def forward_train(self, frame, spec):
         # encoding
-        img = self.imgnet(frame) # b x c x h x w
-        aud = self.audnet(spec)  # b x c x t
+        img = self.imgnet(frame) # b   c   h   w    ; B 512 7 7 
+        aud = self.audnet(spec)  # b   c   t        ; B 512 16
 
         b, c, h, w = img.size()
         aud_B, aud_c, aud_t = aud.size()
         assert (b == aud_B and c == aud_c)
         
         # reshaping for slot
-        img = torch.reshape(img, (b, c, h*w))
-        img = torch.permute(img, (0, 2, 1)) # b x (h x w) x c
-        aud = torch.permute(aud, (0, 2, 1)) # b x t x c
+        img = torch.reshape(img, (b, c, h*w)) #B 512 49
+        img = torch.permute(img, (0, 2, 1)) # B 49 512 
+        aud = torch.permute(aud, (0, 2, 1)) # B 16 512 
 
         # get slot attn
         img_slots, aud_slots, _, _, imgq_imgk_attn, imgq_audk_attn, audq_audk_attn, audq_imgk_attn = self.slot_attn(img, aud)
 
-        img_recon = self.img_decoder(img_slots)
-        aud_recon = self.aud_decoder(aud_slots)
+        img_recon = self.img_decoder(img_slots) #B 2 512-> B 49 512
+        aud_recon = self.aud_decoder(aud_slots) #B 2 512-> B 16 512
         aud_recon = aud_recon.flatten(start_dim=2)
 
         img_slots = nn.functional.normalize(img_slots, dim=2)
         aud_slots = nn.functional.normalize(aud_slots, dim=2)
-            
+        #有极大问题
         att_loss = self.MSELoss(audq_imgk_attn[:, 0, :], imgq_imgk_attn[:, 0, :].detach()) + \
                    self.MSELoss(imgq_audk_attn[:, 0, :], audq_audk_attn[:, 0, :].detach())
         # audq_imgk_attn = b x num_slots x (h x w) size. (h x w) = 49.
         # imgq_audk_attn = b x num_slots x t size. t = 16
 
         recon_loss = self.MSELoss(img_recon, img.detach()) + self.MSELoss(aud_recon, aud.detach())
-        
+        #TODO:这里可以改成队列的infonce 然后不同槽罚重一点？
         info_loss, div_loss = self.calculate(img_slots, aud_slots)
         return info_loss, recon_loss, div_loss, att_loss
     
@@ -368,7 +368,7 @@ class mymodel(nn.Module):
             aud = torch.permute(aud, (0, 2, 1)) # b x t x c
 
             _, _, img_q, aud_q, img_k, img_v = self.slot_attn.get_cross_attn(img, aud) # b x 2 x 196
-
+        #TODO:JSA 有一个比较脆弱的点——最终 localization 高度依赖手工 inference temperature self.infer_sharpening 来缩放softmax前的数值 相当于softmax的temperature
         img_dots = torch.einsum('bid,bjd->bij', img_q, img_k) * (self.infer_sharpening * (512 ** -0.5))
         img_attn = img_dots.softmax(dim=1) + 1e-8
         img_attn = img_attn / img_attn.sum(dim=-1, keepdim=True)
@@ -384,6 +384,7 @@ class mymodel(nn.Module):
         cross_attn = torch.reshape(cross_attn, (image.size(0), self.num_slots, 7, 7))
         cross_attn = cross_attn[:, 0, ...]
         cross_attn = torch.unsqueeze(cross_attn, dim=1)
+        #TODO:你直接拿注意力返回了？训练时候不是这么做的
         return img_attn, cross_attn
         
     def forward(self, frame, spec):
