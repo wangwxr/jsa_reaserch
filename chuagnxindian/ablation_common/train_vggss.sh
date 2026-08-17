@@ -1,0 +1,137 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ "$#" -lt 5 ] || [ "$#" -gt 7 ]; then
+    echo "Internal usage: $0 ENTRY ARCH PREFIX MODEL {10k|144k} [GPU] [EXPERIMENT]"
+    exit 2
+fi
+
+entry_script=$1
+architecture=$2
+experiment_prefix=$3
+model_name=$4
+split=$5
+gpu=${6:-0}
+experiment_name=${7:-${experiment_prefix}_vggss_${split}}
+common_root=$(cd "$(dirname "$0")" && pwd)
+project_root=$(cd "$common_root/../.." && pwd)
+metadata_root="$project_root/metadata_vggss"
+dataset_root=${VGGSOUND_ROOT:-/data/wxr/datasets/VGGSound}
+test_root=${VGGSS_TEST_ROOT:-/data/wxr/datasets/ACL-SSL/VGGSound}
+video_root="$dataset_root/extracted_full/video"
+prepared_root=${VGG_PREP_ROOT:-$project_root/prepared/jsa_vggss_${split}_clean}
+train_manifest="$metadata_root/vggss_${split}.csv"
+test_manifest="$metadata_root/vggss_test.csv"
+annotations="$metadata_root/vggss.json"
+prepare_workers=${VGG_PREP_WORKERS:-16}
+python_bin=${JSA_PYTHON:-python}
+
+case "$split" in
+    10k)
+        epochs=100
+        overlap_args=()
+        ;;
+    144k)
+        epochs=50
+        overlap_args=(--allow-source-overlap)
+        ;;
+    *)
+        echo "split must be 10k or 144k"
+        exit 2
+        ;;
+esac
+
+if [ "$model_name" = "av_mil" ]; then
+    lam1=0.0
+    lam2=0.0
+    lam3=0.0
+    num_slots=0
+    iters=0
+    mask_ratio=0.0
+else
+    lam1=0.1
+    lam2=0.1
+    lam3=100.0
+    num_slots=2
+    iters=5
+    mask_ratio=0.1
+fi
+
+experiment_dir="$project_root/checkpoints/$experiment_name"
+if [ -f "$experiment_dir/latest.pth" ] \
+    || [ -f "$experiment_dir/final.pth" ] \
+    || [ -f "$experiment_dir/vggss_best.pth" ]; then
+    echo "Refusing to overwrite existing experiment: checkpoints/$experiment_name"
+    exit 1
+fi
+
+log_root=${JSA_LOG_ROOT:-$experiment_dir/logs}
+mkdir -p "$log_root"
+timestamp=$(date +%Y%m%d_%H%M%S)
+log_file="$log_root/${experiment_name}_train_${timestamp}.log"
+exec > >(tee -a "$log_file") 2>&1
+echo "Training log: $log_file"
+echo "Architecture: $architecture; experiment: $experiment_name; split: $split; GPU: $gpu"
+
+"$python_bin" "$project_root/tools/check_vggsound_split.py" \
+    --train-manifest "$train_manifest" \
+    --test-manifest "$test_manifest" \
+    --annotations "$annotations" \
+    --video-dir "$video_root" \
+    --test-data-root "$test_root" \
+    "${overlap_args[@]}"
+
+if [ -f "$prepared_root/PREPARATION_COMPLETE" ]; then
+    echo "Using completed precomputed dataset: $prepared_root"
+else
+    "$python_bin" "$project_root/tools/prepare_vggsound_split.py" \
+        --manifest "$train_manifest" \
+        --video-dir "$video_root" \
+        --output-dir "$prepared_root" \
+        --workers "$prepare_workers"
+fi
+
+"$python_bin" "$project_root/tools/check_vggsound_split.py" \
+    --train-manifest "$train_manifest" \
+    --test-manifest "$test_manifest" \
+    --annotations "$annotations" \
+    --video-dir "$video_root" \
+    --test-data-root "$test_root" \
+    --prepared-root "$prepared_root" \
+    "${overlap_args[@]}"
+
+cd "$project_root"
+"$python_bin" "$entry_script" \
+    --model "$model_name" \
+    --train_data_path "$prepared_root" \
+    --train_manifest_path "$train_manifest" \
+    --train_metadata_path "$train_manifest" \
+    --test_data_path "$test_root" \
+    --test_manifest_path "$test_manifest" \
+    --test_gt_path "$annotations" \
+    --trainset "vggss_${split}" \
+    --testset vggss \
+    --epochs "$epochs" \
+    --warmup -1 \
+    --batch_size 256 \
+    --init_lr 0.00005 \
+    --weight_decay 0.01 \
+    --alpha 0.6 \
+    --lam1 "$lam1" \
+    --lam2 "$lam2" \
+    --lam3 "$lam3" \
+    --tau 0.03 \
+    --infer_sharpening 0.1 \
+    --num_slots "$num_slots" \
+    --iters "$iters" \
+    --reciprocal_k 20 \
+    --mask_ratio "$mask_ratio" \
+    --aud_length 5.0 \
+    --workers 16 \
+    --gpu "$gpu" \
+    --wandb false \
+    --hard_aud true \
+    --hard_img true \
+    --rand_aud false \
+    --eval_during_training true \
+    --experiment_name "$experiment_name"

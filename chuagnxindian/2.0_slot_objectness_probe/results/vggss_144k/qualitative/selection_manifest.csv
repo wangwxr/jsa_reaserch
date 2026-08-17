@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+-4bPiXbovf0_000008,OGL_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-lPXTBXa0tE_000030,SLOT_L3_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-3Kv4fdm7Uk_000030,SLOT_L4_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-2-wdcN5vOw_000017,AUD_SUCCESS|SLOT_HURT,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-0UuUoXQUoI_000107,AUD_SUCCESS,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-0BIyqJj9ZU_000030,AUD_FAIL_NEITHER,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-Vo4CAMX26U_000030,OGL_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-z4OZ7ls5Bo_000540,SLOT_L3_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-5CGQGSFGyg_000060,SLOT_L4_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-86gl1hp1Aw_000105,AUD_SUCCESS|SLOT_HURT,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-23CeprtibU_000030,AUD_FAIL_NEITHER,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+-_QPd-VskKY_000030,OGL_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill

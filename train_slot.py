@@ -168,7 +168,9 @@ def main(args):
     train_dataset = get_train_dataset(args, hard_img=args.hard_img, hard_aud=args.hard_aud, rand_aud=args.rand_aud)
     train_loader = torch.utils.data.DataLoader(
         train_dataset, batch_size=args.batch_size, shuffle=True,
-        num_workers=args.workers, pin_memory=True, sampler=None, drop_last=True)
+        num_workers=args.workers, pin_memory=True, sampler=None, drop_last=True,
+        persistent_workers=args.workers > 0,
+        prefetch_factor=2 if args.workers > 0 else None)
     print(f'train samples: {len(train_dataset)}, batches per epoch: {len(train_loader)}')
 
     test_loader = None

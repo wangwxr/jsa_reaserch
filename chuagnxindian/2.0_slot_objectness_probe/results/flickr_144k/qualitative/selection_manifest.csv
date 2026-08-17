@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+10548273474,OGL_RESCUE|SLOT_L4_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10067897816,SLOT_L3_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10061269855,AUD_SUCCESS|SLOT_HURT,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10000130166,AUD_SUCCESS,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10008553263,AUD_FAIL_NEITHER,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10701841844,OGL_RESCUE|SLOT_L4_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10939270325,OGL_RESCUE|SLOT_L3_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10667001125,SLOT_L4_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10109936483,AUD_SUCCESS|SLOT_HURT,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10007936344,AUD_SUCCESS,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+10409146004,AUD_FAIL_NEITHER,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill
+12066557153,OGL_RESCUE|SLOT_L3_RESCUE,first-in-test-order per predefined success/rescue/hurt/failure category; round-robin then first-in-test-order fill

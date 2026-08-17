@@ -1,0 +1,42 @@
+{
+  "ownership_definition": "softmax(logits, dim=slot_dim=1), before eps/token renormalization",
+  "update_weight_definition": "(ownership + eps) / sum_over_tokens(ownership + eps)",
+  "selected_tensor": "ownership[:, target_slot_0, :]",
+  "reason": "ownership sums to one over slots for every visual token; update weights instead sum to one over tokens for each slot",
+  "expected_slot_shape": [
+    2,
+    49
+  ],
+  "SLOT_L3_shape": [
+    1,
+    7,
+    7
+  ],
+  "SLOT_L4_shape": [
+    1,
+    7,
+    7
+  ],
+  "maxima": {
+    "L3_ownership_slot_sum_max_error": 1.1920928955078125e-07,
+    "L3_update_token_sum_max_error": 1.1920928955078125e-07,
+    "L3_update_vs_branch_max_error": 0.0,
+    "L3_ownership_min": 4.673171861213632e-05,
+    "L3_ownership_max": 0.9999532699584961,
+    "L4_ownership_slot_sum_max_error": 1.1920928955078125e-07,
+    "L4_update_token_sum_max_error": 1.1920928955078125e-07,
+    "L4_update_vs_branch_max_error": 0.0,
+    "L4_ownership_min": 0.0021029114723205566,
+    "L4_ownership_max": 0.9978970289230347
+  },
+  "source_file": "/data/wxr/audio_video/JSA/chuagnxindian/1mufasaslot/multi_layer_slot_attention.py",
+  "attention_function_start_line": 32,
+  "L3_logits_nonbatch_shape": [
+    2,
+    49
+  ],
+  "L4_logits_nonbatch_shape": [
+    2,
+    49
+  ]
+}

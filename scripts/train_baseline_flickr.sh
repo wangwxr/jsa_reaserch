@@ -49,7 +49,7 @@ cd "$project_root"
     --alpha 0.6 \
     --tau 0.03 \
     --aud_length 5.0 \
-    --workers 8 \
+    --workers 12 \
     --gpu "$gpu" \
     --wandb false \
     --hard_aud true \

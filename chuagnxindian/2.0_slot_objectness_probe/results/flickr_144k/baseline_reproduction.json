@@ -1,0 +1,101 @@
+{
+  "reference_file": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5/best_full_six_metrics.json",
+  "observed": {
+    "AUD": {
+      "cIoU": 0.812,
+      "AUC": 0.6356
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.804,
+      "AUC": 0.6165999999999998
+    },
+    "IQR": {
+      "cIoU": 0.804,
+      "AUC": 0.6365999999999999
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.448,
+      "AUC": 0.4668
+    },
+    "OGL": {
+      "cIoU": 0.868,
+      "AUC": 0.6596000000000002
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.844,
+      "AUC": 0.6534
+    }
+  },
+  "expected": {
+    "AUD": {
+      "cIoU": 0.812,
+      "AUC": 0.6356
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.804,
+      "AUC": 0.6165999999999998
+    },
+    "IQR": {
+      "cIoU": 0.804,
+      "AUC": 0.6365999999999999
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.448,
+      "AUC": 0.4668
+    },
+    "OGL": {
+      "cIoU": 0.868,
+      "AUC": 0.6596000000000002
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.844,
+      "AUC": 0.6534
+    }
+  },
+  "absolute_errors": {
+    "AUD": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IQR": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "OGL": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    }
+  },
+  "passed": true,
+  "stage2_map_errors": {
+    "AUD_FINE": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "OGL": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    }
+  },
+  "stage2_maps_passed": true
+}

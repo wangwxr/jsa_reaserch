@@ -1,0 +1,5 @@
+method,aud_failure_count,ogl_rescue_count,rescue_count,overlap_with_ogl_rescue,only_slot_rescue,only_ogl_rescue,neither_rescue,hurt_count,net_rescue
+AUD_SLOT_L3,47,19,9,7,2,12,26,31,-22
+AUD_SLOT_L4,47,19,11,9,2,10,26,5,6
+AUD_SLOT_ANY,47,19,18,14,4,5,24,3,15
+OGL,47,19,19,19,,,28,5,14

@@ -1,0 +1,44 @@
+{
+  "experiment": "flickr_10k",
+  "dataset": "flickr",
+  "split": "10k",
+  "checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+  "checkpoint_epoch": 81,
+  "checkpoint_selection_metric": "IQR_cIoU",
+  "checkpoint_selection_score": 0.772,
+  "proj3_checkpoint_weight_reused_exactly": true,
+  "proj3_weight_sha256": "855fa197539f839c0ff270d50673f88c263d41db14a5a372bef4d16ac760c116",
+  "native_l3_shapes_without_batch": [
+    [
+      512,
+      14,
+      14
+    ]
+  ],
+  "pooled_l3_shapes_without_batch": [
+    [
+      512,
+      7,
+      7
+    ]
+  ],
+  "aud_l4_shape_without_batch": [
+    1,
+    7,
+    7
+  ],
+  "expected_AUD_L4": {
+    "cIoU": 0.764,
+    "AUC": 0.5916
+  },
+  "observed_AUD_L4": {
+    "cIoU": 0.764,
+    "AUC": 0.5916000000000001,
+    "mean_sample_cIoU": 0.5921990186566606,
+    "num_samples": 250
+  },
+  "baseline_sanity_passed_at_4_decimals": true,
+  "zero_training": true,
+  "uses_gt_in_refinement": false,
+  "uses_ogl_or_object_prior": false
+}

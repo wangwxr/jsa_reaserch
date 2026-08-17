@@ -1,0 +1,44 @@
+{
+  "experiment": "vggss_144k",
+  "dataset": "vggss",
+  "split": "144k",
+  "checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+  "checkpoint_epoch": 3,
+  "checkpoint_selection_metric": "IQR_cIoU",
+  "checkpoint_selection_score": 0.4069406746801086,
+  "proj3_checkpoint_weight_reused_exactly": true,
+  "proj3_weight_sha256": "17f0e64a8ea313b1418eb8c021f4a526170d4beb76be645318c161843ade3811",
+  "native_l3_shapes_without_batch": [
+    [
+      512,
+      14,
+      14
+    ]
+  ],
+  "pooled_l3_shapes_without_batch": [
+    [
+      512,
+      7,
+      7
+    ]
+  ],
+  "aud_l4_shape_without_batch": [
+    1,
+    7,
+    7
+  ],
+  "expected_AUD_L4": {
+    "cIoU": 0.4002,
+    "AUC": 0.4127
+  },
+  "observed_AUD_L4": {
+    "cIoU": 0.40015509887553313,
+    "AUC": 0.4127471888328809,
+    "mean_sample_cIoU": 0.4123710869336355,
+    "num_samples": 5158
+  },
+  "baseline_sanity_passed_at_4_decimals": true,
+  "zero_training": true,
+  "uses_gt_in_refinement": false,
+  "uses_ogl_or_object_prior": false
+}

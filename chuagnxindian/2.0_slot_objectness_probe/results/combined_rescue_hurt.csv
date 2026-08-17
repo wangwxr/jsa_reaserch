@@ -1,0 +1,9 @@
+dataset,method,aud_failure_count,ogl_rescue_count,rescue_count,overlap_with_ogl_rescue,only_slot_rescue,only_ogl_rescue,neither_rescue,hurt_count,net_rescue
+vggss_144k,AUD_SLOT_L3,2956,357,85,35,50,322,2549,853,-768
+vggss_144k,AUD_SLOT_L4,2956,357,355,220,135,137,2464,567,-212
+vggss_144k,AUD_SLOT_ANY,2956,357,422,241,181,116,2418,280,142
+vggss_144k,OGL,2956,357,357,357,,,2599,202,155
+flickr_144k,AUD_SLOT_L3,47,19,9,7,2,12,26,31,-22
+flickr_144k,AUD_SLOT_L4,47,19,11,9,2,10,26,5,6
+flickr_144k,AUD_SLOT_ANY,47,19,18,14,4,5,24,3,15
+flickr_144k,OGL,47,19,19,19,,,28,5,14

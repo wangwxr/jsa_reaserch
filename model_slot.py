@@ -265,6 +265,7 @@ class mymodel(nn.Module):
                                        iters=self.iters)
         
         # Auxiliary decoder
+        #TODO:看一下这里是什么玩意
         self.img_decoder = MlpDecoder(7, 7, 512, 512)
         self.aud_decoder = MlpDecoder(1, 16, 512, 512)
 
@@ -343,7 +344,7 @@ class mymodel(nn.Module):
 
         img_slots = nn.functional.normalize(img_slots, dim=2)
         aud_slots = nn.functional.normalize(aud_slots, dim=2)
-        #有极大问题
+        #TODO:有极大问题
         att_loss = self.MSELoss(audq_imgk_attn[:, 0, :], imgq_imgk_attn[:, 0, :].detach()) + \
                    self.MSELoss(imgq_audk_attn[:, 0, :], audq_audk_attn[:, 0, :].detach())
         # audq_imgk_attn = b x num_slots x (h x w) size. (h x w) = 49.
@@ -384,7 +385,7 @@ class mymodel(nn.Module):
         cross_attn = torch.reshape(cross_attn, (image.size(0), self.num_slots, 7, 7))
         cross_attn = cross_attn[:, 0, ...]
         cross_attn = torch.unsqueeze(cross_attn, dim=1)
-        #TODO:你直接拿注意力返回了？训练时候不是这么做的
+        #TODO:你直接拿注意力返回了？
         return img_attn, cross_attn
         
     def forward(self, frame, spec):

@@ -1,0 +1,11 @@
+dataset,split,dataset_index,sample_id,selection_rule,AUD_L4_sample_IoU,L3_NATIVE_REFINED_sample_IoU,delta_sample_IoU
+vggss,144k,0,-0BIyqJj9ZU_000030,10 evenly spaced indices in sorted test split,0.2903851751237023,0.0,-0.2903851751237023
+vggss,144k,573,4vsI0Kwn8jY_000030,10 evenly spaced indices in sorted test split,0.34845225848686057,0.0,-0.34845225848686057
+vggss,144k,1146,B5XbkI3zj3U_000059,10 evenly spaced indices in sorted test split,0.650836435203012,0.010743537921497712,-0.6400928972815143
+vggss,144k,1719,HQAaW-5IwHo_000002,10 evenly spaced indices in sorted test split,0.4736654381167519,0.0,-0.4736654381167519
+vggss,144k,2292,NvN2PoU3Pzs_000678,10 evenly spaced indices in sorted test split,0.15918400454232065,0.0,-0.15918400454232065
+vggss,144k,2865,VAfO711tnQA_000030,10 evenly spaced indices in sorted test split,0.36015510223742203,0.14859299931365821,-0.21156210292376382
+vggss,144k,3438,asrePkOXpU0_000049,10 evenly spaced indices in sorted test split,0.48935965797184994,0.04033890680062983,-0.4490207511712201
+vggss,144k,4011,i6G_2fsacJc_000062,10 evenly spaced indices in sorted test split,0.621665342263594,0.2240435477918563,-0.39762179447173773
+vggss,144k,4584,q797zkZNePo_000206,10 evenly spaced indices in sorted test split,0.4020157210677874,0.037448392161423504,-0.3645673289063639
+vggss,144k,5157,zzvCPtdNxNo_000068,10 evenly spaced indices in sorted test split,0.3216924845366468,0.0,-0.3216924845366468
