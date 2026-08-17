@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+-hYRFCQdbLg_000030,HIGH_RELIABILITY_RESCUE,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-ByoSbgzr4M_000000,HIGH_RELIABILITY_HURT,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-2-wdcN5vOw_000017,LOW_MARGIN,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-0BIyqJj9ZU_000030,LOW_SEED_CONTAINMENT|SELECTION_IMPROVES,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+6iZZQvXNBnI_000009,LOW_MARGIN|LOW_SEED_CONTAINMENT|EXTENT_OVEREXPANSION_GE_1P25|SELECTION_WORSENS,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-2Dm0VjW8oM_000001,LOW_MARGIN|LOW_SEED_CONTAINMENT|SELECTION_WORSENS,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+0jy-sVREk4o_000030,HIGH_RELIABILITY_RESCUE,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-kZVoaYYU6o_000000,HIGH_RELIABILITY_HURT,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+_yWsqs9FOnU_000010,LOW_MARGIN|EXTENT_OVEREXPANSION_GE_1P25|SELECTION_IMPROVES,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-7sg--aJdrc_000049,LOW_MARGIN|SELECTION_IMPROVES,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+-3Kv4fdm7Uk_000030,LOW_MARGIN|SELECTION_WORSENS,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+1xS-iGBR2b8_000014,HIGH_RELIABILITY_RESCUE,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill

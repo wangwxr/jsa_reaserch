@@ -1,0 +1,24 @@
+{
+  "audio_representation": "normalized target audio Slot Attention output Sa[:,0,:]",
+  "visual_representation": "normalized raw L4 visual Slot Attention outputs S4[:,0/1,:], as explicitly requested",
+  "similarity": "cosine similarity (dot product after L2 normalization)",
+  "selection": "argmax_j cos(Sa0, S4j), then take L4 ownership map with slot index j",
+  "training_evidence": "S4 is trained end-to-end through the existing MFusion/base losses; cosine follows normalized Slot InfoNCE semantics, but direct InfoNCE is applied after MFusion",
+  "direct_infonce_control": "cos(Sa0,Sfj) is saved per sample as fused_sim_slot0/1 and fused_selected_slot",
+  "new_projection_created": false,
+  "raw_l4_similarity_used_for_selection": true,
+  "fused_similarity_used_for_selection": false,
+  "ownership": {
+    "max_slot_sum_error": 1.1920928955078125e-07,
+    "logits_shape": "[B,2,49]",
+    "ownership_definition": "softmax(final L4 SlotAttention logits, dim=slot_dim=1)"
+  },
+  "forbidden_reliability_inputs": {
+    "GT": false,
+    "IoU": false,
+    "rescue_hurt_label": false,
+    "OBJ_PRIOR": false,
+    "OGL": false
+  },
+  "extent_auroc_direction": "-abs(log(extent_ratio)); high means closer to controlled ratio 1"
+}

@@ -1,0 +1,82 @@
+{
+  "reference_file": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_vggss_144k/best_full_six_metrics.json",
+  "observed": {
+    "AUD": {
+      "cIoU": 0.42690965490500193,
+      "AUC": 0.42295463357890656
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.416614967041489
+    },
+    "IQR": {
+      "cIoU": 0.4230321830166731,
+      "AUC": 0.423419930205506
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.34780922838309425,
+      "AUC": 0.3924195424583172
+    },
+    "OGL": {
+      "cIoU": 0.4569600620395502,
+      "AUC": 0.44010275300504076
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.4447460255913145,
+      "AUC": 0.4343253198914308
+    }
+  },
+  "expected": {
+    "AUD": {
+      "cIoU": 0.42690965490500193,
+      "AUC": 0.42295463357890656
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.416614967041489
+    },
+    "IQR": {
+      "cIoU": 0.4230321830166731,
+      "AUC": 0.423419930205506
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.34780922838309425,
+      "AUC": 0.3924195424583172
+    },
+    "OGL": {
+      "cIoU": 0.4569600620395502,
+      "AUC": 0.44010275300504076
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.4447460255913145,
+      "AUC": 0.4343253198914308
+    }
+  },
+  "absolute_errors": {
+    "AUD": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IQR": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "OGL": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    }
+  },
+  "passed": true
+}

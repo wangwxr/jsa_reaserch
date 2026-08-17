@@ -1,0 +1,16 @@
+{
+  "warning": "Transparent offline heuristic, not a causal classification and not used by the model.",
+  "selection_rule": "selected fusion is still Hurt, selected_slot!=0, and selected IoU improves over fixed by >=0.05",
+  "extent_rule": "remaining Hurt with margin>=global median, seed20>=median, JS<=median, and extent_ratio outside [0.80,1.25]",
+  "global_medians": {
+    "semantic_margin": 0.023940864019095898,
+    "seed_containment_top20": 0.8882343769073486,
+    "js_divergence": 0.013733462223096538
+  },
+  "hurt_count": 13,
+  "possible_selection_error_count": 0,
+  "possible_selection_error_ratio": 0.0,
+  "possible_extent_error_count": 0,
+  "possible_extent_error_ratio": 0.0,
+  "unclassified_hurt_count": 13
+}

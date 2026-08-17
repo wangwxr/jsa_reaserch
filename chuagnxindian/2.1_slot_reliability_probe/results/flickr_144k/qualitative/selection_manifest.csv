@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+2499673064,HIGH_RELIABILITY_RESCUE,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+6669466181,HIGH_RELIABILITY_HURT|LOW_SEED_CONTAINMENT,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+10009662863,LOW_MARGIN,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+10013411946,LOW_MARGIN|LOW_SEED_CONTAINMENT,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+10035917404,LOW_MARGIN|LOW_SEED_CONTAINMENT|SELECTION_IMPROVES,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+10031203703,LOW_SEED_CONTAINMENT|SELECTION_WORSENS,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+7178293884,MAX_EXTENT_FALLBACK_NO_GE_1P25_CASE,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+4007045926,HIGH_RELIABILITY_RESCUE,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+12444360833,LOW_SEED_CONTAINMENT|SELECTION_IMPROVES,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+10109936483,LOW_SEED_CONTAINMENT|SELECTION_WORSENS,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+15994498891,LOW_MARGIN|LOW_SEED_CONTAINMENT|SELECTION_IMPROVES,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill
+10278084464,LOW_MARGIN|LOW_SEED_CONTAINMENT|SELECTION_WORSENS,first-in-test-order per predefined quartile/fixed-threshold category; round-robin then first-in-test-order fill

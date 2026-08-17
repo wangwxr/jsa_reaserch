@@ -1,0 +1,21 @@
+{
+  "num_samples": 250,
+  "slot_selection_changed": 32,
+  "slot_selection_changed_ratio": 0.128,
+  "direct_infonce_fused_selection_changed": 0,
+  "direct_infonce_fused_selection_changed_ratio": 0.0,
+  "changed_selection_improves": 6,
+  "changed_selection_worsens": 26,
+  "changed_selection_ties": 0,
+  "fixed_rescue": 11,
+  "fixed_hurt": 5,
+  "fixed_net_rescue": 6,
+  "selected_rescue": 7,
+  "selected_hurt": 13,
+  "selected_net_rescue": -6,
+  "ogl_rescue": 19,
+  "ogl_hurt": 5,
+  "ogl_net_rescue": 14,
+  "fixed_hurt_resolved_by_selection": 0,
+  "fixed_rescue_lost_by_selection": 4
+}
