@@ -1,0 +1,128 @@
+[
+  {
+    "evidence": "CTRL_RAW_PEAK",
+    "AUROC_IMG_better": 0.5371428571428571,
+    "AUPRC_IMG_better": 0.2399626517273576,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.5,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.01694638335279056,
+    "mean_delta_AUD_better_or_tie": 0.016961813420057297,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.017694647423923016,
+      "cIoU": 0.9375,
+      "AUC": 0.690625,
+      "mean_sample_cIoU": 0.6882348551190969,
+      "num_samples": 32,
+      "num_thresholds": 33
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_ENTROPY",
+    "AUROC_IMG_better": 0.6514285714285715,
+    "AUPRC_IMG_better": 0.42292362399505257,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.5,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.0044323758414080506,
+    "mean_delta_AUD_better_or_tie": 0.0032625838325161193,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.005238417572809739,
+      "cIoU": 0.9375,
+      "AUC": 0.6890624999999999,
+      "mean_sample_cIoU": 0.6887188770915369,
+      "num_samples": 32,
+      "num_thresholds": 33
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_AREA",
+    "AUROC_IMG_better": 0.6971428571428572,
+    "AUPRC_IMG_better": 0.5359291084854995,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.56,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.14806452715014576,
+    "mean_delta_AUD_better_or_tie": 0.08831313775510204,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.19772401147959184,
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6937374052343834,
+      "num_samples": 32,
+      "num_thresholds": 33
+    }
+  },
+  {
+    "evidence": "CTRL_TOP20_CONCENTRATION",
+    "AUROC_IMG_better": 0.6399999999999999,
+    "AUPRC_IMG_better": 0.427056277056277,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.52,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.032441650347418874,
+    "mean_delta_AUD_better_or_tie": 0.021537658036159632,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.04010292562962825,
+      "cIoU": 0.9375,
+      "AUC": 0.690625,
+      "mean_sample_cIoU": 0.6893960939252186,
+      "num_samples": 32,
+      "num_thresholds": 33
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_COMPONENTS",
+    "AUROC_IMG_better": 0.5,
+    "AUPRC_IMG_better": 0.22580645161290322,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.48,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.0,
+    "mean_delta_AUD_better_or_tie": 0.0,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.0,
+      "cIoU": 0.9375,
+      "AUC": 0.6921875,
+      "mean_sample_cIoU": 0.691105674313673,
+      "num_samples": 32,
+      "num_thresholds": 4
+    }
+  },
+  {
+    "evidence": "SEMANTIC_SLOT",
+    "AUROC_IMG_better": 0.6114285714285714,
+    "AUPRC_IMG_better": 0.29356357927786497,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.5685714285714285,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.028304242227474383,
+    "mean_delta_AUD_better_or_tie": 0.018940594225112302,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.035901310177515744,
+      "cIoU": 0.9375,
+      "AUC": 0.684375,
+      "mean_sample_cIoU": 0.6837977861190723,
+      "num_samples": 32,
+      "num_thresholds": 33
+    }
+  },
+  {
+    "evidence": "RECIPROCAL_L4",
+    "AUROC_IMG_better": 0.5314285714285714,
+    "AUPRC_IMG_better": 0.24912300260126344,
+    "AUROC_IMG_only": NaN,
+    "balanced_accuracy_threshold_0": 0.5571428571428572,
+    "positive_rate_IMG_better": 0.21875,
+    "mean_delta_IMG_better": 0.011185594482878172,
+    "mean_delta_AUD_better_or_tie": 0.004765579797302419,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.022580316050436477,
+      "cIoU": 0.9375,
+      "AUC": 0.68125,
+      "mean_sample_cIoU": 0.6812876050647694,
+      "num_samples": 32,
+      "num_thresholds": 33
+    }
+  }
+]

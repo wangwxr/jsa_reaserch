@@ -1,0 +1,191 @@
+{
+  "experiment": "3.1 Hierarchical Audio Representation",
+  "setting": "vggss_144k",
+  "best_epoch": 2,
+  "selection_metric": "IQR_cIoU",
+  "selection_score": 0.3902675455602947,
+  "eval_audio_query_source": "A4",
+  "baseline_best_epoch": 3,
+  "baseline_metrics_from_epoch_csv": {
+    "AUD": {
+      "cIoU": 0.40015509887553313,
+      "AUC": 0.4127471888328809
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.416614967041489
+    },
+    "IQR": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.41595579682047307
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.34780922838309425,
+      "AUC": 0.3924195424583172
+    },
+    "OGL": {
+      "cIoU": 0.4342768514928267,
+      "AUC": 0.43066110895696014
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.4272974020938348,
+      "AUC": 0.42563008918185347
+    }
+  },
+  "baseline_checkpoint_re_evaluation": {
+    "AUD": {
+      "cIoU": 0.40015509887553313,
+      "AUC": 0.4127471888328809,
+      "mean_sample_IoU": 0.4123710869336355,
+      "num_samples": 5158
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.416614967041489,
+      "mean_sample_IoU": 0.41668391824547824,
+      "num_samples": 5158
+    },
+    "IQR": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.41595579682047307,
+      "mean_sample_IoU": 0.41570364206554145,
+      "num_samples": 5158
+    }
+  },
+  "hierarchical_metrics": {
+    "AUD": {
+      "cIoU": 0.3840635905389686,
+      "AUC": 0.4069018999612253
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.38910430399379603,
+      "AUC": 0.4092283830942225
+    },
+    "IQR": {
+      "cIoU": 0.3902675455602947,
+      "AUC": 0.40902481582008526
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.34780922838309425,
+      "AUC": 0.3924195424583172
+    },
+    "OGL": {
+      "cIoU": 0.4243892981775882,
+      "AUC": 0.4253198914307872
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.4174098487785964,
+      "AUC": 0.41934858472276076
+    }
+  },
+  "deltas": {
+    "AUD": {
+      "cIoU": -0.01609150833656453,
+      "AUC": -0.005845288871655641
+    },
+    "IMG_QUERY": {
+      "cIoU": -0.017836370686312553,
+      "AUC": -0.00738658394726649
+    },
+    "IQR": {
+      "cIoU": -0.01667312911981389,
+      "AUC": -0.006930981000387804
+    }
+  },
+  "ogl_gaps": {
+    "baseline": {
+      "OGL_minus_AUD": 0.034121752617293555,
+      "OGL_minus_IQR": 0.027336176812718105
+    },
+    "hierarchical": {
+      "OGL_minus_AUD": 0.04032570763861959,
+      "OGL_minus_IQR": 0.0341217526172935
+    },
+    "reduction": {
+      "OGL_minus_AUD": -0.006203955021326035,
+      "OGL_minus_IQR": -0.0067855758045753944
+    },
+    "best_no_OGL_main": 0.3902675455602947
+  },
+  "A3_QUERY_AUD": {
+    "cIoU": 0.07347809228383094,
+    "AUC": 0.20255913144629703,
+    "mean_sample_IoU": 0.19841796205856965,
+    "num_samples": 5158
+  },
+  "semantic_alignment": {
+    "A3": {
+      "positive_cosine": 0.00525635593838357,
+      "shuffled_negative_cosine": 0.003191033222962831,
+      "margin": 0.0020653227154207392
+    },
+    "A4": {
+      "positive_cosine": 0.3906213113992609,
+      "shuffled_negative_cosine": 0.2693953497458817,
+      "margin": 0.12122596165337918
+    },
+    "FUSED": {
+      "positive_cosine": 0.40341136972309777,
+      "shuffled_negative_cosine": 0.28242508188242504,
+      "margin": 0.12098628784067272
+    }
+  },
+  "representation_diagnostics": {
+    "cos_a3_a4_slot0": 0.007062384210882283,
+    "cos_a3_a4_slot1": 0.01312816480464277,
+    "cos_fused_a4_slot0": 0.9976475801797003,
+    "cos_fused_a4_slot1": 0.9741120636116493,
+    "delta_norm_over_a4_norm": 0.16333451905237606,
+    "a3_adjacent_cosine": 0.9260796019161057,
+    "a3_pairwise_cosine": 0.9014917684877136,
+    "a3_temporal_feature_variance": 0.4326155790643851,
+    "a4_adjacent_cosine": 0.932223765805693,
+    "a4_pairwise_cosine": 0.8924424949659309,
+    "a4_temporal_feature_variance": 0.9736437715269327
+  },
+  "best_checkpoint_reproduction": {
+    "errors": {
+      "AUD": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IMG_QUERY": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IQR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OBJ_PRIOR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "EXTRA_IQR_OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      }
+    },
+    "max_error": 0.0,
+    "passed": true
+  },
+  "qualitative_ids": [
+    "-4bPiXbovf0_000008",
+    "-ByoSbgzr4M_000000",
+    "-JUhUI_KvUI_000026",
+    "0ZxpQ87jdgQ_000037",
+    "-0UuUoXQUoI_000107",
+    "-0BIyqJj9ZU_000030",
+    "-Wd5YV97ftU_000320",
+    "-e4wXAy1iVo_000000",
+    "21I0YiLHzvg_000038",
+    "1VHm2PacRWc_000020",
+    "-2-wdcN5vOw_000017",
+    "-23CeprtibU_000030"
+  ],
+  "num_samples": 5158
+}

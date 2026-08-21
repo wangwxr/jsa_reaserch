@@ -1,0 +1,129 @@
+{
+  "experiment": "3.1 Hierarchical Audio Representation",
+  "setting": "vggss_144k",
+  "raw_A3_shape": [
+    32,
+    256,
+    17,
+    32
+  ],
+  "raw_A4_shape": [
+    32,
+    512,
+    9,
+    16
+  ],
+  "A3_tokens_shape": [
+    32,
+    32,
+    512
+  ],
+  "A4_tokens_shape": [
+    32,
+    16,
+    512
+  ],
+  "T3": 32,
+  "T4": 16,
+  "T3_T4_ratio": 2.0,
+  "A3_slots_shape": [
+    32,
+    2,
+    512
+  ],
+  "A4_slots_shape": [
+    32,
+    2,
+    512
+  ],
+  "fused_audio_slots_shape": [
+    32,
+    2,
+    512
+  ],
+  "A3_query_shape": [
+    32,
+    2,
+    512
+  ],
+  "A4_query_shape": [
+    32,
+    2,
+    512
+  ],
+  "visual_fused_slots_shape": [
+    32,
+    2,
+    512
+  ],
+  "A4_exact_reproduction_max_error": 0.0,
+  "fusion_initial_A4_reproduction_max_error": 0.0,
+  "eval_audio_query_source": "A4",
+  "parameter_audit": {
+    "baseline_total_params": 36417282,
+    "hierarchical_total_params": 41540354,
+    "added_params": 5123072,
+    "added_param_percent": 14.067694563257081,
+    "added_parameter_names": {
+      "audnet.aud_proj3.0.weight": 131072,
+      "audnet.aud_proj3.0.bias": 512,
+      "slot_attn.audio_branch_a3.aud_to_q.weight": 262144,
+      "slot_attn.audio_branch_a3.aud_to_q.bias": 512,
+      "slot_attn.audio_branch_a3.aud_to_k.weight": 262144,
+      "slot_attn.audio_branch_a3.aud_to_k.bias": 512,
+      "slot_attn.audio_branch_a3.aud_to_v.weight": 262144,
+      "slot_attn.audio_branch_a3.aud_to_v.bias": 512,
+      "slot_attn.audio_branch_a3.aud_gru.weight_ih": 786432,
+      "slot_attn.audio_branch_a3.aud_gru.weight_hh": 786432,
+      "slot_attn.audio_branch_a3.aud_gru.bias_ih": 1536,
+      "slot_attn.audio_branch_a3.aud_gru.bias_hh": 1536,
+      "slot_attn.audio_branch_a3.aud_mlp.0.weight": 524288,
+      "slot_attn.audio_branch_a3.aud_mlp.0.bias": 1024,
+      "slot_attn.audio_branch_a3.aud_mlp.2.weight": 524288,
+      "slot_attn.audio_branch_a3.aud_mlp.2.bias": 512,
+      "slot_attn.audio_branch_a3.aud_norm_input.weight": 512,
+      "slot_attn.audio_branch_a3.aud_norm_input.bias": 512,
+      "slot_attn.audio_branch_a3.aud_norm_slots.weight": 512,
+      "slot_attn.audio_branch_a3.aud_norm_slots.bias": 512,
+      "slot_attn.audio_branch_a3.aud_norm_pre_ff.weight": 512,
+      "slot_attn.audio_branch_a3.aud_norm_pre_ff.bias": 512,
+      "slot_attn.audio_hierarchical_fusion.net.0.weight": 1048576,
+      "slot_attn.audio_hierarchical_fusion.net.0.bias": 1024,
+      "slot_attn.audio_hierarchical_fusion.net.2.weight": 524288,
+      "slot_attn.audio_hierarchical_fusion.net.2.bias": 512
+    },
+    "removed_parameter_names": [],
+    "changed_parameter_shapes": {},
+    "passed": true
+  },
+  "first_batch_losses": {
+    "info_loss": 3.2167749404907227,
+    "recon_loss": 4.348540306091309,
+    "div_loss": 0.0,
+    "att_loss": 8.279284520540386e-05,
+    "total_loss": 3.6599082946777344
+  },
+  "first_backward_gradient_norms": {
+    "aud_proj3": 0.0,
+    "audio_branch_a3": 0.0,
+    "audio_hierarchical_fusion": 1.5096996744514242,
+    "audio_branch_a4": 13.39408590265147
+  },
+  "second_backward_gradient_norms": {
+    "aud_proj3": 0.002869075445708265,
+    "audio_branch_a3": 0.015326180891589746,
+    "audio_hierarchical_fusion": 0.6929532219195593,
+    "audio_branch_a4": 5.277587852979353
+  },
+  "zero_init_expected_first_step_block": "aud_proj3/audio_branch_a3 receive zero gradient before the zero-initialized fusion output layer takes its first update; both are nonzero on step two",
+  "temporal_diagnostics": {
+    "a3_adjacent_cosine": 0.9288804531097412,
+    "a3_pairwise_cosine": 0.905656099319458,
+    "a3_temporal_feature_variance": 0.4318994879722595,
+    "a4_adjacent_cosine": 0.92659592628479,
+    "a4_pairwise_cosine": 0.8858357071876526,
+    "a4_temporal_feature_variance": 0.9604829549789429
+  },
+  "no_nan_or_inf": true,
+  "passed": true
+}

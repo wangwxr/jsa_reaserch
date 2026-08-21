@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "vggss_144k",
+    "method": "T2_RAW_MEAN",
+    "pearson_delta_temporal_vs_delta_OGL": -0.03683292895780645,
+    "spearman_delta_temporal_vs_delta_OGL": -0.03727156441774861,
+    "temporal_delta": {
+      "mean": -0.00013671786641471004,
+      "median": -8.003909162057621e-05,
+      "std": 0.004787365770664302,
+      "num_samples": 5158
+    },
+    "OGL_delta": {
+      "mean": 0.017252233699772017,
+      "median": 0.016606995311743464,
+      "std": 0.07628592095465468,
+      "num_samples": 5158
+    }
+  },
+  {
+    "dataset": "vggss_144k",
+    "method": "T2_RAW_GEO",
+    "pearson_delta_temporal_vs_delta_OGL": -0.038998109548952636,
+    "spearman_delta_temporal_vs_delta_OGL": -0.04022256163117123,
+    "temporal_delta": {
+      "mean": -0.0001402356609881423,
+      "median": -7.909315048554993e-05,
+      "std": 0.004799882915158817,
+      "num_samples": 5158
+    },
+    "OGL_delta": {
+      "mean": 0.017252233699772017,
+      "median": 0.016606995311743464,
+      "std": 0.07628592095465468,
+      "num_samples": 5158
+    }
+  },
+  {
+    "dataset": "vggss_144k",
+    "method": "T4_RAW_MEAN",
+    "pearson_delta_temporal_vs_delta_OGL": -0.0390964995389766,
+    "spearman_delta_temporal_vs_delta_OGL": -0.05500168805026673,
+    "temporal_delta": {
+      "mean": -0.00030093885071304395,
+      "median": -0.00018321306859021835,
+      "std": 0.0069967254025932474,
+      "num_samples": 5158
+    },
+    "OGL_delta": {
+      "mean": 0.017252233699772017,
+      "median": 0.016606995311743464,
+      "std": 0.07628592095465468,
+      "num_samples": 5158
+    }
+  },
+  {
+    "dataset": "vggss_144k",
+    "method": "T4_RAW_GEO",
+    "pearson_delta_temporal_vs_delta_OGL": -0.04161276116046799,
+    "spearman_delta_temporal_vs_delta_OGL": -0.05865506080864745,
+    "temporal_delta": {
+      "mean": -0.0003052322217691211,
+      "median": -0.00018738211871832666,
+      "std": 0.00701587800141641,
+      "num_samples": 5158
+    },
+    "OGL_delta": {
+      "mean": 0.017252233699772017,
+      "median": 0.016606995311743464,
+      "std": 0.07628592095465468,
+      "num_samples": 5158
+    }
+  }
+]

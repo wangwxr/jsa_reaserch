@@ -1,0 +1,128 @@
+[
+  {
+    "evidence": "CTRL_RAW_PEAK",
+    "AUROC_IMG_better": 0.5076979696988284,
+    "AUPRC_IMG_better": 0.4590627162225932,
+    "AUROC_IMG_only": 0.44606854838709675,
+    "balanced_accuracy_threshold_0": 0.5,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": 0.017312045338242744,
+    "mean_delta_AUD_better_or_tie": 0.017323604207078035,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.019037708640098572,
+      "cIoU": 0.3828125,
+      "AUC": 0.39394531250000003,
+      "mean_sample_cIoU": 0.3930615617548687,
+      "num_samples": 256,
+      "num_thresholds": 257
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_ENTROPY",
+    "AUROC_IMG_better": 0.5254247684475251,
+    "AUPRC_IMG_better": 0.4689779131469916,
+    "AUROC_IMG_only": 0.4773185483870968,
+    "balanced_accuracy_threshold_0": 0.505643133165675,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": 0.005174189393347787,
+    "mean_delta_AUD_better_or_tie": 0.005019735251890666,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.012005929553362327,
+      "cIoU": 0.3828125,
+      "AUC": 0.3943359375,
+      "mean_sample_cIoU": 0.39315072691081254,
+      "num_samples": 256,
+      "num_thresholds": 257
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_AREA",
+    "AUROC_IMG_better": 0.5901367846408637,
+    "AUPRC_IMG_better": 0.5490653497198583,
+    "AUROC_IMG_only": 0.5826612903225806,
+    "balanced_accuracy_threshold_0": 0.5762129669386002,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": 0.07630367995412454,
+    "mean_delta_AUD_better_or_tie": 0.049917720281543274,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.14453125,
+      "cIoU": 0.390625,
+      "AUC": 0.39589843750000003,
+      "mean_sample_cIoU": 0.39507707165705735,
+      "num_samples": 256,
+      "num_thresholds": 256
+    }
+  },
+  {
+    "evidence": "CTRL_TOP20_CONCENTRATION",
+    "AUROC_IMG_better": 0.5516776053487088,
+    "AUPRC_IMG_better": 0.5029031180159684,
+    "AUROC_IMG_only": 0.611391129032258,
+    "balanced_accuracy_threshold_0": 0.5149359013678464,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": 0.03140155550162997,
+    "mean_delta_AUD_better_or_tie": 0.027086402071588002,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.0851755403745657,
+      "cIoU": 0.3828125,
+      "AUC": 0.39472656250000004,
+      "mean_sample_cIoU": 0.39377767453858264,
+      "num_samples": 256,
+      "num_thresholds": 257
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_COMPONENTS",
+    "AUROC_IMG_better": 0.5065938784272834,
+    "AUPRC_IMG_better": 0.4730009745039748,
+    "AUROC_IMG_only": 0.571320564516129,
+    "balanced_accuracy_threshold_0": 0.49800650187082135,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": -0.008403361344537815,
+    "mean_delta_AUD_better_or_tie": -0.029197080291970802,
+    "optimal_threshold_diagnostic": {
+      "threshold": 1.0,
+      "cIoU": 0.38671875,
+      "AUC": 0.3943359375,
+      "mean_sample_cIoU": 0.3934246675882818,
+      "num_samples": 256,
+      "num_thresholds": 7
+    }
+  },
+  {
+    "evidence": "SEMANTIC_SLOT",
+    "AUROC_IMG_better": 0.4797276574863522,
+    "AUPRC_IMG_better": 0.4572676728282533,
+    "AUROC_IMG_only": 0.3795362903225806,
+    "balanced_accuracy_threshold_0": 0.4966877261853646,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": 0.0358705397366727,
+    "mean_delta_AUD_better_or_tie": 0.038013533432959525,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.07824977443289494,
+      "cIoU": 0.3828125,
+      "AUC": 0.39394531250000003,
+      "mean_sample_cIoU": 0.3930685051707896,
+      "num_samples": 256,
+      "num_thresholds": 257
+    }
+  },
+  {
+    "evidence": "RECIPROCAL_L4",
+    "AUROC_IMG_better": 0.4796663190823775,
+    "AUPRC_IMG_better": 0.4483869702589005,
+    "AUROC_IMG_only": 0.38356854838709675,
+    "balanced_accuracy_threshold_0": 0.48297859289701284,
+    "positive_rate_IMG_better": 0.46484375,
+    "mean_delta_IMG_better": 0.029826077819823545,
+    "mean_delta_AUD_better_or_tie": 0.03223192014981181,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.06364020131791093,
+      "cIoU": 0.3828125,
+      "AUC": 0.394140625,
+      "mean_sample_cIoU": 0.39344413098335757,
+      "num_samples": 256,
+      "num_thresholds": 257
+    }
+  }
+]

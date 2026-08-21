@@ -1,0 +1,932 @@
+{
+  "sample_ids": [
+    "10000130166",
+    "10007936344",
+    "10008553263",
+    "10009662863"
+  ],
+  "raw_A4_shape": [
+    32,
+    512,
+    9,
+    16
+  ],
+  "A4_feature_shape": [
+    32,
+    512,
+    16
+  ],
+  "A4_tokens_shape": [
+    32,
+    16,
+    512
+  ],
+  "T": 16,
+  "T2_boundaries": [
+    [
+      0,
+      8
+    ],
+    [
+      8,
+      16
+    ]
+  ],
+  "T4_boundaries": [
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      12,
+      16
+    ]
+  ],
+  "full_query_shape": [
+    32,
+    2,
+    512
+  ],
+  "T2_query_shapes": [
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ]
+  ],
+  "T4_query_shapes": [
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ]
+  ],
+  "T2_map_shapes": [
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ]
+  ],
+  "T4_map_shapes": [
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ]
+  ],
+  "F34_shape": [
+    32,
+    512,
+    14,
+    14
+  ],
+  "K34_shape": [
+    32,
+    196,
+    512
+  ],
+  "visual_query_l4_shape": [
+    32,
+    2,
+    512
+  ],
+  "FULL_AUD_tensor_reproduction_max_error": 0.0,
+  "spatial_sum_max_errors": {
+    "ORIGINAL_AUD": 1.1920928955078125e-07,
+    "T2_CHUNK1": 1.1920928955078125e-07,
+    "T2_CHUNK2": 1.1920928955078125e-07,
+    "T2_RAW_MEAN": 5.960464477539063e-08,
+    "T4_CHUNK1": 1.1920928955078125e-07,
+    "T4_CHUNK2": 1.1920928955078125e-07,
+    "T4_CHUNK3": 1.1920928955078125e-07,
+    "T4_CHUNK4": 1.1920928955078125e-07,
+    "T4_RAW_MEAN": 5.960464477539063e-08
+  },
+  "f4_token_error": 0.0,
+  "no_nan_or_inf": true,
+  "attention_implementation": "teacher.slot_attn._attention with original infer_sharpening",
+  "target_slot": 0,
+  "passed": true
+}
+flickr_144k:   0%|          | 0/8 [00:00<?, ?it/s]flickr_144k:  12%|█▎        | 1/8 [00:01<00:08,  1.25s/it]flickr_144k:  12%|█▎        | 1/8 [00:01<00:08,  1.25s/it]
+{
+  "experiment": "3.2 A4 Temporal Grounding Probe",
+  "setting": "flickr_144k",
+  "dataset": "flickr",
+  "completed_full_dataset": false,
+  "tensor_audit": {
+    "sample_ids": [
+      "10000130166",
+      "10007936344",
+      "10008553263",
+      "10009662863"
+    ],
+    "raw_A4_shape": [
+      32,
+      512,
+      9,
+      16
+    ],
+    "A4_feature_shape": [
+      32,
+      512,
+      16
+    ],
+    "A4_tokens_shape": [
+      32,
+      16,
+      512
+    ],
+    "T": 16,
+    "T2_boundaries": [
+      [
+        0,
+        8
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "T4_boundaries": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ]
+    ],
+    "full_query_shape": [
+      32,
+      2,
+      512
+    ],
+    "T2_query_shapes": [
+      [
+        32,
+        2,
+        512
+      ],
+      [
+        32,
+        2,
+        512
+      ]
+    ],
+    "T4_query_shapes": [
+      [
+        32,
+        2,
+        512
+      ],
+      [
+        32,
+        2,
+        512
+      ],
+      [
+        32,
+        2,
+        512
+      ],
+      [
+        32,
+        2,
+        512
+      ]
+    ],
+    "T2_map_shapes": [
+      [
+        32,
+        1,
+        14,
+        14
+      ],
+      [
+        32,
+        1,
+        14,
+        14
+      ]
+    ],
+    "T4_map_shapes": [
+      [
+        32,
+        1,
+        14,
+        14
+      ],
+      [
+        32,
+        1,
+        14,
+        14
+      ],
+      [
+        32,
+        1,
+        14,
+        14
+      ],
+      [
+        32,
+        1,
+        14,
+        14
+      ]
+    ],
+    "F34_shape": [
+      32,
+      512,
+      14,
+      14
+    ],
+    "K34_shape": [
+      32,
+      196,
+      512
+    ],
+    "visual_query_l4_shape": [
+      32,
+      2,
+      512
+    ],
+    "FULL_AUD_tensor_reproduction_max_error": 0.0,
+    "spatial_sum_max_errors": {
+      "ORIGINAL_AUD": 1.1920928955078125e-07,
+      "T2_CHUNK1": 1.1920928955078125e-07,
+      "T2_CHUNK2": 1.1920928955078125e-07,
+      "T2_RAW_MEAN": 5.960464477539063e-08,
+      "T4_CHUNK1": 1.1920928955078125e-07,
+      "T4_CHUNK2": 1.1920928955078125e-07,
+      "T4_CHUNK3": 1.1920928955078125e-07,
+      "T4_CHUNK4": 1.1920928955078125e-07,
+      "T4_RAW_MEAN": 5.960464477539063e-08
+    },
+    "f4_token_error": 0.0,
+    "no_nan_or_inf": true,
+    "attention_implementation": "teacher.slot_attn._attention with original infer_sharpening",
+    "target_slot": 0,
+    "passed": true
+  },
+  "method_metrics": [
+    {
+      "dataset": "flickr_144k",
+      "method": "ORIGINAL_AUD",
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6925761664282617,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_CHUNK1",
+      "cIoU": 0.9375,
+      "AUC": 0.6921875,
+      "mean_sample_cIoU": 0.6921448653175639,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_CHUNK2",
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6925462690871216,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_MEAN",
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6925113588369931,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_GEO",
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6924946876475913,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_NORM_MEAN",
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6925641601393189,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_NORM_GEO",
+      "cIoU": 0.9375,
+      "AUC": 0.69375,
+      "mean_sample_cIoU": 0.6926831161928932,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_CHUNK1",
+      "cIoU": 0.9375,
+      "AUC": 0.6921875,
+      "mean_sample_cIoU": 0.6914634988969828,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_CHUNK2",
+      "cIoU": 0.9375,
+      "AUC": 0.6937500000000001,
+      "mean_sample_cIoU": 0.6927958467905914,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_CHUNK3",
+      "cIoU": 0.9375,
+      "AUC": 0.696875,
+      "mean_sample_cIoU": 0.6909195137838636,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_CHUNK4",
+      "cIoU": 0.9375,
+      "AUC": 0.6953125,
+      "mean_sample_cIoU": 0.6942852459880529,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_MEAN",
+      "cIoU": 0.9375,
+      "AUC": 0.6953125,
+      "mean_sample_cIoU": 0.6930047767576464,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_GEO",
+      "cIoU": 0.9375,
+      "AUC": 0.6953125,
+      "mean_sample_cIoU": 0.6930194920579138,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_NORM_MEAN",
+      "cIoU": 0.9375,
+      "AUC": 0.6953125,
+      "mean_sample_cIoU": 0.6931657995776219,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_NORM_GEO",
+      "cIoU": 0.9375,
+      "AUC": 0.6953125,
+      "mean_sample_cIoU": 0.6932443442884029,
+      "num_samples": 32
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "OGL_REFERENCE",
+      "cIoU": 0.9375,
+      "AUC": 0.696875,
+      "mean_sample_cIoU": 0.7001177806377571,
+      "num_samples": 32
+    }
+  ],
+  "temporal_query_semantics": [
+    {
+      "dataset": "flickr_144k",
+      "scale": "FULL",
+      "chunk": 1,
+      "positive_cosine": 0.014288322359789163,
+      "negative_cosine": -0.04831222293432802,
+      "margin": 0.06260054529411718
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "FULL",
+      "chunk": "MEAN",
+      "positive_cosine": 0.014288322359789163,
+      "negative_cosine": -0.04831222293432802,
+      "margin": 0.06260054529411718
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T2",
+      "chunk": 1,
+      "positive_cosine": 0.012032332248054445,
+      "negative_cosine": -0.04939145958633162,
+      "margin": 0.061423791834386066
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T2",
+      "chunk": 2,
+      "positive_cosine": 0.00461101540713571,
+      "negative_cosine": -0.05409884106484242,
+      "margin": 0.05870985647197813
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T2",
+      "chunk": "MEAN",
+      "positive_cosine": 0.008321673827595077,
+      "negative_cosine": -0.05174515032558702,
+      "margin": 0.0600668241531821
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "chunk": 1,
+      "positive_cosine": 0.005323221732396632,
+      "negative_cosine": -0.050036725704558194,
+      "margin": 0.055359947436954826
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "chunk": 2,
+      "positive_cosine": 0.005844358762260526,
+      "negative_cosine": -0.05408985435497016,
+      "margin": 0.059934213117230684
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "chunk": 3,
+      "positive_cosine": 0.0016054047155193985,
+      "negative_cosine": -0.057406673178775236,
+      "margin": 0.059012077894294634
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "chunk": 4,
+      "positive_cosine": -0.004481471376493573,
+      "negative_cosine": -0.0586509128625039,
+      "margin": 0.05416944148601033
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "chunk": "MEAN",
+      "positive_cosine": 0.002072878458420746,
+      "negative_cosine": -0.05504604152520187,
+      "margin": 0.05711891998362262
+    }
+  ],
+  "query_consistency": [
+    {
+      "dataset": "flickr_144k",
+      "scale": "T2",
+      "query_pairwise_cosine": {
+        "mean": 0.8650763230398297,
+        "median": 0.881868451833725,
+        "std": 0.09186755300918668,
+        "num_samples": 32
+      },
+      "query_variance": {
+        "mean": 0.022906121652340516,
+        "median": 0.019765226170420647,
+        "std": 0.01528384964394011,
+        "num_samples": 32
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "query_pairwise_cosine": {
+        "mean": 0.8137078434228897,
+        "median": 0.8329676687717438,
+        "std": 0.07687089774487647,
+        "num_samples": 32
+      },
+      "query_variance": {
+        "mean": 0.047546841960866004,
+        "median": 0.04300844483077526,
+        "std": 0.019204783592092878,
+        "num_samples": 32
+      }
+    }
+  ],
+  "temporal_map_similarity": [
+    {
+      "dataset": "flickr_144k",
+      "scale": "T2",
+      "pearson": {
+        "mean": 0.9970736883019103,
+        "median": 0.9981485047350318,
+        "std": 0.0025740109794505058,
+        "num_samples": 32
+      },
+      "spearman": {
+        "mean": 0.9955965885703544,
+        "median": 0.9964984978763078,
+        "std": 0.002895911326265497,
+        "num_samples": 32
+      },
+      "js_divergence": {
+        "mean": 4.346567029896378e-06,
+        "median": 3.289017777300128e-06,
+        "std": 3.7139941001210505e-06,
+        "num_samples": 32
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "scale": "T4",
+      "pearson": {
+        "mean": 0.9959316236072717,
+        "median": 0.9967320144570222,
+        "std": 0.0034266237256760515,
+        "num_samples": 32
+      },
+      "spearman": {
+        "mean": 0.9942138125856164,
+        "median": 0.9950680936177674,
+        "std": 0.0037395824628847977,
+        "num_samples": 32
+      },
+      "js_divergence": {
+        "mean": 6.964368005491827e-06,
+        "median": 5.220470731170566e-06,
+        "std": 4.246624707191558e-06,
+        "num_samples": 32
+      }
+    }
+  ],
+  "region_stability": {
+    "rows": [
+      {
+        "dataset": "flickr_144k",
+        "region": "GT_REGION",
+        "TEMP_STD": {
+          "mean": 0.010941178316457493,
+          "median": 0.010165139170461447,
+          "std": 0.004014245936313705,
+          "num_samples": 32
+        },
+        "TEMP_CV": {
+          "mean": 0.015399492381102296,
+          "median": 0.013661737948793818,
+          "std": 0.006561946452040825,
+          "num_samples": 32
+        }
+      },
+      {
+        "dataset": "flickr_144k",
+        "region": "AUD_FP_REGION",
+        "TEMP_STD": {
+          "mean": 0.01430866466938498,
+          "median": 0.01255335521555073,
+          "std": 0.00768605121905667,
+          "num_samples": 32
+        },
+        "TEMP_CV": {
+          "mean": 0.020384592415844394,
+          "median": 0.01774480540927189,
+          "std": 0.011037075366379866,
+          "num_samples": 32
+        }
+      }
+    ],
+    "comparison": {
+      "samples_with_GT_and_FP": 32,
+      "fraction_FP_STD_gt_GT_STD": 0.75,
+      "fraction_FP_CV_gt_GT_CV": 0.75
+    }
+  },
+  "overexpansion_stability": {
+    "rows": [
+      {
+        "dataset": "flickr_144k",
+        "region": "GT_REGION",
+        "TEMP_STD": {
+          "mean": 0.010573635973747202,
+          "median": 0.010165139170461447,
+          "std": 0.003553221900661437,
+          "num_samples": 22
+        },
+        "TEMP_CV": {
+          "mean": 0.014110973141910467,
+          "median": 0.01329064550456151,
+          "std": 0.004770355050700259,
+          "num_samples": 22
+        }
+      },
+      {
+        "dataset": "flickr_144k",
+        "region": "OVER_EXPANSION_REGION",
+        "TEMP_STD": {
+          "mean": 0.0150245150349603,
+          "median": 0.01302027353958668,
+          "std": 0.007945216264459308,
+          "num_samples": 22
+        },
+        "TEMP_CV": {
+          "mean": 0.021203846733228487,
+          "median": 0.01852903440158089,
+          "std": 0.01122977366694809,
+          "num_samples": 22
+        }
+      }
+    ],
+    "comparison": {
+      "over_expansion_samples": 22,
+      "fraction_OVER_STD_gt_GT_STD": 0.8636363636363636,
+      "fraction_OVER_CV_gt_GT_CV": 0.8636363636363636
+    }
+  },
+  "rescue_hurt_oracle": [
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_MEAN",
+      "rescue": 0,
+      "hurt": 0,
+      "net": 0,
+      "rescue_intersect_OGL_rescue": 0,
+      "oracle_cIoU": 0.9375,
+      "oracle_AUC": 0.69375
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_GEO",
+      "rescue": 0,
+      "hurt": 0,
+      "net": 0,
+      "rescue_intersect_OGL_rescue": 0,
+      "oracle_cIoU": 0.9375,
+      "oracle_AUC": 0.69375
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_MEAN",
+      "rescue": 0,
+      "hurt": 0,
+      "net": 0,
+      "rescue_intersect_OGL_rescue": 0,
+      "oracle_cIoU": 0.9375,
+      "oracle_AUC": 0.6953125
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_GEO",
+      "rescue": 0,
+      "hurt": 0,
+      "net": 0,
+      "rescue_intersect_OGL_rescue": 0,
+      "oracle_cIoU": 0.9375,
+      "oracle_AUC": 0.6953125
+    }
+  ],
+  "ogl_rescue_capture": [
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_MEAN",
+      "OGL_rescue_total": 0,
+      "consensus_captured": 0,
+      "capture_rate": 0.0
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_GEO",
+      "OGL_rescue_total": 0,
+      "consensus_captured": 0,
+      "capture_rate": 0.0
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_MEAN",
+      "OGL_rescue_total": 0,
+      "consensus_captured": 0,
+      "capture_rate": 0.0
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_GEO",
+      "OGL_rescue_total": 0,
+      "consensus_captured": 0,
+      "capture_rate": 0.0
+    }
+  ],
+  "delta_correlation": [
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_MEAN",
+      "pearson_delta_temporal_vs_delta_OGL": 0.09807947552145503,
+      "spearman_delta_temporal_vs_delta_OGL": 0.07807917888563048,
+      "temporal_delta": {
+        "mean": -6.480759126846827e-05,
+        "median": 0.0005559102733488919,
+        "std": 0.004614652881215383,
+        "num_samples": 32
+      },
+      "OGL_delta": {
+        "mean": 0.007541614209495499,
+        "median": 0.014328902833104451,
+        "std": 0.060685612868291924,
+        "num_samples": 32
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T2_RAW_GEO",
+      "pearson_delta_temporal_vs_delta_OGL": 0.10038544655764307,
+      "spearman_delta_temporal_vs_delta_OGL": 0.07917888563049852,
+      "temporal_delta": {
+        "mean": -8.147878067032988e-05,
+        "median": 0.0005352200322396028,
+        "std": 0.004616930800724109,
+        "num_samples": 32
+      },
+      "OGL_delta": {
+        "mean": 0.007541614209495499,
+        "median": 0.014328902833104451,
+        "std": 0.060685612868291924,
+        "num_samples": 32
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_MEAN",
+      "pearson_delta_temporal_vs_delta_OGL": 0.04030048852358922,
+      "spearman_delta_temporal_vs_delta_OGL": 0.043255131964809374,
+      "temporal_delta": {
+        "mean": 0.0004286103293847897,
+        "median": 0.0007200111284709765,
+        "std": 0.007312591586789609,
+        "num_samples": 32
+      },
+      "OGL_delta": {
+        "mean": 0.007541614209495499,
+        "median": 0.014328902833104451,
+        "std": 0.060685612868291924,
+        "num_samples": 32
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "method": "T4_RAW_GEO",
+      "pearson_delta_temporal_vs_delta_OGL": 0.043043634317102134,
+      "spearman_delta_temporal_vs_delta_OGL": 0.058651026392961866,
+      "temporal_delta": {
+        "mean": 0.00044332562965224316,
+        "median": 0.0007776663237036296,
+        "std": 0.007326393368762904,
+        "num_samples": 32
+      },
+      "OGL_delta": {
+        "mean": 0.007541614209495499,
+        "median": 0.014328902833104451,
+        "std": 0.060685612868291924,
+        "num_samples": 32
+      }
+    }
+  ],
+  "qualitative_category_counts": {
+    "TEMPORAL_RESCUE": 0,
+    "TEMPORAL_HURT": 0,
+    "OGL_RESCUE_TEMPORAL_RESCUE": 0,
+    "OGL_RESCUE_TEMPORAL_FAIL": 0,
+    "BASELINE_SUCCESS_STABLE": 30,
+    "VGG_OVER_EXPANSION": 22
+  },
+  "qualitative_ids": [
+    "10000130166",
+    "10007936344",
+    "10008553263",
+    "10009662863",
+    "10013411946",
+    "10016382545",
+    "10031203703",
+    "10035917404",
+    "10045181004",
+    "10060697266",
+    "10067897816",
+    "10061269855"
+  ],
+  "reference_reproduction": {
+    "skipped_for_partial_run": true
+  },
+  "zero_training_audit": {
+    "optimizer_created": false,
+    "backward_called": false,
+    "new_trainable_params": 0,
+    "trainable_parameter_names": [],
+    "parameters_with_grad": [],
+    "all_models_eval": true,
+    "model_eval_modes": {
+      "original_G": true,
+      "evaluation_only_object_prior": true
+    },
+    "torch_inference_mode_used": true,
+    "object_prior_used_for_evaluation_only": true,
+    "checkpoint_snapshots": {
+      "files": {
+        "stage1_l3_l4": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+          "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+          "mtime_ns": 1786772660768985716,
+          "size": 145864497,
+          "sha256_after": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+          "mtime_ns_after": 1786772660768985716,
+          "unchanged": true
+        },
+        "original_1_3g": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5/flickr_best.pth",
+          "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+          "mtime_ns": 1786899904531667020,
+          "size": 17325651,
+          "sha256_after": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+          "mtime_ns_after": 1786899904531667020,
+          "unchanged": true
+        },
+        "evaluation_only_object_prior": {
+          "path": "/home/wxr/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+          "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+          "mtime_ns": 1786103759269624213,
+          "size": 46830571,
+          "sha256_after": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+          "mtime_ns_after": 1786103759269624213,
+          "unchanged": true
+        }
+      },
+      "all_unchanged": true
+    },
+    "all_checkpoint_hashes_and_mtimes_unchanged": true,
+    "no_nan_or_inf": true,
+    "full_tensor_reproduction_max_error": 0.0
+  },
+  "elapsed_seconds": 8.12149691581726
+}

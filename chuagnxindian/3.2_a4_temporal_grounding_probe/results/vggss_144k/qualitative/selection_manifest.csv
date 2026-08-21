@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+-oSzD8P2BtU_000030,TEMPORAL_RESCUE|OGL_RESCUE_TEMPORAL_RESCUE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+0E6KS8B6DMc_000540,TEMPORAL_HURT|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+-4bPiXbovf0_000008,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+-0UuUoXQUoI_000107,BASELINE_SUCCESS_STABLE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+-0BIyqJj9ZU_000030,VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+1ETrMAVZdY8_000030,TEMPORAL_RESCUE,first-in-test-order round-robin over fixed Experiment 3.2 categories
+2ffgd7k0vI8_000040,TEMPORAL_HURT|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+4tHvsHkl8L0_000027,TEMPORAL_RESCUE|OGL_RESCUE_TEMPORAL_RESCUE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+-Vo4CAMX26U_000030,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+-2-wdcN5vOw_000017,BASELINE_SUCCESS_STABLE,first-in-test-order round-robin over fixed Experiment 3.2 categories
+2ZNKLUHeJtg_000030,TEMPORAL_RESCUE,first-in-test-order round-robin over fixed Experiment 3.2 categories
+9-A6dZ8mbjM_000332,TEMPORAL_HURT|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories

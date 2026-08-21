@@ -1,0 +1,4 @@
+dataset,method,rescue,hurt,net,oracle_cIoU,oracle_AUC
+flickr_144k,Original HR14,12,4,8,0.86,0.6664
+flickr_144k,2.4 same-checkpoint,17,2,15,0.856,0.6554
+flickr_144k,Cross-checkpoint,12,3,9,0.86,0.6632

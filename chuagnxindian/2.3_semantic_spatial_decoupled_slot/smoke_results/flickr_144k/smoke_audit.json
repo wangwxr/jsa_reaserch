@@ -1,0 +1,99 @@
+{
+  "experiment": "flickr_144k",
+  "parameter_audit": {
+    "total_parameters": 41277442,
+    "frozen_parameters": 37860354,
+    "trainable_parameters": 3417088,
+    "spatial_slot_parameters": 3417088,
+    "trainable_parameter_names": [
+      "spatial_slot.norm_input.weight",
+      "spatial_slot.norm_input.bias",
+      "spatial_slot.norm_slots.weight",
+      "spatial_slot.norm_slots.bias",
+      "spatial_slot.norm_pre_ff.weight",
+      "spatial_slot.norm_pre_ff.bias",
+      "spatial_slot.to_q.weight",
+      "spatial_slot.to_q.bias",
+      "spatial_slot.to_k.weight",
+      "spatial_slot.to_k.bias",
+      "spatial_slot.to_v.weight",
+      "spatial_slot.to_v.bias",
+      "spatial_slot.gru.weight_ih",
+      "spatial_slot.gru.weight_hh",
+      "spatial_slot.gru.bias_ih",
+      "spatial_slot.gru.bias_hh",
+      "spatial_slot.mlp.0.weight",
+      "spatial_slot.mlp.0.bias",
+      "spatial_slot.mlp.2.weight",
+      "spatial_slot.mlp.2.bias"
+    ],
+    "invalid_trainable_names": []
+  },
+  "smoke": {
+    "sample_ids": [
+      "10000219855",
+      "10000797195",
+      "10001009574",
+      "10001279044"
+    ],
+    "F34_shape": [
+      4,
+      512,
+      14,
+      14
+    ],
+    "semantic_initial_slots_shape": [
+      4,
+      2,
+      512
+    ],
+    "ownership_shape": [
+      4,
+      2,
+      196
+    ],
+    "F34_requires_grad": false,
+    "semantic_initial_slots_requires_grad": false,
+    "AUD_FINE_requires_grad": false,
+    "ownership_slot_sum_max_error": 5.960464477539063e-08,
+    "old_ownership_slot_sum_max_error": 1.1920928955078125e-07,
+    "local_vs_official_AUD_FINE_max_error": 0.0,
+    "f4_token_error": 0.0,
+    "frozen_model_has_gradient": false,
+    "spatial_slot_gradient_l1": 4319.969577460329,
+    "component_gradient_norms": {
+      "seed": 4.039509296417236,
+      "equiv": 0.03705329820513725,
+      "visual": 0.005097633693367243,
+      "mass": 1.2254447937011719
+    },
+    "losses": {
+      "loss_seed": 0.6622117757797241,
+      "loss_equiv": 0.00034172256710007787,
+      "loss_visual": 0.17278170585632324,
+      "loss_mass": 0.12299377471208572,
+      "weighted_seed": 0.6622117757797241,
+      "weighted_equiv": 0.00034172256710007787,
+      "weighted_visual": 0.017278170213103294,
+      "weighted_mass": 0.012299377471208572,
+      "loss_total": 0.6921310424804688,
+      "slot0_mass": 0.515174388885498,
+      "slot1_mass": 0.48482558131217957,
+      "ownership_entropy": 0.9986259341239929,
+      "valid_overlap_ratio": 0.6466836333274841
+    },
+    "no_nan_or_inf": true,
+    "slot0_is_fixed_target": true,
+    "hungarian_matching": false,
+    "smoke_backward_changed_parameters_max_error": 0.0,
+    "AUD_baseline": {
+      "cIoU": 0.812,
+      "AUC": 0.6356,
+      "mean_sample_cIoU": 0.6368762798827685,
+      "num_samples": 250
+    },
+    "AUD_baseline_reproduced": true
+  },
+  "formal_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5/flickr_best.pth",
+  "formal_checkpoint_unchanged": true
+}

@@ -1,0 +1,191 @@
+{
+  "experiment": "3.1 Hierarchical Audio Representation",
+  "setting": "vggss_10k",
+  "best_epoch": 25,
+  "selection_metric": "IQR_cIoU",
+  "selection_score": 0.4069406746801086,
+  "eval_audio_query_source": "A4",
+  "baseline_best_epoch": 37,
+  "baseline_metrics_from_epoch_csv": {
+    "AUD": {
+      "cIoU": 0.4015122140364482,
+      "AUC": 0.40737689026754553
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.4063590538968592,
+      "AUC": 0.4093544009305933
+    },
+    "IQR": {
+      "cIoU": 0.40732842186894147,
+      "AUC": 0.4091993020550601
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.34780922838309425,
+      "AUC": 0.3924195424583172
+    },
+    "OGL": {
+      "cIoU": 0.44319503683598294,
+      "AUC": 0.42918766963939514
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.43136874757658006,
+      "AUC": 0.4214715005816208
+    }
+  },
+  "baseline_checkpoint_re_evaluation": {
+    "AUD": {
+      "cIoU": 0.4015122140364482,
+      "AUC": 0.40737689026754553,
+      "mean_sample_IoU": 0.40747255557495266,
+      "num_samples": 5158
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.4063590538968592,
+      "AUC": 0.4093544009305933,
+      "mean_sample_IoU": 0.40883345008307165,
+      "num_samples": 5158
+    },
+    "IQR": {
+      "cIoU": 0.40732842186894147,
+      "AUC": 0.4091993020550601,
+      "mean_sample_IoU": 0.4087557108675922,
+      "num_samples": 5158
+    }
+  },
+  "hierarchical_metrics": {
+    "AUD": {
+      "cIoU": 0.4011244668476154,
+      "AUC": 0.40707638619620007
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.40500193873594414,
+      "AUC": 0.4086952307095774
+    },
+    "IQR": {
+      "cIoU": 0.4069406746801086,
+      "AUC": 0.4085304381543234
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.34780922838309425,
+      "AUC": 0.3924195424583172
+    },
+    "OGL": {
+      "cIoU": 0.4420317952694843,
+      "AUC": 0.4263571151609152
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.43214424195424583,
+      "AUC": 0.41973633191159365
+    }
+  },
+  "deltas": {
+    "AUD": {
+      "cIoU": -0.0003877471888328321,
+      "AUC": -0.0003005040713454643
+    },
+    "IMG_QUERY": {
+      "cIoU": -0.0013571151609150789,
+      "AUC": -0.000659170221015859
+    },
+    "IQR": {
+      "cIoU": -0.0003877471888328876,
+      "AUC": -0.000668863900736727
+    }
+  },
+  "ogl_gaps": {
+    "baseline": {
+      "OGL_minus_AUD": 0.041682822799534724,
+      "OGL_minus_IQR": 0.035866614967041466
+    },
+    "hierarchical": {
+      "OGL_minus_AUD": 0.040907328421868894,
+      "OGL_minus_IQR": 0.03509112058937569
+    },
+    "reduction": {
+      "OGL_minus_AUD": 0.0007754943776658307,
+      "OGL_minus_IQR": 0.0007754943776657752
+    },
+    "best_no_OGL_main": 0.4069406746801086
+  },
+  "A3_QUERY_AUD": {
+    "cIoU": 0.035478867778208606,
+    "AUC": 0.16503489724699497,
+    "mean_sample_IoU": 0.1605205198073178,
+    "num_samples": 5158
+  },
+  "semantic_alignment": {
+    "A3": {
+      "positive_cosine": -0.002358396584186132,
+      "shuffled_negative_cosine": -0.005685430209319598,
+      "margin": 0.003327033625133466
+    },
+    "A4": {
+      "positive_cosine": 0.23226673522629726,
+      "shuffled_negative_cosine": 0.06025790964831396,
+      "margin": 0.1720088255779833
+    },
+    "FUSED": {
+      "positive_cosine": 0.24473051268631935,
+      "shuffled_negative_cosine": 0.06205347518950481,
+      "margin": 0.18267703749681452
+    }
+  },
+  "representation_diagnostics": {
+    "cos_a3_a4_slot0": 0.024420887035378747,
+    "cos_a3_a4_slot1": -0.029069760919033256,
+    "cos_fused_a4_slot0": 0.979006077624791,
+    "cos_fused_a4_slot1": 0.6606044569603461,
+    "delta_norm_over_a4_norm": 0.6867902551616242,
+    "a3_adjacent_cosine": 0.9177420929264958,
+    "a3_pairwise_cosine": 0.9092625606055406,
+    "a3_temporal_feature_variance": 0.34194511640853037,
+    "a4_adjacent_cosine": 0.8792846490820049,
+    "a4_pairwise_cosine": 0.8691815817111127,
+    "a4_temporal_feature_variance": 0.8279000054777662
+  },
+  "best_checkpoint_reproduction": {
+    "errors": {
+      "AUD": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IMG_QUERY": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IQR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OBJ_PRIOR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "EXTRA_IQR_OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      }
+    },
+    "max_error": 0.0,
+    "passed": true
+  },
+  "qualitative_ids": [
+    "-4bPiXbovf0_000008",
+    "-K1BRF6qng8_000030",
+    "-2-wdcN5vOw_000017",
+    "1gSwLBNvEWE_000034",
+    "-2Dm0VjW8oM_000001",
+    "-0BIyqJj9ZU_000030",
+    "-OVb-UG8yJw_000030",
+    "-NwBdmVSg1w_000000",
+    "-yicwYUKKuo_000304",
+    "5GyhFsJoiYc_000044",
+    "-86gl1hp1Aw_000105",
+    "-0UuUoXQUoI_000107"
+  ],
+  "num_samples": 5158
+}

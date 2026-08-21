@@ -1,0 +1,5 @@
+dataset,method,OGL_rescue_total,consensus_captured,capture_rate
+vggss_144k,T2_RAW_MEAN,10,1,0.1
+vggss_144k,T2_RAW_GEO,10,1,0.1
+vggss_144k,T4_RAW_MEAN,10,1,0.1
+vggss_144k,T4_RAW_GEO,10,1,0.1

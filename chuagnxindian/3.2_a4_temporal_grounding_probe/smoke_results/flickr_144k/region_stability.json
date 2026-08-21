@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "dataset": "flickr_144k",
+      "region": "GT_REGION",
+      "TEMP_STD": {
+        "mean": 0.010941178316457493,
+        "median": 0.010165139170461447,
+        "std": 0.004014245936313705,
+        "num_samples": 32
+      },
+      "TEMP_CV": {
+        "mean": 0.015399492381102296,
+        "median": 0.013661737948793818,
+        "std": 0.006561946452040825,
+        "num_samples": 32
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "region": "AUD_FP_REGION",
+      "TEMP_STD": {
+        "mean": 0.01430866466938498,
+        "median": 0.01255335521555073,
+        "std": 0.00768605121905667,
+        "num_samples": 32
+      },
+      "TEMP_CV": {
+        "mean": 0.020384592415844394,
+        "median": 0.01774480540927189,
+        "std": 0.011037075366379866,
+        "num_samples": 32
+      }
+    }
+  ],
+  "comparison": {
+    "samples_with_GT_and_FP": 32,
+    "fraction_FP_STD_gt_GT_STD": 0.75,
+    "fraction_FP_CV_gt_GT_CV": 0.75
+  }
+}

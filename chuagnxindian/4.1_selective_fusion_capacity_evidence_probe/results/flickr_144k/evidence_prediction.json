@@ -1,0 +1,128 @@
+[
+  {
+    "evidence": "CTRL_RAW_PEAK",
+    "AUROC_IMG_better": 0.5719234036991047,
+    "AUPRC_IMG_better": 0.46408798933108336,
+    "AUROC_IMG_only": 0.6338851022395326,
+    "balanced_accuracy_threshold_0": 0.5,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": 0.017177932586729804,
+    "mean_delta_AUD_better_or_tie": 0.017055121637958956,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.017694647423923016,
+      "cIoU": 0.82,
+      "AUC": 0.6356,
+      "mean_sample_cIoU": 0.6358577260723776,
+      "num_samples": 250,
+      "num_thresholds": 251
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_ENTROPY",
+    "AUROC_IMG_better": 0.6075419907195607,
+    "AUPRC_IMG_better": 0.48757924429051586,
+    "AUROC_IMG_only": 0.5855241804608893,
+    "balanced_accuracy_threshold_0": 0.5163061237827593,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": 0.0041868766740358575,
+    "mean_delta_AUD_better_or_tie": 0.003515662216800793,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.005238417572809739,
+      "cIoU": 0.824,
+      "AUC": 0.6350000000000001,
+      "mean_sample_cIoU": 0.6359406296562082,
+      "num_samples": 250,
+      "num_thresholds": 251
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_AREA",
+    "AUROC_IMG_better": 0.507025684595778,
+    "AUPRC_IMG_better": 0.4284730688384053,
+    "AUROC_IMG_only": 0.5826030509574813,
+    "balanced_accuracy_threshold_0": 0.5535912685445395,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": 0.10268434549637612,
+    "mean_delta_AUD_better_or_tie": 0.10136571018267447,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.46358816964285715,
+      "cIoU": 0.812,
+      "AUC": 0.6356,
+      "mean_sample_cIoU": 0.6368762798827685,
+      "num_samples": 250,
+      "num_thresholds": 249
+    }
+  },
+  {
+    "evidence": "CTRL_TOP20_CONCENTRATION",
+    "AUROC_IMG_better": 0.5291810992745571,
+    "AUPRC_IMG_better": 0.4460973193355844,
+    "AUROC_IMG_only": 0.5676728334956183,
+    "balanced_accuracy_threshold_0": 0.5209463433762499,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": 0.026291822066727012,
+    "mean_delta_AUD_better_or_tie": 0.024135258807168172,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.04806761202058374,
+      "cIoU": 0.82,
+      "AUC": 0.6356,
+      "mean_sample_cIoU": 0.6362099745492876,
+      "num_samples": 250,
+      "num_thresholds": 251
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_COMPONENTS",
+    "AUROC_IMG_better": 0.5182341023462519,
+    "AUPRC_IMG_better": 0.43731316331379694,
+    "AUROC_IMG_only": 0.5976955533917558,
+    "balanced_accuracy_threshold_0": 0.5023527873995164,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": -0.018691588785046728,
+    "mean_delta_AUD_better_or_tie": -0.055944055944055944,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.0,
+      "cIoU": 0.82,
+      "AUC": 0.6358,
+      "mean_sample_cIoU": 0.6369429571932951,
+      "num_samples": 250,
+      "num_thresholds": 4
+    }
+  },
+  {
+    "evidence": "SEMANTIC_SLOT",
+    "AUROC_IMG_better": 0.5776746617868114,
+    "AUPRC_IMG_better": 0.4882920894021327,
+    "AUROC_IMG_only": 0.49951314508276534,
+    "balanced_accuracy_threshold_0": 0.5593425266322463,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": 0.02573161040612185,
+    "mean_delta_AUD_better_or_tie": 0.019377400638244495,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.025540606918792008,
+      "cIoU": 0.816,
+      "AUC": 0.6330000000000001,
+      "mean_sample_cIoU": 0.6326881494658727,
+      "num_samples": 250,
+      "num_thresholds": 251
+    }
+  },
+  {
+    "evidence": "RECIPROCAL_L4",
+    "AUROC_IMG_better": 0.5873472322070452,
+    "AUPRC_IMG_better": 0.46574746878597045,
+    "AUROC_IMG_only": 0.5576111652061019,
+    "balanced_accuracy_threshold_0": 0.5824455917913862,
+    "positive_rate_IMG_better": 0.428,
+    "mean_delta_IMG_better": 0.011453080415049902,
+    "mean_delta_AUD_better_or_tie": 0.004198973410309929,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.017445545447542232,
+      "cIoU": 0.824,
+      "AUC": 0.6334000000000001,
+      "mean_sample_cIoU": 0.6333343521120949,
+      "num_samples": 250,
+      "num_thresholds": 251
+    }
+  }
+]

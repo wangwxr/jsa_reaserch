@@ -1,0 +1,165 @@
+{
+  "sample_ids": [
+    "10000130166",
+    "10007936344",
+    "10008553263",
+    "10009662863"
+  ],
+  "raw_A4_shape": [
+    32,
+    512,
+    9,
+    16
+  ],
+  "A4_feature_shape": [
+    32,
+    512,
+    16
+  ],
+  "A4_tokens_shape": [
+    32,
+    16,
+    512
+  ],
+  "T": 16,
+  "T2_boundaries": [
+    [
+      0,
+      8
+    ],
+    [
+      8,
+      16
+    ]
+  ],
+  "T4_boundaries": [
+    [
+      0,
+      4
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      8,
+      12
+    ],
+    [
+      12,
+      16
+    ]
+  ],
+  "full_query_shape": [
+    32,
+    2,
+    512
+  ],
+  "T2_query_shapes": [
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ]
+  ],
+  "T4_query_shapes": [
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ],
+    [
+      32,
+      2,
+      512
+    ]
+  ],
+  "T2_map_shapes": [
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ]
+  ],
+  "T4_map_shapes": [
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ],
+    [
+      32,
+      1,
+      14,
+      14
+    ]
+  ],
+  "F34_shape": [
+    32,
+    512,
+    14,
+    14
+  ],
+  "K34_shape": [
+    32,
+    196,
+    512
+  ],
+  "visual_query_l4_shape": [
+    32,
+    2,
+    512
+  ],
+  "FULL_AUD_tensor_reproduction_max_error": 0.0,
+  "spatial_sum_max_errors": {
+    "ORIGINAL_AUD": 1.1920928955078125e-07,
+    "T2_CHUNK1": 1.1920928955078125e-07,
+    "T2_CHUNK2": 1.1920928955078125e-07,
+    "T2_RAW_MEAN": 5.960464477539063e-08,
+    "T4_CHUNK1": 1.1920928955078125e-07,
+    "T4_CHUNK2": 1.1920928955078125e-07,
+    "T4_CHUNK3": 1.1920928955078125e-07,
+    "T4_CHUNK4": 1.1920928955078125e-07,
+    "T4_RAW_MEAN": 5.960464477539063e-08
+  },
+  "f4_token_error": 0.0,
+  "no_nan_or_inf": true,
+  "attention_implementation": "teacher.slot_attn._attention with original infer_sharpening",
+  "target_slot": 0,
+  "passed": true
+}

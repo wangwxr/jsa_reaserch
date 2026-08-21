@@ -1,0 +1,191 @@
+{
+  "experiment": "3.1 Hierarchical Audio Representation",
+  "setting": "flickr_10k",
+  "best_epoch": 100,
+  "selection_metric": "IQR_cIoU",
+  "selection_score": 0.74,
+  "eval_audio_query_source": "A4",
+  "baseline_best_epoch": 81,
+  "baseline_metrics_from_epoch_csv": {
+    "AUD": {
+      "cIoU": 0.764,
+      "AUC": 0.5916000000000001
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.752,
+      "AUC": 0.5890000000000001
+    },
+    "IQR": {
+      "cIoU": 0.772,
+      "AUC": 0.5922000000000001
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.448,
+      "AUC": 0.4668
+    },
+    "OGL": {
+      "cIoU": 0.84,
+      "AUC": 0.6154
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.812,
+      "AUC": 0.6123999999999999
+    }
+  },
+  "baseline_checkpoint_re_evaluation": {
+    "AUD": {
+      "cIoU": 0.764,
+      "AUC": 0.5916000000000001,
+      "mean_sample_IoU": 0.5921927569730399,
+      "num_samples": 250
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.752,
+      "AUC": 0.5890000000000001,
+      "mean_sample_IoU": 0.5894827214421676,
+      "num_samples": 250
+    },
+    "IQR": {
+      "cIoU": 0.772,
+      "AUC": 0.5922000000000001,
+      "mean_sample_IoU": 0.592654240809946,
+      "num_samples": 250
+    }
+  },
+  "hierarchical_metrics": {
+    "AUD": {
+      "cIoU": 0.728,
+      "AUC": 0.5794
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.74,
+      "AUC": 0.5738000000000001
+    },
+    "IQR": {
+      "cIoU": 0.74,
+      "AUC": 0.5772
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.448,
+      "AUC": 0.4668
+    },
+    "OGL": {
+      "cIoU": 0.8,
+      "AUC": 0.6138
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.772,
+      "AUC": 0.6042000000000001
+    }
+  },
+  "deltas": {
+    "AUD": {
+      "cIoU": -0.03600000000000003,
+      "AUC": -0.0122000000000001
+    },
+    "IMG_QUERY": {
+      "cIoU": -0.01200000000000001,
+      "AUC": -0.015199999999999991
+    },
+    "IQR": {
+      "cIoU": -0.03200000000000003,
+      "AUC": -0.015000000000000013
+    }
+  },
+  "ogl_gaps": {
+    "baseline": {
+      "OGL_minus_AUD": 0.07599999999999996,
+      "OGL_minus_IQR": 0.06799999999999995
+    },
+    "hierarchical": {
+      "OGL_minus_AUD": 0.07200000000000006,
+      "OGL_minus_IQR": 0.06000000000000005
+    },
+    "reduction": {
+      "OGL_minus_AUD": 0.0039999999999998925,
+      "OGL_minus_IQR": 0.007999999999999896
+    },
+    "best_no_OGL_main": 0.74
+  },
+  "A3_QUERY_AUD": {
+    "cIoU": 0.024,
+    "AUC": 0.14700000000000005,
+    "mean_sample_IoU": 0.1429341344076412,
+    "num_samples": 250
+  },
+  "semantic_alignment": {
+    "A3": {
+      "positive_cosine": -0.004002708435058594,
+      "shuffled_negative_cosine": -0.0031345996856689453,
+      "margin": -0.0008681087493896487
+    },
+    "A4": {
+      "positive_cosine": 0.194478515625,
+      "shuffled_negative_cosine": 0.07615345764160156,
+      "margin": 0.11832505798339843
+    },
+    "FUSED": {
+      "positive_cosine": 0.20901437377929688,
+      "shuffled_negative_cosine": 0.0841391143798828,
+      "margin": 0.12487525939941407
+    }
+  },
+  "representation_diagnostics": {
+    "cos_a3_a4_slot0": 0.002759518623352051,
+    "cos_a3_a4_slot1": -0.10044202423095704,
+    "cos_fused_a4_slot0": 0.9595224609375,
+    "cos_fused_a4_slot1": 0.05756165313720703,
+    "delta_norm_over_a4_norm": 3.03630908203125,
+    "a3_adjacent_cosine": 0.9142087697982788,
+    "a3_pairwise_cosine": 0.9097885489463806,
+    "a3_temporal_feature_variance": 0.33067265152931213,
+    "a4_adjacent_cosine": 0.8768609762191772,
+    "a4_pairwise_cosine": 0.8708420395851135,
+    "a4_temporal_feature_variance": 0.8440269231796265
+  },
+  "best_checkpoint_reproduction": {
+    "errors": {
+      "AUD": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IMG_QUERY": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IQR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OBJ_PRIOR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "EXTRA_IQR_OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      }
+    },
+    "max_error": 0.0,
+    "passed": true
+  },
+  "qualitative_ids": [
+    "10106776154",
+    "10283938426",
+    "10409146004",
+    "12103535156",
+    "10000130166",
+    "10008553263",
+    "10119607346",
+    "10476442285",
+    "14678892718",
+    "10007936344",
+    "10016382545",
+    "10165890496"
+  ],
+  "num_samples": 250
+}

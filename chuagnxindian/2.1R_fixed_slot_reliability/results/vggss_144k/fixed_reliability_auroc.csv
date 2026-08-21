@@ -1,0 +1,11 @@
+feature,score_direction,AUROC,rescue_samples,hurt_samples
+semantic_margin,higher,0.4704275032913531,355,567
+ownership_confidence,higher,0.4857093176342002,355,567
+eval_soft_containment,higher,0.5547606627418834,355,567
+eval_seed_top10,higher,0.5935762724495118,355,567
+eval_seed_top20,higher,0.5931341133219068,355,567
+raw_seed_top10,higher,0.5021934073577267,355,567
+raw_seed_top20,higher,0.507717912412748,355,567
+centroid_distance,lower,0.5610303798097226,355,567
+js_divergence,lower,0.5078172740144571,355,567
+extent_ratio,closer_to_one,0.49554114812330774,355,567

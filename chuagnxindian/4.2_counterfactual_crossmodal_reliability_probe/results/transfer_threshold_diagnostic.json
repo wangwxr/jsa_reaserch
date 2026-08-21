@@ -1,0 +1,66 @@
+{
+  "DELTA_CF_BLUR": {
+    "vggss_144k_to_flickr_144k": {
+      "source": "vggss_144k",
+      "target": "flickr_144k",
+      "threshold": 0.08840006589889526,
+      "metrics": {
+        "cIoU": 0.812,
+        "AUC": 0.635,
+        "mean_sample_cIoU": 0.6361495642154168,
+        "num_samples": 250
+      },
+      "rescue": 0,
+      "hurt": 0,
+      "net": 0,
+      "IMG_selection_rate": 0.024
+    },
+    "flickr_144k_to_vggss_144k": {
+      "source": "flickr_144k",
+      "target": "vggss_144k",
+      "threshold": 0.004975408315658569,
+      "metrics": {
+        "cIoU": 0.42070569988367584,
+        "AUC": 0.4212582396277627,
+        "mean_sample_cIoU": 0.4211171218721562,
+        "num_samples": 5158
+      },
+      "rescue": 56,
+      "hurt": 88,
+      "net": -32,
+      "IMG_selection_rate": 0.335401318340442
+    }
+  },
+  "DELTA_CF_MEAN": {
+    "vggss_144k_to_flickr_144k": {
+      "source": "vggss_144k",
+      "target": "flickr_144k",
+      "threshold": 0.12126588821411133,
+      "metrics": {
+        "cIoU": 0.812,
+        "AUC": 0.6358,
+        "mean_sample_cIoU": 0.6369803127327959,
+        "num_samples": 250
+      },
+      "rescue": 0,
+      "hurt": 0,
+      "net": 0,
+      "IMG_selection_rate": 0.008
+    },
+    "flickr_144k_to_vggss_144k": {
+      "source": "flickr_144k",
+      "target": "vggss_144k",
+      "threshold": 0.013692408800125122,
+      "metrics": {
+        "cIoU": 0.4214811942613416,
+        "AUC": 0.4215005816207833,
+        "mean_sample_cIoU": 0.42132301099917135,
+        "num_samples": 5158
+      },
+      "rescue": 36,
+      "hurt": 64,
+      "net": -28,
+      "IMG_selection_rate": 0.22373012795657232
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "experiment": "3.1 Hierarchical Audio Representation",
+  "setting": "flickr_144k",
+  "best_epoch": 6,
+  "selection_metric": "IQR_cIoU",
+  "selection_score": 0.788,
+  "eval_audio_query_source": "A4",
+  "baseline_best_epoch": 7,
+  "baseline_metrics_from_epoch_csv": {
+    "AUD": {
+      "cIoU": 0.804,
+      "AUC": 0.6228
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.804,
+      "AUC": 0.6165999999999998
+    },
+    "IQR": {
+      "cIoU": 0.812,
+      "AUC": 0.6236
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.448,
+      "AUC": 0.4668
+    },
+    "OGL": {
+      "cIoU": 0.844,
+      "AUC": 0.6392
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.828,
+      "AUC": 0.6380000000000001
+    }
+  },
+  "baseline_checkpoint_re_evaluation": {
+    "AUD": {
+      "cIoU": 0.804,
+      "AUC": 0.6228,
+      "mean_sample_IoU": 0.6219122889546627,
+      "num_samples": 250
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.804,
+      "AUC": 0.6165999999999998,
+      "mean_sample_IoU": 0.6162179697968241,
+      "num_samples": 250
+    },
+    "IQR": {
+      "cIoU": 0.812,
+      "AUC": 0.6236,
+      "mean_sample_IoU": 0.6236003566124796,
+      "num_samples": 250
+    }
+  },
+  "hierarchical_metrics": {
+    "AUD": {
+      "cIoU": 0.788,
+      "AUC": 0.6126
+    },
+    "IMG_QUERY": {
+      "cIoU": 0.76,
+      "AUC": 0.6062000000000001
+    },
+    "IQR": {
+      "cIoU": 0.788,
+      "AUC": 0.6112
+    },
+    "OBJ_PRIOR": {
+      "cIoU": 0.448,
+      "AUC": 0.4668
+    },
+    "OGL": {
+      "cIoU": 0.852,
+      "AUC": 0.6410000000000001
+    },
+    "EXTRA_IQR_OGL": {
+      "cIoU": 0.824,
+      "AUC": 0.6364000000000001
+    }
+  },
+  "deltas": {
+    "AUD": {
+      "cIoU": -0.016000000000000014,
+      "AUC": -0.010199999999999987
+    },
+    "IMG_QUERY": {
+      "cIoU": -0.04400000000000004,
+      "AUC": -0.010399999999999743
+    },
+    "IQR": {
+      "cIoU": -0.02400000000000002,
+      "AUC": -0.012400000000000078
+    }
+  },
+  "ogl_gaps": {
+    "baseline": {
+      "OGL_minus_AUD": 0.039999999999999925,
+      "OGL_minus_IQR": 0.03199999999999992
+    },
+    "hierarchical": {
+      "OGL_minus_AUD": 0.06399999999999995,
+      "OGL_minus_IQR": 0.06399999999999995
+    },
+    "reduction": {
+      "OGL_minus_AUD": -0.02400000000000002,
+      "OGL_minus_IQR": -0.03200000000000003
+    },
+    "best_no_OGL_main": 0.788
+  },
+  "A3_QUERY_AUD": {
+    "cIoU": 0.188,
+    "AUC": 0.3128,
+    "mean_sample_IoU": 0.31142527857358887,
+    "num_samples": 250
+  },
+  "semantic_alignment": {
+    "A3": {
+      "positive_cosine": 0.002225365161895752,
+      "shuffled_negative_cosine": 0.0047718768119812014,
+      "margin": -0.0025465116500854494
+    },
+    "A4": {
+      "positive_cosine": 0.4242366943359375,
+      "shuffled_negative_cosine": 0.306278564453125,
+      "margin": 0.11795812988281251
+    },
+    "FUSED": {
+      "positive_cosine": 0.4447407531738281,
+      "shuffled_negative_cosine": 0.33366152954101563,
+      "margin": 0.11107922363281247
+    }
+  },
+  "representation_diagnostics": {
+    "cos_a3_a4_slot0": 0.0017269768714904786,
+    "cos_a3_a4_slot1": 0.09169586181640625,
+    "cos_fused_a4_slot0": 0.9932459716796875,
+    "cos_fused_a4_slot1": 0.551916259765625,
+    "delta_norm_over_a4_norm": 0.71198486328125,
+    "a3_adjacent_cosine": 0.9225566387176514,
+    "a3_pairwise_cosine": 0.911166787147522,
+    "a3_temporal_feature_variance": 0.38513001799583435,
+    "a4_adjacent_cosine": 0.9200480580329895,
+    "a4_pairwise_cosine": 0.8950104117393494,
+    "a4_temporal_feature_variance": 0.9757907390594482
+  },
+  "best_checkpoint_reproduction": {
+    "errors": {
+      "AUD": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IMG_QUERY": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IQR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OBJ_PRIOR": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "EXTRA_IQR_OGL": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      }
+    },
+    "max_error": 0.0,
+    "passed": true
+  },
+  "qualitative_ids": [
+    "10008553263",
+    "10016382545",
+    "10701841844",
+    "10000130166",
+    "10106776154",
+    "10067897816",
+    "10165890496",
+    "5906878321",
+    "10007936344",
+    "10409146004",
+    "12444360833",
+    "10283938426"
+  ],
+  "num_samples": 250
+}

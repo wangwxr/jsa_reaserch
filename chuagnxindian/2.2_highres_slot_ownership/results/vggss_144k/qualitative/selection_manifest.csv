@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+0RZRFj7zDnQ_000030,SLOT7_HURT_HR_FIX,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-3Kv4fdm7Uk_000030,SLOT7_RESCUE_HR_RETAINED,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-2-wdcN5vOw_000017,BOTH_HURT,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-4bPiXbovf0_000008,OGL_RESCUE,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-_QPd-VskKY_000030,OGL_RESCUE|HR_ONLY_RESCUE,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+0n56ajMNoMA_000118,SLOT7_HURT_HR_FIX,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-5CGQGSFGyg_000060,SLOT7_RESCUE_HR_RETAINED,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-ByoSbgzr4M_000000,BOTH_HURT,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-Vo4CAMX26U_000030,OGL_RESCUE,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+01SaXyGY5SM_000030,HR_ONLY_RESCUE,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+1MaEJRh2oGY_000089,SLOT7_HURT_HR_FIX,"first-in-test-order round-robin over predefined transition categories, then test-order fill"
+-Wd5YV97ftU_000320,SLOT7_RESCUE_HR_RETAINED,"first-in-test-order round-robin over predefined transition categories, then test-order fill"

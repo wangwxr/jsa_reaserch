@@ -1,0 +1,34 @@
+[
+  {
+    "dataset": "vggss_144k",
+    "scale": "T2",
+    "query_pairwise_cosine": {
+      "mean": 0.8820099630393088,
+      "median": 0.917312502861023,
+      "std": 0.10219112816601153,
+      "num_samples": 256
+    },
+    "query_variance": {
+      "mean": 0.021370647815274424,
+      "median": 0.015258770436048508,
+      "std": 0.01841395612930467,
+      "num_samples": 256
+    }
+  },
+  {
+    "dataset": "vggss_144k",
+    "scale": "T4",
+    "query_pairwise_cosine": {
+      "mean": 0.8515636234078556,
+      "median": 0.865443229675293,
+      "std": 0.08721983763093355,
+      "num_samples": 256
+    },
+    "query_variance": {
+      "mean": 0.04034596000383317,
+      "median": 0.03533102199435234,
+      "std": 0.023489422572134773,
+      "num_samples": 256
+    }
+  }
+]

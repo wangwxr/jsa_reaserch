@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+10000130166,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10548273474,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10008553263,ALL_FAIL,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10007936344,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10701841844,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10067897816,ALL_FAIL,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10009662863,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10939270325,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10409146004,ALL_FAIL,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10013411946,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+11036641226,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+10413912845,ALL_FAIL,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"

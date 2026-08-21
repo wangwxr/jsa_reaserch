@@ -1,0 +1,34 @@
+[
+  {
+    "dataset": "flickr_144k",
+    "scale": "T2",
+    "query_pairwise_cosine": {
+      "mean": 0.8669295635223389,
+      "median": 0.8915049731731415,
+      "std": 0.08878842673830631,
+      "num_samples": 250
+    },
+    "query_variance": {
+      "mean": 0.02192031138949096,
+      "median": 0.01817057840526104,
+      "std": 0.01454006894629608,
+      "num_samples": 250
+    }
+  },
+  {
+    "dataset": "flickr_144k",
+    "scale": "T4",
+    "query_pairwise_cosine": {
+      "mean": 0.8241983435153961,
+      "median": 0.8457499146461487,
+      "std": 0.08618765547914746,
+      "num_samples": 250
+    },
+    "query_variance": {
+      "mean": 0.04365404148772359,
+      "median": 0.03830299153923988,
+      "std": 0.02141828475499834,
+      "num_samples": 250
+    }
+  }
+]

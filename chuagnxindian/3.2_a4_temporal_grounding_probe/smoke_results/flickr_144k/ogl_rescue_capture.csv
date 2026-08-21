@@ -1,0 +1,5 @@
+dataset,method,OGL_rescue_total,consensus_captured,capture_rate
+flickr_144k,T2_RAW_MEAN,0,0,0.0
+flickr_144k,T2_RAW_GEO,0,0,0.0
+flickr_144k,T4_RAW_MEAN,0,0,0.0
+flickr_144k,T4_RAW_GEO,0,0,0.0

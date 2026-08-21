@@ -1,0 +1,14 @@
+{
+  "checkpoint": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5/flickr_best.pth",
+  "checkpoint_epoch": 47,
+  "sha256_before": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+  "sha256_after": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+  "mtime_ns_before": 1786899904531667020,
+  "mtime_ns_after": 1786899904531667020,
+  "checkpoint_unchanged": true,
+  "optimizer_created": false,
+  "backward_called": false,
+  "new_trainable_parameters": 0,
+  "model_trainable_parameters_during_probe": 0,
+  "base_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth"
+}

@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "dataset": "flickr_144k",
+      "region": "GT_REGION",
+      "TEMP_STD": {
+        "mean": 0.008386975171495984,
+        "median": 0.007808006626323251,
+        "std": 0.003844752389705641,
+        "num_samples": 203
+      },
+      "TEMP_CV": {
+        "mean": 0.011169982493344555,
+        "median": 0.010235958605426334,
+        "std": 0.0057831076196682455,
+        "num_samples": 203
+      }
+    },
+    {
+      "dataset": "flickr_144k",
+      "region": "OVER_EXPANSION_REGION",
+      "TEMP_STD": {
+        "mean": 0.010349160348535726,
+        "median": 0.00959200691471606,
+        "std": 0.005057802026147625,
+        "num_samples": 203
+      },
+      "TEMP_CV": {
+        "mean": 0.014488489464803234,
+        "median": 0.013225754838916838,
+        "std": 0.007137767886980823,
+        "num_samples": 203
+      }
+    }
+  ],
+  "comparison": {
+    "over_expansion_samples": 203,
+    "fraction_OVER_STD_gt_GT_STD": 0.7339901477832512,
+    "fraction_OVER_CV_gt_GT_CV": 0.7733990147783252
+  }
+}

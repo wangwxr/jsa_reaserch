@@ -1,0 +1,5 @@
+dataset,method,rescue,hurt,net,rescue_intersect_OGL_rescue,oracle_cIoU,oracle_AUC
+flickr_144k,T2_RAW_MEAN,0,1,-1,0,0.812,0.6364
+flickr_144k,T2_RAW_GEO,0,1,-1,0,0.812,0.6364
+flickr_144k,T4_RAW_MEAN,0,1,-1,0,0.812,0.638
+flickr_144k,T4_RAW_GEO,0,1,-1,0,0.812,0.638

@@ -1,0 +1,41 @@
+{
+  "rows": [
+    {
+      "dataset": "vggss_144k",
+      "region": "GT_REGION",
+      "TEMP_STD": {
+        "mean": 0.009813419299654583,
+        "median": 0.008024319768140761,
+        "std": 0.006998125688363475,
+        "num_samples": 4109
+      },
+      "TEMP_CV": {
+        "mean": 0.0132383591194558,
+        "median": 0.010397226653489359,
+        "std": 0.010560712743129896,
+        "num_samples": 4109
+      }
+    },
+    {
+      "dataset": "vggss_144k",
+      "region": "OVER_EXPANSION_REGION",
+      "TEMP_STD": {
+        "mean": 0.012226707211128974,
+        "median": 0.01057879771918552,
+        "std": 0.007006448863240089,
+        "num_samples": 4109
+      },
+      "TEMP_CV": {
+        "mean": 0.01697335585338117,
+        "median": 0.014663712964684172,
+        "std": 0.009800673650416604,
+        "num_samples": 4109
+      }
+    }
+  ],
+  "comparison": {
+    "over_expansion_samples": 4109,
+    "fraction_OVER_STD_gt_GT_STD": 0.7500608420540278,
+    "fraction_OVER_CV_gt_GT_CV": 0.767583353614018
+  }
+}

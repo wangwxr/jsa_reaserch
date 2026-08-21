@@ -1,0 +1,671 @@
+{
+  "vggss_144k": {
+    "experiment": "2.4 Object-Aware Multi-Geometry Spatial Specialization",
+    "dataset": "vggss_144k",
+    "best_AUD_OBJ_epoch": 50,
+    "best_AUD_FINE_epoch": 1,
+    "parameter_audit": {
+      "total_teacher_parameters": 36417282,
+      "frozen_teacher_parameters": 36417282,
+      "proj3_spatial_parameters": 131584,
+      "topdown_adapter_parameters": 1311488,
+      "spatial_student_parameters": 1443072,
+      "trainable_parameters": 1443072,
+      "trainable_parameter_names": [
+        "student.proj3_spatial.weight",
+        "student.proj3_spatial.bias",
+        "student.adapter.layers.0.weight",
+        "student.adapter.layers.0.bias",
+        "student.adapter.layers.2.weight",
+        "student.adapter.layers.2.bias"
+      ],
+      "invalid_trainable_parameter_names": []
+    },
+    "smoke_audit": {
+      "sample_ids": [
+        "--0PQM4-hqg_000030",
+        "--56QUhyDQM_000185",
+        "--5OkAjCI7g_000040",
+        "--8puiAGLhs_000030"
+      ],
+      "base_stage1_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+      "loaded_trained_1_3g_checkpoint": false,
+      "parameter_audit": {
+        "total_teacher_parameters": 36417282,
+        "frozen_teacher_parameters": 36417282,
+        "proj3_spatial_parameters": 131584,
+        "topdown_adapter_parameters": 1311488,
+        "spatial_student_parameters": 1443072,
+        "trainable_parameters": 1443072,
+        "trainable_parameter_names": [
+          "student.proj3_spatial.weight",
+          "student.proj3_spatial.bias",
+          "student.adapter.layers.0.weight",
+          "student.adapter.layers.0.bias",
+          "student.adapter.layers.2.weight",
+          "student.adapter.layers.2.bias"
+        ],
+        "invalid_trainable_parameter_names": []
+      },
+      "F34_shape": [
+        4,
+        512,
+        14,
+        14
+      ],
+      "K34_shape": [
+        4,
+        196,
+        512
+      ],
+      "Q4_shape": [
+        4,
+        2,
+        512
+      ],
+      "OWN7_shape": [
+        4,
+        2,
+        7,
+        7
+      ],
+      "OWN14_shape": [
+        4,
+        2,
+        14,
+        14
+      ],
+      "avg_pool_OWN14_shape": [
+        4,
+        2,
+        7,
+        7
+      ],
+      "Q4_A_requires_grad": false,
+      "Q4_B_requires_grad": false,
+      "Q4_A_B_share_storage": false,
+      "OWN7_requires_grad": false,
+      "OWN14_requires_grad": true,
+      "OWN7_slot_sum_max_errors": {
+        "OWN7_A": 1.1920928955078125e-07,
+        "OWN7_B": 1.1920928955078125e-07
+      },
+      "OWN14_slot_sum_max_errors": {
+        "OWN14_A": 1.1920928955078125e-07,
+        "OWN14_B": 1.1920928955078125e-07
+      },
+      "raw_losses": {
+        "loss_audio_coarse": 2.0441206288523972e-05,
+        "loss_audio_equiv": 0.0001782511972123757,
+        "loss_own_coarse": 0.0007277854019775987,
+        "loss_own_equiv": 0.007295700255781412,
+        "loss_total": 0.008222177624702454
+      },
+      "initial_gradient_norms": {
+        "loss_audio_coarse": {
+          "proj3_spatial": 0.0,
+          "adapter": 2.476531153661199e-05,
+          "total": 2.476531153661199e-05
+        },
+        "loss_audio_equiv": {
+          "proj3_spatial": 0.0,
+          "adapter": 6.427365588024259e-05,
+          "total": 6.427365588024259e-05
+        },
+        "loss_own_coarse": {
+          "proj3_spatial": 0.0,
+          "adapter": 0.0026725728530436754,
+          "total": 0.0026725728530436754
+        },
+        "loss_own_equiv": {
+          "proj3_spatial": 0.0,
+          "adapter": 0.0026778969913721085,
+          "total": 0.002677897224202752
+        }
+      },
+      "gradient_cosines": {
+        "audio_coarse_vs_own_coarse": 0.1005733385682106,
+        "audio_equiv_vs_own_equiv": 0.11293572187423706,
+        "total_audio_vs_total_ownership": 0.4783487915992737
+      },
+      "post_temporary_step_gradient_norms": {
+        "loss_audio_coarse": {
+          "proj3_spatial": 4.0113877730618697e-07,
+          "adapter": 2.446438702463638e-05,
+          "total": 2.4467673938488588e-05
+        },
+        "loss_audio_equiv": {
+          "proj3_spatial": 1.3323765415407252e-06,
+          "adapter": 6.392374780261889e-05,
+          "total": 6.393763032974675e-05
+        },
+        "loss_own_coarse": {
+          "proj3_spatial": 7.009854016359895e-05,
+          "adapter": 0.0024879369884729385,
+          "total": 0.002488924190402031
+        },
+        "loss_own_equiv": {
+          "proj3_spatial": 6.327716982923448e-05,
+          "adapter": 0.002663098508492112,
+          "total": 0.0026638503186404705
+        }
+      },
+      "OWN7_slot0_mass": 0.11644549667835236,
+      "OWN14_slot0_mass": 0.11034896969795227,
+      "OWN7_entropy": 0.4173537492752075,
+      "OWN14_entropy": 0.40403541922569275,
+      "pooled_ownership_mae": 0.009165006689727306,
+      "audio_only_degeneration_max_abs_error": 0.0,
+      "proj3_spatial_copy_max_abs_error": 0.0,
+      "zero_init_F34_minus_F4_up_max_abs_error": 0.0,
+      "f4_token_error": 0.0,
+      "teacher_has_gradient": false,
+      "backward_changed_parameters_max_error": 0.0,
+      "student_restore_max_error": 0.0,
+      "no_nan_or_inf": true
+    },
+    "comparison": {
+      "original_1_3g_AUD": {
+        "method": "AUD_FINE",
+        "cIoU": 0.42690965490500193,
+        "AUC": 0.42295463357890656,
+        "mean_sample_cIoU": 0.42293451522094005,
+        "num_samples": 5158
+      },
+      "original_2_2_HR14_standalone": {
+        "method": "SLOT_L4_HR14",
+        "cIoU": 0.20104691740984879,
+        "AUC": 0.3448914307871268,
+        "mean_sample_cIoU": 0.3442475445837555,
+        "num_samples": 5158
+      },
+      "original_2_2_HR14_fusion": {
+        "method": "AUD_SLOT_L4_HR14",
+        "cIoU": 0.37766576192322604,
+        "AUC": 0.41749709189608375,
+        "mean_sample_cIoU": 0.4171204313267065,
+        "num_samples": 5158
+      },
+      "original_2_2_HR14_rescue_hurt_oracle": {
+        "candidate": "HR14",
+        "rescue": 430,
+        "hurt": 684,
+        "net_rescue": -254,
+        "oracle_cIoU": 0.5102753005040713,
+        "oracle_AUC": 0.469397053121365
+      },
+      "new_primary": {
+        "AUD_FINE": {
+          "cIoU": 0.4152772392400155,
+          "AUC": 0.41952307095773556,
+          "mean_sample_cIoU": 0.4193255842559651,
+          "num_samples": 5158
+        },
+        "OBJ_FINE": {
+          "cIoU": 0.24486234974796434,
+          "AUC": 0.36612058937572706,
+          "mean_sample_cIoU": 0.36540019146373715,
+          "num_samples": 5158
+        },
+        "AUD_OBJ": {
+          "cIoU": 0.3970531213648701,
+          "AUC": 0.4208995734780923,
+          "mean_sample_cIoU": 0.4207231353282705,
+          "num_samples": 5158
+        },
+        "OBJ_PRIOR": {
+          "cIoU": 0.34780922838309425,
+          "AUC": 0.3924195424583172,
+          "mean_sample_cIoU": 0.3914037623400056,
+          "num_samples": 5158
+        },
+        "OGL": {
+          "cIoU": 0.4517254749903063,
+          "AUC": 0.438832880961613,
+          "mean_sample_cIoU": 0.4387636054179679,
+          "num_samples": 5158
+        },
+        "rescue_hurt": {
+          "rescue": 397,
+          "hurt": 491,
+          "net": -94
+        },
+        "oracle": {
+          "cIoU": 0.49224505622334236,
+          "AUC": 0.46196200077549443,
+          "mean_sample_cIoU": 0.4619001432895718,
+          "num_samples": 5158
+        }
+      },
+      "delta_vs_original_1_3g_AUD": {
+        "cIoU": -0.011632415664986406,
+        "AUC": -0.0034315626211710026
+      },
+      "delta_fusion_vs_2_2_HR14": {
+        "cIoU": 0.019387359441644048,
+        "AUC": 0.003402481582008565
+      }
+    },
+    "collapse_audit_csv": "/data/wxr/audio_video/JSA/checkpoints/2.4_object_aware_multigeom_spatial_specialization_vggss_144k/epoch_metrics.csv",
+    "qualitative_ids": [
+      {
+        "sample_id": "0RZRFj7zDnQ_000030",
+        "categories": "SLOT7_HURT_HR_FIX",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-3Kv4fdm7Uk_000030",
+        "categories": "SLOT7_RESCUE_HR_RETAINED",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-2-wdcN5vOw_000017",
+        "categories": "BOTH_HURT",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-4bPiXbovf0_000008",
+        "categories": "OGL_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-_QPd-VskKY_000030",
+        "categories": "OGL_RESCUE|HR_ONLY_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "0n56ajMNoMA_000118",
+        "categories": "SLOT7_HURT_HR_FIX",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-5CGQGSFGyg_000060",
+        "categories": "SLOT7_RESCUE_HR_RETAINED",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-ByoSbgzr4M_000000",
+        "categories": "BOTH_HURT",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-Vo4CAMX26U_000030",
+        "categories": "OGL_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "01SaXyGY5SM_000030",
+        "categories": "HR_ONLY_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "1MaEJRh2oGY_000089",
+        "categories": "SLOT7_HURT_HR_FIX",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-Wd5YV97ftU_000320",
+        "categories": "SLOT7_RESCUE_HR_RETAINED",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "-NwBdmVSg1w_000000",
+        "categories": "NEW_RESCUE",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      },
+      {
+        "sample_id": "-aK9JKAGme0_000041",
+        "categories": "NEW_RESCUE",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      },
+      {
+        "sample_id": "-0UuUoXQUoI_000107",
+        "categories": "NEW_HURT",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      },
+      {
+        "sample_id": "-GW1J75oAKU_000304",
+        "categories": "NEW_HURT",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      }
+    ],
+    "stage1_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+    "stage1_checkpoint_unchanged": true,
+    "original_1_3g_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_vggss_144k/vggss_best.pth",
+    "original_1_3g_loaded_only_after_training": true,
+    "original_1_3g_checkpoint_unchanged": true,
+    "training_seconds": 11737.162018537521
+  },
+  "flickr_144k": {
+    "experiment": "2.4 Object-Aware Multi-Geometry Spatial Specialization",
+    "dataset": "flickr_144k",
+    "best_AUD_OBJ_epoch": 1,
+    "best_AUD_FINE_epoch": 32,
+    "parameter_audit": {
+      "total_teacher_parameters": 36417282,
+      "frozen_teacher_parameters": 36417282,
+      "proj3_spatial_parameters": 131584,
+      "topdown_adapter_parameters": 1311488,
+      "spatial_student_parameters": 1443072,
+      "trainable_parameters": 1443072,
+      "trainable_parameter_names": [
+        "student.proj3_spatial.weight",
+        "student.proj3_spatial.bias",
+        "student.adapter.layers.0.weight",
+        "student.adapter.layers.0.bias",
+        "student.adapter.layers.2.weight",
+        "student.adapter.layers.2.bias"
+      ],
+      "invalid_trainable_parameter_names": []
+    },
+    "smoke_audit": {
+      "sample_ids": [
+        "10000219855",
+        "10000797195",
+        "10001009574",
+        "10001279044"
+      ],
+      "base_stage1_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+      "loaded_trained_1_3g_checkpoint": false,
+      "parameter_audit": {
+        "total_teacher_parameters": 36417282,
+        "frozen_teacher_parameters": 36417282,
+        "proj3_spatial_parameters": 131584,
+        "topdown_adapter_parameters": 1311488,
+        "spatial_student_parameters": 1443072,
+        "trainable_parameters": 1443072,
+        "trainable_parameter_names": [
+          "student.proj3_spatial.weight",
+          "student.proj3_spatial.bias",
+          "student.adapter.layers.0.weight",
+          "student.adapter.layers.0.bias",
+          "student.adapter.layers.2.weight",
+          "student.adapter.layers.2.bias"
+        ],
+        "invalid_trainable_parameter_names": []
+      },
+      "F34_shape": [
+        4,
+        512,
+        14,
+        14
+      ],
+      "K34_shape": [
+        4,
+        196,
+        512
+      ],
+      "Q4_shape": [
+        4,
+        2,
+        512
+      ],
+      "OWN7_shape": [
+        4,
+        2,
+        7,
+        7
+      ],
+      "OWN14_shape": [
+        4,
+        2,
+        14,
+        14
+      ],
+      "avg_pool_OWN14_shape": [
+        4,
+        2,
+        7,
+        7
+      ],
+      "Q4_A_requires_grad": false,
+      "Q4_B_requires_grad": false,
+      "Q4_A_B_share_storage": false,
+      "OWN7_requires_grad": false,
+      "OWN14_requires_grad": true,
+      "OWN7_slot_sum_max_errors": {
+        "OWN7_A": 1.1920928955078125e-07,
+        "OWN7_B": 5.960464477539063e-08
+      },
+      "OWN14_slot_sum_max_errors": {
+        "OWN14_A": 1.1920928955078125e-07,
+        "OWN14_B": 1.1920928955078125e-07
+      },
+      "raw_losses": {
+        "loss_audio_coarse": 3.698896398418583e-05,
+        "loss_audio_equiv": 0.0002902367268688977,
+        "loss_own_coarse": 0.0031424383632838726,
+        "loss_own_equiv": 0.07154074311256409,
+        "loss_total": 0.07501040399074554
+      },
+      "initial_gradient_norms": {
+        "loss_audio_coarse": {
+          "proj3_spatial": 0.0,
+          "adapter": 1.9798255380010232e-05,
+          "total": 1.9798255380010232e-05
+        },
+        "loss_audio_equiv": {
+          "proj3_spatial": 0.0,
+          "adapter": 6.355060759233311e-05,
+          "total": 6.355060759233311e-05
+        },
+        "loss_own_coarse": {
+          "proj3_spatial": 0.0,
+          "adapter": 0.004017489030957222,
+          "total": 0.004017489030957222
+        },
+        "loss_own_equiv": {
+          "proj3_spatial": 0.0,
+          "adapter": 0.012427574954926968,
+          "total": 0.012427574954926968
+        }
+      },
+      "gradient_cosines": {
+        "audio_coarse_vs_own_coarse": 0.3283620774745941,
+        "audio_equiv_vs_own_equiv": 0.38882893323898315,
+        "total_audio_vs_total_ownership": 0.3635238707065582
+      },
+      "post_temporary_step_gradient_norms": {
+        "loss_audio_coarse": {
+          "proj3_spatial": 3.856195860407752e-07,
+          "adapter": 1.9741646610782482e-05,
+          "total": 1.974541191884782e-05
+        },
+        "loss_audio_equiv": {
+          "proj3_spatial": 1.320247292824206e-06,
+          "adapter": 6.346487498376518e-05,
+          "total": 6.347860471578315e-05
+        },
+        "loss_own_coarse": {
+          "proj3_spatial": 0.00011590351641643792,
+          "adapter": 0.0038612426724284887,
+          "total": 0.003862981917336583
+        },
+        "loss_own_equiv": {
+          "proj3_spatial": 0.00031723157735541463,
+          "adapter": 0.012394589371979237,
+          "total": 0.01239864807575941
+        }
+      },
+      "OWN7_slot0_mass": 0.37150245904922485,
+      "OWN14_slot0_mass": 0.3660546541213989,
+      "OWN7_entropy": 0.7836256623268127,
+      "OWN14_entropy": 0.7866272330284119,
+      "pooled_ownership_mae": 0.027302280068397522,
+      "audio_only_degeneration_max_abs_error": 0.0,
+      "proj3_spatial_copy_max_abs_error": 0.0,
+      "zero_init_F34_minus_F4_up_max_abs_error": 0.0,
+      "f4_token_error": 0.0,
+      "teacher_has_gradient": false,
+      "backward_changed_parameters_max_error": 0.0,
+      "student_restore_max_error": 0.0,
+      "no_nan_or_inf": true
+    },
+    "comparison": {
+      "original_1_3g_AUD": {
+        "method": "AUD_FINE",
+        "cIoU": 0.812,
+        "AUC": 0.6356,
+        "mean_sample_cIoU": 0.6368762798827685,
+        "num_samples": 250
+      },
+      "original_2_2_HR14_standalone": {
+        "method": "SLOT_L4_HR14",
+        "cIoU": 0.812,
+        "AUC": 0.6212000000000001,
+        "mean_sample_cIoU": 0.6216806755574305,
+        "num_samples": 250
+      },
+      "original_2_2_HR14_fusion": {
+        "method": "AUD_SLOT_L4_HR14",
+        "cIoU": 0.844,
+        "AUC": 0.6501999999999999,
+        "mean_sample_cIoU": 0.6498098069504591,
+        "num_samples": 250
+      },
+      "original_2_2_HR14_rescue_hurt_oracle": {
+        "candidate": "HR14",
+        "rescue": 12,
+        "hurt": 4,
+        "net_rescue": 8,
+        "oracle_cIoU": 0.86,
+        "oracle_AUC": 0.6664
+      },
+      "new_primary": {
+        "AUD_FINE": {
+          "cIoU": 0.788,
+          "AUC": 0.6295999999999999,
+          "mean_sample_cIoU": 0.6313531955830883,
+          "num_samples": 250
+        },
+        "OBJ_FINE": {
+          "cIoU": 0.808,
+          "AUC": 0.6174,
+          "mean_sample_cIoU": 0.6167751138239042,
+          "num_samples": 250
+        },
+        "AUD_OBJ": {
+          "cIoU": 0.848,
+          "AUC": 0.6422,
+          "mean_sample_cIoU": 0.6407384983870383,
+          "num_samples": 250
+        },
+        "OBJ_PRIOR": {
+          "cIoU": 0.448,
+          "AUC": 0.4668,
+          "mean_sample_cIoU": 0.4653670845603529,
+          "num_samples": 250
+        },
+        "OGL": {
+          "cIoU": 0.856,
+          "AUC": 0.654,
+          "mean_sample_cIoU": 0.6524718490012419,
+          "num_samples": 250
+        },
+        "rescue_hurt": {
+          "rescue": 17,
+          "hurt": 2,
+          "net": 15
+        },
+        "oracle": {
+          "cIoU": 0.856,
+          "AUC": 0.6554,
+          "mean_sample_cIoU": 0.6562547455250122,
+          "num_samples": 250
+        }
+      },
+      "delta_vs_original_1_3g_AUD": {
+        "cIoU": -0.02400000000000002,
+        "AUC": -0.006000000000000116
+      },
+      "delta_fusion_vs_2_2_HR14": {
+        "cIoU": 0.0040000000000000036,
+        "AUC": -0.007999999999999896
+      }
+    },
+    "collapse_audit_csv": "/data/wxr/audio_video/JSA/checkpoints/2.4_object_aware_multigeom_spatial_specialization_flickr_144k_frame8_center5/epoch_metrics.csv",
+    "qualitative_ids": [
+      {
+        "sample_id": "10659354545",
+        "categories": "SLOT7_HURT_HR_FIX",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "10548273474",
+        "categories": "SLOT7_RESCUE_HR_RETAINED|OGL_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "2432219254",
+        "categories": "BOTH_HURT",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "10549911663",
+        "categories": "HR_ONLY_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "10667001125",
+        "categories": "SLOT7_RESCUE_HR_RETAINED",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "3956341886",
+        "categories": "BOTH_HURT",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "10701841844",
+        "categories": "OGL_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "12066557153",
+        "categories": "OGL_RESCUE|HR_ONLY_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "2499673064",
+        "categories": "SLOT7_RESCUE_HR_RETAINED|OGL_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "6669466181",
+        "categories": "BOTH_HURT",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "10939270325",
+        "categories": "OGL_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "12103535156",
+        "categories": "OGL_RESCUE|HR_ONLY_RESCUE",
+        "selection_rule": "first-in-test-order round-robin over predefined transition categories, then test-order fill"
+      },
+      {
+        "sample_id": "10476446674",
+        "categories": "NEW_RESCUE",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      },
+      {
+        "sample_id": "11036641226",
+        "categories": "NEW_RESCUE",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      },
+      {
+        "sample_id": "8311669586",
+        "categories": "NEW_HURT",
+        "selection_rule": "first-in-test-order same-checkpoint outcome"
+      }
+    ],
+    "stage1_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "stage1_checkpoint_unchanged": true,
+    "original_1_3g_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5/flickr_best.pth",
+    "original_1_3g_loaded_only_after_training": true,
+    "original_1_3g_checkpoint_unchanged": true,
+    "training_seconds": 8024.710346460342
+  }
+}

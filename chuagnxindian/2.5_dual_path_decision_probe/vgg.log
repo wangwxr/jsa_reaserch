@@ -1,0 +1,300 @@
+{
+  "sample_ids": [
+    "-0BIyqJj9ZU_000030",
+    "-0UuUoXQUoI_000107",
+    "-2-wdcN5vOw_000017",
+    "-23CeprtibU_000030"
+  ],
+  "Q3_shape": [
+    256,
+    2,
+    512
+  ],
+  "K3_POOL_shape": [
+    256,
+    49,
+    512
+  ],
+  "K3_NATIVE_shape": [
+    256,
+    196,
+    512
+  ],
+  "F3_PROJECTED_NATIVE_shape": [
+    256,
+    512,
+    14,
+    14
+  ],
+  "OWN_POOL_shape": [
+    256,
+    2,
+    49
+  ],
+  "OWN_NATIVE_shape": [
+    256,
+    2,
+    196
+  ],
+  "pooled_ownership_reconstruction_max_error": 0.0,
+  "native_readout_slot_sum_max_error": 1.1920928955078125e-07,
+  "pooled_slot_sum_max_error": 1.1920928955078125e-07,
+  "stage1_aud_local_vs_official_max_error": 0.0,
+  "stage1_all_finite": true,
+  "passed": true
+}
+vggss_10k:   0%|          | 0/21 [00:00<?, ?it/s]vggss_10k:   5%|▍         | 1/21 [00:06<02:17,  6.87s/it]vggss_10k:  10%|▉         | 2/21 [00:07<01:01,  3.23s/it]vggss_10k:  14%|█▍        | 3/21 [00:08<00:35,  1.97s/it]vggss_10k:  19%|█▉        | 4/21 [00:08<00:23,  1.38s/it]vggss_10k:  24%|██▍       | 5/21 [00:08<00:16,  1.05s/it]vggss_10k:  29%|██▊       | 6/21 [00:09<00:12,  1.17it/s]vggss_10k:  33%|███▎      | 7/21 [00:09<00:10,  1.36it/s]vggss_10k:  38%|███▊      | 8/21 [00:10<00:08,  1.55it/s]vggss_10k:  43%|████▎     | 9/21 [00:10<00:07,  1.71it/s]vggss_10k:  48%|████▊     | 10/21 [00:11<00:05,  1.86it/s]vggss_10k:  52%|█████▏    | 11/21 [00:11<00:05,  1.97it/s]vggss_10k:  57%|█████▋    | 12/21 [00:12<00:04,  2.04it/s]vggss_10k:  62%|██████▏   | 13/21 [00:12<00:03,  2.10it/s]vggss_10k:  67%|██████▋   | 14/21 [00:13<00:03,  2.13it/s]vggss_10k:  71%|███████▏  | 15/21 [00:13<00:02,  2.17it/s]vggss_10k:  76%|███████▌  | 16/21 [00:13<00:02,  2.19it/s]vggss_10k:  81%|████████  | 17/21 [00:14<00:01,  2.19it/s]vggss_10k:  86%|████████▌ | 18/21 [00:14<00:01,  2.19it/s]vggss_10k:  90%|█████████ | 19/21 [00:15<00:00,  2.19it/s]vggss_10k:  95%|█████████▌| 20/21 [00:15<00:00,  2.21it/s]vggss_10k: 100%|██████████| 21/21 [00:15<00:00,  1.33it/s]
+{
+  "experiment": "2.5 Dual-Path Decision Probe",
+  "setting": "vggss_10k",
+  "dataset": "vggss",
+  "completed_full_dataset": true,
+  "tensor_audit": {
+    "sample_ids": [
+      "-0BIyqJj9ZU_000030",
+      "-0UuUoXQUoI_000107",
+      "-2-wdcN5vOw_000017",
+      "-23CeprtibU_000030"
+    ],
+    "Q3_shape": [
+      256,
+      2,
+      512
+    ],
+    "K3_POOL_shape": [
+      256,
+      49,
+      512
+    ],
+    "K3_NATIVE_shape": [
+      256,
+      196,
+      512
+    ],
+    "F3_PROJECTED_NATIVE_shape": [
+      256,
+      512,
+      14,
+      14
+    ],
+    "OWN_POOL_shape": [
+      256,
+      2,
+      49
+    ],
+    "OWN_NATIVE_shape": [
+      256,
+      2,
+      196
+    ],
+    "pooled_ownership_reconstruction_max_error": 0.0,
+    "native_readout_slot_sum_max_error": 1.1920928955078125e-07,
+    "pooled_slot_sum_max_error": 1.1920928955078125e-07,
+    "stage1_aud_local_vs_official_max_error": 0.0,
+    "stage1_all_finite": true,
+    "passed": true
+  },
+  "part_a_candidates": [
+    {
+      "dataset": "vggss_10k",
+      "map": "SLOT_L3_POOLED",
+      "ownership_cIoU": 0.1341605273361768,
+      "ownership_AUC": 0.26917409848778595,
+      "audio_cIoU": 0.4015122140364482,
+      "audio_AUC": 0.40737689026754553,
+      "fusion_cIoU": 0.31116711903838695,
+      "fusion_AUC": 0.37149088794106244,
+      "rescue": 101,
+      "hurt": 567,
+      "net": -466,
+      "oracle_cIoU": 0.42109344707250873,
+      "oracle_AUC": 0.4202500969367972
+    },
+    {
+      "dataset": "vggss_10k",
+      "map": "SLOT_L3_NATIVE_UPDATE",
+      "ownership_cIoU": 0.04497867390461419,
+      "ownership_AUC": 0.23992826677006596,
+      "audio_cIoU": 0.38134936021713844,
+      "audio_AUC": 0.40016479255525395,
+      "fusion_cIoU": 0.31640170608763085,
+      "fusion_AUC": 0.3806611089569601,
+      "rescue": 123,
+      "hurt": 458,
+      "net": -335,
+      "oracle_cIoU": 0.4051958123303606,
+      "oracle_AUC": 0.4174098487785963
+    },
+    {
+      "dataset": "vggss_10k",
+      "map": "SLOT_L3_NATIVE_READOUT",
+      "ownership_cIoU": 0.13803799922450563,
+      "ownership_AUC": 0.2719367972082202,
+      "audio_cIoU": 0.4015122140364482,
+      "audio_AUC": 0.40737689026754553,
+      "fusion_cIoU": 0.3260953858084529,
+      "fusion_AUC": 0.375494377665762,
+      "rescue": 89,
+      "hurt": 478,
+      "net": -389,
+      "oracle_cIoU": 0.41876696393951146,
+      "oracle_AUC": 0.4176812718107794
+    },
+    {
+      "dataset": "vggss_10k",
+      "map": "SLOT_L4",
+      "ownership_cIoU": 0.10604885614579294,
+      "ownership_AUC": 0.28351105079488176,
+      "audio_cIoU": 0.4015122140364482,
+      "audio_AUC": 0.40737689026754553,
+      "fusion_cIoU": 0.2915858860023265,
+      "fusion_AUC": 0.3781601395889879,
+      "rescue": 325,
+      "hurt": 892,
+      "net": -567,
+      "oracle_cIoU": 0.46452113222179137,
+      "oracle_AUC": 0.4412659945715394
+    }
+  ],
+  "part_a_144k_methods": [],
+  "part_b_methods": [],
+  "part_b_transitions": [],
+  "alpha_diagnostic": [],
+  "map_complementarity": [],
+  "reference_reproduction": {},
+  "zero_training_audit": {
+    "optimizer_created": false,
+    "backward_called": false,
+    "new_trainable_params": 0,
+    "trainable_parameter_names": [],
+    "parameters_with_grad": [],
+    "all_models_eval": true,
+    "model_eval_modes": {
+      "stage1": true
+    },
+    "torch_inference_mode_used": true,
+    "checkpoint_and_source_snapshots": {
+      "files": {
+        "stage1_l3_l4": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+          "sha256": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+          "mtime_ns": 1786734764661328891,
+          "size": 145864158,
+          "sha256_after": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+          "mtime_ns_after": 1786734764661328891,
+          "unchanged": true
+        },
+        "native_update": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/1.1.1_14_14_L3_vggss_10k/vggss_best.pth",
+          "sha256": "5cf81f70f4153b82a1005a6fa380fde87a601945ccefcd38f6a0e75b833d2f2f",
+          "mtime_ns": 1786981356512257709,
+          "size": 165049780,
+          "sha256_after": "5cf81f70f4153b82a1005a6fa380fde87a601945ccefcd38f6a0e75b833d2f2f",
+          "mtime_ns_after": 1786981356512257709,
+          "unchanged": true
+        },
+        "native_update_per_sample": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/1.1.1_14_14_L3_vggss_10k/ownership_per_sample.csv",
+          "sha256": "6c6b36a995ca3ce36721e4c88af3b94325f87e2ebf8a254a6fe59a62cf582d99",
+          "mtime_ns": 1786985219600682501,
+          "size": 1396536,
+          "sha256_after": "6c6b36a995ca3ce36721e4c88af3b94325f87e2ebf8a254a6fe59a62cf582d99",
+          "mtime_ns_after": 1786985219600682501,
+          "unchanged": true
+        }
+      },
+      "all_unchanged": true
+    },
+    "all_checkpoint_hashes_and_mtimes_unchanged": true,
+    "full_slot_sum_max_errors": {
+      "pooled": 1.1920928955078125e-07,
+      "native_readout": 1.1920928955078125e-07,
+      "l4": 1.1920928955078125e-07
+    },
+    "no_nan_or_inf": true
+  },
+  "qualitative_ids": [],
+  "elapsed_seconds": 25.25392508506775
+}
+{
+  "sample_ids": [
+    "-0BIyqJj9ZU_000030",
+    "-0UuUoXQUoI_000107",
+    "-2-wdcN5vOw_000017",
+    "-23CeprtibU_000030"
+  ],
+  "Q3_shape": [
+    256,
+    2,
+    512
+  ],
+  "K3_POOL_shape": [
+    256,
+    49,
+    512
+  ],
+  "K3_NATIVE_shape": [
+    256,
+    196,
+    512
+  ],
+  "F3_PROJECTED_NATIVE_shape": [
+    256,
+    512,
+    14,
+    14
+  ],
+  "OWN_POOL_shape": [
+    256,
+    2,
+    49
+  ],
+  "OWN_NATIVE_shape": [
+    256,
+    2,
+    196
+  ],
+  "pooled_ownership_reconstruction_max_error": 0.0,
+  "native_readout_slot_sum_max_error": 1.1920928955078125e-07,
+  "pooled_slot_sum_max_error": 1.1920928955078125e-07,
+  "stage1_aud_local_vs_official_max_error": 0.0,
+  "stage1_all_finite": true,
+  "original_G_Q4_shape": [
+    256,
+    2,
+    512
+  ],
+  "original_G_K34_shape": [
+    256,
+    196,
+    512
+  ],
+  "original_G_aud_local_vs_official_max_error": 0.0,
+  "original_G_OWN14_slot_sum_max_error": 1.1920928955078125e-07,
+  "experiment_2_4_OWN14_slot_sum_max_error": 1.1920928955078125e-07,
+  "original_G_f4_token_error": 0.0,
+  "stage2_all_finite": true,
+  "passed": true
+}
+vggss_144k:   0%|          | 0/21 [00:00<?, ?it/s]vggss_144k:   5%|▍         | 1/21 [00:09<03:10,  9.55s/it]vggss_144k:  10%|▉         | 2/21 [00:12<01:51,  5.84s/it]vggss_144k:  14%|█▍        | 3/21 [00:15<01:18,  4.39s/it]vggss_144k:  19%|█▉        | 4/21 [00:17<01:02,  3.66s/it]vggss_144k:  24%|██▍       | 5/21 [00:20<00:51,  3.25s/it]vggss_144k:  29%|██▊       | 6/21 [00:23<00:45,  3.00s/it]vggss_144k:  33%|███▎      | 7/21 [00:25<00:39,  2.84s/it]vggss_144k:  38%|███▊      | 8/21 [00:28<00:35,  2.74s/it]vggss_144k:  43%|████▎     | 9/21 [00:30<00:32,  2.68s/it]vggss_144k:  48%|████▊     | 10/21 [00:33<00:28,  2.63s/it]vggss_144k:  52%|█████▏    | 11/21 [00:35<00:25,  2.60s/it]vggss_144k:  57%|█████▋    | 12/21 [00:38<00:23,  2.57s/it]vggss_144k:  62%|██████▏   | 13/21 [00:40<00:20,  2.55s/it]vggss_144k:  67%|██████▋   | 14/21 [00:43<00:17,  2.53s/it]vggss_144k:  71%|███████▏  | 15/21 [00:45<00:15,  2.52s/it]vggss_144k:  76%|███████▌  | 16/21 [00:48<00:13,  2.75s/it]vggss_144k:  81%|████████  | 17/21 [00:51<00:10,  2.71s/it]vggss_144k:  86%|████████▌ | 18/21 [00:54<00:07,  2.65s/it]vggss_144k:  90%|█████████ | 19/21 [00:56<00:05,  2.61s/it]vggss_144k:  95%|█████████▌| 20/21 [00:59<00:02,  2.58s/it]vggss_144k: 100%|██████████| 21/21 [00:59<00:00,  1.94s/it]vggss_144k: 100%|██████████| 21/21 [00:59<00:00,  2.84s/it]
+Traceback (most recent call last):
+  File "/data/wxr/audio_video/JSA/chuagnxindian/2.5_dual_path_decision_probe/probe.py", line 861, in <module>
+    run(parse_args())
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/wxr/audio_video/JSA/chuagnxindian/2.5_dual_path_decision_probe/probe.py", line 783, in run
+    raise RuntimeError(
+RuntimeError: Native-update qualitative map did not reproduce its stored IoU: 0RZRFj7zDnQ_000030 0.20648596900616287 vs 0.20653864560899737
+Exception ignored in atexit callback: <function _MultiProcessingDataLoaderIter._clean_up_worker at 0x73f1269ca950>
+Traceback (most recent call last):
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1657, in _clean_up_worker
+    w.join(timeout=_utils.MP_STATUS_CHECK_INTERVAL)
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/multiprocessing/process.py", line 149, in join
+    res = self._popen.wait(timeout)
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/multiprocessing/popen_fork.py", line 40, in wait
+    if not wait([self.sentinel], timeout):
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/multiprocessing/connection.py", line 936, in wait
+    ready = selector.select(timeout)
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt: 

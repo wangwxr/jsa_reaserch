@@ -1,0 +1,52 @@
+{
+  "optimizer_created": false,
+  "backward_called": false,
+  "new_trainable_params": 0,
+  "trainable_parameter_names": [],
+  "parameters_with_grad": [],
+  "all_models_eval": true,
+  "torch_inference_mode": true,
+  "checkpoint_snapshots": {
+    "files": {
+      "formal_stage1_best": {
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+        "sha256": "db25dd60a915d9980524ec2d73e26019a28efd1a825765392d24fbe898453a68",
+        "mtime_ns": 1786771760890763333,
+        "size": 145864158,
+        "sha256_after": "db25dd60a915d9980524ec2d73e26019a28efd1a825765392d24fbe898453a68",
+        "mtime_ns_after": 1786771760890763333,
+        "unchanged": true
+      },
+      "formal_original_1_3G": {
+        "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_vggss_144k/vggss_best.pth",
+        "sha256": "c6fb6e512a11fffcedbee66e1ce50a403849b042a7240643e3bbb109b512bc09",
+        "mtime_ns": 1786899402431818162,
+        "size": 17325621,
+        "sha256_after": "c6fb6e512a11fffcedbee66e1ce50a403849b042a7240643e3bbb109b512bc09",
+        "mtime_ns_after": 1786899402431818162,
+        "unchanged": true
+      },
+      "evaluation_only_object_prior": {
+        "path": "/home/wxr/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+        "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "mtime_ns": 1786103759269624213,
+        "size": 46830571,
+        "sha256_after": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+        "mtime_ns_after": 1786103759269624213,
+        "unchanged": true
+      },
+      "trajectory_final.pth": {
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/final.pth",
+        "sha256": "a65ce7810fa21acc701134c7a04dacdd58898b0ff2ba53f918a8d57ffd447ae3",
+        "mtime_ns": 1786784568196936915,
+        "size": 145843583,
+        "sha256_after": "a65ce7810fa21acc701134c7a04dacdd58898b0ff2ba53f918a8d57ffd447ae3",
+        "mtime_ns_after": 1786784568196936915,
+        "unchanged": true
+      }
+    },
+    "all_unchanged": true
+  },
+  "all_checkpoint_hashes_and_mtimes_unchanged": true,
+  "no_nan_or_inf": true
+}

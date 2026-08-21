@@ -1,0 +1,165 @@
+{
+  "experiment": "flickr_144k",
+  "parameter_audit": {
+    "total_teacher_parameters": 36417282,
+    "frozen_teacher_parameters": 36417282,
+    "proj3_spatial_parameters": 131584,
+    "topdown_adapter_parameters": 1311488,
+    "spatial_student_parameters": 1443072,
+    "trainable_parameters": 1443072,
+    "trainable_parameter_names": [
+      "student.proj3_spatial.weight",
+      "student.proj3_spatial.bias",
+      "student.adapter.layers.0.weight",
+      "student.adapter.layers.0.bias",
+      "student.adapter.layers.2.weight",
+      "student.adapter.layers.2.bias"
+    ],
+    "invalid_trainable_parameter_names": []
+  },
+  "smoke": {
+    "sample_ids": [
+      "10000219855",
+      "10000797195",
+      "10001009574",
+      "10001279044"
+    ],
+    "base_stage1_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "loaded_trained_1_3g_checkpoint": false,
+    "parameter_audit": {
+      "total_teacher_parameters": 36417282,
+      "frozen_teacher_parameters": 36417282,
+      "proj3_spatial_parameters": 131584,
+      "topdown_adapter_parameters": 1311488,
+      "spatial_student_parameters": 1443072,
+      "trainable_parameters": 1443072,
+      "trainable_parameter_names": [
+        "student.proj3_spatial.weight",
+        "student.proj3_spatial.bias",
+        "student.adapter.layers.0.weight",
+        "student.adapter.layers.0.bias",
+        "student.adapter.layers.2.weight",
+        "student.adapter.layers.2.bias"
+      ],
+      "invalid_trainable_parameter_names": []
+    },
+    "F34_shape": [
+      4,
+      512,
+      14,
+      14
+    ],
+    "K34_shape": [
+      4,
+      196,
+      512
+    ],
+    "Q4_shape": [
+      4,
+      2,
+      512
+    ],
+    "OWN7_shape": [
+      4,
+      2,
+      7,
+      7
+    ],
+    "OWN14_shape": [
+      4,
+      2,
+      14,
+      14
+    ],
+    "avg_pool_OWN14_shape": [
+      4,
+      2,
+      7,
+      7
+    ],
+    "Q4_A_requires_grad": false,
+    "Q4_B_requires_grad": false,
+    "Q4_A_B_share_storage": false,
+    "OWN7_requires_grad": false,
+    "OWN14_requires_grad": true,
+    "OWN7_slot_sum_max_errors": {
+      "OWN7_A": 1.1920928955078125e-07,
+      "OWN7_B": 5.960464477539063e-08
+    },
+    "OWN14_slot_sum_max_errors": {
+      "OWN14_A": 1.1920928955078125e-07,
+      "OWN14_B": 1.1920928955078125e-07
+    },
+    "raw_losses": {
+      "loss_audio_coarse": 3.698896398418583e-05,
+      "loss_audio_equiv": 0.0002902367268688977,
+      "loss_own_coarse": 0.0031424383632838726,
+      "loss_own_equiv": 0.07154074311256409,
+      "loss_total": 0.07501040399074554
+    },
+    "initial_gradient_norms": {
+      "loss_audio_coarse": {
+        "proj3_spatial": 0.0,
+        "adapter": 1.9798255380010232e-05,
+        "total": 1.9798255380010232e-05
+      },
+      "loss_audio_equiv": {
+        "proj3_spatial": 0.0,
+        "adapter": 6.355060759233311e-05,
+        "total": 6.355060759233311e-05
+      },
+      "loss_own_coarse": {
+        "proj3_spatial": 0.0,
+        "adapter": 0.004017489030957222,
+        "total": 0.004017489030957222
+      },
+      "loss_own_equiv": {
+        "proj3_spatial": 0.0,
+        "adapter": 0.012427574954926968,
+        "total": 0.012427574954926968
+      }
+    },
+    "gradient_cosines": {
+      "audio_coarse_vs_own_coarse": 0.3283620774745941,
+      "audio_equiv_vs_own_equiv": 0.38882893323898315,
+      "total_audio_vs_total_ownership": 0.3635238707065582
+    },
+    "post_temporary_step_gradient_norms": {
+      "loss_audio_coarse": {
+        "proj3_spatial": 3.856195860407752e-07,
+        "adapter": 1.9741646610782482e-05,
+        "total": 1.974541191884782e-05
+      },
+      "loss_audio_equiv": {
+        "proj3_spatial": 1.320247292824206e-06,
+        "adapter": 6.346487498376518e-05,
+        "total": 6.347860471578315e-05
+      },
+      "loss_own_coarse": {
+        "proj3_spatial": 0.00011590351641643792,
+        "adapter": 0.0038612426724284887,
+        "total": 0.003862981917336583
+      },
+      "loss_own_equiv": {
+        "proj3_spatial": 0.00031723157735541463,
+        "adapter": 0.012394589371979237,
+        "total": 0.01239864807575941
+      }
+    },
+    "OWN7_slot0_mass": 0.37150245904922485,
+    "OWN14_slot0_mass": 0.3660546541213989,
+    "OWN7_entropy": 0.7836256623268127,
+    "OWN14_entropy": 0.7866272330284119,
+    "pooled_ownership_mae": 0.027302280068397522,
+    "audio_only_degeneration_max_abs_error": 0.0,
+    "proj3_spatial_copy_max_abs_error": 0.0,
+    "zero_init_F34_minus_F4_up_max_abs_error": 0.0,
+    "f4_token_error": 0.0,
+    "teacher_has_gradient": false,
+    "backward_changed_parameters_max_error": 0.0,
+    "student_restore_max_error": 0.0,
+    "no_nan_or_inf": true
+  },
+  "base_stage1_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+  "base_stage1_checkpoint_unchanged": true
+}

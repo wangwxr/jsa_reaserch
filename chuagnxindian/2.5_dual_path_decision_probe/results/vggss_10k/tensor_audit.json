@@ -1,0 +1,45 @@
+{
+  "sample_ids": [
+    "-0BIyqJj9ZU_000030",
+    "-0UuUoXQUoI_000107",
+    "-2-wdcN5vOw_000017",
+    "-23CeprtibU_000030"
+  ],
+  "Q3_shape": [
+    256,
+    2,
+    512
+  ],
+  "K3_POOL_shape": [
+    256,
+    49,
+    512
+  ],
+  "K3_NATIVE_shape": [
+    256,
+    196,
+    512
+  ],
+  "F3_PROJECTED_NATIVE_shape": [
+    256,
+    512,
+    14,
+    14
+  ],
+  "OWN_POOL_shape": [
+    256,
+    2,
+    49
+  ],
+  "OWN_NATIVE_shape": [
+    256,
+    2,
+    196
+  ],
+  "pooled_ownership_reconstruction_max_error": 0.0,
+  "native_readout_slot_sum_max_error": 1.1920928955078125e-07,
+  "pooled_slot_sum_max_error": 1.1920928955078125e-07,
+  "stage1_aud_local_vs_official_max_error": 0.0,
+  "stage1_all_finite": true,
+  "passed": true
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "evidence": "CTRL_RAW_PEAK",
+    "AUROC_IMG_better": 0.5183285483709703,
+    "AUPRC_IMG_better": 0.506151142202665,
+    "AUROC_IMG_only": 0.5505027912968794,
+    "balanced_accuracy_threshold_0": 0.5,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": 0.01723170388925273,
+    "mean_delta_AUD_better_or_tie": 0.017198986705341767,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.020824069157242775,
+      "cIoU": 0.4271035284994184,
+      "AUC": 0.42294493989918575,
+      "mean_sample_cIoU": 0.42293968066751964,
+      "num_samples": 5158,
+      "num_thresholds": 5157
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_ENTROPY",
+    "AUROC_IMG_better": 0.5508123911355284,
+    "AUPRC_IMG_better": 0.5377900050048567,
+    "AUROC_IMG_only": 0.6023642523141521,
+    "balanced_accuracy_threshold_0": 0.5081037641453335,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": 0.005108204728000296,
+    "mean_delta_AUD_better_or_tie": 0.004578204089009358,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.014996291262305395,
+      "cIoU": 0.4278790228770841,
+      "AUC": 0.4230612640558356,
+      "mean_sample_cIoU": 0.4231018937860923,
+      "num_samples": 5158,
+      "num_thresholds": 5158
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_AREA",
+    "AUROC_IMG_better": 0.5857754683662492,
+    "AUPRC_IMG_better": 0.5388193443576539,
+    "AUROC_IMG_only": 0.6583899942742628,
+    "balanced_accuracy_threshold_0": 0.5918035436536665,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": 0.06961726116280488,
+    "mean_delta_AUD_better_or_tie": 0.05264923220750289,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.555923150510204,
+      "cIoU": 0.42690965490500193,
+      "AUC": 0.42295463357890656,
+      "mean_sample_cIoU": 0.42293451522094005,
+      "num_samples": 5158,
+      "num_thresholds": 4717
+    }
+  },
+  {
+    "evidence": "CTRL_TOP20_CONCENTRATION",
+    "AUROC_IMG_better": 0.5687820485352302,
+    "AUPRC_IMG_better": 0.5491560513942884,
+    "AUROC_IMG_only": 0.6799086267773642,
+    "balanced_accuracy_threshold_0": 0.5240637373525514,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": 0.030034776017936426,
+    "mean_delta_AUD_better_or_tie": 0.025086546512348647,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.07967054878755764,
+      "cIoU": 0.4278790228770841,
+      "AUC": 0.42323575029081034,
+      "mean_sample_cIoU": 0.4232727383751878,
+      "num_samples": 5158,
+      "num_thresholds": 5158
+    }
+  },
+  {
+    "evidence": "CTRL_NEG_COMPONENTS",
+    "AUROC_IMG_better": 0.5056318217663541,
+    "AUPRC_IMG_better": 0.5056877408962624,
+    "AUROC_IMG_only": 0.5221550243343831,
+    "balanced_accuracy_threshold_0": 0.49770209042338465,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": -0.022753567296567682,
+    "mean_delta_AUD_better_or_tie": -0.03391812865497076,
+    "optimal_threshold_diagnostic": {
+      "threshold": 1.0,
+      "cIoU": 0.4271035284994184,
+      "AUC": 0.4228576967816984,
+      "mean_sample_cIoU": 0.4228637855814438,
+      "num_samples": 5158,
+      "num_thresholds": 9
+    }
+  },
+  {
+    "evidence": "SEMANTIC_SLOT",
+    "AUROC_IMG_better": 0.5069728140465145,
+    "AUPRC_IMG_better": 0.5074809721945087,
+    "AUROC_IMG_only": 0.5332450615516747,
+    "balanced_accuracy_threshold_0": 0.4982022373927706,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": 0.037172039132318965,
+    "mean_delta_AUD_better_or_tie": 0.03670449787046544,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.07825259961985334,
+      "cIoU": 0.4276851492826677,
+      "AUC": 0.42305157037611485,
+      "mean_sample_cIoU": 0.4230254451960972,
+      "num_samples": 5158,
+      "num_thresholds": 5158
+    }
+  },
+  {
+    "evidence": "RECIPROCAL_L4",
+    "AUROC_IMG_better": 0.5049129873576257,
+    "AUPRC_IMG_better": 0.5035681073169764,
+    "AUROC_IMG_only": 0.47972731176638994,
+    "balanced_accuracy_threshold_0": 0.5083992816166482,
+    "positive_rate_IMG_better": 0.5027142303218302,
+    "mean_delta_IMG_better": 0.024847319691945976,
+    "mean_delta_AUD_better_or_tie": 0.02429397308087404,
+    "optimal_threshold_diagnostic": {
+      "threshold": 0.06370705183151343,
+      "cIoU": 0.42749127568825124,
+      "AUC": 0.42297402093834824,
+      "mean_sample_cIoU": 0.42296041506013765,
+      "num_samples": 5158,
+      "num_thresholds": 5158
+    }
+  }
+]

@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+-0UuUoXQUoI_000107,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-4bPiXbovf0_000008,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+1ETrMAVZdY8_000030,TEMPORAL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+HejDlgS37cw_000288,AUD_SUCCESS|TEMPORAL_HURT,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-0BIyqJj9ZU_000030,ALL_FAIL,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-2-wdcN5vOw_000017,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-Vo4CAMX26U_000030,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+4tHvsHkl8L0_000027,OGL_RESCUE|TEMPORAL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+Qzld9zDqrHI_000079,AUD_SUCCESS|TEMPORAL_HURT,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-23CeprtibU_000030,ALL_FAIL,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-2Dm0VjW8oM_000001,AUD_SUCCESS,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"
+-_QPd-VskKY_000030,OGL_RESCUE,"first-in-test-order round-robin over predefined AUD_SUCCESS, OGL_RESCUE, TEMPORAL_RESCUE, TEMPORAL_HURT, ALL_FAIL categories; test-order fill"

@@ -1,0 +1,13 @@
+sample_id,categories,selection_rule
+10476446674,TEMPORAL_HURT|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10548273474,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10000130166,BASELINE_SUCCESS_STABLE,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10007936344,BASELINE_SUCCESS_STABLE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10701841844,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10008553263,VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10939270325,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10009662863,BASELINE_SUCCESS_STABLE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+11036641226,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10013411946,BASELINE_SUCCESS_STABLE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+12066557153,OGL_RESCUE_TEMPORAL_FAIL|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories
+10016382545,BASELINE_SUCCESS_STABLE|VGG_OVER_EXPANSION,first-in-test-order round-robin over fixed Experiment 3.2 categories

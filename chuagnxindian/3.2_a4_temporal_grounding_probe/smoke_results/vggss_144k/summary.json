@@ -1,0 +1,766 @@
+{
+  "experiment": "3.2 A4 Temporal Grounding Probe",
+  "setting": "vggss_144k",
+  "dataset": "vggss",
+  "completed_full_dataset": false,
+  "tensor_audit": {
+    "sample_ids": [
+      "-0BIyqJj9ZU_000030",
+      "-0UuUoXQUoI_000107",
+      "-2-wdcN5vOw_000017",
+      "-23CeprtibU_000030"
+    ],
+    "raw_A4_shape": [
+      256,
+      512,
+      9,
+      16
+    ],
+    "A4_feature_shape": [
+      256,
+      512,
+      16
+    ],
+    "A4_tokens_shape": [
+      256,
+      16,
+      512
+    ],
+    "T": 16,
+    "T2_boundaries": [
+      [
+        0,
+        8
+      ],
+      [
+        8,
+        16
+      ]
+    ],
+    "T4_boundaries": [
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        8
+      ],
+      [
+        8,
+        12
+      ],
+      [
+        12,
+        16
+      ]
+    ],
+    "full_query_shape": [
+      256,
+      2,
+      512
+    ],
+    "T2_query_shapes": [
+      [
+        256,
+        2,
+        512
+      ],
+      [
+        256,
+        2,
+        512
+      ]
+    ],
+    "T4_query_shapes": [
+      [
+        256,
+        2,
+        512
+      ],
+      [
+        256,
+        2,
+        512
+      ],
+      [
+        256,
+        2,
+        512
+      ],
+      [
+        256,
+        2,
+        512
+      ]
+    ],
+    "T2_map_shapes": [
+      [
+        256,
+        1,
+        14,
+        14
+      ],
+      [
+        256,
+        1,
+        14,
+        14
+      ]
+    ],
+    "T4_map_shapes": [
+      [
+        256,
+        1,
+        14,
+        14
+      ],
+      [
+        256,
+        1,
+        14,
+        14
+      ],
+      [
+        256,
+        1,
+        14,
+        14
+      ],
+      [
+        256,
+        1,
+        14,
+        14
+      ]
+    ],
+    "F34_shape": [
+      256,
+      512,
+      14,
+      14
+    ],
+    "K34_shape": [
+      256,
+      196,
+      512
+    ],
+    "visual_query_l4_shape": [
+      256,
+      2,
+      512
+    ],
+    "FULL_AUD_tensor_reproduction_max_error": 0.0,
+    "spatial_sum_max_errors": {
+      "ORIGINAL_AUD": 1.1920928955078125e-07,
+      "T2_CHUNK1": 1.1920928955078125e-07,
+      "T2_CHUNK2": 1.1920928955078125e-07,
+      "T2_RAW_MEAN": 1.1920928955078125e-07,
+      "T4_CHUNK1": 1.1920928955078125e-07,
+      "T4_CHUNK2": 1.7881393432617188e-07,
+      "T4_CHUNK3": 1.1920928955078125e-07,
+      "T4_CHUNK4": 1.1920928955078125e-07,
+      "T4_RAW_MEAN": 1.1920928955078125e-07
+    },
+    "f4_token_error": 0.0,
+    "no_nan_or_inf": true,
+    "attention_implementation": "teacher.slot_attn._attention with original infer_sharpening",
+    "target_slot": 0,
+    "passed": true
+  },
+  "method_metrics": [
+    {
+      "dataset": "vggss_144k",
+      "method": "ORIGINAL_AUD",
+      "cIoU": 0.3828125,
+      "AUC": 0.3941406250000001,
+      "mean_sample_cIoU": 0.39328981317060285,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_CHUNK1",
+      "cIoU": 0.3828125,
+      "AUC": 0.3955078125,
+      "mean_sample_cIoU": 0.3940559591675117,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_CHUNK2",
+      "cIoU": 0.37890625,
+      "AUC": 0.39296875000000003,
+      "mean_sample_cIoU": 0.39278835838229814,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_MEAN",
+      "cIoU": 0.390625,
+      "AUC": 0.39628906250000007,
+      "mean_sample_cIoU": 0.39364617646722855,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_GEO",
+      "cIoU": 0.390625,
+      "AUC": 0.39628906250000007,
+      "mean_sample_cIoU": 0.3936397728485316,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_NORM_MEAN",
+      "cIoU": 0.38671875,
+      "AUC": 0.39570312500000004,
+      "mean_sample_cIoU": 0.39360885119639843,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_NORM_GEO",
+      "cIoU": 0.38671875,
+      "AUC": 0.39589843750000003,
+      "mean_sample_cIoU": 0.3935912710829476,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_CHUNK1",
+      "cIoU": 0.37890625,
+      "AUC": 0.39609375,
+      "mean_sample_cIoU": 0.39440149585846035,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_CHUNK2",
+      "cIoU": 0.37890625,
+      "AUC": 0.39277343750000004,
+      "mean_sample_cIoU": 0.39345763040256215,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_CHUNK3",
+      "cIoU": 0.38671875,
+      "AUC": 0.39375,
+      "mean_sample_cIoU": 0.39360115128985096,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_CHUNK4",
+      "cIoU": 0.37890625,
+      "AUC": 0.39199218750000003,
+      "mean_sample_cIoU": 0.3919867926143883,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_MEAN",
+      "cIoU": 0.38671875,
+      "AUC": 0.39531250000000007,
+      "mean_sample_cIoU": 0.39378067984781495,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_GEO",
+      "cIoU": 0.38671875,
+      "AUC": 0.39531250000000007,
+      "mean_sample_cIoU": 0.3937767434353281,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_NORM_MEAN",
+      "cIoU": 0.38671875,
+      "AUC": 0.3947265625000001,
+      "mean_sample_cIoU": 0.3937279331121339,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_NORM_GEO",
+      "cIoU": 0.38671875,
+      "AUC": 0.3951171875,
+      "mean_sample_cIoU": 0.39371911378190116,
+      "num_samples": 256
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "OGL_REFERENCE",
+      "cIoU": 0.3828125,
+      "AUC": 0.4052734375,
+      "mean_sample_cIoU": 0.4056986879546064,
+      "num_samples": 256
+    }
+  ],
+  "temporal_query_semantics": [
+    {
+      "dataset": "vggss_144k",
+      "scale": "FULL",
+      "chunk": 1,
+      "positive_cosine": 0.01445824639267812,
+      "negative_cosine": -0.024699029399926076,
+      "margin": 0.039157275792604196
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "FULL",
+      "chunk": "MEAN",
+      "positive_cosine": 0.01445824639267812,
+      "negative_cosine": -0.024699029399926076,
+      "margin": 0.039157275792604196
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T2",
+      "chunk": 1,
+      "positive_cosine": 0.011314998873785953,
+      "negative_cosine": -0.024700930629478535,
+      "margin": 0.03601592950326449
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T2",
+      "chunk": 2,
+      "positive_cosine": 0.014563555926542904,
+      "negative_cosine": -0.02571822303252702,
+      "margin": 0.040281778959069925
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T2",
+      "chunk": "MEAN",
+      "positive_cosine": 0.012939277400164428,
+      "negative_cosine": -0.025209576831002778,
+      "margin": 0.038148854231167206
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "chunk": 1,
+      "positive_cosine": 0.009895440462059923,
+      "negative_cosine": -0.02557654416159494,
+      "margin": 0.03547198462365486
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "chunk": 2,
+      "positive_cosine": 0.008665396333526587,
+      "negative_cosine": -0.025684305881441105,
+      "margin": 0.03434970221496769
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "chunk": 3,
+      "positive_cosine": 0.011379168893654423,
+      "negative_cosine": -0.027655032588882023,
+      "margin": 0.039034201482536446
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "chunk": 4,
+      "positive_cosine": 0.013268064825751935,
+      "negative_cosine": -0.02455320895933255,
+      "margin": 0.037821273785084486
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "chunk": "MEAN",
+      "positive_cosine": 0.010802017628748217,
+      "negative_cosine": -0.025867272897812654,
+      "margin": 0.03666929052656087
+    }
+  ],
+  "query_consistency": [
+    {
+      "dataset": "vggss_144k",
+      "scale": "T2",
+      "query_pairwise_cosine": {
+        "mean": 0.8820099630393088,
+        "median": 0.917312502861023,
+        "std": 0.10219112816601153,
+        "num_samples": 256
+      },
+      "query_variance": {
+        "mean": 0.021370647815274424,
+        "median": 0.015258770436048508,
+        "std": 0.01841395612930467,
+        "num_samples": 256
+      }
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "query_pairwise_cosine": {
+        "mean": 0.8515636234078556,
+        "median": 0.865443229675293,
+        "std": 0.08721983763093355,
+        "num_samples": 256
+      },
+      "query_variance": {
+        "mean": 0.04034596000383317,
+        "median": 0.03533102199435234,
+        "std": 0.023489422572134773,
+        "num_samples": 256
+      }
+    }
+  ],
+  "temporal_map_similarity": [
+    {
+      "dataset": "vggss_144k",
+      "scale": "T2",
+      "pearson": {
+        "mean": 0.996603024270085,
+        "median": 0.9985713198122379,
+        "std": 0.0052895235885754895,
+        "num_samples": 256
+      },
+      "spearman": {
+        "mean": 0.9955473903816026,
+        "median": 0.9980627784108568,
+        "std": 0.0072541307228723585,
+        "num_samples": 256
+      },
+      "js_divergence": {
+        "mean": 3.6290744799778665e-06,
+        "median": 1.9623938192462153e-06,
+        "std": 5.108060841924208e-06,
+        "num_samples": 256
+      }
+    },
+    {
+      "dataset": "vggss_144k",
+      "scale": "T4",
+      "pearson": {
+        "mean": 0.9961105930430552,
+        "median": 0.997697268329711,
+        "std": 0.0045911961863420005,
+        "num_samples": 256
+      },
+      "spearman": {
+        "mean": 0.9949088962884943,
+        "median": 0.9970855347215029,
+        "std": 0.00623157719474421,
+        "num_samples": 256
+      },
+      "js_divergence": {
+        "mean": 4.186626051747667e-06,
+        "median": 3.0843275802168522e-06,
+        "std": 3.960489268056113e-06,
+        "num_samples": 256
+      }
+    }
+  ],
+  "region_stability": {
+    "rows": [
+      {
+        "dataset": "vggss_144k",
+        "region": "GT_REGION",
+        "TEMP_STD": {
+          "mean": 0.01009004712136658,
+          "median": 0.008250590836519824,
+          "std": 0.007304105371327289,
+          "num_samples": 256
+        },
+        "TEMP_CV": {
+          "mean": 0.014781727374807499,
+          "median": 0.011309705680448236,
+          "std": 0.011757439553826141,
+          "num_samples": 256
+        }
+      },
+      {
+        "dataset": "vggss_144k",
+        "region": "AUD_FP_REGION",
+        "TEMP_STD": {
+          "mean": 0.011589363862050416,
+          "median": 0.009733745187823608,
+          "std": 0.006659070343498363,
+          "num_samples": 254
+        },
+        "TEMP_CV": {
+          "mean": 0.016222514139920804,
+          "median": 0.013381044950865508,
+          "std": 0.009553772857874229,
+          "num_samples": 254
+        }
+      }
+    ],
+    "comparison": {
+      "samples_with_GT_and_FP": 254,
+      "fraction_FP_STD_gt_GT_STD": 0.6732283464566929,
+      "fraction_FP_CV_gt_GT_CV": 0.6535433070866141
+    }
+  },
+  "overexpansion_stability": {
+    "rows": [
+      {
+        "dataset": "vggss_144k",
+        "region": "GT_REGION",
+        "TEMP_STD": {
+          "mean": 0.009804938298469495,
+          "median": 0.007697934136672671,
+          "std": 0.007509020724935224,
+          "num_samples": 206
+        },
+        "TEMP_CV": {
+          "mean": 0.013431252121179823,
+          "median": 0.010020820082999971,
+          "std": 0.011341059892965171,
+          "num_samples": 206
+        }
+      },
+      {
+        "dataset": "vggss_144k",
+        "region": "OVER_EXPANSION_REGION",
+        "TEMP_STD": {
+          "mean": 0.011799183644392605,
+          "median": 0.010015270428942624,
+          "std": 0.006638060454783754,
+          "num_samples": 206
+        },
+        "TEMP_CV": {
+          "mean": 0.016316645127956823,
+          "median": 0.013838261101565911,
+          "std": 0.00930570837348463,
+          "num_samples": 206
+        }
+      }
+    ],
+    "comparison": {
+      "over_expansion_samples": 206,
+      "fraction_OVER_STD_gt_GT_STD": 0.7233009708737864,
+      "fraction_OVER_CV_gt_GT_CV": 0.7281553398058253
+    }
+  },
+  "rescue_hurt_oracle": [
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_MEAN",
+      "rescue": 2,
+      "hurt": 0,
+      "net": 2,
+      "rescue_intersect_OGL_rescue": 1,
+      "oracle_cIoU": 0.390625,
+      "oracle_AUC": 0.39648437500000006
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_GEO",
+      "rescue": 2,
+      "hurt": 0,
+      "net": 2,
+      "rescue_intersect_OGL_rescue": 1,
+      "oracle_cIoU": 0.390625,
+      "oracle_AUC": 0.39648437500000006
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_MEAN",
+      "rescue": 2,
+      "hurt": 1,
+      "net": 1,
+      "rescue_intersect_OGL_rescue": 1,
+      "oracle_cIoU": 0.390625,
+      "oracle_AUC": 0.39648437500000006
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_GEO",
+      "rescue": 2,
+      "hurt": 1,
+      "net": 1,
+      "rescue_intersect_OGL_rescue": 1,
+      "oracle_cIoU": 0.390625,
+      "oracle_AUC": 0.39648437500000006
+    }
+  ],
+  "ogl_rescue_capture": [
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_MEAN",
+      "OGL_rescue_total": 10,
+      "consensus_captured": 1,
+      "capture_rate": 0.1
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_GEO",
+      "OGL_rescue_total": 10,
+      "consensus_captured": 1,
+      "capture_rate": 0.1
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_MEAN",
+      "OGL_rescue_total": 10,
+      "consensus_captured": 1,
+      "capture_rate": 0.1
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_GEO",
+      "OGL_rescue_total": 10,
+      "consensus_captured": 1,
+      "capture_rate": 0.1
+    }
+  ],
+  "delta_correlation": [
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_MEAN",
+      "pearson_delta_temporal_vs_delta_OGL": -0.09773848683167687,
+      "spearman_delta_temporal_vs_delta_OGL": -0.12687542915999084,
+      "temporal_delta": {
+        "mean": 0.0003563632966256524,
+        "median": 3.1965403143680016e-05,
+        "std": 0.007806273058590093,
+        "num_samples": 256
+      },
+      "OGL_delta": {
+        "mean": 0.012408874784003567,
+        "median": 0.01033337546717572,
+        "std": 0.07342549731138319,
+        "num_samples": 256
+      }
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T2_RAW_GEO",
+      "pearson_delta_temporal_vs_delta_OGL": -0.0999897957410591,
+      "spearman_delta_temporal_vs_delta_OGL": -0.13012345502403297,
+      "temporal_delta": {
+        "mean": 0.00034995967792875074,
+        "median": 3.1965403143680016e-05,
+        "std": 0.007848850613603792,
+        "num_samples": 256
+      },
+      "OGL_delta": {
+        "mean": 0.012408874784003567,
+        "median": 0.01033337546717572,
+        "std": 0.07342549731138319,
+        "num_samples": 256
+      }
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_MEAN",
+      "pearson_delta_temporal_vs_delta_OGL": -0.07314165177262001,
+      "spearman_delta_temporal_vs_delta_OGL": -0.07312385557335775,
+      "temporal_delta": {
+        "mean": 0.0004908666772120892,
+        "median": -6.180351512939664e-05,
+        "std": 0.009097000050412486,
+        "num_samples": 256
+      },
+      "OGL_delta": {
+        "mean": 0.012408874784003567,
+        "median": 0.01033337546717572,
+        "std": 0.07342549731138319,
+        "num_samples": 256
+      }
+    },
+    {
+      "dataset": "vggss_144k",
+      "method": "T4_RAW_GEO",
+      "pearson_delta_temporal_vs_delta_OGL": -0.07500695209247157,
+      "spearman_delta_temporal_vs_delta_OGL": -0.07618018997482262,
+      "temporal_delta": {
+        "mean": 0.00048693026472525463,
+        "median": -7.425601275191235e-05,
+        "std": 0.00913269195250174,
+        "num_samples": 256
+      },
+      "OGL_delta": {
+        "mean": 0.012408874784003567,
+        "median": 0.01033337546717572,
+        "std": 0.07342549731138319,
+        "num_samples": 256
+      }
+    }
+  ],
+  "qualitative_category_counts": {
+    "TEMPORAL_RESCUE": 2,
+    "TEMPORAL_HURT": 1,
+    "OGL_RESCUE_TEMPORAL_RESCUE": 1,
+    "OGL_RESCUE_TEMPORAL_FAIL": 9,
+    "BASELINE_SUCCESS_STABLE": 97,
+    "VGG_OVER_EXPANSION": 206
+  },
+  "qualitative_ids": [
+    "-oSzD8P2BtU_000030",
+    "0E6KS8B6DMc_000540",
+    "-4bPiXbovf0_000008",
+    "-0UuUoXQUoI_000107",
+    "-0BIyqJj9ZU_000030",
+    "1ETrMAVZdY8_000030",
+    "-Vo4CAMX26U_000030",
+    "-2-wdcN5vOw_000017",
+    "-_QPd-VskKY_000030",
+    "-2Dm0VjW8oM_000001",
+    "-23CeprtibU_000030",
+    "-hYRFCQdbLg_000030"
+  ],
+  "reference_reproduction": {
+    "skipped_for_partial_run": true
+  },
+  "zero_training_audit": {
+    "optimizer_created": false,
+    "backward_called": false,
+    "new_trainable_params": 0,
+    "trainable_parameter_names": [],
+    "parameters_with_grad": [],
+    "all_models_eval": true,
+    "model_eval_modes": {
+      "original_G": true,
+      "evaluation_only_object_prior": true
+    },
+    "torch_inference_mode_used": true,
+    "object_prior_used_for_evaluation_only": true,
+    "checkpoint_snapshots": {
+      "files": {
+        "stage1_l3_l4": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+          "sha256": "db25dd60a915d9980524ec2d73e26019a28efd1a825765392d24fbe898453a68",
+          "mtime_ns": 1786771760890763333,
+          "size": 145864158,
+          "sha256_after": "db25dd60a915d9980524ec2d73e26019a28efd1a825765392d24fbe898453a68",
+          "mtime_ns_after": 1786771760890763333,
+          "unchanged": true
+        },
+        "original_1_3g": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_vggss_144k/vggss_best.pth",
+          "sha256": "c6fb6e512a11fffcedbee66e1ce50a403849b042a7240643e3bbb109b512bc09",
+          "mtime_ns": 1786899402431818162,
+          "size": 17325621,
+          "sha256_after": "c6fb6e512a11fffcedbee66e1ce50a403849b042a7240643e3bbb109b512bc09",
+          "mtime_ns_after": 1786899402431818162,
+          "unchanged": true
+        },
+        "evaluation_only_object_prior": {
+          "path": "/home/wxr/.cache/torch/hub/checkpoints/resnet18-f37072fd.pth",
+          "sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+          "mtime_ns": 1786103759269624213,
+          "size": 46830571,
+          "sha256_after": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+          "mtime_ns_after": 1786103759269624213,
+          "unchanged": true
+        }
+      },
+      "all_unchanged": true
+    },
+    "all_checkpoint_hashes_and_mtimes_unchanged": true,
+    "no_nan_or_inf": true,
+    "full_tensor_reproduction_max_error": 0.0
+  },
+  "elapsed_seconds": 19.60260772705078
+}

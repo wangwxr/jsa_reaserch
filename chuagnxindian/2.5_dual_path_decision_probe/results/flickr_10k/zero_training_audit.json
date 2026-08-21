@@ -1,0 +1,51 @@
+{
+  "optimizer_created": false,
+  "backward_called": false,
+  "new_trainable_params": 0,
+  "trainable_parameter_names": [],
+  "parameters_with_grad": [],
+  "all_models_eval": true,
+  "model_eval_modes": {
+    "stage1": true
+  },
+  "torch_inference_mode_used": true,
+  "checkpoint_and_source_snapshots": {
+    "files": {
+      "stage1_l3_l4": {
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+        "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+        "mtime_ns": 1786734905201357150,
+        "size": 145864497,
+        "sha256_after": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+        "mtime_ns_after": 1786734905201357150,
+        "unchanged": true
+      },
+      "native_update": {
+        "path": "/data/wxr/audio_video/JSA/checkpoints/1.1.1_14_14_L3_flickr_10k/flickr_best.pth",
+        "sha256": "a05c7be01d0b1c78c9d2768fa471c83cf25ac89261ed79275eb1e45b6597eefd",
+        "mtime_ns": 1786982961530953376,
+        "size": 165050141,
+        "sha256_after": "a05c7be01d0b1c78c9d2768fa471c83cf25ac89261ed79275eb1e45b6597eefd",
+        "mtime_ns_after": 1786982961530953376,
+        "unchanged": true
+      },
+      "native_update_per_sample": {
+        "path": "/data/wxr/audio_video/JSA/checkpoints/1.1.1_14_14_L3_flickr_10k/ownership_per_sample.csv",
+        "sha256": "f484d6c82b43ad0f7074387c18383434266743d88220a37967d51ff3da90af56",
+        "mtime_ns": 1786983380660442813,
+        "size": 65317,
+        "sha256_after": "f484d6c82b43ad0f7074387c18383434266743d88220a37967d51ff3da90af56",
+        "mtime_ns_after": 1786983380660442813,
+        "unchanged": true
+      }
+    },
+    "all_unchanged": true
+  },
+  "all_checkpoint_hashes_and_mtimes_unchanged": true,
+  "full_slot_sum_max_errors": {
+    "pooled": 1.1920928955078125e-07,
+    "native_readout": 1.1920928955078125e-07,
+    "l4": 1.1920928955078125e-07
+  },
+  "no_nan_or_inf": true
+}
