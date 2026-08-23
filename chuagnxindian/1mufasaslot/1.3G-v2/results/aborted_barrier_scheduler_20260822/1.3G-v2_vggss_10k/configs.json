@@ -1,0 +1,136 @@
+{
+  "architecture": "1.3G-v2_visual_semantic_preservation",
+  "experiment_key": "vggss_10k",
+  "experiment_name": "1.3G-v2_vggss_10k",
+  "base_experiment": "mufasa_ablation2_l3_l4_ablation_vggss_10k",
+  "base_checkpoint_path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+  "epochs": 100,
+  "batch_size": 256,
+  "workers": 16,
+  "optimizer": "AdamW",
+  "init_lr": 5e-05,
+  "weight_decay": 0.01,
+  "scheduler": false,
+  "lambda_aud_coarse": 1.0,
+  "lambda_aud_equiv": 1.0,
+  "lambda_img_coarse": 1.0,
+  "gradient_diagnostic_interval": 20,
+  "random_resized_crop_scale": [
+    0.6,
+    1.0
+  ],
+  "random_resized_crop_ratio": [
+    0.9,
+    1.1
+  ],
+  "flip_probability": 0.5,
+  "minimum_valid_ratio": 0.2,
+  "checkpoint_selection": "AUD_FINE_cIoU",
+  "seed": 12345,
+  "train_data_path": "/home/wxr/datasets/JSA/VGGSound_144k_npy",
+  "train_manifest_path": "/data/wxr/audio_video/JSA/metadata_vggss/vggss_10k.csv",
+  "test_data_path": "/data/wxr/datasets/ACL-SSL/VGGSound",
+  "test_manifest_path": "/data/wxr/audio_video/JSA/metadata_vggss/vggss_test.csv",
+  "test_gt_path": "/data/wxr/audio_video/JSA/metadata_vggss/vggss.json",
+  "parameter_counts": {
+    "total_teacher_parameters": 36417282,
+    "frozen_teacher_parameters": 36417282,
+    "proj3_spatial_parameters": 131584,
+    "topdown_adapter_parameters": 1311488,
+    "spatial_student_parameters": 1443072,
+    "trainable_parameters": 1443072,
+    "new_trainable_parameters_relative_to_G": 0
+  },
+  "trainable_parameter_names": [
+    "student.proj3_spatial.weight",
+    "student.proj3_spatial.bias",
+    "student.adapter.layers.0.weight",
+    "student.adapter.layers.0.bias",
+    "student.adapter.layers.2.weight",
+    "student.adapter.layers.2.bias"
+  ],
+  "sanity_checks": {
+    "baseline_metrics": {
+      "AUD_L4": {
+        "cIoU": 0.4015122140364482,
+        "AUC": 0.40737689026754553,
+        "mean_sample_cIoU": 0.40747255557495266,
+        "num_samples": 5158
+      },
+      "AUD_FINE": {
+        "cIoU": 0.4065529274912757,
+        "AUC": 0.40906359053896857,
+        "mean_sample_cIoU": 0.4087453464995374,
+        "num_samples": 5158
+      },
+      "IMG_L4": {
+        "cIoU": 0.4063590538968592,
+        "AUC": 0.4093544009305933,
+        "mean_sample_cIoU": 0.40883345008307165,
+        "num_samples": 5158
+      },
+      "IMG_FINE": {
+        "cIoU": 0.40887941062427297,
+        "AUC": 0.409751841799147,
+        "mean_sample_cIoU": 0.41004621168580657,
+        "num_samples": 5158
+      },
+      "IQR_FINE": {
+        "cIoU": 0.4113997673516867,
+        "AUC": 0.41038193098100034,
+        "mean_sample_cIoU": 0.41002388953411883,
+        "num_samples": 5158
+      }
+    },
+    "lambda_img_zero_regression_max_abs_errors": {
+      "AUD_L4": 0.0,
+      "AUD_FINE": 0.0,
+      "F34": 0.0,
+      "K34": 0.0,
+      "L_aud_coarse": 0.0,
+      "L_aud_equiv": 0.0,
+      "L_total_lambda_img_0": 0.0
+    },
+    "teacher_has_any_gradient": false,
+    "QA_requires_grad": false,
+    "Q4_requires_grad": false,
+    "K4_requires_grad": false,
+    "K34_requires_grad": true,
+    "K34_gradient_l2": 4.45964396931231e-05,
+    "L_img_coarse_gradient_norm": 5.090533027123893e-05,
+    "gradient_diagnostic_changed_parameter_grad": false,
+    "initial_adapter_gradient_l1": 0.08598704601172358,
+    "initial_proj3_spatial_gradient_l1": 0.0,
+    "second_step_adapter_gradient_l1": 0.08630022102624935,
+    "second_step_proj3_spatial_gradient_l1": 0.0006321246546576731,
+    "proj3_spatial_copy_max_abs_error": 0.0,
+    "zero_init_f34_minus_up_f4_max_abs": 0.0,
+    "probability_sum_max_errors": {
+      "AUD_L4_A": 1.1920928955078125e-07,
+      "AUD_FINE_A": 5.960464477539063e-08,
+      "IMG_L4_A": 5.960464477539063e-08,
+      "IMG_FINE_A": 1.1920928955078125e-07,
+      "AUD_L4_B": 1.1920928955078125e-07,
+      "AUD_FINE_B": 1.1920928955078125e-07,
+      "IMG_L4_B": 1.1920928955078125e-07,
+      "IMG_FINE_B": 5.960464477539063e-08
+    },
+    "initial_gradient_conflict": {
+      "grad_norm_aud": 0.00010760035967615298,
+      "grad_norm_img": 5.090533027123893e-05,
+      "grad_norm_ratio": 0.4730962791514217,
+      "grad_cosine": -0.07890139459264629
+    },
+    "loss_aud_coarse": 5.161506123840809e-05,
+    "loss_aud_equiv": 0.0005325321108102798,
+    "loss_img_coarse": 7.367362559307367e-05,
+    "loss_total": 0.0006578207830898464,
+    "student_restored_after_temporary_audit_step": true
+  },
+  "forbidden_inputs": [
+    "GT localization",
+    "OGL",
+    "OBJ_PRIOR",
+    "Q_VALUE"
+  ]
+}

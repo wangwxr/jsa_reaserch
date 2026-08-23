@@ -1,0 +1,32 @@
+{
+  "AUD_L4": {
+    "cIoU": 0.764,
+    "AUC": 0.5916000000000001,
+    "mean_sample_cIoU": 0.5921990186566606,
+    "num_samples": 250
+  },
+  "AUD_FINE": {
+    "cIoU": 0.784,
+    "AUC": 0.6029999999999999,
+    "mean_sample_cIoU": 0.6031409539968986,
+    "num_samples": 250
+  },
+  "IMG_L4": {
+    "cIoU": 0.752,
+    "AUC": 0.5890000000000001,
+    "mean_sample_cIoU": 0.5894848175665861,
+    "num_samples": 250
+  },
+  "IMG_FINE": {
+    "cIoU": 0.768,
+    "AUC": 0.603,
+    "mean_sample_cIoU": 0.6021866418023671,
+    "num_samples": 250
+  },
+  "IQR_FINE": {
+    "cIoU": 0.768,
+    "AUC": 0.6032,
+    "mean_sample_cIoU": 0.6048117904066781,
+    "num_samples": 250
+  }
+}

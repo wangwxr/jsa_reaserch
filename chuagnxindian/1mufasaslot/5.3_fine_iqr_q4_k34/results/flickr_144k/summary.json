@@ -1,0 +1,213 @@
+{
+  "experiment": "5.3_fine_iqr_q4_k34",
+  "dataset_experiment": "flickr_144k",
+  "formal_G_experiment": "1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best",
+  "checkpoint": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+  "checkpoint_epoch": 47,
+  "zero_training": true,
+  "definitions": {
+    "AUD_FINE": "target(Qa -> K34), native 14x14; unchanged formal G path",
+    "IMG_L4": "target(Q4 -> K4), native 7x7; unchanged formal G IMG_QUERY",
+    "IMG_FINE": "target(Q4 -> K34), native 14x14, using the same JSA _attention",
+    "IQR_OLD": "norm(0.6*norm(resize(AUD_FINE))+0.4*norm(resize(IMG_L4)))",
+    "IQR_FINE": "resize/eval_norm(native_norm(0.6*AUD_FINE+0.4*IMG_FINE))",
+    "IQR_FINE_EVALSPACE": "norm(0.6*norm(resize(AUD_FINE))+0.4*norm(resize(IMG_FINE)))"
+  },
+  "metrics": {
+    "AUD_FINE": {
+      "cIoU": 0.812,
+      "AUC": 0.6356,
+      "mean_sample_cIoU": 0.6368762798827685,
+      "num_samples": 250
+    },
+    "IMG_L4": {
+      "cIoU": 0.804,
+      "AUC": 0.6165999999999998,
+      "mean_sample_cIoU": 0.616200507823542,
+      "num_samples": 250
+    },
+    "IMG_FINE": {
+      "cIoU": 0.816,
+      "AUC": 0.6408,
+      "mean_sample_cIoU": 0.6408072265122131,
+      "num_samples": 250
+    },
+    "IQR_OLD": {
+      "cIoU": 0.804,
+      "AUC": 0.6365999999999999,
+      "mean_sample_cIoU": 0.6374747910830167,
+      "num_samples": 250
+    },
+    "IQR_FINE": {
+      "cIoU": 0.804,
+      "AUC": 0.6394,
+      "mean_sample_cIoU": 0.6404155479448511,
+      "num_samples": 250
+    },
+    "IQR_FINE_EVALSPACE": {
+      "cIoU": 0.8,
+      "AUC": 0.639,
+      "mean_sample_cIoU": 0.64043322170794,
+      "num_samples": 250
+    }
+  },
+  "metric_deltas": {
+    "IMG_FINE_minus_IMG_L4": {
+      "cIoU": 0.0119999999999999,
+      "AUC": 0.02420000000000022
+    },
+    "IQR_FINE_minus_IQR_OLD": {
+      "cIoU": 0.0,
+      "AUC": 0.0028000000000000247
+    },
+    "IQR_FINE_minus_AUD_FINE": {
+      "cIoU": -0.008000000000000007,
+      "AUC": 0.0037999999999999146
+    },
+    "IQR_FINE_EVALSPACE_minus_IQR_FINE": {
+      "cIoU": -0.0040000000000000036,
+      "AUC": -0.00039999999999995595
+    }
+  },
+  "per_sample_analysis": {
+    "IQR_FINE_vs_IQR_OLD": {
+      "improved": 91,
+      "hurt": 81,
+      "unchanged": 78
+    },
+    "IQR_FINE_vs_AUD_FINE": {
+      "improved": 72,
+      "hurt": 49,
+      "unchanged": 129
+    }
+  },
+  "audit": {
+    "passed": true,
+    "optimizer_created": false,
+    "backward_called": false,
+    "new_trainable_params": 0,
+    "model_trainable_params_during_probe": 0,
+    "parameters_with_grad": [],
+    "checkpoint_before": {
+      "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+      "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+      "mtime_ns": 1786899904531667020,
+      "size_bytes": 17325651
+    },
+    "checkpoint_after": {
+      "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+      "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+      "mtime_ns": 1786899904531667020,
+      "size_bytes": 17325651
+    },
+    "checkpoint_unchanged": true,
+    "base_checkpoint_before": {
+      "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+      "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+      "mtime_ns": 1786772660768985716,
+      "size_bytes": 145864497
+    },
+    "base_checkpoint_after": {
+      "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+      "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+      "mtime_ns": 1786772660768985716,
+      "size_bytes": 145864497
+    },
+    "base_checkpoint_unchanged": true,
+    "nan_inf_count": 0,
+    "tensor_shapes_first_batch": {
+      "Qa": [
+        32,
+        2,
+        512
+      ],
+      "Q4": [
+        32,
+        2,
+        512
+      ],
+      "K4": [
+        32,
+        49,
+        512
+      ],
+      "F34": [
+        32,
+        512,
+        14,
+        14
+      ],
+      "fine_tokens": [
+        32,
+        196,
+        512
+      ],
+      "K34": [
+        32,
+        196,
+        512
+      ],
+      "AUD_FINE_ALL": [
+        32,
+        2,
+        196
+      ],
+      "IMG_L4_ALL": [
+        32,
+        2,
+        49
+      ],
+      "IMG_FINE_ALL": [
+        32,
+        2,
+        196
+      ],
+      "AUD_FINE": [
+        32,
+        1,
+        14,
+        14
+      ],
+      "IMG_L4": [
+        32,
+        1,
+        7,
+        7
+      ],
+      "IMG_FINE": [
+        32,
+        1,
+        14,
+        14
+      ]
+    },
+    "max_abs_errors_all_samples": {
+      "AUD_FINE_raw": 0.0,
+      "IMG_L4_raw": 0.0,
+      "IQR_OLD_final": 0.0,
+      "AUD_FINE_final": 0.0,
+      "IMG_L4_final": 0.0,
+      "Q4_between_formal_calls": 0.0,
+      "K4_between_formal_calls": 0.0
+    },
+    "formal_metric_reference": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/best_full_six_metrics.json",
+    "formal_metric_absolute_errors": {
+      "AUD_FINE": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IMG_L4": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      },
+      "IQR_OLD": {
+        "cIoU": 0.0,
+        "AUC": 0.0
+      }
+    },
+    "formal_reproduction_passed": true,
+    "infer_sharpening": 0.1,
+    "alpha": 0.6,
+    "threshold": 0.6
+  }
+}

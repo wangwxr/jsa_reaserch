@@ -1,0 +1,214 @@
+{
+  "passed": true,
+  "optimizer_created": false,
+  "backward_called": false,
+  "new_trainable_params": 0,
+  "parameters_with_grad": [],
+  "requires_grad_parameters": [],
+  "all_model_parameters_require_grad_false": true,
+  "frozen_K34_V34_query_path": {
+    "img_norm_input.weight": true,
+    "img_norm_input.bias": true,
+    "img_to_k.weight": true,
+    "img_to_k.bias": true,
+    "img_to_v.weight": true,
+    "img_to_v.bias": true,
+    "img_norm_slots.weight": true,
+    "img_norm_slots.bias": true,
+    "img_to_q.weight": true,
+    "img_to_q.bias": true
+  },
+  "nan_inf_count": 0,
+  "checkpoint_before": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+    "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+    "mtime_ns": 1786899904531667020,
+    "size_bytes": 17325651
+  },
+  "checkpoint_after": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+    "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+    "mtime_ns": 1786899904531667020,
+    "size_bytes": 17325651
+  },
+  "checkpoint_unchanged": true,
+  "base_checkpoint_before": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+    "mtime_ns": 1786772660768985716,
+    "size_bytes": 145864497
+  },
+  "base_checkpoint_after": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+    "mtime_ns": 1786772660768985716,
+    "size_bytes": 145864497
+  },
+  "base_checkpoint_unchanged": true,
+  "baseline_5_3_metric_absolute_errors": {
+    "AUD_FINE": {
+      "cIoU": 0.0,
+      "AUC": 0.0,
+      "mean_sample_cIoU": 0.0
+    },
+    "IMG_L4": {
+      "cIoU": 0.0,
+      "AUC": 0.0,
+      "mean_sample_cIoU": 0.0
+    },
+    "IMG_FINE": {
+      "cIoU": 0.0,
+      "AUC": 0.0,
+      "mean_sample_cIoU": 0.0
+    },
+    "IQR_OLD": {
+      "cIoU": 0.0,
+      "AUC": 0.0,
+      "mean_sample_cIoU": 0.0
+    },
+    "IQR_FINE": {
+      "cIoU": 0.0,
+      "AUC": 0.0,
+      "mean_sample_cIoU": 0.0
+    }
+  },
+  "baseline_5_3_per_sample_IoU_max_errors": {
+    "AUD_FINE": 0.0,
+    "IMG_L4": 0.0,
+    "IMG_FINE": 0.0,
+    "IQR_OLD": 0.0,
+    "IQR_FINE": 0.0
+  },
+  "baseline_5_3_sample_id_mismatches": 0,
+  "baseline_5_3_reproduction_passed": true,
+  "max_abs_errors_all_samples": {
+    "AUD_FINE_raw_reconstruction": 0.0,
+    "IMG_L4_raw_reconstruction": 0.0,
+    "IMG_FINE_manual_vs_attention": 0.0,
+    "AUD_FINE_final_map_reconstruction": 0.0,
+    "IMG_L4_final_map_reconstruction": 0.0,
+    "IMG_FINE_final_map_reconstruction": 0.0,
+    "IQR_OLD_final_map_reconstruction": 0.0,
+    "IQR_FINE_final_map_reconstruction": 0.0,
+    "K34_captured_vs_recomputed": 0.0,
+    "Q4_from_S4_query_input": 0.0,
+    "update_attention_vs_raw_control": 0.0,
+    "Q4_between_formal_calls": 0.0,
+    "K4_between_formal_calls": 0.0
+  },
+  "tensor_shapes_first_batch": {
+    "Qa": [
+      32,
+      2,
+      512
+    ],
+    "Q4": [
+      32,
+      2,
+      512
+    ],
+    "K4": [
+      32,
+      49,
+      512
+    ],
+    "F34": [
+      32,
+      512,
+      14,
+      14
+    ],
+    "fine_tokens": [
+      32,
+      196,
+      512
+    ],
+    "fine_norm": [
+      32,
+      196,
+      512
+    ],
+    "K34": [
+      32,
+      196,
+      512
+    ],
+    "V34": [
+      32,
+      196,
+      512
+    ],
+    "dots": [
+      32,
+      2,
+      196
+    ],
+    "ownership_raw": [
+      32,
+      2,
+      196
+    ],
+    "update_attention": [
+      32,
+      2,
+      196
+    ],
+    "U_UPDATE": [
+      32,
+      2,
+      512
+    ],
+    "S4_QUERY_INPUT": [
+      32,
+      2,
+      512
+    ],
+    "Q_VALUE": [
+      32,
+      2,
+      512
+    ],
+    "U_RES": [
+      32,
+      2,
+      512
+    ],
+    "Q_VALUE_RES": [
+      32,
+      2,
+      512
+    ],
+    "AUD_FINE": [
+      32,
+      1,
+      14,
+      14
+    ],
+    "IMG_L4": [
+      32,
+      1,
+      7,
+      7
+    ],
+    "IMG_FINE": [
+      32,
+      1,
+      14,
+      14
+    ],
+    "IMG_VALUE": [
+      32,
+      1,
+      14,
+      14
+    ],
+    "IMG_VALUE_RES": [
+      32,
+      1,
+      14,
+      14
+    ]
+  },
+  "infer_sharpening": 0.1,
+  "alpha": 0.6
+}

@@ -1,0 +1,129 @@
+{
+  "passed": true,
+  "optimizer_created": false,
+  "backward_called": false,
+  "new_trainable_params": 0,
+  "model_trainable_params_during_probe": 0,
+  "parameters_with_grad": [],
+  "checkpoint_before": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+    "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+    "mtime_ns": 1786899904531667020,
+    "size_bytes": 17325651
+  },
+  "checkpoint_after": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+    "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+    "mtime_ns": 1786899904531667020,
+    "size_bytes": 17325651
+  },
+  "checkpoint_unchanged": true,
+  "base_checkpoint_before": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+    "mtime_ns": 1786772660768985716,
+    "size_bytes": 145864497
+  },
+  "base_checkpoint_after": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+    "mtime_ns": 1786772660768985716,
+    "size_bytes": 145864497
+  },
+  "base_checkpoint_unchanged": true,
+  "nan_inf_count": 0,
+  "tensor_shapes_first_batch": {
+    "Qa": [
+      32,
+      2,
+      512
+    ],
+    "Q4": [
+      32,
+      2,
+      512
+    ],
+    "K4": [
+      32,
+      49,
+      512
+    ],
+    "F34": [
+      32,
+      512,
+      14,
+      14
+    ],
+    "fine_tokens": [
+      32,
+      196,
+      512
+    ],
+    "K34": [
+      32,
+      196,
+      512
+    ],
+    "AUD_FINE_ALL": [
+      32,
+      2,
+      196
+    ],
+    "IMG_L4_ALL": [
+      32,
+      2,
+      49
+    ],
+    "IMG_FINE_ALL": [
+      32,
+      2,
+      196
+    ],
+    "AUD_FINE": [
+      32,
+      1,
+      14,
+      14
+    ],
+    "IMG_L4": [
+      32,
+      1,
+      7,
+      7
+    ],
+    "IMG_FINE": [
+      32,
+      1,
+      14,
+      14
+    ]
+  },
+  "max_abs_errors_all_samples": {
+    "AUD_FINE_raw": 0.0,
+    "IMG_L4_raw": 0.0,
+    "IQR_OLD_final": 0.0,
+    "AUD_FINE_final": 0.0,
+    "IMG_L4_final": 0.0,
+    "Q4_between_formal_calls": 0.0,
+    "K4_between_formal_calls": 0.0
+  },
+  "formal_metric_reference": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/best_full_six_metrics.json",
+  "formal_metric_absolute_errors": {
+    "AUD_FINE": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IMG_L4": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    },
+    "IQR_OLD": {
+      "cIoU": 0.0,
+      "AUC": 0.0
+    }
+  },
+  "formal_reproduction_passed": true,
+  "infer_sharpening": 0.1,
+  "alpha": 0.6,
+  "threshold": 0.6
+}

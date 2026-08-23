@@ -1,0 +1,44 @@
+{
+  "dataset": "flickr",
+  "formal_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+    "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+    "size": 17325651,
+    "mtime_ns": 1786899904531667020
+  },
+  "base_checkpoint": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+  "checkpoint_epoch": 47,
+  "dataset_size": 250,
+  "fixed_dataset_indices": [
+    0,
+    27,
+    55,
+    83,
+    110,
+    138,
+    166,
+    193,
+    221,
+    249
+  ],
+  "num_visualized_samples": 10,
+  "alpha": 0.6,
+  "threshold_for_displayed_iou": 0.6,
+  "normalization": "official evaluator: bicubic to 224x224 then per-map min-max",
+  "map_definitions": {
+    "AUD": "1.3G AUD_FINE: Qa -> K34 (14x14)",
+    "IMG_QUERY": "frozen visual Q4 -> K4 (7x7)",
+    "IQR": "norm(0.6*AUD + 0.4*IMG_QUERY)",
+    "OBJ_PRIOR": "ImageNet ResNet18 external OGL branch output",
+    "OGL": "norm(0.6*AUD + 0.4*OBJ_PRIOR)",
+    "EXTRA_IQR_OGL": "norm(0.6*AUD + 0.2*IMG_QUERY + 0.2*OBJ_PRIOR)"
+  },
+  "read_only_audit": {
+    "optimizer_created": false,
+    "backward_called": false,
+    "all_refinement_parameters_require_grad_false": true,
+    "all_object_prior_parameters_require_grad_false": true,
+    "checkpoint_before_after_identical": true,
+    "nan_inf_count": 0
+  }
+}
