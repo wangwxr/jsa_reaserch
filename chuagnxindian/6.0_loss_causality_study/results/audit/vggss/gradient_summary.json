@@ -1,0 +1,11 @@
+{
+  "batch_size": 256,
+  "batches": 20,
+  "dataset": "vggss",
+  "gradient_forward_precision": "formal-training autocast float16",
+  "negative_gradient_cosine_ratio": 0.5714285714285714,
+  "negative_pairs": 12,
+  "optimizer_created": false,
+  "optimizer_step_called": false,
+  "pair_count": 21
+}

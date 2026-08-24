@@ -1,0 +1,29 @@
+{
+  "fixed_weights_verified_all_epochs": true,
+  "full_total_max_abs_error": 0.0,
+  "lambda_zero_total_gradient": 0.0,
+  "lambda_zero_weighted_gradient": 0.0,
+  "lambda_zero_weighted_value": 0.0,
+  "passed": true,
+  "schedule_points": {
+    "early_high_late_low": {
+      "1": 100.0,
+      "20": 100.0,
+      "21": 95.5,
+      "30": 55.0,
+      "40": 10.0,
+      "41": 10.0,
+      "100": 10.0
+    },
+    "early_low_late_high": {
+      "1": 0.0,
+      "20": 0.0,
+      "21": 5.0,
+      "30": 50.0,
+      "40": 100.0,
+      "41": 100.0,
+      "100": 100.0
+    }
+  },
+  "scope": "The schedule function returns only one scalar; forward/data/model are untouched."
+}

@@ -1,0 +1,40 @@
+{
+  "flickr": {
+    "after": {
+      "mtime_ns": 1786734905201357150,
+      "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+      "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+      "size": 145864497
+    },
+    "before": {
+      "mtime_ns": 1786734905201357150,
+      "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+      "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+      "size": 145864497
+    },
+    "dataset": "flickr",
+    "identical": true,
+    "model_checkpoint_saved": false,
+    "optimizer_created": false,
+    "optimizer_step_called": false
+  },
+  "vggss": {
+    "after": {
+      "mtime_ns": 1786734764661328891,
+      "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+      "sha256": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+      "size": 145864158
+    },
+    "before": {
+      "mtime_ns": 1786734764661328891,
+      "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+      "sha256": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+      "size": 145864158
+    },
+    "dataset": "vggss",
+    "identical": true,
+    "model_checkpoint_saved": false,
+    "optimizer_created": false,
+    "optimizer_step_called": false
+  }
+}

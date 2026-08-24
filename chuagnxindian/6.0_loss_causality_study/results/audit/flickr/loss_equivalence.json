@@ -1,0 +1,24 @@
+{
+  "batch_size": 256,
+  "fp32": true,
+  "max_absolute_errors": {
+    "aud_raw": 0.0,
+    "audio_slots": 0.0,
+    "fused_img_slots": 0.0,
+    "img_raw": 0.0,
+    "old_att_vs_att_space_plus_att_time": 0.0,
+    "old_div_vs_div_img_plus_div_aud": 0.0,
+    "old_recon_vs_rec_img_plus_rec_aud": 0.0,
+    "old_total_vs_new_full_total": 0.0
+  },
+  "maximum_error": 0.0,
+  "old_losses": {
+    "att": 2.5617380742914975e-05,
+    "div": 0.0015595238655805588,
+    "info": 0.24197697639465332,
+    "recon": 3.5550050735473633,
+    "total": 0.6001951694488525
+  },
+  "passed": true,
+  "tolerance": 1e-07
+}

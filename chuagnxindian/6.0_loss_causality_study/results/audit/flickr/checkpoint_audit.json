@@ -1,0 +1,19 @@
+{
+  "after": {
+    "mtime_ns": 1786734905201357150,
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+    "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+    "size": 145864497
+  },
+  "before": {
+    "mtime_ns": 1786734905201357150,
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+    "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+    "size": 145864497
+  },
+  "dataset": "flickr",
+  "identical": true,
+  "model_checkpoint_saved": false,
+  "optimizer_created": false,
+  "optimizer_step_called": false
+}

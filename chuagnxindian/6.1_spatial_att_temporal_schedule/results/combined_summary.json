@@ -1,0 +1,1821 @@
+{
+  "all_four_trainings_succeeded": true,
+  "decision": {
+    "case": "T5",
+    "rationale": "跨数据集方向不一致，未满足 T1–T4 的一致性条件，不能支持 schedule 路线。",
+    "signals": {
+      "flickr": {
+        "decay_aud_delta": -0.020000000000000018,
+        "decay_iqr_delta": -0.01200000000000001,
+        "decay_ogl_iqr_gap_delta": -0.015999999999999903,
+        "decay_pearson_delta": -0.00018613983191306804,
+        "decay_synergy": 0.016000000000000014,
+        "delayed_aud_delta": 0.01200000000000001,
+        "delayed_iqr_delta": -0.0040000000000000036
+      },
+      "vggss": {
+        "decay_aud_delta": 0.009305932531989192,
+        "decay_iqr_delta": 0.010081426909654911,
+        "decay_ogl_iqr_gap_delta": -0.004265219077161708,
+        "decay_pearson_delta": 0.0013182800507325343,
+        "decay_synergy": -0.003877471888328765,
+        "delayed_aud_delta": 0.009499806126405608,
+        "delayed_iqr_delta": 0.0069794493989918105
+      }
+    }
+  },
+  "flickr_ciou_unit": 0.004,
+  "no_144k_started": true,
+  "sources": {
+    "EARLY_HIGH_LATE_LOW:flickr": "/data/wxr/audio_video/JSA/checkpoints/6.1_early_high_late_low_flickr_10k_frame8_center5",
+    "EARLY_HIGH_LATE_LOW:vggss": "/data/wxr/audio_video/JSA/checkpoints/6.1_early_high_late_low_vggss_10k",
+    "EARLY_LOW_LATE_HIGH:flickr": "/data/wxr/audio_video/JSA/checkpoints/6.1_early_low_late_high_flickr_10k_frame8_center5",
+    "EARLY_LOW_LATE_HIGH:vggss": "/data/wxr/audio_video/JSA/checkpoints/6.1_early_low_late_high_vggss_10k",
+    "FULL_REFERENCE:flickr": "/data/wxr/audio_video/JSA/chuagnxindian/6.0_loss_causality_study/results/full_reference/flickr",
+    "FULL_REFERENCE:vggss": "/data/wxr/audio_video/JSA/chuagnxindian/6.0_loss_causality_study/results/full_reference/vggss"
+  },
+  "summaries": {
+    "EARLY_HIGH_LATE_LOW:flickr": {
+      "best_epoch": 99,
+      "configuration": "early_high_late_low",
+      "dataset": "flickr",
+      "diagnostics": {
+        "IQR_minus_AUD_AUC": 0.0021999999999998687,
+        "IQR_minus_AUD_cIoU": 0.016000000000000014,
+        "OGL_minus_AUD_AUC": 0.02079999999999993,
+        "OGL_minus_AUD_cIoU": 0.06800000000000006,
+        "OGL_minus_IQR_AUC": 0.01860000000000006,
+        "OGL_minus_IQR_cIoU": 0.052000000000000046,
+        "aud_attention_entropy": {
+          "mean": 3.886240982214794,
+          "median": 3.8865089312043644,
+          "std": 0.0019543184545139577
+        },
+        "aud_coverage": {
+          "mean": 0.8135815280808895,
+          "median": 0.8187726253975047,
+          "std": 0.12960747908282455
+        },
+        "aud_effective_active_area": {
+          "mean": 48.72746777788133,
+          "median": 48.740432967848406,
+          "std": 0.09517473138868564
+        },
+        "aud_effective_active_ratio": {
+          "mean": 0.9944381179159454,
+          "median": 0.9947027136295592,
+          "std": 0.0019423414569119505
+        },
+        "aud_img_js": {
+          "mean": 8.933307321965131e-05,
+          "median": 5.586849109825735e-05,
+          "std": 8.730541532704246e-05
+        },
+        "aud_img_pearson": {
+          "mean": 0.9870828663738709,
+          "median": 0.9894963913273527,
+          "std": 0.009073441959093117
+        },
+        "aud_img_spearman": {
+          "mean": 0.9764359183673469,
+          "median": 0.9815306122448979,
+          "std": 0.018176033925093437
+        },
+        "aud_img_threshold_mask_iou": {
+          "mean": 0.9174416637227205,
+          "median": 0.9249821052774772,
+          "std": 0.04019241446101144
+        },
+        "aud_img_top10_overlap": {
+          "mean": 0.7487999999999999,
+          "median": 0.8,
+          "std": 0.18487444388016425
+        },
+        "aud_outside_leakage": {
+          "mean": 0.28263670092964677,
+          "median": 0.25306952801571336,
+          "std": 0.1744541635791005
+        },
+        "aud_precision": {
+          "mean": 0.7173632990703531,
+          "median": 0.7469304719842866,
+          "std": 0.1744541635791005
+        },
+        "aud_predicted_area_ratio": {
+          "mean": 0.5691500318877551,
+          "median": 0.56005859375,
+          "std": 0.08137322429633452
+        },
+        "expand_base_iou_gain_vs_aud": {
+          "mean": 0.0008728871736468075,
+          "median": -0.0005070279354033036,
+          "std": 0.024727167048053212
+        },
+        "fusion_synergy_auc": 0.0021999999999998687,
+        "fusion_synergy_ciou": 0.016000000000000014,
+        "img_attention_entropy": {
+          "mean": 3.886593362673932,
+          "median": 3.8871978419250808,
+          "std": 0.0025794005881249753
+        },
+        "img_effective_active_area": {
+          "mean": 48.74471037627064,
+          "median": 48.774022335366254,
+          "std": 0.12556949566881068
+        },
+        "img_effective_active_ratio": {
+          "mean": 0.9947900076789927,
+          "median": 0.9953882109258418,
+          "std": 0.0025626427687512393
+        },
+        "iqr_beats_aud_and_img_fraction": 0.08,
+        "nan_inf_count": 0,
+        "sample_count": 250,
+        "sample_synergy": {
+          "mean": -0.011039373474163866,
+          "median": -0.00865862014459129,
+          "std": 0.0121882012812487
+        },
+        "sample_synergy_ge_001_fraction": 0.012,
+        "sample_synergy_positive_fraction": 0.08,
+        "shrink_base_iou_gain_vs_aud": {
+          "mean": -0.004991189643956084,
+          "median": -0.0009005551988736094,
+          "std": 0.02466455891569163
+        },
+        "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+      },
+      "experiment_name": "6.1_early_high_late_low_flickr_10k_frame8_center5",
+      "final_epoch": {
+        "diagnostics": {
+          "IQR_minus_AUD_AUC": 0.0007999999999999119,
+          "IQR_minus_AUD_cIoU": 0.01200000000000001,
+          "OGL_minus_AUD_AUC": 0.02080000000000004,
+          "OGL_minus_AUD_cIoU": 0.08399999999999996,
+          "OGL_minus_IQR_AUC": 0.02000000000000013,
+          "OGL_minus_IQR_cIoU": 0.07199999999999995,
+          "aud_attention_entropy": {
+            "mean": 3.8869868840147053,
+            "median": 3.8872370710840682,
+            "std": 0.001819959238967014
+          },
+          "aud_coverage": {
+            "mean": 0.8080448646817783,
+            "median": 0.8036951293320858,
+            "std": 0.13061974954853747
+          },
+          "aud_effective_active_area": {
+            "mean": 48.76381488450451,
+            "median": 48.7759357432122,
+            "std": 0.08870033797899844
+          },
+          "aud_effective_active_ratio": {
+            "mean": 0.9951798956021329,
+            "median": 0.9954272600655552,
+            "std": 0.0018102109791632338
+          },
+          "aud_img_js": {
+            "mean": 9.132117400387563e-05,
+            "median": 5.6615547640371296e-05,
+            "std": 9.936138883218123e-05
+          },
+          "aud_img_pearson": {
+            "mean": 0.9861444540965721,
+            "median": 0.9890477713930671,
+            "std": 0.010393982260668904
+          },
+          "aud_img_spearman": {
+            "mean": 0.9751771428571429,
+            "median": 0.9803061224489795,
+            "std": 0.02072871577006283
+          },
+          "aud_img_threshold_mask_iou": {
+            "mean": 0.9140227122250614,
+            "median": 0.921158336946823,
+            "std": 0.04333090813459619
+          },
+          "aud_img_top10_overlap": {
+            "mean": 0.7631999999999998,
+            "median": 0.8,
+            "std": 0.1822244769508202
+          },
+          "aud_outside_leakage": {
+            "mean": 0.2832298731532069,
+            "median": 0.24784608533559,
+            "std": 0.17448014117295316
+          },
+          "aud_precision": {
+            "mean": 0.7167701268467931,
+            "median": 0.7521539146644101,
+            "std": 0.17448014117295316
+          },
+          "aud_predicted_area_ratio": {
+            "mean": 0.565804368622449,
+            "median": 0.5651407047193877,
+            "std": 0.07974391612845218
+          },
+          "expand_base_iou_gain_vs_aud": {
+            "mean": 0.0012472118977523868,
+            "median": 8.231791478130468e-06,
+            "std": 0.026759737045408873
+          },
+          "fusion_synergy_auc": 0.0007999999999999119,
+          "fusion_synergy_ciou": 0.0,
+          "img_attention_entropy": {
+            "mean": 3.8863439941550384,
+            "median": 3.8868657410360186,
+            "std": 0.002603463077984806
+          },
+          "img_effective_active_area": {
+            "mean": 48.73255951249189,
+            "median": 48.757827128426925,
+            "std": 0.12668733132995266
+          },
+          "img_effective_active_ratio": {
+            "mean": 0.9945420308671815,
+            "median": 0.9950576964985086,
+            "std": 0.0025854557414276055
+          },
+          "iqr_beats_aud_and_img_fraction": 0.104,
+          "nan_inf_count": 0,
+          "sample_count": 250,
+          "sample_synergy": {
+            "mean": -0.011117043484617622,
+            "median": -0.007823722872156325,
+            "std": 0.012481379743739132
+          },
+          "sample_synergy_ge_001_fraction": 0.008,
+          "sample_synergy_positive_fraction": 0.104,
+          "shrink_base_iou_gain_vs_aud": {
+            "mean": -0.004922195029782229,
+            "median": -0.0003408943438892309,
+            "std": 0.02439657728999306
+          },
+          "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+        },
+        "metrics": {
+          "AUD": {
+            "AUC": 0.5974,
+            "cIoU": 0.732,
+            "mean_IoU": 0.5969742927514484
+          },
+          "EXPAND_BASE": {
+            "AUC": 0.5988,
+            "cIoU": 0.752,
+            "mean_IoU": 0.5982215046492009
+          },
+          "EXTRA_IQR_OGL": {
+            "AUC": 0.6164,
+            "cIoU": 0.768,
+            "mean_IoU": 0.6153887707232925
+          },
+          "IMG_QUERY": {
+            "AUC": 0.5934,
+            "cIoU": 0.744,
+            "mean_IoU": 0.5934526593155784
+          },
+          "IQR": {
+            "AUC": 0.5982,
+            "cIoU": 0.744,
+            "mean_IoU": 0.5977470310246509
+          },
+          "OBJ_PRIOR": {
+            "AUC": 0.4668,
+            "cIoU": 0.448,
+            "mean_IoU": 0.46537125676259156
+          },
+          "OGL": {
+            "AUC": 0.6182000000000001,
+            "cIoU": 0.816,
+            "mean_IoU": 0.6173208767663321
+          },
+          "SHRINK_BASE": {
+            "AUC": 0.5923999999999999,
+            "cIoU": 0.74,
+            "mean_IoU": 0.5920520977216662
+          }
+        }
+      },
+      "gradient_trajectory_audited_epochs": [
+        1,
+        5,
+        10,
+        20,
+        21,
+        25,
+        30,
+        35,
+        40,
+        41,
+        50,
+        60,
+        80,
+        100
+      ],
+      "metrics": {
+        "AUD": {
+          "AUC": 0.5988000000000001,
+          "cIoU": 0.744,
+          "mean_IoU": 0.6009599455972641
+        },
+        "EXPAND_BASE": {
+          "AUC": 0.6002000000000001,
+          "cIoU": 0.756,
+          "mean_IoU": 0.6018328327709109
+        },
+        "EXTRA_IQR_OGL": {
+          "AUC": 0.62,
+          "cIoU": 0.772,
+          "mean_IoU": 0.6190401985854121
+        },
+        "IMG_QUERY": {
+          "AUC": 0.5966,
+          "cIoU": 0.74,
+          "mean_IoU": 0.5969549994858492
+        },
+        "IQR": {
+          "AUC": 0.601,
+          "cIoU": 0.76,
+          "mean_IoU": 0.6010401261101082
+        },
+        "OBJ_PRIOR": {
+          "AUC": 0.4668,
+          "cIoU": 0.448,
+          "mean_IoU": 0.46537125676259156
+        },
+        "OGL": {
+          "AUC": 0.6196,
+          "cIoU": 0.812,
+          "mean_IoU": 0.6201550428774648
+        },
+        "SHRINK_BASE": {
+          "AUC": 0.5956,
+          "cIoU": 0.748,
+          "mean_IoU": 0.595968755953308
+        }
+      },
+      "preflight": {
+        "buffers_unchanged": true,
+        "fixed_weights": {
+          "att_space": 100.0,
+          "att_time": 100.0,
+          "div_aud": 0.1,
+          "div_img": 0.1,
+          "rec_aud": 0.1,
+          "rec_img": 0.1
+        },
+        "forward_called_once_only; schedule_not_an_input": true,
+        "full_total_max_abs_error": 0.0,
+        "lambda_zero_total_derivative_wrt_att_space": 0.0,
+        "lambda_zero_weighted_gradient_norm": 0.0,
+        "parameters_unchanged": true,
+        "passed": true
+      },
+      "sanity": {
+        "checkpoint_selection_unchanged": true,
+        "dataset_and_evaluator_unchanged": true,
+        "first_step_parameter_delta": 0.29851116724333066,
+        "nan_inf_count": 0,
+        "parameters_updated": true,
+        "schedule_only_changes_att_space_multiplier": true
+      },
+      "selection_metric": "IQR_cIoU",
+      "selection_score": 0.76,
+      "total_training_seconds": 2277.6832597255707,
+      "training_diagnostic_bests": {
+        "aud_ciou": {
+          "epoch": 81,
+          "value": 0.76
+        },
+        "img_ciou": {
+          "epoch": 75,
+          "value": 0.752
+        },
+        "iqr_ciou": {
+          "epoch": 99,
+          "value": 0.76
+        }
+      }
+    },
+    "EARLY_HIGH_LATE_LOW:vggss": {
+      "best_epoch": 89,
+      "configuration": "early_high_late_low",
+      "dataset": "vggss",
+      "diagnostics": {
+        "IQR_minus_AUD_AUC": 0.002025979061651806,
+        "IQR_minus_AUD_cIoU": 0.006591702210158978,
+        "OGL_minus_AUD_AUC": 0.018514928266770092,
+        "OGL_minus_AUD_cIoU": 0.038193098100038736,
+        "OGL_minus_IQR_AUC": 0.016488949205118286,
+        "OGL_minus_IQR_cIoU": 0.03160139588987976,
+        "aud_attention_entropy": {
+          "mean": 3.8860459382001533,
+          "median": 3.8863374264874064,
+          "std": 0.0022647791748657167
+        },
+        "aud_coverage": {
+          "mean": 0.8415089529584788,
+          "median": 0.8721632849246403,
+          "std": 0.15876628006608057
+        },
+        "aud_effective_active_area": {
+          "mean": 48.717996575340806,
+          "median": 48.73207446232716,
+          "std": 0.11024196966912325
+        },
+        "aud_effective_active_ratio": {
+          "mean": 0.9942448280681798,
+          "median": 0.994532131884228,
+          "std": 0.002249836115696392
+        },
+        "aud_img_js": {
+          "mean": 5.4348345441709467e-05,
+          "median": 4.283901707400913e-05,
+          "std": 4.1507246124031096e-05
+        },
+        "aud_img_pearson": {
+          "mean": 0.9872100917732117,
+          "median": 0.9897272429439796,
+          "std": 0.009412013617049233
+        },
+        "aud_img_spearman": {
+          "mean": 0.9813575449406303,
+          "median": 0.985204081632653,
+          "std": 0.0138167946510507
+        },
+        "aud_img_threshold_mask_iou": {
+          "mean": 0.8971928448381087,
+          "median": 0.9098051106313068,
+          "std": 0.05696583612501054
+        },
+        "aud_img_top10_overlap": {
+          "mean": 0.8092671578131059,
+          "median": 0.8,
+          "std": 0.1632342212411534
+        },
+        "aud_outside_leakage": {
+          "mean": 0.5104413513837063,
+          "median": 0.5366224918152651,
+          "std": 0.2977431243106917
+        },
+        "aud_precision": {
+          "mean": 0.4895586486162937,
+          "median": 0.4633775081847349,
+          "std": 0.2977431243106917
+        },
+        "aud_predicted_area_ratio": {
+          "mean": 0.49764099080040114,
+          "median": 0.4935327646683674,
+          "std": 0.10010864998188906
+        },
+        "expand_base_iou_gain_vs_aud": {
+          "mean": -8.723613676094593e-05,
+          "median": -0.0007311466212932445,
+          "std": 0.01758981452333014
+        },
+        "fusion_synergy_auc": -0.001347421481194322,
+        "fusion_synergy_ciou": -0.003877471888328765,
+        "img_attention_entropy": {
+          "mean": 3.886685465110217,
+          "median": 3.8870254295617546,
+          "std": 0.0021627015385470654
+        },
+        "img_effective_active_area": {
+          "mean": 48.74915198788664,
+          "median": 48.76561381564919,
+          "std": 0.10532340893660029
+        },
+        "img_effective_active_ratio": {
+          "mean": 0.9948806528140131,
+          "median": 0.9952166084826365,
+          "std": 0.0021494573252367403
+        },
+        "iqr_beats_aud_and_img_fraction": 0.0732842186894145,
+        "nan_inf_count": 0,
+        "sample_count": 5158,
+        "sample_synergy": {
+          "mean": -0.01073242660852581,
+          "median": -0.006902454120628357,
+          "std": 0.01343037036609246
+        },
+        "sample_synergy_ge_001_fraction": 0.0021326095385808454,
+        "sample_synergy_positive_fraction": 0.0732842186894145,
+        "shrink_base_iou_gain_vs_aud": {
+          "mean": 0.0029453629497682805,
+          "median": 0.002876826064916467,
+          "std": 0.0287943509769071
+        },
+        "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+      },
+      "experiment_name": "6.1_early_high_late_low_vggss_10k",
+      "final_epoch": {
+        "diagnostics": {
+          "IQR_minus_AUD_AUC": 0.0007948817371074557,
+          "IQR_minus_AUD_cIoU": 0.004071345482745237,
+          "OGL_minus_AUD_AUC": 0.019406746801085617,
+          "OGL_minus_AUD_cIoU": 0.04362155874369911,
+          "OGL_minus_IQR_AUC": 0.01861186506397816,
+          "OGL_minus_IQR_cIoU": 0.03955021326095387,
+          "aud_attention_entropy": {
+            "mean": 3.886172930463707,
+            "median": 3.8864457156619574,
+            "std": 0.002178760026146642
+          },
+          "aud_coverage": {
+            "mean": 0.8388791495965945,
+            "median": 0.8657030801282996,
+            "std": 0.15810763121884724
+          },
+          "aud_effective_active_area": {
+            "mean": 48.72417447843645,
+            "median": 48.73735190418733,
+            "std": 0.10607957487381837
+          },
+          "aud_effective_active_ratio": {
+            "mean": 0.9943709077231929,
+            "median": 0.9946398347793333,
+            "std": 0.002164889283139151
+          },
+          "aud_img_js": {
+            "mean": 5.4379716876889816e-05,
+            "median": 4.305309893571196e-05,
+            "std": 4.100378076033712e-05
+          },
+          "aud_img_pearson": {
+            "mean": 0.9870503987470154,
+            "median": 0.9897009360168818,
+            "std": 0.009648971986054864
+          },
+          "aud_img_spearman": {
+            "mean": 0.9806535418462659,
+            "median": 0.9848979591836735,
+            "std": 0.015111674906796263
+          },
+          "aud_img_threshold_mask_iou": {
+            "mean": 0.8981436478324997,
+            "median": 0.9093513404670717,
+            "std": 0.054107008260986356
+          },
+          "aud_img_top10_overlap": {
+            "mean": 0.804575416828228,
+            "median": 0.8,
+            "std": 0.16221853971225741
+          },
+          "aud_outside_leakage": {
+            "mean": 0.5138568752933428,
+            "median": 0.5374036694499038,
+            "std": 0.29718016322921664
+          },
+          "aud_precision": {
+            "mean": 0.4861431247066572,
+            "median": 0.4625963305500962,
+            "std": 0.29718016322921664
+          },
+          "aud_predicted_area_ratio": {
+            "mean": 0.49992672168530555,
+            "median": 0.49824617346938777,
+            "std": 0.09822463599424158
+          },
+          "expand_base_iou_gain_vs_aud": {
+            "mean": -0.0006450246028246519,
+            "median": -0.000964285821832854,
+            "std": 0.017761127531271126
+          },
+          "fusion_synergy_auc": -0.0001744862349747911,
+          "fusion_synergy_ciou": -0.004652966265994596,
+          "img_attention_entropy": {
+            "mean": 3.8869267760464785,
+            "median": 3.88720232330248,
+            "std": 0.0019887750504979347
+          },
+          "img_effective_active_area": {
+            "mean": 48.76089952988411,
+            "median": 48.77424091050322,
+            "std": 0.09689324224636622
+          },
+          "img_effective_active_ratio": {
+            "mean": 0.9951203985690634,
+            "median": 0.9953926716429228,
+            "std": 0.001977413107068698
+          },
+          "iqr_beats_aud_and_img_fraction": 0.08259015122140365,
+          "nan_inf_count": 0,
+          "sample_count": 5158,
+          "sample_synergy": {
+            "mean": -0.01006027350668757,
+            "median": -0.006433339063590671,
+            "std": 0.012364998235851674
+          },
+          "sample_synergy_ge_001_fraction": 0.005040713454827452,
+          "sample_synergy_positive_fraction": 0.08259015122140365,
+          "shrink_base_iou_gain_vs_aud": {
+            "mean": 0.0014545052095693272,
+            "median": 0.0019089012795256433,
+            "std": 0.026722241017628025
+          },
+          "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+        },
+        "metrics": {
+          "AUD": {
+            "AUC": 0.4098293912369136,
+            "cIoU": 0.4026754556029469,
+            "mean_IoU": 0.40976319465404637
+          },
+          "EXPAND_BASE": {
+            "AUC": 0.4094804187669639,
+            "cIoU": 0.40248158200853046,
+            "mean_IoU": 0.40911817005122175
+          },
+          "EXTRA_IQR_OGL": {
+            "AUC": 0.42220822024040333,
+            "cIoU": 0.43272586273749514,
+            "mean_IoU": 0.4223327193524696
+          },
+          "IMG_QUERY": {
+            "AUC": 0.41079875920899583,
+            "cIoU": 0.4113997673516867,
+            "mean_IoU": 0.4104484690230901
+          },
+          "IQR": {
+            "AUC": 0.41062427297402104,
+            "cIoU": 0.4067468010856921,
+            "mean_IoU": 0.41078618520539006
+          },
+          "OBJ_PRIOR": {
+            "AUC": 0.3924195424583172,
+            "cIoU": 0.34780922838309425,
+            "mean_IoU": 0.3914037623400056
+          },
+          "OGL": {
+            "AUC": 0.4292361380379992,
+            "cIoU": 0.446297014346646,
+            "mean_IoU": 0.42939536112229526
+          },
+          "SHRINK_BASE": {
+            "AUC": 0.41143854207057,
+            "cIoU": 0.4108181465684374,
+            "mean_IoU": 0.4112176998636157
+          }
+        }
+      },
+      "gradient_trajectory_audited_epochs": [
+        1,
+        5,
+        10,
+        20,
+        21,
+        25,
+        30,
+        35,
+        40,
+        41,
+        50,
+        60,
+        80,
+        100
+      ],
+      "metrics": {
+        "AUD": {
+          "AUC": 0.4118359829391237,
+          "cIoU": 0.4108181465684374,
+          "mean_IoU": 0.41198478174680153
+        },
+        "EXPAND_BASE": {
+          "AUC": 0.4118456766188446,
+          "cIoU": 0.40887941062427297,
+          "mean_IoU": 0.4118975456100406
+        },
+        "EXTRA_IQR_OGL": {
+          "AUC": 0.42441837921675074,
+          "cIoU": 0.43757270259790615,
+          "mean_IoU": 0.4243998367199211
+        },
+        "IMG_QUERY": {
+          "AUC": 0.41520938348196984,
+          "cIoU": 0.42128732066692515,
+          "mean_IoU": 0.4147127398512149
+        },
+        "IQR": {
+          "AUC": 0.4138619620007755,
+          "cIoU": 0.4174098487785964,
+          "mean_IoU": 0.41379322500595384
+        },
+        "OBJ_PRIOR": {
+          "AUC": 0.3924195424583172,
+          "cIoU": 0.34780922838309425,
+          "mean_IoU": 0.3914037623400056
+        },
+        "OGL": {
+          "AUC": 0.4303509112058938,
+          "cIoU": 0.44901124466847614,
+          "mean_IoU": 0.430405555011319
+        },
+        "SHRINK_BASE": {
+          "AUC": 0.4152384645211323,
+          "cIoU": 0.41993020550601007,
+          "mean_IoU": 0.4149301446965698
+        }
+      },
+      "preflight": {
+        "buffers_unchanged": true,
+        "fixed_weights": {
+          "att_space": 100.0,
+          "att_time": 100.0,
+          "div_aud": 0.1,
+          "div_img": 0.1,
+          "rec_aud": 0.1,
+          "rec_img": 0.1
+        },
+        "forward_called_once_only; schedule_not_an_input": true,
+        "full_total_max_abs_error": 0.0,
+        "lambda_zero_total_derivative_wrt_att_space": 0.0,
+        "lambda_zero_weighted_gradient_norm": 0.0,
+        "parameters_unchanged": true,
+        "passed": true
+      },
+      "sanity": {
+        "checkpoint_selection_unchanged": true,
+        "dataset_and_evaluator_unchanged": true,
+        "first_step_parameter_delta": 0.29845758620250956,
+        "nan_inf_count": 0,
+        "parameters_updated": true,
+        "schedule_only_changes_att_space_multiplier": true
+      },
+      "selection_metric": "IQR_cIoU",
+      "selection_score": 0.4174098487785964,
+      "total_training_seconds": 4308.428155422211,
+      "training_diagnostic_bests": {
+        "aud_ciou": {
+          "epoch": 76,
+          "value": 0.41120589375727024
+        },
+        "img_ciou": {
+          "epoch": 89,
+          "value": 0.42128732066692515
+        },
+        "iqr_ciou": {
+          "epoch": 89,
+          "value": 0.4174098487785964
+        }
+      }
+    },
+    "EARLY_LOW_LATE_HIGH:flickr": {
+      "best_epoch": 25,
+      "configuration": "early_low_late_high",
+      "dataset": "flickr",
+      "diagnostics": {
+        "IQR_minus_AUD_AUC": 0.0011999999999998678,
+        "IQR_minus_AUD_cIoU": -0.008000000000000007,
+        "OGL_minus_AUD_AUC": 0.0242,
+        "OGL_minus_AUD_cIoU": 0.04799999999999993,
+        "OGL_minus_IQR_AUC": 0.02300000000000013,
+        "OGL_minus_IQR_cIoU": 0.05599999999999994,
+        "aud_attention_entropy": {
+          "mean": 3.889069012983927,
+          "median": 3.889158537236977,
+          "std": 0.0009284262269852187
+        },
+        "aud_coverage": {
+          "mean": 0.8133763228952006,
+          "median": 0.8144459741971413,
+          "std": 0.1325455364321356
+        },
+        "aud_effective_active_area": {
+          "mean": 48.86539336918731,
+          "median": 48.869747145106835,
+          "std": 0.04535344967022139
+        },
+        "aud_effective_active_ratio": {
+          "mean": 0.9972529259017817,
+          "median": 0.9973417784715681,
+          "std": 0.0009255806055147232
+        },
+        "aud_img_js": {
+          "mean": 0.0001383621628974904,
+          "median": 0.00010253813051084651,
+          "std": 0.0001078147947829537
+        },
+        "aud_img_pearson": {
+          "mean": 0.9642029641750633,
+          "median": 0.9693108637488417,
+          "std": 0.02273115824418215
+        },
+        "aud_img_spearman": {
+          "mean": 0.9473926530612246,
+          "median": 0.955,
+          "std": 0.03278806899958224
+        },
+        "aud_img_threshold_mask_iou": {
+          "mean": 0.8655857249120626,
+          "median": 0.8779419866625571,
+          "std": 0.06361642819162167
+        },
+        "aud_img_top10_overlap": {
+          "mean": 0.6192000000000001,
+          "median": 0.6,
+          "std": 0.22827912738575115
+        },
+        "aud_outside_leakage": {
+          "mean": 0.27676100891945066,
+          "median": 0.2567404213507003,
+          "std": 0.16863914304934785
+        },
+        "aud_precision": {
+          "mean": 0.7232389910805493,
+          "median": 0.7432595786492997,
+          "std": 0.16863914304934785
+        },
+        "aud_predicted_area_ratio": {
+          "mean": 0.5639330357142857,
+          "median": 0.5520069355867347,
+          "std": 0.09135547454323338
+        },
+        "expand_base_iou_gain_vs_aud": {
+          "mean": 0.00010315097562428977,
+          "median": -0.0009123200840173706,
+          "std": 0.035433134510772624
+        },
+        "fusion_synergy_auc": 0.0011999999999998678,
+        "fusion_synergy_ciou": -0.008000000000000007,
+        "img_attention_entropy": {
+          "mean": 3.887397182098572,
+          "median": 3.8877241442286032,
+          "std": 0.00201660011793521
+        },
+        "img_effective_active_area": {
+          "mean": 48.78384506461381,
+          "median": 48.79969897243315,
+          "std": 0.098294703754043
+        },
+        "img_effective_active_ratio": {
+          "mean": 0.9955886747880369,
+          "median": 0.9959122239272071,
+          "std": 0.0020060143623274076
+        },
+        "iqr_beats_aud_and_img_fraction": 0.132,
+        "nan_inf_count": 0,
+        "sample_count": 250,
+        "sample_synergy": {
+          "mean": -0.015582613801973847,
+          "median": -0.012709889851206635,
+          "std": 0.017109590950282017
+        },
+        "sample_synergy_ge_001_fraction": 0.032,
+        "sample_synergy_positive_fraction": 0.132,
+        "shrink_base_iou_gain_vs_aud": {
+          "mean": -0.009631231541617257,
+          "median": -0.0012902068791485755,
+          "std": 0.04141449273658746
+        },
+        "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+      },
+      "experiment_name": "6.1_early_low_late_high_flickr_10k_frame8_center5",
+      "final_epoch": {
+        "diagnostics": {
+          "IQR_minus_AUD_AUC": -0.005199999999999982,
+          "IQR_minus_AUD_cIoU": 0.0,
+          "OGL_minus_AUD_AUC": 0.02199999999999991,
+          "OGL_minus_AUD_cIoU": 0.09999999999999998,
+          "OGL_minus_IQR_AUC": 0.02719999999999989,
+          "OGL_minus_IQR_cIoU": 0.09999999999999998,
+          "aud_attention_entropy": {
+            "mean": 3.8853415340923365,
+            "median": 3.8856965511725265,
+            "std": 0.0023257219335890136
+          },
+          "aud_coverage": {
+            "mean": 0.7938495306768928,
+            "median": 0.7902445713279369,
+            "std": 0.13190297680808258
+          },
+          "aud_effective_active_area": {
+            "mean": 48.683698271008545,
+            "median": 48.700853286106344,
+            "std": 0.11308092101089334
+          },
+          "aud_effective_active_ratio": {
+            "mean": 0.9935448626736437,
+            "median": 0.9938949650225785,
+            "std": 0.002307773898181495
+          },
+          "aud_img_js": {
+            "mean": 9.150257790280549e-05,
+            "median": 6.218296944056169e-05,
+            "std": 9.461536600233846e-05
+          },
+          "aud_img_pearson": {
+            "mean": 0.9894554437659832,
+            "median": 0.9921040423492251,
+            "std": 0.00823289704193829
+          },
+          "aud_img_spearman": {
+            "mean": 0.9803560199122571,
+            "median": 0.9842857142857143,
+            "std": 0.01495601552119894
+          },
+          "aud_img_threshold_mask_iou": {
+            "mean": 0.9251182179570956,
+            "median": 0.9300817783286011,
+            "std": 0.0375136766322151
+          },
+          "aud_img_top10_overlap": {
+            "mean": 0.7992,
+            "median": 0.8,
+            "std": 0.16828357020220364
+          },
+          "aud_outside_leakage": {
+            "mean": 0.28493394066982247,
+            "median": 0.2581465945887109,
+            "std": 0.17279901763770078
+          },
+          "aud_precision": {
+            "mean": 0.7150660593301775,
+            "median": 0.7418534054112891,
+            "std": 0.1727990176377008
+          },
+          "aud_predicted_area_ratio": {
+            "mean": 0.5560173788265306,
+            "median": 0.5581154336734694,
+            "std": 0.07782739283073577
+          },
+          "expand_base_iou_gain_vs_aud": {
+            "mean": -0.0019390239495446111,
+            "median": -0.0021021820058001184,
+            "std": 0.018261736722578106
+          },
+          "fusion_synergy_auc": -0.005199999999999982,
+          "fusion_synergy_ciou": 0.0,
+          "img_attention_entropy": {
+            "mean": 3.885446500364223,
+            "median": 3.8859061511357016,
+            "std": 0.0030854230841663903
+          },
+          "img_effective_active_area": {
+            "mean": 48.68890864459688,
+            "median": 48.711062056952514,
+            "std": 0.15000363720291837
+          },
+          "img_effective_active_ratio": {
+            "mean": 0.9936511968285077,
+            "median": 0.9941033072847452,
+            "std": 0.0030612987184269057
+          },
+          "iqr_beats_aud_and_img_fraction": 0.044,
+          "nan_inf_count": 0,
+          "sample_count": 250,
+          "sample_synergy": {
+            "mean": -0.010849194145714744,
+            "median": -0.007756955314421443,
+            "std": 0.010489739782765064
+          },
+          "sample_synergy_ge_001_fraction": 0.0,
+          "sample_synergy_positive_fraction": 0.044,
+          "shrink_base_iou_gain_vs_aud": {
+            "mean": -0.010112948333535172,
+            "median": -0.0026444923888709337,
+            "std": 0.028801046920366443
+          },
+          "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+        },
+        "metrics": {
+          "AUD": {
+            "AUC": 0.5886,
+            "cIoU": 0.724,
+            "mean_IoU": 0.5886409262872503
+          },
+          "EXPAND_BASE": {
+            "AUC": 0.5866,
+            "cIoU": 0.724,
+            "mean_IoU": 0.5867019023377058
+          },
+          "EXTRA_IQR_OGL": {
+            "AUC": 0.606,
+            "cIoU": 0.784,
+            "mean_IoU": 0.6059573846116676
+          },
+          "IMG_QUERY": {
+            "AUC": 0.5764,
+            "cIoU": 0.716,
+            "mean_IoU": 0.576719256822285
+          },
+          "IQR": {
+            "AUC": 0.5834,
+            "cIoU": 0.724,
+            "mean_IoU": 0.5845888176352222
+          },
+          "OBJ_PRIOR": {
+            "AUC": 0.4668,
+            "cIoU": 0.448,
+            "mean_IoU": 0.46537125676259156
+          },
+          "OGL": {
+            "AUC": 0.6105999999999999,
+            "cIoU": 0.824,
+            "mean_IoU": 0.6106735979379946
+          },
+          "SHRINK_BASE": {
+            "AUC": 0.5788000000000001,
+            "cIoU": 0.724,
+            "mean_IoU": 0.5785279779537152
+          }
+        }
+      },
+      "gradient_trajectory_audited_epochs": [
+        1,
+        5,
+        10,
+        20,
+        21,
+        25,
+        30,
+        35,
+        40,
+        41,
+        50,
+        60,
+        80,
+        100
+      ],
+      "metrics": {
+        "AUD": {
+          "AUC": 0.6002000000000001,
+          "cIoU": 0.776,
+          "mean_IoU": 0.601253585076689
+        },
+        "EXPAND_BASE": {
+          "AUC": 0.6028,
+          "cIoU": 0.764,
+          "mean_IoU": 0.6013567360523134
+        },
+        "EXTRA_IQR_OGL": {
+          "AUC": 0.6187999999999999,
+          "cIoU": 0.804,
+          "mean_IoU": 0.6197201375047648
+        },
+        "IMG_QUERY": {
+          "AUC": 0.592,
+          "cIoU": 0.74,
+          "mean_IoU": 0.5918639699104573
+        },
+        "IQR": {
+          "AUC": 0.6013999999999999,
+          "cIoU": 0.768,
+          "mean_IoU": 0.6015011667191711
+        },
+        "OBJ_PRIOR": {
+          "AUC": 0.4668,
+          "cIoU": 0.448,
+          "mean_IoU": 0.46537125676259156
+        },
+        "OGL": {
+          "AUC": 0.6244000000000001,
+          "cIoU": 0.824,
+          "mean_IoU": 0.6230422198622454
+        },
+        "SHRINK_BASE": {
+          "AUC": 0.5916,
+          "cIoU": 0.76,
+          "mean_IoU": 0.5916223535350718
+        }
+      },
+      "preflight": {
+        "buffers_unchanged": true,
+        "fixed_weights": {
+          "att_space": 100.0,
+          "att_time": 100.0,
+          "div_aud": 0.1,
+          "div_img": 0.1,
+          "rec_aud": 0.1,
+          "rec_img": 0.1
+        },
+        "forward_called_once_only; schedule_not_an_input": true,
+        "full_total_max_abs_error": 0.0,
+        "lambda_zero_total_derivative_wrt_att_space": 0.0,
+        "lambda_zero_weighted_gradient_norm": 0.0,
+        "parameters_unchanged": true,
+        "passed": true
+      },
+      "sanity": {
+        "checkpoint_selection_unchanged": true,
+        "dataset_and_evaluator_unchanged": true,
+        "first_step_parameter_delta": 0.29851101929867113,
+        "nan_inf_count": 0,
+        "parameters_updated": true,
+        "schedule_only_changes_att_space_multiplier": true
+      },
+      "selection_metric": "IQR_cIoU",
+      "selection_score": 0.768,
+      "total_training_seconds": 2268.564558506012,
+      "training_diagnostic_bests": {
+        "aud_ciou": {
+          "epoch": 25,
+          "value": 0.776
+        },
+        "img_ciou": {
+          "epoch": 58,
+          "value": 0.76
+        },
+        "iqr_ciou": {
+          "epoch": 25,
+          "value": 0.768
+        }
+      }
+    },
+    "EARLY_LOW_LATE_HIGH:vggss": {
+      "best_epoch": 92,
+      "configuration": "early_low_late_high",
+      "dataset": "vggss",
+      "diagnostics": {
+        "IQR_minus_AUD_AUC": 0.0011244668476153574,
+        "IQR_minus_AUD_cIoU": 0.0032958511050794614,
+        "OGL_minus_AUD_AUC": 0.016808840635905486,
+        "OGL_minus_AUD_cIoU": 0.03528499418379216,
+        "OGL_minus_IQR_AUC": 0.01568437378829013,
+        "OGL_minus_IQR_cIoU": 0.0319891430787127,
+        "aud_attention_entropy": {
+          "mean": 3.8863209886311307,
+          "median": 3.8866461641921064,
+          "std": 0.002196638443942129
+        },
+        "aud_coverage": {
+          "mean": 0.8341089324495224,
+          "median": 0.8631111304478138,
+          "std": 0.1636365845230378
+        },
+        "aud_effective_active_area": {
+          "mean": 48.73139091545915,
+          "median": 48.747122213921024,
+          "std": 0.10694664312726955
+        },
+        "aud_effective_active_ratio": {
+          "mean": 0.994518181948146,
+          "median": 0.9948392288555311,
+          "std": 0.002182584553617746
+        },
+        "aud_img_js": {
+          "mean": 4.569206271695754e-05,
+          "median": 3.504147580321257e-05,
+          "std": 3.639935677952251e-05
+        },
+        "aud_img_pearson": {
+          "mean": 0.9889181903746961,
+          "median": 0.9913595993659545,
+          "std": 0.008819511145935625
+        },
+        "aud_img_spearman": {
+          "mean": 0.9835771504067341,
+          "median": 0.9870408163265306,
+          "std": 0.012609550803190105
+        },
+        "aud_img_threshold_mask_iou": {
+          "mean": 0.9062605369650427,
+          "median": 0.9168860443360021,
+          "std": 0.05038104507713312
+        },
+        "aud_img_top10_overlap": {
+          "mean": 0.8251260178363707,
+          "median": 0.8,
+          "std": 0.1568542963292057
+        },
+        "aud_outside_leakage": {
+          "mean": 0.5052606075735635,
+          "median": 0.5328492686774895,
+          "std": 0.29933200928002535
+        },
+        "aud_precision": {
+          "mean": 0.4947393924264365,
+          "median": 0.4671507313225105,
+          "std": 0.29933200928002535
+        },
+        "aud_predicted_area_ratio": {
+          "mean": 0.4860566069165889,
+          "median": 0.4826809630102041,
+          "std": 0.09770717429569314
+        },
+        "expand_base_iou_gain_vs_aud": {
+          "mean": -0.00033912247708083694,
+          "median": -0.0010506173774348648,
+          "std": 0.01837008439867201
+        },
+        "fusion_synergy_auc": 0.00018417991469549255,
+        "fusion_synergy_ciou": 0.0019387359441643826,
+        "img_attention_entropy": {
+          "mean": 3.886779764382921,
+          "median": 3.8871540777260414,
+          "std": 0.0021947436519190867
+        },
+        "img_effective_active_area": {
+          "mean": 48.75375261280216,
+          "median": 48.77188782589624,
+          "std": 0.10689029605669724
+        },
+        "img_effective_active_ratio": {
+          "mean": 0.9949745431184115,
+          "median": 0.9953446495080867,
+          "std": 0.0021814346134019845
+        },
+        "iqr_beats_aud_and_img_fraction": 0.07599844901124467,
+        "nan_inf_count": 0,
+        "sample_count": 5158,
+        "sample_synergy": {
+          "mean": -0.009212993882646615,
+          "median": -0.005901296134581041,
+          "std": 0.011303296195101984
+        },
+        "sample_synergy_ge_001_fraction": 0.00407134548274525,
+        "sample_synergy_positive_fraction": 0.07599844901124467,
+        "shrink_base_iou_gain_vs_aud": {
+          "mean": 0.001097988083147479,
+          "median": 0.0017594764938983834,
+          "std": 0.02339647809104194
+        },
+        "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+      },
+      "experiment_name": "6.1_early_low_late_high_vggss_10k",
+      "final_epoch": {
+        "diagnostics": {
+          "IQR_minus_AUD_AUC": 0.0007851880573865322,
+          "IQR_minus_AUD_cIoU": 0.00019387359441641605,
+          "OGL_minus_AUD_AUC": 0.020637844125630078,
+          "OGL_minus_AUD_cIoU": 0.044978673904614186,
+          "OGL_minus_IQR_AUC": 0.019852656068243546,
+          "OGL_minus_IQR_cIoU": 0.04478480031019777,
+          "aud_attention_entropy": {
+            "mean": 3.8868640840080477,
+            "median": 3.8871137703101724,
+            "std": 0.0019286454946578092
+          },
+          "aud_coverage": {
+            "mean": 0.8326147975785848,
+            "median": 0.8609472347576818,
+            "std": 0.1630550893158807
+          },
+          "aud_effective_active_area": {
+            "mean": 48.75783697298402,
+            "median": 48.76992199675607,
+            "std": 0.09396835075393455
+          },
+          "aud_effective_active_ratio": {
+            "mean": 0.9950578974078372,
+            "median": 0.9953045305460422,
+            "std": 0.0019177214439578484
+          },
+          "aud_img_js": {
+            "mean": 4.732190616126487e-05,
+            "median": 3.674133390007028e-05,
+            "std": 3.604760371542308e-05
+          },
+          "aud_img_pearson": {
+            "mean": 0.9877399111519495,
+            "median": 0.9905276345457694,
+            "std": 0.009904854589321
+          },
+          "aud_img_spearman": {
+            "mean": 0.9820649070383133,
+            "median": 0.9860204081632653,
+            "std": 0.014105376788262698
+          },
+          "aud_img_threshold_mask_iou": {
+            "mean": 0.9024067318125865,
+            "median": 0.9131682204263232,
+            "std": 0.052666527088598994
+          },
+          "aud_img_top10_overlap": {
+            "mean": 0.8115548662272198,
+            "median": 0.8,
+            "std": 0.1603307759923036
+          },
+          "aud_outside_leakage": {
+            "mean": 0.5156766593044829,
+            "median": 0.5436065246058874,
+            "std": 0.2967540010487841
+          },
+          "aud_precision": {
+            "mean": 0.4843233406955171,
+            "median": 0.45639347539411257,
+            "std": 0.2967540010487841
+          },
+          "aud_predicted_area_ratio": {
+            "mean": 0.4965255646382971,
+            "median": 0.49560546875,
+            "std": 0.09686956911252194
+          },
+          "expand_base_iou_gain_vs_aud": {
+            "mean": -0.0004756298545092313,
+            "median": -0.0011497715362719652,
+            "std": 0.019202843098547095
+          },
+          "fusion_synergy_auc": 0.000649476541294991,
+          "fusion_synergy_ciou": 0.00019387359441641605,
+          "img_attention_entropy": {
+            "mean": 3.887575138136325,
+            "median": 3.8878835944026577,
+            "std": 0.0018166377527579249
+          },
+          "img_effective_active_area": {
+            "mean": 48.792508528403395,
+            "median": 48.80748071263878,
+            "std": 0.08856505839480912
+          },
+          "img_effective_active_ratio": {
+            "mean": 0.9957654801714978,
+            "median": 0.9960710349518117,
+            "std": 0.0018074501713226355
+          },
+          "iqr_beats_aud_and_img_fraction": 0.07405971306708026,
+          "nan_inf_count": 0,
+          "sample_count": 5158,
+          "sample_synergy": {
+            "mean": -0.009556926596949343,
+            "median": -0.006178145932670798,
+            "std": 0.011974613755945334
+          },
+          "sample_synergy_ge_001_fraction": 0.0029081039162466072,
+          "sample_synergy_positive_fraction": 0.07405971306708026,
+          "shrink_base_iou_gain_vs_aud": {
+            "mean": 0.0007686449836719203,
+            "median": 0.001829770991591595,
+            "std": 0.024299573285182657
+          },
+          "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+        },
+        "metrics": {
+          "AUD": {
+            "AUC": 0.4051667312911982,
+            "cIoU": 0.3931756494765413,
+            "mean_IoU": 0.4050302961311857
+          },
+          "EXPAND_BASE": {
+            "AUC": 0.4047789841023653,
+            "cIoU": 0.39240015509887555,
+            "mean_IoU": 0.40455466627667636
+          },
+          "EXTRA_IQR_OGL": {
+            "AUC": 0.41772004652966266,
+            "cIoU": 0.4214811942613416,
+            "mean_IoU": 0.4175478953617733
+          },
+          "IMG_QUERY": {
+            "AUC": 0.4053024428072897,
+            "cIoU": 0.39240015509887555,
+            "mean_IoU": 0.40521177259509344
+          },
+          "IQR": {
+            "AUC": 0.4059519193485847,
+            "cIoU": 0.39336952307095774,
+            "mean_IoU": 0.4056906282530068
+          },
+          "OBJ_PRIOR": {
+            "AUC": 0.3924195424583172,
+            "cIoU": 0.34780922838309425,
+            "mean_IoU": 0.3914037623400056
+          },
+          "OGL": {
+            "AUC": 0.42580457541682826,
+            "cIoU": 0.4381543233811555,
+            "mean_IoU": 0.42547746997717967
+          },
+          "SHRINK_BASE": {
+            "AUC": 0.40607793718495544,
+            "cIoU": 0.3955021326095386,
+            "mean_IoU": 0.4057989411148576
+          }
+        }
+      },
+      "gradient_trajectory_audited_epochs": [
+        1,
+        5,
+        10,
+        20,
+        21,
+        25,
+        30,
+        35,
+        40,
+        41,
+        50,
+        60,
+        80,
+        100
+      ],
+      "metrics": {
+        "AUD": {
+          "AUC": 0.4126017836370686,
+          "cIoU": 0.4110120201628538,
+          "mean_IoU": 0.41262000711449076
+        },
+        "EXPAND_BASE": {
+          "AUC": 0.41232066692516484,
+          "cIoU": 0.40965490500193874,
+          "mean_IoU": 0.41228088463741
+        },
+        "EXTRA_IQR_OGL": {
+          "AUC": 0.42389492051182626,
+          "cIoU": 0.4352462194649089,
+          "mean_IoU": 0.4239064158692875
+        },
+        "IMG_QUERY": {
+          "AUC": 0.4135420705699885,
+          "cIoU": 0.4123691353237689,
+          "mean_IoU": 0.4132639093528807
+        },
+        "IQR": {
+          "AUC": 0.413726250484684,
+          "cIoU": 0.4143078712679333,
+          "mean_IoU": 0.413476180482815
+        },
+        "OBJ_PRIOR": {
+          "AUC": 0.3924195424583172,
+          "cIoU": 0.34780922838309425,
+          "mean_IoU": 0.3914037623400056
+        },
+        "OGL": {
+          "AUC": 0.4294106242729741,
+          "cIoU": 0.446297014346646,
+          "mean_IoU": 0.4295414657641104
+        },
+        "SHRINK_BASE": {
+          "AUC": 0.4136971694455216,
+          "cIoU": 0.40926715781310585,
+          "mean_IoU": 0.41371799519763824
+        }
+      },
+      "preflight": {
+        "buffers_unchanged": true,
+        "fixed_weights": {
+          "att_space": 100.0,
+          "att_time": 100.0,
+          "div_aud": 0.1,
+          "div_img": 0.1,
+          "rec_aud": 0.1,
+          "rec_img": 0.1
+        },
+        "forward_called_once_only; schedule_not_an_input": true,
+        "full_total_max_abs_error": 0.0,
+        "lambda_zero_total_derivative_wrt_att_space": 0.0,
+        "lambda_zero_weighted_gradient_norm": 0.0,
+        "parameters_unchanged": true,
+        "passed": true
+      },
+      "sanity": {
+        "checkpoint_selection_unchanged": true,
+        "dataset_and_evaluator_unchanged": true,
+        "first_step_parameter_delta": 0.29845738581402464,
+        "nan_inf_count": 0,
+        "parameters_updated": true,
+        "schedule_only_changes_att_space_multiplier": true
+      },
+      "selection_metric": "IQR_cIoU",
+      "selection_score": 0.4143078712679333,
+      "total_training_seconds": 4324.459116458893,
+      "training_diagnostic_bests": {
+        "aud_ciou": {
+          "epoch": 92,
+          "value": 0.4110120201628538
+        },
+        "img_ciou": {
+          "epoch": 92,
+          "value": 0.4123691353237689
+        },
+        "iqr_ciou": {
+          "epoch": 92,
+          "value": 0.4143078712679333
+        }
+      }
+    },
+    "FULL_REFERENCE:flickr": {
+      "backward_called": false,
+      "checkpoint": {
+        "mtime_ns": 1786734905201357150,
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+        "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+        "size": 145864497
+      },
+      "checkpoint_after": {
+        "mtime_ns": 1786734905201357150,
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+        "sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+        "size": 145864497
+      },
+      "checkpoint_identical": true,
+      "configuration": "FULL_REFERENCE",
+      "dataset": "flickr",
+      "diagnostics": {
+        "IQR_minus_AUD_AUC": 0.0005999999999999339,
+        "IQR_minus_AUD_cIoU": 0.008000000000000007,
+        "OGL_minus_AUD_AUC": 0.02379999999999982,
+        "OGL_minus_AUD_cIoU": 0.07599999999999996,
+        "OGL_minus_IQR_AUC": 0.023199999999999887,
+        "OGL_minus_IQR_cIoU": 0.06799999999999995,
+        "aud_attention_entropy": {
+          "mean": 3.885078783077437,
+          "median": 3.885523070862753,
+          "std": 0.002758768531678564
+        },
+        "aud_coverage": {
+          "mean": 0.7645261248214071,
+          "median": 0.7713881008514798,
+          "std": 0.1348149064888348
+        },
+        "aud_effective_active_area": {
+          "mean": 48.67096179293742,
+          "median": 48.69240537896246,
+          "std": 0.13409678412878806
+        },
+        "aud_effective_active_ratio": {
+          "mean": 0.9932849345497433,
+          "median": 0.9937225587543359,
+          "std": 0.0027366690638528208
+        },
+        "aud_img_js": {
+          "mean": 9.38561691821195e-05,
+          "median": 6.017794075832122e-05,
+          "std": 8.932510843435083e-05
+        },
+        "aud_img_pearson": {
+          "mean": 0.987269006205784,
+          "median": 0.9905989010993015,
+          "std": 0.009672725068417416
+        },
+        "aud_img_spearman": {
+          "mean": 0.9806224489795918,
+          "median": 0.9841326530612244,
+          "std": 0.01365541680664729
+        },
+        "aud_img_threshold_mask_iou": {
+          "mean": 0.9058947226939789,
+          "median": 0.9183818391292505,
+          "std": 0.0525759261388113
+        },
+        "aud_img_top10_overlap": {
+          "mean": 0.8215999999999999,
+          "median": 0.8,
+          "std": 0.15599179465600108
+        },
+        "aud_outside_leakage": {
+          "mean": 0.25765658954126036,
+          "median": 0.22418508355435346,
+          "std": 0.17577705756080458
+        },
+        "aud_precision": {
+          "mean": 0.7423434104587397,
+          "median": 0.7758149164456465,
+          "std": 0.17577705756080458
+        },
+        "aud_predicted_area_ratio": {
+          "mean": 0.5188641581632653,
+          "median": 0.5157445790816326,
+          "std": 0.09188015329927605
+        },
+        "expand_base_iou_gain_vs_aud": {
+          "mean": 0.004433198541911781,
+          "median": 0.00013119595359645242,
+          "std": 0.022594318069715385
+        },
+        "fusion_synergy_auc": 0.0005999999999999339,
+        "fusion_synergy_ciou": 0.008000000000000007,
+        "img_attention_entropy": {
+          "mean": 3.8854539896812565,
+          "median": 3.8863502321731502,
+          "std": 0.0033395459044598206
+        },
+        "img_effective_active_area": {
+          "mean": 48.689312856728854,
+          "median": 48.73269858390555,
+          "std": 0.1622297146118936
+        },
+        "img_effective_active_ratio": {
+          "mean": 0.993659446055691,
+          "median": 0.994544869059297,
+          "std": 0.0033108105022835416
+        },
+        "iqr_beats_aud_and_img_fraction": 0.064,
+        "nan_inf_count": 0,
+        "sample_count": 250,
+        "sample_synergy": {
+          "mean": -0.013361604257126987,
+          "median": -0.00975931444515743,
+          "std": 0.014828070128608506
+        },
+        "sample_synergy_ge_001_fraction": 0.008,
+        "sample_synergy_positive_fraction": 0.064,
+        "shrink_base_iou_gain_vs_aud": {
+          "mean": -0.007380051413277298,
+          "median": -0.0023300498165140793,
+          "std": 0.034837032198751575
+        },
+        "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+      },
+      "metrics": {
+        "AUD": {
+          "AUC": 0.5916000000000001,
+          "cIoU": 0.764,
+          "mean_IoU": 0.5921927569730399
+        },
+        "EXPAND_BASE": {
+          "AUC": 0.5978,
+          "cIoU": 0.78,
+          "mean_IoU": 0.5966259555149516
+        },
+        "EXTRA_IQR_OGL": {
+          "AUC": 0.6123999999999999,
+          "cIoU": 0.812,
+          "mean_IoU": 0.6118988618272356
+        },
+        "IMG_QUERY": {
+          "AUC": 0.5890000000000001,
+          "cIoU": 0.752,
+          "mean_IoU": 0.5894827214421676
+        },
+        "IQR": {
+          "AUC": 0.5922000000000001,
+          "cIoU": 0.772,
+          "mean_IoU": 0.592654240809946
+        },
+        "OBJ_PRIOR": {
+          "AUC": 0.4668,
+          "cIoU": 0.448,
+          "mean_IoU": 0.46537125676259156
+        },
+        "OGL": {
+          "AUC": 0.6154,
+          "cIoU": 0.84,
+          "mean_IoU": 0.6157155157381571
+        },
+        "SHRINK_BASE": {
+          "AUC": 0.5838,
+          "cIoU": 0.744,
+          "mean_IoU": 0.5848127055597625
+        }
+      },
+      "optimizer_created": false
+    },
+    "FULL_REFERENCE:vggss": {
+      "backward_called": false,
+      "checkpoint": {
+        "mtime_ns": 1786734764661328891,
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+        "sha256": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+        "size": 145864158
+      },
+      "checkpoint_after": {
+        "mtime_ns": 1786734764661328891,
+        "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+        "sha256": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+        "size": 145864158
+      },
+      "checkpoint_identical": true,
+      "configuration": "FULL_REFERENCE",
+      "dataset": "vggss",
+      "diagnostics": {
+        "IQR_minus_AUD_AUC": 0.0018224117875145773,
+        "IQR_minus_AUD_cIoU": 0.005816207832493259,
+        "OGL_minus_AUD_AUC": 0.02181077937184961,
+        "OGL_minus_AUD_cIoU": 0.041682822799534724,
+        "OGL_minus_IQR_AUC": 0.01998836758433503,
+        "OGL_minus_IQR_cIoU": 0.035866614967041466,
+        "aud_attention_entropy": {
+          "mean": 3.8875448374830555,
+          "median": 3.8878256865761687,
+          "std": 0.0018513118039795973
+        },
+        "aud_coverage": {
+          "mean": 0.8278507381536874,
+          "median": 0.8610376599983914,
+          "std": 0.17165911496248132
+        },
+        "aud_effective_active_area": {
+          "mean": 48.791033205305055,
+          "median": 48.80465445934765,
+          "std": 0.09025020282071834
+        },
+        "aud_effective_active_ratio": {
+          "mean": 0.9957353715368379,
+          "median": 0.9960133563132174,
+          "std": 0.0018418408738922116
+        },
+        "aud_img_js": {
+          "mean": 4.487957840173105e-05,
+          "median": 3.458028079576586e-05,
+          "std": 3.6689287233191144e-05
+        },
+        "aud_img_pearson": {
+          "mean": 0.9858918117224792,
+          "median": 0.9894420105817784,
+          "std": 0.011988674825493954
+        },
+        "aud_img_spearman": {
+          "mean": 0.9800523702145055,
+          "median": 0.9847959183673469,
+          "std": 0.01605485512508271
+        },
+        "aud_img_threshold_mask_iou": {
+          "mean": 0.8937270014216843,
+          "median": 0.9064878252046491,
+          "std": 0.058059216590283576
+        },
+        "aud_img_top10_overlap": {
+          "mean": 0.8176812718107794,
+          "median": 0.8,
+          "std": 0.15938245258042052
+        },
+        "aud_outside_leakage": {
+          "mean": 0.5067701310006122,
+          "median": 0.5291866086266398,
+          "std": 0.299209643749103
+        },
+        "aud_precision": {
+          "mean": 0.49322986899938787,
+          "median": 0.4708133913733602,
+          "std": 0.299209643749103
+        },
+        "aud_predicted_area_ratio": {
+          "mean": 0.4848401134791111,
+          "median": 0.48123604910714285,
+          "std": 0.10281501436058117
+        },
+        "expand_base_iou_gain_vs_aud": {
+          "mean": 0.0004164644620527927,
+          "median": -0.0008365768635530679,
+          "std": 0.02013497147498996
+        },
+        "fusion_synergy_auc": -0.00015509887553316615,
+        "fusion_synergy_ciou": 0.0009693679720822468,
+        "img_attention_entropy": {
+          "mean": 3.887282180350994,
+          "median": 3.8877722236198586,
+          "std": 0.002339928280625654
+        },
+        "img_effective_active_area": {
+          "mean": 48.77826945054352,
+          "median": 48.80204528798626,
+          "std": 0.11398507826181305
+        },
+        "img_effective_active_ratio": {
+          "mean": 0.995474886745786,
+          "median": 0.9959601079180869,
+          "std": 0.0023262260869757767
+        },
+        "iqr_beats_aud_and_img_fraction": 0.0785188057386584,
+        "nan_inf_count": 0,
+        "sample_count": 5158,
+        "sample_synergy": {
+          "mean": -0.01061350610614852,
+          "median": -0.006929385691563927,
+          "std": 0.012887160441364792
+        },
+        "sample_synergy_ge_001_fraction": 0.00407134548274525,
+        "sample_synergy_positive_fraction": 0.0785188057386584,
+        "shrink_base_iou_gain_vs_aud": {
+          "mean": 0.001048693358762828,
+          "median": 0.002193458842385518,
+          "std": 0.02673537438686406
+        },
+        "shrink_expand_scope_note": "SHRINK_BASE/EXPAND_BASE are base AUD-IMG branch-interaction diagnostics, not Experiment 5.2 PROP_F34/K34 oracles."
+      },
+      "metrics": {
+        "AUD": {
+          "AUC": 0.40737689026754553,
+          "cIoU": 0.4015122140364482,
+          "mean_IoU": 0.40747255557495266
+        },
+        "EXPAND_BASE": {
+          "AUC": 0.40796820473051576,
+          "cIoU": 0.40345094998061265,
+          "mean_IoU": 0.4078890200370054
+        },
+        "EXTRA_IQR_OGL": {
+          "AUC": 0.4214715005816208,
+          "cIoU": 0.43136874757658006,
+          "mean_IoU": 0.42120735822024896
+        },
+        "IMG_QUERY": {
+          "AUC": 0.4093544009305933,
+          "cIoU": 0.4063590538968592,
+          "mean_IoU": 0.40883345008307165
+        },
+        "IQR": {
+          "AUC": 0.4091993020550601,
+          "cIoU": 0.40732842186894147,
+          "mean_IoU": 0.4087557108675922
+        },
+        "OBJ_PRIOR": {
+          "AUC": 0.3924195424583172,
+          "cIoU": 0.34780922838309425,
+          "mean_IoU": 0.3914037623400056
+        },
+        "OGL": {
+          "AUC": 0.42918766963939514,
+          "cIoU": 0.44319503683598294,
+          "mean_IoU": 0.4287699942023086
+        },
+        "SHRINK_BASE": {
+          "AUC": 0.4083850329585111,
+          "cIoU": 0.402287708414114,
+          "mean_IoU": 0.40852124893371555
+        }
+      },
+      "optimizer_created": false
+    }
+  }
+}
