@@ -1,0 +1,43 @@
+{
+  "total_teacher_parameters": 36417282,
+  "frozen_teacher_parameters": 36417282,
+  "proj3_spatial_parameters": 131584,
+  "topdown_adapter_parameters": 1311488,
+  "spatial_student_parameters": 1443072,
+  "trainable_parameters": 1443072
+}
+Running Experiment G geometry and model sanity checks...
+Validate:   0%|          | 0/8 [00:00<?, ?it/s]Validate:  12%|█▎        | 1/8 [00:01<00:11,  1.60s/it]Validate:  38%|███▊      | 3/8 [00:01<00:02,  2.16it/s]Validate:  62%|██████▎   | 5/8 [00:01<00:00,  3.86it/s]Validate:  88%|████████▊ | 7/8 [00:01<00:00,  5.64it/s]Validate: 100%|██████████| 8/8 [00:02<00:00,  3.89it/s]
+SANITY/AUD_L4/cIoU,AUC 0.8000 0.6102
+SANITY/AUD_FINE/cIoU,AUC 0.8080 0.6116
+{
+  "identity_inverse_max_abs_error": 2.384185791015625e-07,
+  "horizontal_flip_vs_experiment_f_max_abs_error": 3.5762786865234375e-07,
+  "horizontal_flip_inverse_max_abs_error": 4.76837158203125e-07,
+  "crop_resize_flip_valid_recovery_max_abs_error": 2.384185791015625e-07,
+  "crop_resize_flip_valid_ratio": 0.6122449040412903,
+  "teacher_aud_l4_reproduced": true,
+  "teacher_has_any_gradient": false,
+  "initial_adapter_gradient_l1": 0.11420417716726661,
+  "initial_proj3_spatial_gradient_l1": 0.0,
+  "second_step_adapter_gradient_l1": 0.11517095599083405,
+  "second_step_proj3_spatial_gradient_l1": 0.000971072800894035,
+  "proj3_spatial_copy_max_abs_error": 0.0,
+  "zero_init_f34_minus_up_f4_max_abs": 0.0,
+  "f4_hook_minus_formal_tokens_max_abs": 0.0,
+  "probability_sum_max_errors": {
+    "AUD_L4_A": 0.0,
+    "AUD_L4_B": 1.1920928955078125e-07,
+    "AUD_FINE_A": 1.1920928955078125e-07,
+    "AUD_FINE_B": 5.960464477539063e-08
+  },
+  "sum_pool_probability_sum_max_error": 0.0,
+  "mean_valid_ratio": 0.735331654548645,
+  "skipped_small_overlap_samples": 0,
+  "loss_coarse": 6.370920891640708e-05,
+  "loss_equiv": 0.0006317913066595793,
+  "loss_total": 0.000695500522851944,
+  "student_restored_after_temporary_gradient_audit": true
+}
+All Experiment G sanity checks passed.
+Sanity-only mode: temporary audit update was restored; no training checkpoint written.

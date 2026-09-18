@@ -1,0 +1,21 @@
+{
+  "base_loss_mean": 3.1680381298065186,
+  "base_loss_hard": 3.1680381298065186,
+  "mean_cram_loss": 0.6931197196245193,
+  "hard_cram_loss": 0.6931408941745758,
+  "mean_grad_norm": 0.002236303989775479,
+  "hard_grad_norm": 0.001530707799247466,
+  "hard_to_mean_grad_ratio": 0.6895719977567314,
+  "gradient_cosine": 0.8380469381809235,
+  "mean_max_parameter_grad": 0.00015458986490557436,
+  "hard_max_parameter_grad": 9.41014759519021e-05,
+  "mean_mean_parameter_grad": 1.0868257227514277e-07,
+  "hard_mean_parameter_grad": 9.026121716715352e-08,
+  "hard_neff": 2.4262682795524597,
+  "hardest_weight": 0.586128830909729,
+  "dataset": "vggss",
+  "tau": 2.6128406021282223e-05,
+  "batches": 4,
+  "microbatch": 64,
+  "finite": true
+}

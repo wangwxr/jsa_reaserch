@@ -1,0 +1,24 @@
+{
+  "all_parameters_frozen": true,
+  "backward_called": false,
+  "checkpoint": {
+    "mtime_ns": 1789097292577211810,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C1/vggss/seed12345/selected_best.pth",
+    "sha256": "dfc86d0ac57eec25b6a0736adf8478e3efdbc22ad56edd2b9aab91002f00dd32",
+    "size": 145865943
+  },
+  "dataset": "vggss",
+  "elapsed_seconds": 64.88122320175171,
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C1",
+  "kind": "best",
+  "model_state_unchanged": true,
+  "optimizer_created": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "sample_mismatch": 0,
+  "samples": 5158,
+  "seed": 12345
+}

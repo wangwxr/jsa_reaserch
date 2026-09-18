@@ -1,0 +1,302 @@
+[
+  {
+    "exponent": 16,
+    "base_loss": 0.0033720415085554123,
+    "coarse_loss": 0.002209642669185996,
+    "equiv_loss": 0.0011623988393694162,
+    "cram_loss": 0.6931469440460205,
+    "d_pos": 1.085487255636508e-07,
+    "d_neg": 4.776140372086957e-07,
+    "gap": 3.690653045396175e-07,
+    "anchor_entropy": 5.273141860961914,
+    "scale": 65536.0,
+    "amp": true,
+    "groups": [
+      {
+        "group": "all_student",
+        "base_norm": 0.008375754968870226,
+        "weighted_cram_norm": 0.008642137544000976,
+        "raw_cram_norm": 3.45685501760039e-07,
+        "total_norm": 0.0013566081917239427,
+        "ratio": 1.031804007653137,
+        "cosine": -0.9877775666951194,
+        "sum_relative_error": 0.00218846846321204
+      },
+      {
+        "group": "proj3_spatial",
+        "base_norm": 0.004863668625912335,
+        "weighted_cram_norm": 0.004962033132562833,
+        "raw_cram_norm": 1.9848132530251335e-07,
+        "total_norm": 0.0006533612992627666,
+        "ratio": 1.0202243438474485,
+        "cosine": -0.9913565249502246,
+        "sum_relative_error": 0.002600058009990022
+      },
+      {
+        "group": "adapter",
+        "base_norm": 0.006818944111508049,
+        "weighted_cram_norm": 0.007075646155707611,
+        "raw_cram_norm": 2.830258462283045e-07,
+        "total_norm": 0.0011889090791470033,
+        "ratio": 1.0376454242771014,
+        "cosine": -0.9860345938138989,
+        "sum_relative_error": 0.0020479689031274225
+      },
+      {
+        "group": "adapter_output_conv",
+        "base_norm": 0.002913662454357986,
+        "weighted_cram_norm": 0.0030853380579495943,
+        "raw_cram_norm": 1.2341352231798377e-07,
+        "total_norm": 0.0005686788363735364,
+        "ratio": 1.058920896391012,
+        "cosine": -0.9836524448051011,
+        "sum_relative_error": 0.001884899940530017
+      },
+      {
+        "group": "K34_activation",
+        "base_norm": 1.56818967853165e-05,
+        "weighted_cram_norm": 1.447535446391824e-05,
+        "raw_cram_norm": 5.790141785567296e-10,
+        "total_norm": 2.2056690596072468e-05,
+        "ratio": 0.9230614550066427,
+        "cosine": 0.06836934522232246,
+        "sum_relative_error": 0.00022149592133712052
+      },
+      {
+        "group": "F34_activation",
+        "base_norm": 3.4675296261686713e-06,
+        "weighted_cram_norm": 2.7330193826886286e-06,
+        "raw_cram_norm": 1.0932077530754515e-10,
+        "total_norm": 4.4734259208858095e-06,
+        "ratio": 0.7881747749357761,
+        "cosine": 0.027349079203277754,
+        "sum_relative_error": 0.00037070306944308405
+      }
+    ]
+  },
+  {
+    "exponent": 24,
+    "base_loss": 0.0033720415085554123,
+    "coarse_loss": 0.002209642669185996,
+    "equiv_loss": 0.0011623988393694162,
+    "cram_loss": 0.6931469440460205,
+    "d_pos": 1.085487255636508e-07,
+    "d_neg": 4.776140372086957e-07,
+    "gap": 3.690653045396175e-07,
+    "anchor_entropy": 5.273141860961914,
+    "scale": 16777216.0,
+    "amp": true,
+    "groups": [
+      {
+        "group": "all_student",
+        "base_norm": 0.00837573509831917,
+        "weighted_cram_norm": 0.008642136603974537,
+        "raw_cram_norm": 3.456854641589815e-07,
+        "total_norm": 0.0013565979818945856,
+        "ratio": 1.0318063432675693,
+        "cosine": -0.9877777418104926,
+        "sum_relative_error": 0.002180177046311849
+      },
+      {
+        "group": "proj3_spatial",
+        "base_norm": 0.004863660693147858,
+        "weighted_cram_norm": 0.004962031238352066,
+        "raw_cram_norm": 1.9848124953408264e-07,
+        "total_norm": 0.0006533549384797858,
+        "ratio": 1.02022561839949,
+        "cosine": -0.9913566092295333,
+        "sum_relative_error": 0.002590038162313383
+      },
+      {
+        "group": "adapter",
+        "base_norm": 0.006818925362485215,
+        "weighted_cram_norm": 0.0070756463359452045,
+        "raw_cram_norm": 2.830258534378082e-07,
+        "total_norm": 0.0011889009247387007,
+        "ratio": 1.037648303774134,
+        "cosine": -0.9860348216311032,
+        "sum_relative_error": 0.0020402754396072827
+      },
+      {
+        "group": "adapter_output_conv",
+        "base_norm": 0.002913659652057112,
+        "weighted_cram_norm": 0.0030853396749037157,
+        "raw_cram_norm": 1.2341358699614863e-07,
+        "total_norm": 0.0005686731259068542,
+        "ratio": 1.058922469796839,
+        "cosine": -0.9836528118784807,
+        "sum_relative_error": 0.001866935508751426
+      },
+      {
+        "group": "K34_activation",
+        "base_norm": 1.5681897054082e-05,
+        "weighted_cram_norm": 1.4475354379232949e-05,
+        "raw_cram_norm": 5.790141751693179e-10,
+        "total_norm": 2.205668975702208e-05,
+        "ratio": 0.9230614337864825,
+        "cosine": 0.06836932487897088,
+        "sum_relative_error": 0.00022042515708387228
+      },
+      {
+        "group": "F34_activation",
+        "base_norm": 3.467529449090021e-06,
+        "weighted_cram_norm": 2.7330191699402264e-06,
+        "raw_cram_norm": 1.0932076679760905e-10,
+        "total_norm": 4.473425377416404e-06,
+        "ratio": 0.7881747538315641,
+        "cosine": 0.027348882452667072,
+        "sum_relative_error": 0.00035894067609837474
+      }
+    ]
+  },
+  {
+    "exponent": 28,
+    "base_loss": 0.0033720415085554123,
+    "coarse_loss": 0.002209642669185996,
+    "equiv_loss": 0.0011623988393694162,
+    "cram_loss": 0.6931469440460205,
+    "d_pos": 1.085487255636508e-07,
+    "d_neg": 4.776140372086957e-07,
+    "gap": 3.690653045396175e-07,
+    "anchor_entropy": 5.273141860961914,
+    "scale": 268435456.0,
+    "amp": true,
+    "groups": [
+      {
+        "group": "all_student",
+        "base_norm": Infinity,
+        "weighted_cram_norm": Infinity,
+        "raw_cram_norm": Infinity,
+        "total_norm": 0.0013565985038312834,
+        "ratio": NaN,
+        "cosine": NaN,
+        "sum_relative_error": NaN
+      },
+      {
+        "group": "proj3_spatial",
+        "base_norm": Infinity,
+        "weighted_cram_norm": Infinity,
+        "raw_cram_norm": Infinity,
+        "total_norm": 0.0006533550643269938,
+        "ratio": NaN,
+        "cosine": NaN,
+        "sum_relative_error": NaN
+      },
+      {
+        "group": "adapter",
+        "base_norm": 0.006818925120605006,
+        "weighted_cram_norm": 0.00707564645274338,
+        "raw_cram_norm": 2.830258581097352e-07,
+        "total_norm": 0.0011889014511369503,
+        "ratio": 1.0376483577100193,
+        "cosine": -0.9860348181587268,
+        "sum_relative_error": 0.0020407969903698717
+      },
+      {
+        "group": "adapter_output_conv",
+        "base_norm": 0.0029136596306678624,
+        "weighted_cram_norm": 0.003085339670011109,
+        "raw_cram_norm": 1.2341358680044436e-07,
+        "total_norm": 0.0005686732202448538,
+        "ratio": 1.0589224758912195,
+        "cosine": -0.9836528109264784,
+        "sum_relative_error": 0.0018667698232540087
+      },
+      {
+        "group": "K34_activation",
+        "base_norm": 1.568189705408242e-05,
+        "weighted_cram_norm": 1.4475354379232954e-05,
+        "raw_cram_norm": 5.790141751693181e-10,
+        "total_norm": 2.205668975799398e-05,
+        "ratio": 0.9230614337864581,
+        "cosine": 0.06836932481858626,
+        "sum_relative_error": 0.00022042514779445124
+      },
+      {
+        "group": "F34_activation",
+        "base_norm": 3.4675294486008423e-06,
+        "weighted_cram_norm": 2.7330191702501045e-06,
+        "raw_cram_norm": 1.0932076681000417e-10,
+        "total_norm": 4.4734253855423445e-06,
+        "ratio": 0.7881747540321208,
+        "cosine": 0.02734888279028702,
+        "sum_relative_error": 0.00035894067980349754
+      }
+    ]
+  },
+  {
+    "exponent": 32,
+    "base_loss": 0.0033720415085554123,
+    "coarse_loss": 0.002209642669185996,
+    "equiv_loss": 0.0011623988393694162,
+    "cram_loss": 0.6931469440460205,
+    "d_pos": 1.085487255636508e-07,
+    "d_neg": 4.776140372086957e-07,
+    "gap": 3.690653045396175e-07,
+    "anchor_entropy": 5.273141860961914,
+    "scale": 4294967296.0,
+    "amp": true,
+    "groups": [
+      {
+        "group": "all_student",
+        "base_norm": NaN,
+        "weighted_cram_norm": Infinity,
+        "raw_cram_norm": Infinity,
+        "total_norm": NaN,
+        "ratio": NaN,
+        "cosine": NaN,
+        "sum_relative_error": NaN
+      },
+      {
+        "group": "proj3_spatial",
+        "base_norm": NaN,
+        "weighted_cram_norm": Infinity,
+        "raw_cram_norm": Infinity,
+        "total_norm": NaN,
+        "ratio": NaN,
+        "cosine": NaN,
+        "sum_relative_error": NaN
+      },
+      {
+        "group": "adapter",
+        "base_norm": NaN,
+        "weighted_cram_norm": Infinity,
+        "raw_cram_norm": Infinity,
+        "total_norm": NaN,
+        "ratio": NaN,
+        "cosine": NaN,
+        "sum_relative_error": NaN
+      },
+      {
+        "group": "adapter_output_conv",
+        "base_norm": Infinity,
+        "weighted_cram_norm": Infinity,
+        "raw_cram_norm": Infinity,
+        "total_norm": Infinity,
+        "ratio": NaN,
+        "cosine": NaN,
+        "sum_relative_error": NaN
+      },
+      {
+        "group": "K34_activation",
+        "base_norm": 1.568189705408242e-05,
+        "weighted_cram_norm": 1.4475354379232954e-05,
+        "raw_cram_norm": 5.790141751693181e-10,
+        "total_norm": 2.2056689758023115e-05,
+        "ratio": 0.9230614337864581,
+        "cosine": 0.06836932481862966,
+        "sum_relative_error": 0.00022042514780580696
+      },
+      {
+        "group": "F34_activation",
+        "base_norm": 3.467529448596448e-06,
+        "weighted_cram_norm": 2.7330191702126597e-06,
+        "raw_cram_norm": 1.0932076680850638e-10,
+        "total_norm": 4.473425385515753e-06,
+        "ratio": 0.788174754022321,
+        "cosine": 0.02734888270652575,
+        "sum_relative_error": 0.0003589407121378167
+      }
+    ]
+  }
+]

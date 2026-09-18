@@ -1,0 +1,13 @@
+{
+  "dataset": "flickr_144k",
+  "selection_metric": "mean_spearman",
+  "selection_source": "8.1 diagnostic_visualizations/fig_81_audio_swap_examples_flickr_144k",
+  "counterfactual_index_source": "8.1 results/flickr_144k_counterfactual_indices.npz",
+  "reference_sample_ids_match": true,
+  "wrong_audio_ids_match": true,
+  "samples": [
+    {"quantile": 0.05, "sample_index": 44, "sample_id": "10446128125", "matched_audio_id": "10446128125", "reference_mean_spearman": 0.9556377551020409, "wrong_audio_indices": [68, 57, 166, 5, 151, 187, 86, 243], "wrong_audio_ids": ["10771238614", "10610974774", "3052033339", "10016382545", "2695985181", "3908875350", "11650557765", "8311669586"]},
+    {"quantile": 0.5, "sample_index": 103, "sample_id": "12729873904", "matched_audio_id": "12729873904", "reference_mean_spearman": 0.9851147959183671, "wrong_audio_indices": [160, 95, 122, 163, 234, 6, 37, 191], "wrong_audio_ids": ["2897081671", "12158276143", "14742398172", "2935372113", "7178293884", "10031203703", "10389014583", "4180455681"]},
+    {"quantile": 0.95, "sample_index": 68, "sample_id": "10771238614", "matched_audio_id": "10771238614", "reference_mean_spearman": 0.9948341836734692, "wrong_audio_indices": [69, 213, 235, 138, 141, 208, 58, 96], "wrong_audio_ids": ["10795023275", "5237296528", "7387939334", "17140316339", "20854461578", "5006362787", "10624261424", "12328837165"]}
+  ]
+}

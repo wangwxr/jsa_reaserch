@@ -1,0 +1,60 @@
+{
+  "batch_size": 256,
+  "fixed_train_epoch": 0,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "rows": [
+    {
+      "checkpoint": {
+        "mtime_ns": 1789050511629612858,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/M0/flickr/seed12345/selected_best.pth",
+        "sha256": "bfb61cae7372301eaf38a4955f8500209e62c20f516ab60c19a0b7cc4c5d63c4",
+        "size": 145865559
+      },
+      "d_pos_mean": 1.5048490240587853e-05,
+      "d_pos_median": 1.1229074516450055e-05,
+      "dataset": "flickr",
+      "group": "C0",
+      "seed": 12345
+    },
+    {
+      "checkpoint": {
+        "mtime_ns": 1789099355978722732,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C1/flickr/seed12345/selected_best.pth",
+        "sha256": "62567c4cb267d64349c3c7307ddabc02918aee825d1fa131835f26b975d7a7d2",
+        "size": 145865943
+      },
+      "d_pos_mean": 1.5855608580750413e-05,
+      "d_pos_median": 1.1779460692196153e-05,
+      "dataset": "flickr",
+      "group": "C1",
+      "seed": 12345
+    },
+    {
+      "checkpoint": {
+        "mtime_ns": 1789132193812017670,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C2/flickr/seed12345/selected_best.pth",
+        "sha256": "ed24966850acda712a95945682e55f691f4379878509b20da494b1e5a520f027",
+        "size": 145865943
+      },
+      "d_pos_mean": 2.885389039875008e-05,
+      "d_pos_median": 1.8793971321429126e-05,
+      "dataset": "flickr",
+      "group": "C2",
+      "seed": 12345
+    },
+    {
+      "checkpoint": {
+        "mtime_ns": 1789159219301514512,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/flickr/seed12345/selected_best.pth",
+        "sha256": "c96f672f73d47b1d74395b15242d54f89ca9c30e9b95082648999e46a49eac3a",
+        "size": 145865943
+      },
+      "d_pos_mean": 2.3983368009794503e-05,
+      "d_pos_median": 1.641333983570803e-05,
+      "dataset": "flickr",
+      "group": "C3",
+      "seed": 12345
+    }
+  ],
+  "test_data_used": false
+}

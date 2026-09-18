@@ -1,0 +1,751 @@
+flickr C1 seed12345 epoch 1/50 batch 1/562 total=12.7800 d_pos=0.000009 d_neg=0.000009 gap=-0.000001 ETA=1:32:53
+flickr C1 seed12345 epoch 1/50 batch 51/562 total=11.5459 d_pos=0.000009 d_neg=0.000009 gap=0.000000 ETA=0:09:57
+flickr C1 seed12345 epoch 1/50 batch 101/562 total=11.2820 d_pos=0.000013 d_neg=0.000013 gap=-0.000000 ETA=0:08:18
+flickr C1 seed12345 epoch 1/50 batch 151/562 total=10.9765 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:07:13
+flickr C1 seed12345 epoch 1/50 batch 201/562 total=10.9659 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:06:15
+flickr C1 seed12345 epoch 1/50 batch 251/562 total=10.7806 d_pos=0.000006 d_neg=0.000006 gap=0.000000 ETA=0:05:20
+flickr C1 seed12345 epoch 1/50 batch 301/562 total=10.6270 d_pos=0.000003 d_neg=0.000003 gap=-0.000000 ETA=0:04:27
+flickr C1 seed12345 epoch 1/50 batch 351/562 total=10.4323 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:03:35
+flickr C1 seed12345 epoch 1/50 batch 401/562 total=10.5287 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:02:43
+flickr C1 seed12345 epoch 1/50 batch 451/562 total=10.5041 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:01:52
+flickr C1 seed12345 epoch 1/50 batch 501/562 total=10.1280 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:01:01
+flickr C1 seed12345 epoch 1/50 batch 551/562 total=10.2684 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:00:11
+flickr C1 seed12345 epoch 1/50 batch 562/562 total=10.7392 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:00:00
+{"epoch": 1, "learning_rate": 5e-05, "epoch_seconds": 572.6528038978577, "gradient_l2_mean": 12.886794706980266, "parameter_l2": 199.34203494175526, "info_loss": 10.178673262273714, "recon_loss": 5.703600287013207, "div_loss": 0.04209870561456898, "a2v_loss": 5.677565495538393e-06, "v2a_loss": 8.986223428458093e-06, "original_match_loss": 1.4663789027240115e-05, "d_pos": 5.677565463981192e-06, "d_neg": 5.73083975658688e-06, "g_match": 5.327428485625202e-08, "cram_loss": 0.6931471517077544, "weighted_cram_loss": 0.06931471588666753, "total_loss": 10.824024468554297, "AUD_cIoU": 0.688, "AUD_AUC": 0.5742, "IQR_cIoU": 0.684, "IQR_AUC": 0.5764000000000001}
+flickr C1 seed12345 epoch 2/50 batch 1/562 total=10.1090 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:39:32
+flickr C1 seed12345 epoch 2/50 batch 51/562 total=10.4858 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:09:01
+flickr C1 seed12345 epoch 2/50 batch 101/562 total=10.1476 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:07:54
+flickr C1 seed12345 epoch 2/50 batch 151/562 total=10.3365 d_pos=0.000003 d_neg=0.000003 gap=0.000000 ETA=0:06:58
+flickr C1 seed12345 epoch 2/50 batch 201/562 total=9.8928 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:06:05
+flickr C1 seed12345 epoch 2/50 batch 251/562 total=9.9101 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:05:13
+flickr C1 seed12345 epoch 2/50 batch 301/562 total=9.9232 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:04:22
+flickr C1 seed12345 epoch 2/50 batch 351/562 total=10.0234 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:03:32
+flickr C1 seed12345 epoch 2/50 batch 401/562 total=9.8041 d_pos=0.000004 d_neg=0.000005 gap=0.000000 ETA=0:02:41
+flickr C1 seed12345 epoch 2/50 batch 451/562 total=10.2095 d_pos=0.000004 d_neg=0.000005 gap=0.000000 ETA=0:01:51
+flickr C1 seed12345 epoch 2/50 batch 501/562 total=10.0099 d_pos=0.000004 d_neg=0.000004 gap=0.000000 ETA=0:01:01
+flickr C1 seed12345 epoch 2/50 batch 551/562 total=10.0989 d_pos=0.000005 d_neg=0.000005 gap=0.000000 ETA=0:00:11
+flickr C1 seed12345 epoch 2/50 batch 562/562 total=10.1449 d_pos=0.000004 d_neg=0.000005 gap=0.000001 ETA=0:00:00
+{"epoch": 2, "learning_rate": 5e-05, "epoch_seconds": 566.7493393421173, "gradient_l2_mean": 19.431286975179106, "parameter_l2": 199.64679711289585, "info_loss": 9.521519701676013, "recon_loss": 4.55983589637322, "div_loss": 0.00027571304691325726, "a2v_loss": 3.795884947076662e-06, "v2a_loss": 2.5675547468475272e-05, "original_match_loss": 2.947143238520847e-05, "d_pos": 3.7958849689239546e-06, "d_neg": 4.0031240770947345e-06, "g_match": 2.0723912004898127e-07, "cram_loss": 0.6931470729065959, "weighted_cram_loss": 0.06931470916523629, "total_loss": 10.049792980384147, "AUD_cIoU": 0.716, "AUD_AUC": 0.596, "IQR_cIoU": 0.72, "IQR_AUC": 0.5945999999999999}
+flickr C1 seed12345 epoch 3/50 batch 1/562 total=9.6709 d_pos=0.000004 d_neg=0.000005 gap=0.000000 ETA=0:38:10
+flickr C1 seed12345 epoch 3/50 batch 51/562 total=9.8927 d_pos=0.000006 d_neg=0.000007 gap=0.000000 ETA=0:09:00
+flickr C1 seed12345 epoch 3/50 batch 101/562 total=9.7981 d_pos=0.000006 d_neg=0.000006 gap=0.000001 ETA=0:07:53
+flickr C1 seed12345 epoch 3/50 batch 151/562 total=9.6438 d_pos=0.000006 d_neg=0.000007 gap=0.000001 ETA=0:06:58
+flickr C1 seed12345 epoch 3/50 batch 201/562 total=9.6599 d_pos=0.000006 d_neg=0.000007 gap=0.000001 ETA=0:06:05
+flickr C1 seed12345 epoch 3/50 batch 251/562 total=9.5978 d_pos=0.000005 d_neg=0.000006 gap=0.000001 ETA=0:05:13
+flickr C1 seed12345 epoch 3/50 batch 301/562 total=9.6210 d_pos=0.000008 d_neg=0.000009 gap=0.000001 ETA=0:04:22
+flickr C1 seed12345 epoch 3/50 batch 351/562 total=9.6781 d_pos=0.000006 d_neg=0.000007 gap=0.000000 ETA=0:03:32
+flickr C1 seed12345 epoch 3/50 batch 401/562 total=9.5047 d_pos=0.000005 d_neg=0.000006 gap=0.000000 ETA=0:02:41
+flickr C1 seed12345 epoch 3/50 batch 451/562 total=9.3833 d_pos=0.000006 d_neg=0.000006 gap=0.000001 ETA=0:01:51
+flickr C1 seed12345 epoch 3/50 batch 501/562 total=9.3613 d_pos=0.000005 d_neg=0.000006 gap=0.000001 ETA=0:01:01
+flickr C1 seed12345 epoch 3/50 batch 551/562 total=9.5832 d_pos=0.000005 d_neg=0.000006 gap=0.000000 ETA=0:00:11
+flickr C1 seed12345 epoch 3/50 batch 562/562 total=9.5221 d_pos=0.000007 d_neg=0.000008 gap=0.000001 ETA=0:00:00
+{"epoch": 3, "learning_rate": 5e-05, "epoch_seconds": 564.9412262439728, "gradient_l2_mean": 21.909744447040435, "parameter_l2": 199.92617148599894, "info_loss": 9.145824420494542, "recon_loss": 4.299567689250797, "div_loss": 0.00034388376721363264, "a2v_loss": 5.54563567364642e-06, "v2a_loss": 4.174748110939831e-05, "original_match_loss": 4.7293116763624915e-05, "d_pos": 5.545635697112031e-06, "d_neg": 6.117570850445035e-06, "g_match": 5.719351798076747e-07, "cram_loss": 0.6931468866685956, "weighted_cram_loss": 0.06931469002175161, "total_loss": 9.649859818699522, "AUD_cIoU": 0.772, "AUD_AUC": 0.6172000000000001, "IQR_cIoU": 0.792, "IQR_AUC": 0.6175999999999999}
+flickr C1 seed12345 epoch 4/50 batch 1/562 total=9.3553 d_pos=0.000006 d_neg=0.000007 gap=0.000001 ETA=0:50:24
+flickr C1 seed12345 epoch 4/50 batch 51/562 total=9.4136 d_pos=0.000006 d_neg=0.000006 gap=0.000000 ETA=0:09:12
+flickr C1 seed12345 epoch 4/50 batch 101/562 total=9.0683 d_pos=0.000007 d_neg=0.000007 gap=0.000001 ETA=0:07:59
+flickr C1 seed12345 epoch 4/50 batch 151/562 total=9.2075 d_pos=0.000007 d_neg=0.000008 gap=0.000001 ETA=0:07:01
+flickr C1 seed12345 epoch 4/50 batch 201/562 total=9.2143 d_pos=0.000008 d_neg=0.000008 gap=0.000001 ETA=0:06:07
+flickr C1 seed12345 epoch 4/50 batch 251/562 total=9.1199 d_pos=0.000007 d_neg=0.000008 gap=0.000000 ETA=0:05:15
+flickr C1 seed12345 epoch 4/50 batch 301/562 total=9.0375 d_pos=0.000006 d_neg=0.000007 gap=0.000000 ETA=0:04:24
+flickr C1 seed12345 epoch 4/50 batch 351/562 total=9.1975 d_pos=0.000006 d_neg=0.000007 gap=0.000001 ETA=0:03:33
+flickr C1 seed12345 epoch 4/50 batch 401/562 total=9.5649 d_pos=0.000008 d_neg=0.000008 gap=0.000001 ETA=0:02:42
+flickr C1 seed12345 epoch 4/50 batch 451/562 total=9.3861 d_pos=0.000007 d_neg=0.000009 gap=0.000002 ETA=0:01:51
+flickr C1 seed12345 epoch 4/50 batch 501/562 total=9.3528 d_pos=0.000007 d_neg=0.000009 gap=0.000001 ETA=0:01:01
+flickr C1 seed12345 epoch 4/50 batch 551/562 total=9.0479 d_pos=0.000008 d_neg=0.000009 gap=0.000001 ETA=0:00:11
+flickr C1 seed12345 epoch 4/50 batch 562/562 total=9.0872 d_pos=0.000010 d_neg=0.000012 gap=0.000002 ETA=0:00:00
+{"epoch": 4, "learning_rate": 5e-05, "epoch_seconds": 566.6136689186096, "gradient_l2_mean": 22.4972139017791, "parameter_l2": 200.19754801151979, "info_loss": 8.83172462843491, "recon_loss": 4.138622920284067, "div_loss": 0.0005013698768334668, "a2v_loss": 7.40608732232813e-06, "v2a_loss": 6.21526367878648e-05, "original_match_loss": 6.955872410938377e-05, "d_pos": 7.406087313427381e-06, "d_neg": 8.291455252087046e-06, "g_match": 8.853679370413471e-07, "cram_loss": 0.6931467330964859, "weighted_cram_loss": 0.06931467452401369, "total_loss": 9.32190791058795, "AUD_cIoU": 0.792, "AUD_AUC": 0.619, "IQR_cIoU": 0.784, "IQR_AUC": 0.6200000000000001}
+flickr C1 seed12345 epoch 5/50 batch 1/562 total=8.9315 d_pos=0.000011 d_neg=0.000013 gap=0.000002 ETA=0:52:22
+flickr C1 seed12345 epoch 5/50 batch 51/562 total=9.1584 d_pos=0.000012 d_neg=0.000014 gap=0.000002 ETA=0:09:16
+flickr C1 seed12345 epoch 5/50 batch 101/562 total=9.1482 d_pos=0.000010 d_neg=0.000013 gap=0.000003 ETA=0:08:00
+flickr C1 seed12345 epoch 5/50 batch 151/562 total=8.9295 d_pos=0.000009 d_neg=0.000011 gap=0.000002 ETA=0:07:02
+flickr C1 seed12345 epoch 5/50 batch 201/562 total=9.4335 d_pos=0.000010 d_neg=0.000011 gap=0.000002 ETA=0:06:07
+flickr C1 seed12345 epoch 5/50 batch 251/562 total=8.8831 d_pos=0.000008 d_neg=0.000009 gap=0.000001 ETA=0:05:15
+flickr C1 seed12345 epoch 5/50 batch 301/562 total=8.9010 d_pos=0.000010 d_neg=0.000011 gap=0.000002 ETA=0:04:24
+flickr C1 seed12345 epoch 5/50 batch 351/562 total=8.9994 d_pos=0.000010 d_neg=0.000012 gap=0.000002 ETA=0:03:33
+flickr C1 seed12345 epoch 5/50 batch 401/562 total=9.0422 d_pos=0.000010 d_neg=0.000013 gap=0.000003 ETA=0:02:42
+flickr C1 seed12345 epoch 5/50 batch 451/562 total=9.5600 d_pos=0.000009 d_neg=0.000010 gap=0.000001 ETA=0:01:51
+flickr C1 seed12345 epoch 5/50 batch 501/562 total=8.7777 d_pos=0.000010 d_neg=0.000011 gap=0.000001 ETA=0:01:01
+flickr C1 seed12345 epoch 5/50 batch 551/562 total=8.6771 d_pos=0.000008 d_neg=0.000010 gap=0.000002 ETA=0:00:11
+flickr C1 seed12345 epoch 5/50 batch 562/562 total=8.7047 d_pos=0.000008 d_neg=0.000009 gap=0.000001 ETA=0:00:00
+{"epoch": 5, "learning_rate": 5e-05, "epoch_seconds": 566.7203407287598, "gradient_l2_mean": 27.73443466889722, "parameter_l2": 200.46891169479704, "info_loss": 8.562749787157541, "recon_loss": 3.9815476123124256, "div_loss": 0.0005523208586757612, "a2v_loss": 9.552169980018453e-06, "v2a_loss": 8.221718418484204e-05, "original_match_loss": 9.176935396499823e-05, "d_pos": 9.552169977590977e-06, "d_neg": 1.1278516729595347e-05, "g_match": 1.7263467501837622e-06, "cram_loss": 0.693146311621649, "weighted_cram_loss": 0.06931463271061297, "total_loss": 9.039451677179846, "AUD_cIoU": 0.8, "AUD_AUC": 0.6136, "IQR_cIoU": 0.812, "IQR_AUC": 0.6144}
+flickr C1 seed12345 epoch 6/50 batch 1/562 total=8.6582 d_pos=0.000008 d_neg=0.000010 gap=0.000002 ETA=0:50:13
+flickr C1 seed12345 epoch 6/50 batch 51/562 total=8.7318 d_pos=0.000011 d_neg=0.000013 gap=0.000002 ETA=0:09:14
+flickr C1 seed12345 epoch 6/50 batch 101/562 total=8.7927 d_pos=0.000011 d_neg=0.000013 gap=0.000002 ETA=0:08:00
+flickr C1 seed12345 epoch 6/50 batch 151/562 total=8.4320 d_pos=0.000009 d_neg=0.000011 gap=0.000002 ETA=0:07:02
+flickr C1 seed12345 epoch 6/50 batch 201/562 total=9.0088 d_pos=0.000010 d_neg=0.000011 gap=0.000001 ETA=0:06:08
+flickr C1 seed12345 epoch 6/50 batch 251/562 total=8.6190 d_pos=0.000013 d_neg=0.000016 gap=0.000003 ETA=0:05:16
+flickr C1 seed12345 epoch 6/50 batch 301/562 total=8.5924 d_pos=0.000013 d_neg=0.000017 gap=0.000004 ETA=0:04:24
+flickr C1 seed12345 epoch 6/50 batch 351/562 total=8.2441 d_pos=0.000013 d_neg=0.000019 gap=0.000005 ETA=0:03:33
+flickr C1 seed12345 epoch 6/50 batch 401/562 total=8.6586 d_pos=0.000013 d_neg=0.000016 gap=0.000003 ETA=0:02:42
+flickr C1 seed12345 epoch 6/50 batch 451/562 total=8.5044 d_pos=0.000012 d_neg=0.000016 gap=0.000005 ETA=0:01:51
+flickr C1 seed12345 epoch 6/50 batch 501/562 total=8.6204 d_pos=0.000011 d_neg=0.000013 gap=0.000002 ETA=0:01:01
+flickr C1 seed12345 epoch 6/50 batch 551/562 total=8.4297 d_pos=0.000012 d_neg=0.000015 gap=0.000003 ETA=0:00:11
+flickr C1 seed12345 epoch 6/50 batch 562/562 total=8.9062 d_pos=0.000012 d_neg=0.000015 gap=0.000003 ETA=0:00:00
+{"epoch": 6, "learning_rate": 5e-05, "epoch_seconds": 567.139283657074, "gradient_l2_mean": 27.102585212844406, "parameter_l2": 200.72441763997537, "info_loss": 8.294647956658089, "recon_loss": 3.870439576508736, "div_loss": 0.0006947755076992077, "a2v_loss": 1.141607451319806e-05, "v2a_loss": 0.00010542947041024901, "original_match_loss": 0.00011684554500598129, "d_pos": 1.1416074511579741e-05, "d_neg": 1.3958382198351019e-05, "g_match": 2.542307707607121e-06, "cram_loss": 0.6931459047828281, "weighted_cram_loss": 0.06931459194453586, "total_loss": 8.762760883548506, "AUD_cIoU": 0.82, "AUD_AUC": 0.6168, "IQR_cIoU": 0.796, "IQR_AUC": 0.6134000000000001}
+flickr C1 seed12345 epoch 7/50 batch 1/562 total=8.1304 d_pos=0.000013 d_neg=0.000016 gap=0.000003 ETA=0:46:55
+flickr C1 seed12345 epoch 7/50 batch 51/562 total=8.4370 d_pos=0.000014 d_neg=0.000018 gap=0.000004 ETA=0:09:10
+flickr C1 seed12345 epoch 7/50 batch 101/562 total=8.2439 d_pos=0.000014 d_neg=0.000018 gap=0.000004 ETA=0:07:59
+flickr C1 seed12345 epoch 7/50 batch 151/562 total=8.4594 d_pos=0.000014 d_neg=0.000019 gap=0.000004 ETA=0:07:01
+flickr C1 seed12345 epoch 7/50 batch 201/562 total=8.5802 d_pos=0.000012 d_neg=0.000014 gap=0.000002 ETA=0:06:07
+flickr C1 seed12345 epoch 7/50 batch 251/562 total=8.2089 d_pos=0.000013 d_neg=0.000016 gap=0.000003 ETA=0:05:15
+flickr C1 seed12345 epoch 7/50 batch 301/562 total=8.3567 d_pos=0.000012 d_neg=0.000016 gap=0.000004 ETA=0:04:23
+flickr C1 seed12345 epoch 7/50 batch 351/562 total=8.6659 d_pos=0.000017 d_neg=0.000019 gap=0.000002 ETA=0:03:32
+flickr C1 seed12345 epoch 7/50 batch 401/562 total=8.2339 d_pos=0.000013 d_neg=0.000017 gap=0.000004 ETA=0:02:42
+flickr C1 seed12345 epoch 7/50 batch 451/562 total=8.4186 d_pos=0.000013 d_neg=0.000016 gap=0.000003 ETA=0:01:51
+flickr C1 seed12345 epoch 7/50 batch 501/562 total=8.1843 d_pos=0.000012 d_neg=0.000015 gap=0.000003 ETA=0:01:01
+flickr C1 seed12345 epoch 7/50 batch 551/562 total=8.4507 d_pos=0.000012 d_neg=0.000015 gap=0.000003 ETA=0:00:11
+flickr C1 seed12345 epoch 7/50 batch 562/562 total=8.5971 d_pos=0.000012 d_neg=0.000015 gap=0.000003 ETA=0:00:00
+{"epoch": 7, "learning_rate": 5e-05, "epoch_seconds": 566.516485452652, "gradient_l2_mean": 30.894669504498435, "parameter_l2": 200.98246625403544, "info_loss": 8.020724774255447, "recon_loss": 3.759922330914019, "div_loss": 0.000903890584181212, "a2v_loss": 1.3859784903745412e-05, "v2a_loss": 0.00015628341472193142, "original_match_loss": 0.00017014319975676057, "d_pos": 1.385978488918055e-05, "d_neg": 1.7378045261230194e-05, "g_match": 3.518260355461885e-06, "cram_loss": 0.6931454165974545, "weighted_cram_loss": 0.06931454306501511, "total_loss": 8.483136538508948, "AUD_cIoU": 0.832, "AUD_AUC": 0.6344, "IQR_cIoU": 0.832, "IQR_AUC": 0.6358}
+flickr C1 seed12345 epoch 8/50 batch 1/562 total=8.4427 d_pos=0.000012 d_neg=0.000015 gap=0.000003 ETA=0:53:47
+flickr C1 seed12345 epoch 8/50 batch 51/562 total=8.2803 d_pos=0.000017 d_neg=0.000022 gap=0.000005 ETA=0:09:16
+flickr C1 seed12345 epoch 8/50 batch 101/562 total=7.7933 d_pos=0.000013 d_neg=0.000018 gap=0.000005 ETA=0:08:01
+flickr C1 seed12345 epoch 8/50 batch 151/562 total=8.2338 d_pos=0.000014 d_neg=0.000018 gap=0.000004 ETA=0:07:03
+flickr C1 seed12345 epoch 8/50 batch 201/562 total=8.3020 d_pos=0.000014 d_neg=0.000018 gap=0.000004 ETA=0:06:08
+flickr C1 seed12345 epoch 8/50 batch 251/562 total=7.9489 d_pos=0.000017 d_neg=0.000020 gap=0.000003 ETA=0:05:16
+flickr C1 seed12345 epoch 8/50 batch 301/562 total=7.9870 d_pos=0.000013 d_neg=0.000015 gap=0.000002 ETA=0:04:24
+flickr C1 seed12345 epoch 8/50 batch 351/562 total=8.1938 d_pos=0.000014 d_neg=0.000018 gap=0.000004 ETA=0:03:33
+flickr C1 seed12345 epoch 8/50 batch 401/562 total=8.2957 d_pos=0.000017 d_neg=0.000020 gap=0.000004 ETA=0:02:42
+flickr C1 seed12345 epoch 8/50 batch 451/562 total=7.8250 d_pos=0.000015 d_neg=0.000019 gap=0.000004 ETA=0:01:51
+flickr C1 seed12345 epoch 8/50 batch 501/562 total=8.4196 d_pos=0.000016 d_neg=0.000018 gap=0.000002 ETA=0:01:01
+flickr C1 seed12345 epoch 8/50 batch 551/562 total=8.4755 d_pos=0.000012 d_neg=0.000016 gap=0.000003 ETA=0:00:11
+flickr C1 seed12345 epoch 8/50 batch 562/562 total=8.7003 d_pos=0.000015 d_neg=0.000019 gap=0.000004 ETA=0:00:00
+{"epoch": 8, "learning_rate": 5e-05, "epoch_seconds": 567.3522746562958, "gradient_l2_mean": 36.28598570707009, "parameter_l2": 201.2342958435619, "info_loss": 7.737142418627213, "recon_loss": 3.6705884818928944, "div_loss": 0.0008323382742842162, "a2v_loss": 1.4900389354891128e-05, "v2a_loss": 0.00019187125413814473, "original_match_loss": 0.00020677164371798207, "d_pos": 1.4900389366219354e-05, "d_neg": 1.913147412274011e-05, "g_match": 4.231084762387157e-06, "cram_loss": 0.6931450611968057, "weighted_cram_loss": 0.06931450765487138, "total_loss": 8.194276282795808, "AUD_cIoU": 0.812, "AUD_AUC": 0.6224000000000001, "IQR_cIoU": 0.8, "IQR_AUC": 0.6182000000000001}
+flickr C1 seed12345 epoch 9/50 batch 1/562 total=7.9238 d_pos=0.000014 d_neg=0.000019 gap=0.000005 ETA=0:49:42
+flickr C1 seed12345 epoch 9/50 batch 51/562 total=7.8266 d_pos=0.000015 d_neg=0.000020 gap=0.000006 ETA=0:09:13
+flickr C1 seed12345 epoch 9/50 batch 101/562 total=7.8669 d_pos=0.000016 d_neg=0.000023 gap=0.000007 ETA=0:07:59
+flickr C1 seed12345 epoch 9/50 batch 151/562 total=8.0645 d_pos=0.000018 d_neg=0.000023 gap=0.000005 ETA=0:07:02
+flickr C1 seed12345 epoch 9/50 batch 201/562 total=7.7867 d_pos=0.000016 d_neg=0.000019 gap=0.000004 ETA=0:06:08
+flickr C1 seed12345 epoch 9/50 batch 251/562 total=7.9796 d_pos=0.000017 d_neg=0.000022 gap=0.000006 ETA=0:05:15
+flickr C1 seed12345 epoch 9/50 batch 301/562 total=7.5051 d_pos=0.000016 d_neg=0.000023 gap=0.000007 ETA=0:04:24
+flickr C1 seed12345 epoch 9/50 batch 351/562 total=7.6458 d_pos=0.000015 d_neg=0.000020 gap=0.000005 ETA=0:03:33
+flickr C1 seed12345 epoch 9/50 batch 401/562 total=7.7813 d_pos=0.000021 d_neg=0.000029 gap=0.000008 ETA=0:02:42
+flickr C1 seed12345 epoch 9/50 batch 451/562 total=7.8613 d_pos=0.000019 d_neg=0.000027 gap=0.000008 ETA=0:01:51
+flickr C1 seed12345 epoch 9/50 batch 501/562 total=7.5187 d_pos=0.000017 d_neg=0.000024 gap=0.000007 ETA=0:01:01
+flickr C1 seed12345 epoch 9/50 batch 551/562 total=7.7759 d_pos=0.000018 d_neg=0.000023 gap=0.000005 ETA=0:00:11
+flickr C1 seed12345 epoch 9/50 batch 562/562 total=7.7905 d_pos=0.000016 d_neg=0.000021 gap=0.000006 ETA=0:00:00
+{"epoch": 9, "learning_rate": 5e-05, "epoch_seconds": 567.1929504871368, "gradient_l2_mean": 38.575139760227565, "parameter_l2": 201.48079220910566, "info_loss": 7.427447056855171, "recon_loss": 3.596095844944177, "div_loss": 0.001162666392022101, "a2v_loss": 1.701886142839473e-05, "v2a_loss": 0.00020629979775018336, "original_match_loss": 0.00022331865938248616, "d_pos": 1.7018861496364086e-05, "d_neg": 2.248504726102578e-05, "g_match": 5.466185792173103e-06, "cram_loss": 0.6931444448932634, "weighted_cram_loss": 0.06931444606163747, "total_loss": 7.878819224673234, "AUD_cIoU": 0.816, "AUD_AUC": 0.6258, "IQR_cIoU": 0.816, "IQR_AUC": 0.6236}
+flickr C1 seed12345 epoch 10/50 batch 1/562 total=7.7082 d_pos=0.000016 d_neg=0.000021 gap=0.000005 ETA=0:53:37
+flickr C1 seed12345 epoch 10/50 batch 51/562 total=7.7118 d_pos=0.000019 d_neg=0.000027 gap=0.000008 ETA=0:09:17
+flickr C1 seed12345 epoch 10/50 batch 101/562 total=7.1893 d_pos=0.000022 d_neg=0.000032 gap=0.000010 ETA=0:08:01
+flickr C1 seed12345 epoch 10/50 batch 151/562 total=7.3983 d_pos=0.000021 d_neg=0.000032 gap=0.000011 ETA=0:07:02
+flickr C1 seed12345 epoch 10/50 batch 201/562 total=7.6170 d_pos=0.000022 d_neg=0.000028 gap=0.000006 ETA=0:06:08
+flickr C1 seed12345 epoch 10/50 batch 251/562 total=7.7849 d_pos=0.000021 d_neg=0.000027 gap=0.000006 ETA=0:05:16
+flickr C1 seed12345 epoch 10/50 batch 301/562 total=7.8558 d_pos=0.000019 d_neg=0.000025 gap=0.000006 ETA=0:04:24
+flickr C1 seed12345 epoch 10/50 batch 351/562 total=8.0960 d_pos=0.000018 d_neg=0.000025 gap=0.000007 ETA=0:03:33
+flickr C1 seed12345 epoch 10/50 batch 401/562 total=7.6546 d_pos=0.000020 d_neg=0.000025 gap=0.000005 ETA=0:02:42
+flickr C1 seed12345 epoch 10/50 batch 451/562 total=7.9349 d_pos=0.000018 d_neg=0.000024 gap=0.000006 ETA=0:01:51
+flickr C1 seed12345 epoch 10/50 batch 501/562 total=7.9835 d_pos=0.000017 d_neg=0.000023 gap=0.000006 ETA=0:01:01
+flickr C1 seed12345 epoch 10/50 batch 551/562 total=7.8740 d_pos=0.000018 d_neg=0.000024 gap=0.000006 ETA=0:00:11
+flickr C1 seed12345 epoch 10/50 batch 562/562 total=8.1501 d_pos=0.000019 d_neg=0.000025 gap=0.000006 ETA=0:00:00
+{"epoch": 10, "learning_rate": 5e-05, "epoch_seconds": 566.6355640888214, "gradient_l2_mean": 48.34016466602717, "parameter_l2": 201.71948619207149, "info_loss": 7.121575868850925, "recon_loss": 3.5148728517450896, "div_loss": 0.0013482091244926603, "a2v_loss": 1.961984277559524e-05, "v2a_loss": 0.00024400543964951004, "original_match_loss": 0.0002636252823733191, "d_pos": 1.9619842820908143e-05, "d_neg": 2.65410427407565e-05, "g_match": 6.921200015733696e-06, "cram_loss": 0.6931437168044976, "weighted_cram_loss": 0.06931437321298911, "total_loss": 7.568874940329175, "AUD_cIoU": 0.816, "AUD_AUC": 0.6175999999999999, "IQR_cIoU": 0.832, "IQR_AUC": 0.6152}
+flickr C1 seed12345 epoch 11/50 batch 1/562 total=7.2078 d_pos=0.000017 d_neg=0.000022 gap=0.000005 ETA=0:39:47
+flickr C1 seed12345 epoch 11/50 batch 51/562 total=7.4642 d_pos=0.000023 d_neg=0.000031 gap=0.000008 ETA=0:09:02
+flickr C1 seed12345 epoch 11/50 batch 101/562 total=6.9704 d_pos=0.000024 d_neg=0.000032 gap=0.000008 ETA=0:07:54
+flickr C1 seed12345 epoch 11/50 batch 151/562 total=7.1809 d_pos=0.000022 d_neg=0.000032 gap=0.000011 ETA=0:06:58
+flickr C1 seed12345 epoch 11/50 batch 201/562 total=6.9031 d_pos=0.000019 d_neg=0.000025 gap=0.000006 ETA=0:06:05
+flickr C1 seed12345 epoch 11/50 batch 251/562 total=7.0392 d_pos=0.000020 d_neg=0.000026 gap=0.000007 ETA=0:05:14
+flickr C1 seed12345 epoch 11/50 batch 301/562 total=7.3614 d_pos=0.000022 d_neg=0.000029 gap=0.000007 ETA=0:04:23
+flickr C1 seed12345 epoch 11/50 batch 351/562 total=7.3245 d_pos=0.000020 d_neg=0.000028 gap=0.000008 ETA=0:03:32
+flickr C1 seed12345 epoch 11/50 batch 401/562 total=7.2196 d_pos=0.000018 d_neg=0.000027 gap=0.000009 ETA=0:02:41
+flickr C1 seed12345 epoch 11/50 batch 451/562 total=6.6549 d_pos=0.000021 d_neg=0.000030 gap=0.000009 ETA=0:01:51
+flickr C1 seed12345 epoch 11/50 batch 501/562 total=7.0781 d_pos=0.000020 d_neg=0.000029 gap=0.000010 ETA=0:01:01
+flickr C1 seed12345 epoch 11/50 batch 551/562 total=7.1599 d_pos=0.000022 d_neg=0.000031 gap=0.000009 ETA=0:00:11
+flickr C1 seed12345 epoch 11/50 batch 562/562 total=7.1324 d_pos=0.000018 d_neg=0.000025 gap=0.000007 ETA=0:00:00
+{"epoch": 11, "learning_rate": 5e-05, "epoch_seconds": 565.1948084831238, "gradient_l2_mean": 49.29062882762355, "parameter_l2": 201.9492723609153, "info_loss": 6.77928202517092, "recon_loss": 3.456609807404759, "div_loss": 0.001473517318295971, "a2v_loss": 2.012566884425908e-05, "v2a_loss": 0.000280551553625751, "original_match_loss": 0.0003006772222952317, "d_pos": 2.0125668792472904e-05, "d_neg": 2.8012935764694236e-05, "g_match": 7.887266908702352e-06, "cram_loss": 0.6931432315887506, "weighted_cram_loss": 0.06931432467815715, "total_loss": 7.224472493887796, "AUD_cIoU": 0.828, "AUD_AUC": 0.6217999999999999, "IQR_cIoU": 0.836, "IQR_AUC": 0.6186}
+flickr C1 seed12345 epoch 12/50 batch 1/562 total=7.0411 d_pos=0.000018 d_neg=0.000026 gap=0.000007 ETA=0:52:33
+flickr C1 seed12345 epoch 12/50 batch 51/562 total=6.8756 d_pos=0.000024 d_neg=0.000036 gap=0.000012 ETA=0:09:17
+flickr C1 seed12345 epoch 12/50 batch 101/562 total=6.8555 d_pos=0.000024 d_neg=0.000033 gap=0.000009 ETA=0:08:01
+flickr C1 seed12345 epoch 12/50 batch 151/562 total=7.2006 d_pos=0.000022 d_neg=0.000028 gap=0.000006 ETA=0:07:02
+flickr C1 seed12345 epoch 12/50 batch 201/562 total=6.8632 d_pos=0.000021 d_neg=0.000032 gap=0.000011 ETA=0:06:08
+flickr C1 seed12345 epoch 12/50 batch 251/562 total=6.8386 d_pos=0.000024 d_neg=0.000036 gap=0.000012 ETA=0:05:16
+flickr C1 seed12345 epoch 12/50 batch 301/562 total=6.9243 d_pos=0.000019 d_neg=0.000029 gap=0.000010 ETA=0:04:24
+flickr C1 seed12345 epoch 12/50 batch 351/562 total=6.5415 d_pos=0.000020 d_neg=0.000035 gap=0.000015 ETA=0:03:33
+flickr C1 seed12345 epoch 12/50 batch 401/562 total=7.1149 d_pos=0.000021 d_neg=0.000028 gap=0.000008 ETA=0:02:42
+flickr C1 seed12345 epoch 12/50 batch 451/562 total=6.4602 d_pos=0.000023 d_neg=0.000036 gap=0.000013 ETA=0:01:51
+flickr C1 seed12345 epoch 12/50 batch 501/562 total=7.1708 d_pos=0.000025 d_neg=0.000036 gap=0.000011 ETA=0:01:01
+flickr C1 seed12345 epoch 12/50 batch 551/562 total=6.6590 d_pos=0.000020 d_neg=0.000033 gap=0.000013 ETA=0:00:11
+flickr C1 seed12345 epoch 12/50 batch 562/562 total=7.3468 d_pos=0.000022 d_neg=0.000033 gap=0.000010 ETA=0:00:00
+{"epoch": 12, "learning_rate": 5e-05, "epoch_seconds": 566.5351691246033, "gradient_l2_mean": 56.92626036983075, "parameter_l2": 202.17213878696023, "info_loss": 6.4360180893826735, "recon_loss": 3.400107175854177, "div_loss": 0.0016698264015599872, "a2v_loss": 2.300671887975741e-05, "v2a_loss": 0.0002994408663057762, "original_match_loss": 0.00032244758526968613, "d_pos": 2.300671880855142e-05, "d_neg": 3.343137453018221e-05, "g_match": 1.0424655714348359e-05, "cram_loss": 0.6931419640885553, "weighted_cram_loss": 0.06931419776639905, "total_loss": 6.877754708626092, "AUD_cIoU": 0.816, "AUD_AUC": 0.608, "IQR_cIoU": 0.816, "IQR_AUC": 0.6066}
+flickr C1 seed12345 epoch 13/50 batch 1/562 total=6.6690 d_pos=0.000020 d_neg=0.000030 gap=0.000009 ETA=0:47:48
+flickr C1 seed12345 epoch 13/50 batch 51/562 total=6.1668 d_pos=0.000023 d_neg=0.000035 gap=0.000012 ETA=0:09:11
+flickr C1 seed12345 epoch 13/50 batch 101/562 total=6.7411 d_pos=0.000021 d_neg=0.000031 gap=0.000011 ETA=0:07:58
+flickr C1 seed12345 epoch 13/50 batch 151/562 total=6.6901 d_pos=0.000027 d_neg=0.000041 gap=0.000014 ETA=0:07:00
+flickr C1 seed12345 epoch 13/50 batch 201/562 total=6.2830 d_pos=0.000026 d_neg=0.000044 gap=0.000018 ETA=0:06:07
+flickr C1 seed12345 epoch 13/50 batch 251/562 total=6.6956 d_pos=0.000023 d_neg=0.000033 gap=0.000010 ETA=0:05:14
+flickr C1 seed12345 epoch 13/50 batch 301/562 total=6.2800 d_pos=0.000025 d_neg=0.000039 gap=0.000014 ETA=0:04:23
+flickr C1 seed12345 epoch 13/50 batch 351/562 total=6.5970 d_pos=0.000024 d_neg=0.000036 gap=0.000012 ETA=0:03:32
+flickr C1 seed12345 epoch 13/50 batch 401/562 total=7.3264 d_pos=0.000026 d_neg=0.000039 gap=0.000013 ETA=0:02:42
+flickr C1 seed12345 epoch 13/50 batch 451/562 total=6.3117 d_pos=0.000023 d_neg=0.000037 gap=0.000013 ETA=0:01:51
+flickr C1 seed12345 epoch 13/50 batch 501/562 total=6.4538 d_pos=0.000023 d_neg=0.000036 gap=0.000013 ETA=0:01:01
+flickr C1 seed12345 epoch 13/50 batch 551/562 total=6.5311 d_pos=0.000023 d_neg=0.000033 gap=0.000010 ETA=0:00:11
+flickr C1 seed12345 epoch 13/50 batch 562/562 total=6.5125 d_pos=0.000022 d_neg=0.000035 gap=0.000013 ETA=0:00:00
+{"epoch": 13, "learning_rate": 5e-05, "epoch_seconds": 565.8913080692291, "gradient_l2_mean": 72.75473801096867, "parameter_l2": 202.3899201886096, "info_loss": 6.081674058242201, "recon_loss": 3.348669654109724, "div_loss": 0.0019774421199400547, "a2v_loss": 2.382930064303767e-05, "v2a_loss": 0.0003131657481341444, "original_match_loss": 0.0003369950484923581, "d_pos": 2.3829300649510945e-05, "d_neg": 3.60510404782765e-05, "g_match": 1.2221739989788189e-05, "cram_loss": 0.6931410654583859, "weighted_cram_loss": 0.0693141080810294, "total_loss": 6.519752320869961, "AUD_cIoU": 0.828, "AUD_AUC": 0.617, "IQR_cIoU": 0.812, "IQR_AUC": 0.611}
+flickr C1 seed12345 epoch 14/50 batch 1/562 total=6.1330 d_pos=0.000023 d_neg=0.000034 gap=0.000011 ETA=0:46:37
+flickr C1 seed12345 epoch 14/50 batch 51/562 total=6.0961 d_pos=0.000025 d_neg=0.000041 gap=0.000016 ETA=0:09:09
+flickr C1 seed12345 epoch 14/50 batch 101/562 total=5.9456 d_pos=0.000024 d_neg=0.000040 gap=0.000016 ETA=0:07:57
+flickr C1 seed12345 epoch 14/50 batch 151/562 total=6.0800 d_pos=0.000027 d_neg=0.000043 gap=0.000016 ETA=0:07:00
+flickr C1 seed12345 epoch 14/50 batch 201/562 total=5.9097 d_pos=0.000025 d_neg=0.000039 gap=0.000014 ETA=0:06:07
+flickr C1 seed12345 epoch 14/50 batch 251/562 total=6.5533 d_pos=0.000027 d_neg=0.000040 gap=0.000013 ETA=0:05:14
+flickr C1 seed12345 epoch 14/50 batch 301/562 total=6.0528 d_pos=0.000025 d_neg=0.000042 gap=0.000016 ETA=0:04:23
+flickr C1 seed12345 epoch 14/50 batch 351/562 total=6.3639 d_pos=0.000024 d_neg=0.000037 gap=0.000013 ETA=0:03:32
+flickr C1 seed12345 epoch 14/50 batch 401/562 total=5.7956 d_pos=0.000025 d_neg=0.000037 gap=0.000011 ETA=0:02:42
+flickr C1 seed12345 epoch 14/50 batch 451/562 total=6.4431 d_pos=0.000023 d_neg=0.000033 gap=0.000010 ETA=0:01:51
+flickr C1 seed12345 epoch 14/50 batch 501/562 total=6.4565 d_pos=0.000027 d_neg=0.000039 gap=0.000011 ETA=0:01:01
+flickr C1 seed12345 epoch 14/50 batch 551/562 total=5.8784 d_pos=0.000024 d_neg=0.000037 gap=0.000013 ETA=0:00:11
+flickr C1 seed12345 epoch 14/50 batch 562/562 total=6.0756 d_pos=0.000027 d_neg=0.000041 gap=0.000014 ETA=0:00:00
+{"epoch": 14, "learning_rate": 5e-05, "epoch_seconds": 565.591076374054, "gradient_l2_mean": 67.17663268617748, "parameter_l2": 202.59969704775426, "info_loss": 5.717145905375905, "recon_loss": 3.3066824980053613, "div_loss": 0.002258106356476735, "a2v_loss": 2.500941223726737e-05, "v2a_loss": 0.00033836306262412523, "original_match_loss": 0.0003633724751462166, "d_pos": 2.5009412344076358e-05, "d_neg": 3.8425273306267394e-05, "g_match": 1.3415861012358893e-05, "cram_loss": 0.6931404691998221, "weighted_cram_loss": 0.06931404847638463, "total_loss": 6.1536912264773, "AUD_cIoU": 0.82, "AUD_AUC": 0.6106, "IQR_cIoU": 0.808, "IQR_AUC": 0.6062}
+flickr C1 seed12345 epoch 15/50 batch 1/562 total=5.4842 d_pos=0.000024 d_neg=0.000037 gap=0.000012 ETA=0:50:02
+flickr C1 seed12345 epoch 15/50 batch 51/562 total=5.9395 d_pos=0.000028 d_neg=0.000037 gap=0.000010 ETA=0:09:14
+flickr C1 seed12345 epoch 15/50 batch 101/562 total=5.4711 d_pos=0.000028 d_neg=0.000042 gap=0.000014 ETA=0:07:59
+flickr C1 seed12345 epoch 15/50 batch 151/562 total=5.3927 d_pos=0.000027 d_neg=0.000042 gap=0.000016 ETA=0:07:01
+flickr C1 seed12345 epoch 15/50 batch 201/562 total=5.9070 d_pos=0.000024 d_neg=0.000036 gap=0.000012 ETA=0:06:07
+flickr C1 seed12345 epoch 15/50 batch 251/562 total=5.5870 d_pos=0.000022 d_neg=0.000032 gap=0.000010 ETA=0:05:15
+flickr C1 seed12345 epoch 15/50 batch 301/562 total=5.5425 d_pos=0.000025 d_neg=0.000040 gap=0.000015 ETA=0:04:24
+flickr C1 seed12345 epoch 15/50 batch 351/562 total=5.9996 d_pos=0.000025 d_neg=0.000036 gap=0.000012 ETA=0:03:33
+flickr C1 seed12345 epoch 15/50 batch 401/562 total=5.6989 d_pos=0.000023 d_neg=0.000040 gap=0.000017 ETA=0:02:42
+flickr C1 seed12345 epoch 15/50 batch 451/562 total=5.8069 d_pos=0.000023 d_neg=0.000035 gap=0.000012 ETA=0:01:51
+flickr C1 seed12345 epoch 15/50 batch 501/562 total=5.6032 d_pos=0.000024 d_neg=0.000037 gap=0.000014 ETA=0:01:01
+flickr C1 seed12345 epoch 15/50 batch 551/562 total=6.1807 d_pos=0.000026 d_neg=0.000043 gap=0.000018 ETA=0:00:11
+flickr C1 seed12345 epoch 15/50 batch 562/562 total=5.5646 d_pos=0.000028 d_neg=0.000045 gap=0.000017 ETA=0:00:00
+{"epoch": 15, "learning_rate": 5e-05, "epoch_seconds": 566.3276512622833, "gradient_l2_mean": 75.8123316955679, "parameter_l2": 202.8036562365553, "info_loss": 5.383208378354001, "recon_loss": 3.258898174211224, "div_loss": 0.002526195059460836, "a2v_loss": 2.5012915720904222e-05, "v2a_loss": 0.0003348150215665992, "original_match_loss": 0.00035982793817434166, "d_pos": 2.5012915720904222e-05, "d_neg": 3.883590998610289e-05, "g_match": 1.3822994316984847e-05, "cram_loss": 0.6931402633410756, "weighted_cram_loss": 0.06931402776854319, "total_loss": 5.814647599895654, "AUD_cIoU": 0.82, "AUD_AUC": 0.6092, "IQR_cIoU": 0.808, "IQR_AUC": 0.607}
+flickr C1 seed12345 epoch 16/50 batch 1/562 total=5.4091 d_pos=0.000029 d_neg=0.000043 gap=0.000014 ETA=0:49:58
+flickr C1 seed12345 epoch 16/50 batch 51/562 total=5.7324 d_pos=0.000028 d_neg=0.000042 gap=0.000015 ETA=0:09:12
+flickr C1 seed12345 epoch 16/50 batch 101/562 total=5.4167 d_pos=0.000027 d_neg=0.000042 gap=0.000015 ETA=0:07:59
+flickr C1 seed12345 epoch 16/50 batch 151/562 total=5.2561 d_pos=0.000027 d_neg=0.000045 gap=0.000018 ETA=0:07:01
+flickr C1 seed12345 epoch 16/50 batch 201/562 total=5.7094 d_pos=0.000028 d_neg=0.000043 gap=0.000015 ETA=0:06:07
+flickr C1 seed12345 epoch 16/50 batch 251/562 total=5.1577 d_pos=0.000025 d_neg=0.000044 gap=0.000019 ETA=0:05:15
+flickr C1 seed12345 epoch 16/50 batch 301/562 total=5.3552 d_pos=0.000028 d_neg=0.000044 gap=0.000016 ETA=0:04:23
+flickr C1 seed12345 epoch 16/50 batch 351/562 total=5.3395 d_pos=0.000029 d_neg=0.000047 gap=0.000018 ETA=0:03:32
+flickr C1 seed12345 epoch 16/50 batch 401/562 total=5.8688 d_pos=0.000028 d_neg=0.000043 gap=0.000015 ETA=0:02:42
+flickr C1 seed12345 epoch 16/50 batch 451/562 total=5.6531 d_pos=0.000026 d_neg=0.000040 gap=0.000014 ETA=0:01:51
+flickr C1 seed12345 epoch 16/50 batch 501/562 total=5.1956 d_pos=0.000028 d_neg=0.000049 gap=0.000021 ETA=0:01:01
+flickr C1 seed12345 epoch 16/50 batch 551/562 total=5.4305 d_pos=0.000025 d_neg=0.000043 gap=0.000018 ETA=0:00:11
+flickr C1 seed12345 epoch 16/50 batch 562/562 total=5.6658 d_pos=0.000028 d_neg=0.000043 gap=0.000015 ETA=0:00:00
+{"epoch": 16, "learning_rate": 5e-05, "epoch_seconds": 565.9175007343292, "gradient_l2_mean": 87.29568794628248, "parameter_l2": 202.99919481072018, "info_loss": 5.027103553038899, "recon_loss": 3.2230425869442816, "div_loss": 0.0030524025793813724, "a2v_loss": 2.735165802007802e-05, "v2a_loss": 0.0003715088461824855, "original_match_loss": 0.0003988605039857089, "d_pos": 2.7351658058917653e-05, "d_neg": 4.38373752337718e-05, "g_match": 1.6485717212075464e-05, "cram_loss": 0.6931389342211319, "weighted_cram_loss": 0.06931389489101769, "total_loss": 5.458913016573814, "AUD_cIoU": 0.82, "AUD_AUC": 0.6128, "IQR_cIoU": 0.808, "IQR_AUC": 0.6093999999999999}
+flickr C1 seed12345 epoch 17/50 batch 1/562 total=5.3402 d_pos=0.000029 d_neg=0.000041 gap=0.000012 ETA=0:52:01
+flickr C1 seed12345 epoch 17/50 batch 51/562 total=5.1682 d_pos=0.000033 d_neg=0.000049 gap=0.000016 ETA=0:09:14
+flickr C1 seed12345 epoch 17/50 batch 101/562 total=5.1273 d_pos=0.000029 d_neg=0.000049 gap=0.000019 ETA=0:08:00
+flickr C1 seed12345 epoch 17/50 batch 151/562 total=4.9399 d_pos=0.000031 d_neg=0.000045 gap=0.000014 ETA=0:07:01
+flickr C1 seed12345 epoch 17/50 batch 201/562 total=5.2943 d_pos=0.000032 d_neg=0.000048 gap=0.000017 ETA=0:06:07
+flickr C1 seed12345 epoch 17/50 batch 251/562 total=5.3487 d_pos=0.000028 d_neg=0.000043 gap=0.000016 ETA=0:05:15
+flickr C1 seed12345 epoch 17/50 batch 301/562 total=5.1721 d_pos=0.000027 d_neg=0.000049 gap=0.000023 ETA=0:04:24
+flickr C1 seed12345 epoch 17/50 batch 351/562 total=5.0915 d_pos=0.000029 d_neg=0.000049 gap=0.000019 ETA=0:03:32
+flickr C1 seed12345 epoch 17/50 batch 401/562 total=5.1887 d_pos=0.000031 d_neg=0.000052 gap=0.000021 ETA=0:02:42
+flickr C1 seed12345 epoch 17/50 batch 451/562 total=5.4571 d_pos=0.000028 d_neg=0.000048 gap=0.000020 ETA=0:01:51
+flickr C1 seed12345 epoch 17/50 batch 501/562 total=5.3013 d_pos=0.000025 d_neg=0.000044 gap=0.000019 ETA=0:01:01
+flickr C1 seed12345 epoch 17/50 batch 551/562 total=5.3346 d_pos=0.000029 d_neg=0.000044 gap=0.000015 ETA=0:00:11
+flickr C1 seed12345 epoch 17/50 batch 562/562 total=5.4110 d_pos=0.000022 d_neg=0.000041 gap=0.000019 ETA=0:00:00
+{"epoch": 17, "learning_rate": 5e-05, "epoch_seconds": 566.1396560668945, "gradient_l2_mean": 79.20723948451598, "parameter_l2": 203.19060604044978, "info_loss": 4.7083341337183615, "recon_loss": 3.1813274358939445, "div_loss": 0.0030719413814794443, "a2v_loss": 2.9471567038569293e-05, "v2a_loss": 0.00035938801223393927, "original_match_loss": 0.0003888595796350118, "d_pos": 2.9471567054752475e-05, "d_neg": 4.806935422911078e-05, "g_match": 1.8597787352373286e-05, "cram_loss": 0.6931378766098905, "weighted_cram_loss": 0.06931378916436243, "total_loss": 5.134973815327437, "AUD_cIoU": 0.804, "AUD_AUC": 0.6022000000000001, "IQR_cIoU": 0.792, "IQR_AUC": 0.5998000000000001}
+flickr C1 seed12345 epoch 18/50 batch 1/562 total=4.3189 d_pos=0.000027 d_neg=0.000043 gap=0.000016 ETA=0:44:34
+flickr C1 seed12345 epoch 18/50 batch 51/562 total=4.3671 d_pos=0.000029 d_neg=0.000050 gap=0.000021 ETA=0:09:10
+flickr C1 seed12345 epoch 18/50 batch 101/562 total=4.8466 d_pos=0.000029 d_neg=0.000049 gap=0.000020 ETA=0:07:57
+flickr C1 seed12345 epoch 18/50 batch 151/562 total=4.8277 d_pos=0.000029 d_neg=0.000054 gap=0.000025 ETA=0:07:00
+flickr C1 seed12345 epoch 18/50 batch 201/562 total=5.1457 d_pos=0.000033 d_neg=0.000052 gap=0.000019 ETA=0:06:06
+flickr C1 seed12345 epoch 18/50 batch 251/562 total=4.8811 d_pos=0.000032 d_neg=0.000056 gap=0.000023 ETA=0:05:14
+flickr C1 seed12345 epoch 18/50 batch 301/562 total=4.3247 d_pos=0.000029 d_neg=0.000053 gap=0.000024 ETA=0:04:23
+flickr C1 seed12345 epoch 18/50 batch 351/562 total=4.9045 d_pos=0.000028 d_neg=0.000050 gap=0.000022 ETA=0:03:32
+flickr C1 seed12345 epoch 18/50 batch 401/562 total=4.7586 d_pos=0.000027 d_neg=0.000045 gap=0.000018 ETA=0:02:41
+flickr C1 seed12345 epoch 18/50 batch 451/562 total=5.3723 d_pos=0.000024 d_neg=0.000036 gap=0.000012 ETA=0:01:51
+flickr C1 seed12345 epoch 18/50 batch 501/562 total=5.0906 d_pos=0.000027 d_neg=0.000044 gap=0.000017 ETA=0:01:01
+flickr C1 seed12345 epoch 18/50 batch 551/562 total=4.8521 d_pos=0.000028 d_neg=0.000050 gap=0.000022 ETA=0:00:11
+flickr C1 seed12345 epoch 18/50 batch 562/562 total=4.7747 d_pos=0.000027 d_neg=0.000040 gap=0.000013 ETA=0:00:00
+{"epoch": 18, "learning_rate": 5e-05, "epoch_seconds": 565.4722707271576, "gradient_l2_mean": 76.0639006090844, "parameter_l2": 203.37997582803817, "info_loss": 4.405862529931119, "recon_loss": 3.140005122724377, "div_loss": 0.0036371339545866934, "a2v_loss": 2.96764867883882e-05, "v2a_loss": 0.0003824181897396692, "original_match_loss": 0.00041209467591633327, "d_pos": 2.9676486901670456e-05, "d_neg": 4.8387044308159426e-05, "g_match": 1.8710557445328604e-05, "cram_loss": 0.6931378200809303, "weighted_cram_loss": 0.06931378353002657, "total_loss": 4.830750003828273, "AUD_cIoU": 0.832, "AUD_AUC": 0.6126, "IQR_cIoU": 0.824, "IQR_AUC": 0.6102}
+flickr C1 seed12345 epoch 19/50 batch 1/562 total=4.1983 d_pos=0.000031 d_neg=0.000043 gap=0.000012 ETA=0:38:58
+flickr C1 seed12345 epoch 19/50 batch 51/562 total=4.4488 d_pos=0.000030 d_neg=0.000049 gap=0.000019 ETA=0:09:01
+flickr C1 seed12345 epoch 19/50 batch 101/562 total=4.2560 d_pos=0.000034 d_neg=0.000053 gap=0.000019 ETA=0:07:54
+flickr C1 seed12345 epoch 19/50 batch 151/562 total=4.4801 d_pos=0.000032 d_neg=0.000052 gap=0.000020 ETA=0:06:58
+flickr C1 seed12345 epoch 19/50 batch 201/562 total=4.4030 d_pos=0.000030 d_neg=0.000049 gap=0.000019 ETA=0:06:05
+flickr C1 seed12345 epoch 19/50 batch 251/562 total=4.5803 d_pos=0.000030 d_neg=0.000049 gap=0.000019 ETA=0:05:14
+flickr C1 seed12345 epoch 19/50 batch 301/562 total=4.0696 d_pos=0.000030 d_neg=0.000055 gap=0.000025 ETA=0:04:23
+flickr C1 seed12345 epoch 19/50 batch 351/562 total=4.6059 d_pos=0.000031 d_neg=0.000055 gap=0.000024 ETA=0:03:32
+flickr C1 seed12345 epoch 19/50 batch 401/562 total=4.5068 d_pos=0.000028 d_neg=0.000051 gap=0.000022 ETA=0:02:41
+flickr C1 seed12345 epoch 19/50 batch 451/562 total=4.6019 d_pos=0.000032 d_neg=0.000060 gap=0.000028 ETA=0:01:51
+flickr C1 seed12345 epoch 19/50 batch 501/562 total=5.0680 d_pos=0.000033 d_neg=0.000053 gap=0.000019 ETA=0:01:01
+flickr C1 seed12345 epoch 19/50 batch 551/562 total=4.7325 d_pos=0.000031 d_neg=0.000049 gap=0.000019 ETA=0:00:11
+flickr C1 seed12345 epoch 19/50 batch 562/562 total=4.3372 d_pos=0.000035 d_neg=0.000061 gap=0.000026 ETA=0:00:00
+{"epoch": 19, "learning_rate": 5e-05, "epoch_seconds": 565.8557875156403, "gradient_l2_mean": 95.80567555214277, "parameter_l2": 203.56304364738804, "info_loss": 4.125418861565641, "recon_loss": 3.1115055258163777, "div_loss": 0.0034613882682826436, "a2v_loss": 3.15282428164857e-05, "v2a_loss": 0.0003961802999761612, "original_match_loss": 0.00042770854227478514, "d_pos": 3.152824278411935e-05, "d_neg": 5.262444554907858e-05, "g_match": 2.10962026176923e-05, "cram_loss": 0.6931366293667899, "weighted_cram_loss": 0.06931366438702333, "total_loss": 4.549000056612958, "AUD_cIoU": 0.804, "AUD_AUC": 0.6044, "IQR_cIoU": 0.812, "IQR_AUC": 0.6054}
+flickr C1 seed12345 epoch 20/50 batch 1/562 total=4.2073 d_pos=0.000037 d_neg=0.000061 gap=0.000024 ETA=0:42:55
+flickr C1 seed12345 epoch 20/50 batch 51/562 total=3.9404 d_pos=0.000028 d_neg=0.000051 gap=0.000024 ETA=0:09:06
+flickr C1 seed12345 epoch 20/50 batch 101/562 total=4.4522 d_pos=0.000031 d_neg=0.000056 gap=0.000024 ETA=0:07:56
+flickr C1 seed12345 epoch 20/50 batch 151/562 total=4.6008 d_pos=0.000036 d_neg=0.000057 gap=0.000022 ETA=0:07:00
+flickr C1 seed12345 epoch 20/50 batch 201/562 total=4.7141 d_pos=0.000031 d_neg=0.000058 gap=0.000026 ETA=0:06:06
+flickr C1 seed12345 epoch 20/50 batch 251/562 total=5.3563 d_pos=0.000033 d_neg=0.000049 gap=0.000016 ETA=0:05:14
+flickr C1 seed12345 epoch 20/50 batch 301/562 total=4.4746 d_pos=0.000033 d_neg=0.000055 gap=0.000022 ETA=0:04:23
+flickr C1 seed12345 epoch 20/50 batch 351/562 total=4.5617 d_pos=0.000037 d_neg=0.000059 gap=0.000022 ETA=0:03:32
+flickr C1 seed12345 epoch 20/50 batch 401/562 total=3.9055 d_pos=0.000030 d_neg=0.000046 gap=0.000016 ETA=0:02:42
+flickr C1 seed12345 epoch 20/50 batch 451/562 total=4.1406 d_pos=0.000032 d_neg=0.000057 gap=0.000025 ETA=0:01:51
+flickr C1 seed12345 epoch 20/50 batch 501/562 total=4.4275 d_pos=0.000032 d_neg=0.000049 gap=0.000017 ETA=0:01:01
+flickr C1 seed12345 epoch 20/50 batch 551/562 total=4.4111 d_pos=0.000030 d_neg=0.000050 gap=0.000019 ETA=0:00:11
+flickr C1 seed12345 epoch 20/50 batch 562/562 total=4.8412 d_pos=0.000032 d_neg=0.000048 gap=0.000016 ETA=0:00:00
+{"epoch": 20, "learning_rate": 5e-05, "epoch_seconds": 569.2135562896729, "gradient_l2_mean": 85.96169776249037, "parameter_l2": 203.74492088808083, "info_loss": 3.8462911178208756, "recon_loss": 3.0763212344824633, "div_loss": 0.003651645246253505, "a2v_loss": 3.173666555797279e-05, "v2a_loss": 0.00039249406795032333, "original_match_loss": 0.0004242307336021586, "d_pos": 3.173666558710252e-05, "d_neg": 5.431150764519402e-05, "g_match": 2.2574842168137122e-05, "cram_loss": 0.6931358882328794, "weighted_cram_loss": 0.06931359026567792, "total_loss": 4.266025048557974, "AUD_cIoU": 0.804, "AUD_AUC": 0.5978, "IQR_cIoU": 0.804, "IQR_AUC": 0.5950000000000001}
+flickr C1 seed12345 epoch 21/50 batch 1/562 total=3.9440 d_pos=0.000031 d_neg=0.000057 gap=0.000026 ETA=0:46:14
+flickr C1 seed12345 epoch 21/50 batch 51/562 total=3.3142 d_pos=0.000032 d_neg=0.000053 gap=0.000021 ETA=0:09:08
+flickr C1 seed12345 epoch 21/50 batch 101/562 total=3.8088 d_pos=0.000036 d_neg=0.000058 gap=0.000021 ETA=0:07:57
+flickr C1 seed12345 epoch 21/50 batch 151/562 total=3.8131 d_pos=0.000034 d_neg=0.000062 gap=0.000028 ETA=0:07:00
+flickr C1 seed12345 epoch 21/50 batch 201/562 total=3.9625 d_pos=0.000031 d_neg=0.000056 gap=0.000026 ETA=0:06:07
+flickr C1 seed12345 epoch 21/50 batch 251/562 total=4.0109 d_pos=0.000036 d_neg=0.000063 gap=0.000028 ETA=0:05:15
+flickr C1 seed12345 epoch 21/50 batch 301/562 total=4.2955 d_pos=0.000032 d_neg=0.000058 gap=0.000026 ETA=0:04:23
+flickr C1 seed12345 epoch 21/50 batch 351/562 total=4.1415 d_pos=0.000033 d_neg=0.000053 gap=0.000021 ETA=0:03:33
+flickr C1 seed12345 epoch 21/50 batch 401/562 total=3.9827 d_pos=0.000031 d_neg=0.000050 gap=0.000020 ETA=0:02:42
+flickr C1 seed12345 epoch 21/50 batch 451/562 total=4.0727 d_pos=0.000034 d_neg=0.000054 gap=0.000020 ETA=0:01:51
+flickr C1 seed12345 epoch 21/50 batch 501/562 total=4.0703 d_pos=0.000030 d_neg=0.000054 gap=0.000024 ETA=0:01:01
+flickr C1 seed12345 epoch 21/50 batch 551/562 total=4.3877 d_pos=0.000035 d_neg=0.000065 gap=0.000030 ETA=0:00:11
+flickr C1 seed12345 epoch 21/50 batch 562/562 total=4.4283 d_pos=0.000035 d_neg=0.000058 gap=0.000023 ETA=0:00:00
+{"epoch": 21, "learning_rate": 5e-05, "epoch_seconds": 566.5482647418976, "gradient_l2_mean": 87.53478694982448, "parameter_l2": 203.92633501366797, "info_loss": 3.592801543741464, "recon_loss": 3.0495389284188215, "div_loss": 0.004352551379930427, "a2v_loss": 3.338216944916975e-05, "v2a_loss": 0.00038826416088748734, "original_match_loss": 0.00042164633008096286, "d_pos": 3.3382169429749934e-05, "d_neg": 5.8000617700664564e-05, "g_match": 2.4618448225601726e-05, "cram_loss": 0.6931348669995617, "weighted_cram_loss": 0.06931348803893951, "total_loss": 4.009668803299873, "AUD_cIoU": 0.808, "AUD_AUC": 0.6062, "IQR_cIoU": 0.808, "IQR_AUC": 0.6042}
+flickr C1 seed12345 epoch 22/50 batch 1/562 total=3.3213 d_pos=0.000031 d_neg=0.000053 gap=0.000021 ETA=0:43:51
+flickr C1 seed12345 epoch 22/50 batch 51/562 total=3.4177 d_pos=0.000038 d_neg=0.000061 gap=0.000023 ETA=0:09:06
+flickr C1 seed12345 epoch 22/50 batch 101/562 total=3.7192 d_pos=0.000032 d_neg=0.000055 gap=0.000023 ETA=0:07:56
+flickr C1 seed12345 epoch 22/50 batch 151/562 total=3.6846 d_pos=0.000038 d_neg=0.000065 gap=0.000027 ETA=0:07:00
+flickr C1 seed12345 epoch 22/50 batch 201/562 total=3.8344 d_pos=0.000036 d_neg=0.000064 gap=0.000029 ETA=0:06:07
+flickr C1 seed12345 epoch 22/50 batch 251/562 total=4.0451 d_pos=0.000037 d_neg=0.000068 gap=0.000031 ETA=0:05:15
+flickr C1 seed12345 epoch 22/50 batch 301/562 total=3.7369 d_pos=0.000038 d_neg=0.000069 gap=0.000031 ETA=0:04:24
+flickr C1 seed12345 epoch 22/50 batch 351/562 total=4.3188 d_pos=0.000032 d_neg=0.000060 gap=0.000028 ETA=0:03:33
+flickr C1 seed12345 epoch 22/50 batch 401/562 total=3.9550 d_pos=0.000035 d_neg=0.000059 gap=0.000024 ETA=0:02:42
+flickr C1 seed12345 epoch 22/50 batch 451/562 total=3.7192 d_pos=0.000038 d_neg=0.000066 gap=0.000029 ETA=0:01:51
+flickr C1 seed12345 epoch 22/50 batch 501/562 total=3.9508 d_pos=0.000036 d_neg=0.000061 gap=0.000025 ETA=0:01:01
+flickr C1 seed12345 epoch 22/50 batch 551/562 total=4.2616 d_pos=0.000034 d_neg=0.000054 gap=0.000020 ETA=0:00:11
+flickr C1 seed12345 epoch 22/50 batch 562/562 total=4.1788 d_pos=0.000033 d_neg=0.000059 gap=0.000027 ETA=0:00:00
+{"epoch": 22, "learning_rate": 5e-05, "epoch_seconds": 566.9942169189453, "gradient_l2_mean": 86.96663527129921, "parameter_l2": 204.1005796047131, "info_loss": 3.3457242233473212, "recon_loss": 3.02177500639946, "div_loss": 0.004567311354995675, "a2v_loss": 3.490564422237084e-05, "v2a_loss": 0.0003824741404554956, "original_match_loss": 0.00041737978492061413, "d_pos": 3.4905644151164854e-05, "d_neg": 6.151829063947257e-05, "g_match": 2.6612646326475926e-05, "cram_loss": 0.6931338690990231, "weighted_cram_loss": 0.06931338823827984, "total_loss": 3.7594098247242993, "AUD_cIoU": 0.804, "AUD_AUC": 0.6052, "IQR_cIoU": 0.82, "IQR_AUC": 0.6028}
+flickr C1 seed12345 epoch 23/50 batch 1/562 total=3.2900 d_pos=0.000029 d_neg=0.000057 gap=0.000028 ETA=0:46:03
+flickr C1 seed12345 epoch 23/50 batch 51/562 total=3.3451 d_pos=0.000038 d_neg=0.000064 gap=0.000026 ETA=0:09:08
+flickr C1 seed12345 epoch 23/50 batch 101/562 total=3.1332 d_pos=0.000036 d_neg=0.000058 gap=0.000022 ETA=0:07:57
+flickr C1 seed12345 epoch 23/50 batch 151/562 total=3.5019 d_pos=0.000033 d_neg=0.000066 gap=0.000033 ETA=0:07:00
+flickr C1 seed12345 epoch 23/50 batch 201/562 total=3.4732 d_pos=0.000033 d_neg=0.000053 gap=0.000021 ETA=0:06:06
+flickr C1 seed12345 epoch 23/50 batch 251/562 total=3.5350 d_pos=0.000043 d_neg=0.000074 gap=0.000031 ETA=0:05:14
+flickr C1 seed12345 epoch 23/50 batch 301/562 total=3.5301 d_pos=0.000034 d_neg=0.000061 gap=0.000027 ETA=0:04:23
+flickr C1 seed12345 epoch 23/50 batch 351/562 total=3.5941 d_pos=0.000035 d_neg=0.000066 gap=0.000031 ETA=0:03:32
+flickr C1 seed12345 epoch 23/50 batch 401/562 total=3.4304 d_pos=0.000036 d_neg=0.000060 gap=0.000025 ETA=0:02:42
+flickr C1 seed12345 epoch 23/50 batch 451/562 total=3.5153 d_pos=0.000034 d_neg=0.000060 gap=0.000027 ETA=0:01:51
+flickr C1 seed12345 epoch 23/50 batch 501/562 total=3.7718 d_pos=0.000034 d_neg=0.000068 gap=0.000034 ETA=0:01:01
+flickr C1 seed12345 epoch 23/50 batch 551/562 total=3.8615 d_pos=0.000036 d_neg=0.000064 gap=0.000028 ETA=0:00:11
+flickr C1 seed12345 epoch 23/50 batch 562/562 total=4.1924 d_pos=0.000039 d_neg=0.000062 gap=0.000023 ETA=0:00:00
+{"epoch": 23, "learning_rate": 5e-05, "epoch_seconds": 566.6305842399597, "gradient_l2_mean": 92.9983157309578, "parameter_l2": 204.27109229469107, "info_loss": 3.1330674810341668, "recon_loss": 2.99753274569732, "div_loss": 0.004736521744063237, "a2v_loss": 3.55626717655436e-05, "v2a_loss": 0.0003832478731936109, "original_match_loss": 0.0004188105453831538, "d_pos": 3.556267179143669e-05, "d_neg": 6.211697830515333e-05, "g_match": 2.6554306594632546e-05, "cram_loss": 0.6931338989013455, "weighted_cram_loss": 0.06931339135373614, "total_loss": 3.5444888529828433, "AUD_cIoU": 0.82, "AUD_AUC": 0.6052000000000001, "IQR_cIoU": 0.804, "IQR_AUC": 0.5992000000000001}
+flickr C1 seed12345 epoch 24/50 batch 1/562 total=2.8278 d_pos=0.000032 d_neg=0.000054 gap=0.000022 ETA=0:41:52
+flickr C1 seed12345 epoch 24/50 batch 51/562 total=3.2951 d_pos=0.000034 d_neg=0.000068 gap=0.000033 ETA=0:09:05
+flickr C1 seed12345 epoch 24/50 batch 101/562 total=3.0652 d_pos=0.000041 d_neg=0.000068 gap=0.000027 ETA=0:07:56
+flickr C1 seed12345 epoch 24/50 batch 151/562 total=3.4631 d_pos=0.000035 d_neg=0.000061 gap=0.000026 ETA=0:07:00
+flickr C1 seed12345 epoch 24/50 batch 201/562 total=3.6079 d_pos=0.000044 d_neg=0.000072 gap=0.000028 ETA=0:06:06
+flickr C1 seed12345 epoch 24/50 batch 251/562 total=2.9446 d_pos=0.000031 d_neg=0.000063 gap=0.000031 ETA=0:05:14
+flickr C1 seed12345 epoch 24/50 batch 301/562 total=3.0198 d_pos=0.000038 d_neg=0.000062 gap=0.000024 ETA=0:04:23
+flickr C1 seed12345 epoch 24/50 batch 351/562 total=3.7836 d_pos=0.000041 d_neg=0.000068 gap=0.000027 ETA=0:03:32
+flickr C1 seed12345 epoch 24/50 batch 401/562 total=3.4151 d_pos=0.000035 d_neg=0.000062 gap=0.000026 ETA=0:02:42
+flickr C1 seed12345 epoch 24/50 batch 451/562 total=3.6475 d_pos=0.000033 d_neg=0.000057 gap=0.000024 ETA=0:01:51
+flickr C1 seed12345 epoch 24/50 batch 501/562 total=3.2535 d_pos=0.000035 d_neg=0.000063 gap=0.000028 ETA=0:01:01
+flickr C1 seed12345 epoch 24/50 batch 551/562 total=3.8582 d_pos=0.000031 d_neg=0.000055 gap=0.000024 ETA=0:00:11
+flickr C1 seed12345 epoch 24/50 batch 562/562 total=3.3384 d_pos=0.000033 d_neg=0.000059 gap=0.000026 ETA=0:00:00
+{"epoch": 24, "learning_rate": 5e-05, "epoch_seconds": 566.0199370384216, "gradient_l2_mean": 87.74554406236537, "parameter_l2": 204.4397998709806, "info_loss": 2.930638627225394, "recon_loss": 2.9774650157134306, "div_loss": 0.0049261240644075536, "a2v_loss": 3.728629416339013e-05, "v2a_loss": 0.000384527335839936, "original_match_loss": 0.000421813629773525, "d_pos": 3.728629427019911e-05, "d_neg": 6.515259372858203e-05, "g_match": 2.786629957813845e-05, "cram_loss": 0.6931332410230331, "weighted_cram_loss": 0.06931332570378042, "total_loss": 3.340372416896752, "AUD_cIoU": 0.78, "AUD_AUC": 0.5983999999999999, "IQR_cIoU": 0.788, "IQR_AUC": 0.5958}
+flickr C1 seed12345 epoch 25/50 batch 1/562 total=3.4582 d_pos=0.000038 d_neg=0.000062 gap=0.000025 ETA=0:50:59
+flickr C1 seed12345 epoch 25/50 batch 51/562 total=2.5430 d_pos=0.000039 d_neg=0.000066 gap=0.000027 ETA=0:09:15
+flickr C1 seed12345 epoch 25/50 batch 101/562 total=2.9192 d_pos=0.000037 d_neg=0.000065 gap=0.000028 ETA=0:08:00
+flickr C1 seed12345 epoch 25/50 batch 151/562 total=2.7325 d_pos=0.000039 d_neg=0.000069 gap=0.000029 ETA=0:07:02
+flickr C1 seed12345 epoch 25/50 batch 201/562 total=3.2601 d_pos=0.000042 d_neg=0.000075 gap=0.000033 ETA=0:06:08
+flickr C1 seed12345 epoch 25/50 batch 251/562 total=2.8631 d_pos=0.000036 d_neg=0.000070 gap=0.000034 ETA=0:05:15
+flickr C1 seed12345 epoch 25/50 batch 301/562 total=3.1198 d_pos=0.000041 d_neg=0.000075 gap=0.000034 ETA=0:04:24
+flickr C1 seed12345 epoch 25/50 batch 351/562 total=3.3116 d_pos=0.000044 d_neg=0.000070 gap=0.000026 ETA=0:03:33
+flickr C1 seed12345 epoch 25/50 batch 401/562 total=3.0433 d_pos=0.000046 d_neg=0.000082 gap=0.000036 ETA=0:02:42
+flickr C1 seed12345 epoch 25/50 batch 451/562 total=3.5816 d_pos=0.000038 d_neg=0.000063 gap=0.000025 ETA=0:01:51
+flickr C1 seed12345 epoch 25/50 batch 501/562 total=3.5268 d_pos=0.000039 d_neg=0.000064 gap=0.000025 ETA=0:01:01
+flickr C1 seed12345 epoch 25/50 batch 551/562 total=3.2609 d_pos=0.000035 d_neg=0.000064 gap=0.000028 ETA=0:00:11
+flickr C1 seed12345 epoch 25/50 batch 562/562 total=3.0578 d_pos=0.000034 d_neg=0.000057 gap=0.000022 ETA=0:00:00
+{"epoch": 25, "learning_rate": 5e-05, "epoch_seconds": 567.4640972614288, "gradient_l2_mean": 87.43027510426919, "parameter_l2": 204.60193219295263, "info_loss": 2.7256677566474017, "recon_loss": 2.9488591579355803, "div_loss": 0.004672151316185995, "a2v_loss": 3.884664107524948e-05, "v2a_loss": 0.00039027369912801596, "original_match_loss": 0.0004291203402971279, "d_pos": 3.884664106230294e-05, "d_neg": 6.859372938686719e-05, "g_match": 2.974708859320503e-05, "cram_loss": 0.6931323021968488, "weighted_cram_loss": 0.06931323167002923, "total_loss": 3.13324615709298, "AUD_cIoU": 0.8, "AUD_AUC": 0.6012000000000001, "IQR_cIoU": 0.8, "IQR_AUC": 0.596}
+flickr C1 seed12345 epoch 26/50 batch 1/562 total=2.5129 d_pos=0.000035 d_neg=0.000063 gap=0.000028 ETA=0:49:55
+flickr C1 seed12345 epoch 26/50 batch 51/562 total=2.7714 d_pos=0.000038 d_neg=0.000069 gap=0.000032 ETA=0:09:13
+flickr C1 seed12345 epoch 26/50 batch 101/562 total=2.9102 d_pos=0.000038 d_neg=0.000066 gap=0.000028 ETA=0:07:59
+flickr C1 seed12345 epoch 26/50 batch 151/562 total=3.2043 d_pos=0.000043 d_neg=0.000073 gap=0.000030 ETA=0:07:01
+flickr C1 seed12345 epoch 26/50 batch 201/562 total=2.7549 d_pos=0.000037 d_neg=0.000068 gap=0.000031 ETA=0:06:08
+flickr C1 seed12345 epoch 26/50 batch 251/562 total=2.6735 d_pos=0.000041 d_neg=0.000065 gap=0.000024 ETA=0:05:15
+flickr C1 seed12345 epoch 26/50 batch 301/562 total=2.7570 d_pos=0.000039 d_neg=0.000078 gap=0.000039 ETA=0:04:24
+flickr C1 seed12345 epoch 26/50 batch 351/562 total=2.8852 d_pos=0.000039 d_neg=0.000069 gap=0.000030 ETA=0:03:33
+flickr C1 seed12345 epoch 26/50 batch 401/562 total=3.2490 d_pos=0.000040 d_neg=0.000068 gap=0.000028 ETA=0:02:42
+flickr C1 seed12345 epoch 26/50 batch 451/562 total=2.9640 d_pos=0.000036 d_neg=0.000067 gap=0.000031 ETA=0:01:51
+flickr C1 seed12345 epoch 26/50 batch 501/562 total=3.0545 d_pos=0.000040 d_neg=0.000076 gap=0.000036 ETA=0:01:01
+flickr C1 seed12345 epoch 26/50 batch 551/562 total=2.8923 d_pos=0.000038 d_neg=0.000061 gap=0.000023 ETA=0:00:11
+flickr C1 seed12345 epoch 26/50 batch 562/562 total=3.1719 d_pos=0.000040 d_neg=0.000071 gap=0.000031 ETA=0:00:00
+{"epoch": 26, "learning_rate": 5e-05, "epoch_seconds": 567.429785490036, "gradient_l2_mean": 85.330673187708, "parameter_l2": 204.76353066085397, "info_loss": 2.5697881757576693, "recon_loss": 2.927406576180373, "div_loss": 0.004430879203244725, "a2v_loss": 3.800097389601472e-05, "v2a_loss": 0.00037307583887893973, "original_match_loss": 0.00041107681289470995, "d_pos": 3.800097388306817e-05, "d_neg": 6.732525448520954e-05, "g_match": 2.932428065716418e-05, "cram_loss": 0.6931325146311967, "weighted_cram_loss": 0.06931325298770467, "total_loss": 2.9733928645632868, "AUD_cIoU": 0.796, "AUD_AUC": 0.5928, "IQR_cIoU": 0.792, "IQR_AUC": 0.5922}
+flickr C1 seed12345 epoch 27/50 batch 1/562 total=2.5328 d_pos=0.000043 d_neg=0.000085 gap=0.000042 ETA=0:45:22
+flickr C1 seed12345 epoch 27/50 batch 51/562 total=2.7328 d_pos=0.000039 d_neg=0.000072 gap=0.000033 ETA=0:09:08
+flickr C1 seed12345 epoch 27/50 batch 101/562 total=2.4523 d_pos=0.000036 d_neg=0.000065 gap=0.000029 ETA=0:07:57
+flickr C1 seed12345 epoch 27/50 batch 151/562 total=2.8981 d_pos=0.000037 d_neg=0.000074 gap=0.000037 ETA=0:07:00
+flickr C1 seed12345 epoch 27/50 batch 201/562 total=2.7247 d_pos=0.000042 d_neg=0.000074 gap=0.000032 ETA=0:06:07
+flickr C1 seed12345 epoch 27/50 batch 251/562 total=2.4052 d_pos=0.000037 d_neg=0.000073 gap=0.000036 ETA=0:05:14
+flickr C1 seed12345 epoch 27/50 batch 301/562 total=2.8120 d_pos=0.000035 d_neg=0.000061 gap=0.000025 ETA=0:04:23
+flickr C1 seed12345 epoch 27/50 batch 351/562 total=3.1136 d_pos=0.000040 d_neg=0.000069 gap=0.000029 ETA=0:03:44
+flickr C1 seed12345 epoch 27/50 batch 401/562 total=2.8173 d_pos=0.000038 d_neg=0.000070 gap=0.000032 ETA=0:02:50
+flickr C1 seed12345 epoch 27/50 batch 451/562 total=2.6568 d_pos=0.000042 d_neg=0.000068 gap=0.000026 ETA=0:01:56
+flickr C1 seed12345 epoch 27/50 batch 501/562 total=2.7786 d_pos=0.000039 d_neg=0.000069 gap=0.000030 ETA=0:01:03
+flickr C1 seed12345 epoch 27/50 batch 551/562 total=3.3210 d_pos=0.000040 d_neg=0.000074 gap=0.000034 ETA=0:00:11
+flickr C1 seed12345 epoch 27/50 batch 562/562 total=2.8932 d_pos=0.000037 d_neg=0.000071 gap=0.000034 ETA=0:00:00
+{"epoch": 27, "learning_rate": 5e-05, "epoch_seconds": 586.6129577159882, "gradient_l2_mean": 90.63827921677118, "parameter_l2": 204.9250760546411, "info_loss": 2.4331468863419365, "recon_loss": 2.902722776148243, "div_loss": 0.004387188199460108, "a2v_loss": 3.893100440879584e-05, "v2a_loss": 0.00037969037232956986, "original_match_loss": 0.00041862137669952605, "d_pos": 3.8931004480001836e-05, "d_neg": 7.030535508352175e-05, "g_match": 3.137435060028327e-05, "cram_loss": 0.6931314869283357, "weighted_cram_loss": 0.06931315024393309, "total_loss": 2.8350331600874767, "AUD_cIoU": 0.804, "AUD_AUC": 0.6028, "IQR_cIoU": 0.804, "IQR_AUC": 0.6016}
+flickr C1 seed12345 epoch 28/50 batch 1/562 total=2.2389 d_pos=0.000043 d_neg=0.000071 gap=0.000028 ETA=0:45:09
+flickr C1 seed12345 epoch 28/50 batch 51/562 total=2.6378 d_pos=0.000039 d_neg=0.000075 gap=0.000036 ETA=0:09:07
+flickr C1 seed12345 epoch 28/50 batch 101/562 total=2.4462 d_pos=0.000039 d_neg=0.000072 gap=0.000033 ETA=0:07:56
+flickr C1 seed12345 epoch 28/50 batch 151/562 total=3.0416 d_pos=0.000040 d_neg=0.000075 gap=0.000035 ETA=0:06:59
+flickr C1 seed12345 epoch 28/50 batch 201/562 total=2.7446 d_pos=0.000042 d_neg=0.000071 gap=0.000029 ETA=0:06:06
+flickr C1 seed12345 epoch 28/50 batch 251/562 total=2.7260 d_pos=0.000045 d_neg=0.000073 gap=0.000028 ETA=0:05:14
+flickr C1 seed12345 epoch 28/50 batch 301/562 total=2.4339 d_pos=0.000040 d_neg=0.000074 gap=0.000034 ETA=0:04:23
+flickr C1 seed12345 epoch 28/50 batch 351/562 total=2.6759 d_pos=0.000036 d_neg=0.000077 gap=0.000041 ETA=0:03:32
+flickr C1 seed12345 epoch 28/50 batch 401/562 total=2.6539 d_pos=0.000048 d_neg=0.000092 gap=0.000044 ETA=0:02:41
+flickr C1 seed12345 epoch 28/50 batch 451/562 total=2.9078 d_pos=0.000041 d_neg=0.000071 gap=0.000030 ETA=0:01:51
+flickr C1 seed12345 epoch 28/50 batch 501/562 total=2.6754 d_pos=0.000045 d_neg=0.000089 gap=0.000044 ETA=0:01:01
+flickr C1 seed12345 epoch 28/50 batch 551/562 total=2.7509 d_pos=0.000037 d_neg=0.000065 gap=0.000028 ETA=0:00:11
+flickr C1 seed12345 epoch 28/50 batch 562/562 total=3.0757 d_pos=0.000044 d_neg=0.000076 gap=0.000032 ETA=0:00:00
+{"epoch": 28, "learning_rate": 5e-05, "epoch_seconds": 565.241446018219, "gradient_l2_mean": 91.27323291932002, "parameter_l2": 205.08022361395228, "info_loss": 2.27640212791246, "recon_loss": 2.880195903184151, "div_loss": 0.0047843301021643116, "a2v_loss": 4.110301680898325e-05, "v2a_loss": 0.0003803555688052687, "original_match_loss": 0.00042145858572429756, "d_pos": 4.110301696434178e-05, "d_neg": 7.419968648178559e-05, "g_match": 3.3096669310299115e-05, "cram_loss": 0.6931306290244716, "weighted_cram_loss": 0.069313064602028, "total_loss": 2.6763590693049584, "AUD_cIoU": 0.784, "AUD_AUC": 0.5984, "IQR_cIoU": 0.784, "IQR_AUC": 0.5946000000000001}
+flickr C1 seed12345 epoch 29/50 batch 1/562 total=2.3050 d_pos=0.000039 d_neg=0.000071 gap=0.000033 ETA=0:44:27
+flickr C1 seed12345 epoch 29/50 batch 51/562 total=2.5696 d_pos=0.000042 d_neg=0.000087 gap=0.000045 ETA=0:09:09
+flickr C1 seed12345 epoch 29/50 batch 101/562 total=2.1905 d_pos=0.000042 d_neg=0.000080 gap=0.000038 ETA=0:07:57
+flickr C1 seed12345 epoch 29/50 batch 151/562 total=2.6428 d_pos=0.000042 d_neg=0.000082 gap=0.000040 ETA=0:07:00
+flickr C1 seed12345 epoch 29/50 batch 201/562 total=2.5476 d_pos=0.000041 d_neg=0.000073 gap=0.000032 ETA=0:06:06
+flickr C1 seed12345 epoch 29/50 batch 251/562 total=2.1137 d_pos=0.000040 d_neg=0.000072 gap=0.000032 ETA=0:05:14
+flickr C1 seed12345 epoch 29/50 batch 301/562 total=2.4635 d_pos=0.000042 d_neg=0.000076 gap=0.000034 ETA=0:04:23
+flickr C1 seed12345 epoch 29/50 batch 351/562 total=2.3419 d_pos=0.000040 d_neg=0.000080 gap=0.000041 ETA=0:03:32
+flickr C1 seed12345 epoch 29/50 batch 401/562 total=2.9319 d_pos=0.000042 d_neg=0.000077 gap=0.000034 ETA=0:02:41
+flickr C1 seed12345 epoch 29/50 batch 451/562 total=2.3885 d_pos=0.000043 d_neg=0.000088 gap=0.000045 ETA=0:01:51
+flickr C1 seed12345 epoch 29/50 batch 501/562 total=2.9473 d_pos=0.000045 d_neg=0.000080 gap=0.000035 ETA=0:01:01
+flickr C1 seed12345 epoch 29/50 batch 551/562 total=2.9346 d_pos=0.000039 d_neg=0.000077 gap=0.000038 ETA=0:00:11
+flickr C1 seed12345 epoch 29/50 batch 562/562 total=2.4555 d_pos=0.000045 d_neg=0.000090 gap=0.000045 ETA=0:00:00
+{"epoch": 29, "learning_rate": 5e-05, "epoch_seconds": 567.2938840389252, "gradient_l2_mean": 86.4559444607345, "parameter_l2": 205.23461751489975, "info_loss": 2.1321912592416132, "recon_loss": 2.863200855849052, "div_loss": 0.004388252063571505, "a2v_loss": 4.300399194243679e-05, "v2a_loss": 0.00037077370900751895, "original_match_loss": 0.00041377770056155944, "d_pos": 4.300399198774969e-05, "d_neg": 7.915993647200795e-05, "g_match": 3.615594471082277e-05, "cram_loss": 0.6931291003032087, "weighted_cram_loss": 0.0693129115867233, "total_loss": 2.5296408531928827, "AUD_cIoU": 0.8, "AUD_AUC": 0.6032000000000001, "IQR_cIoU": 0.816, "IQR_AUC": 0.6026}
+flickr C1 seed12345 epoch 30/50 batch 1/562 total=2.1049 d_pos=0.000039 d_neg=0.000087 gap=0.000049 ETA=0:50:38
+flickr C1 seed12345 epoch 30/50 batch 51/562 total=2.2868 d_pos=0.000041 d_neg=0.000072 gap=0.000031 ETA=0:09:13
+flickr C1 seed12345 epoch 30/50 batch 101/562 total=2.2530 d_pos=0.000048 d_neg=0.000086 gap=0.000037 ETA=0:07:59
+flickr C1 seed12345 epoch 30/50 batch 151/562 total=2.2147 d_pos=0.000042 d_neg=0.000069 gap=0.000027 ETA=0:07:01
+flickr C1 seed12345 epoch 30/50 batch 201/562 total=2.2010 d_pos=0.000041 d_neg=0.000075 gap=0.000035 ETA=0:06:07
+flickr C1 seed12345 epoch 30/50 batch 251/562 total=2.4109 d_pos=0.000040 d_neg=0.000082 gap=0.000042 ETA=0:05:15
+flickr C1 seed12345 epoch 30/50 batch 301/562 total=2.5920 d_pos=0.000043 d_neg=0.000073 gap=0.000031 ETA=0:04:23
+flickr C1 seed12345 epoch 30/50 batch 351/562 total=2.6789 d_pos=0.000044 d_neg=0.000078 gap=0.000034 ETA=0:03:32
+flickr C1 seed12345 epoch 30/50 batch 401/562 total=2.6347 d_pos=0.000040 d_neg=0.000069 gap=0.000029 ETA=0:02:42
+flickr C1 seed12345 epoch 30/50 batch 451/562 total=2.4613 d_pos=0.000040 d_neg=0.000072 gap=0.000032 ETA=0:01:51
+flickr C1 seed12345 epoch 30/50 batch 501/562 total=2.4152 d_pos=0.000046 d_neg=0.000080 gap=0.000034 ETA=0:01:01
+flickr C1 seed12345 epoch 30/50 batch 551/562 total=2.5083 d_pos=0.000042 d_neg=0.000076 gap=0.000034 ETA=0:00:11
+flickr C1 seed12345 epoch 30/50 batch 562/562 total=3.0582 d_pos=0.000042 d_neg=0.000084 gap=0.000043 ETA=0:00:00
+{"epoch": 30, "learning_rate": 5e-05, "epoch_seconds": 566.3470268249512, "gradient_l2_mean": 85.80019347460473, "parameter_l2": 205.38762497067788, "info_loss": 2.024061534540509, "recon_loss": 2.845573190692481, "div_loss": 0.004344757650050855, "a2v_loss": 4.2638335235808806e-05, "v2a_loss": 0.00036314357393396374, "original_match_loss": 0.00040578190869075044, "d_pos": 4.2638335093396825e-05, "d_neg": 7.774267957831263e-05, "g_match": 3.510434442341972e-05, "cram_loss": 0.6931296243362155, "weighted_cram_loss": 0.06931296387336008, "total_loss": 2.4189444818530643, "AUD_cIoU": 0.796, "AUD_AUC": 0.5958, "IQR_cIoU": 0.796, "IQR_AUC": 0.5932000000000001}
+flickr C1 seed12345 epoch 31/50 batch 1/562 total=2.2167 d_pos=0.000042 d_neg=0.000081 gap=0.000039 ETA=0:48:57
+flickr C1 seed12345 epoch 31/50 batch 51/562 total=2.3605 d_pos=0.000044 d_neg=0.000086 gap=0.000042 ETA=0:09:14
+flickr C1 seed12345 epoch 31/50 batch 101/562 total=2.1250 d_pos=0.000043 d_neg=0.000080 gap=0.000037 ETA=0:08:01
+flickr C1 seed12345 epoch 31/50 batch 151/562 total=2.4531 d_pos=0.000045 d_neg=0.000084 gap=0.000038 ETA=0:07:03
+flickr C1 seed12345 epoch 31/50 batch 201/562 total=2.3809 d_pos=0.000041 d_neg=0.000079 gap=0.000039 ETA=0:06:09
+flickr C1 seed12345 epoch 31/50 batch 251/562 total=2.2556 d_pos=0.000040 d_neg=0.000073 gap=0.000033 ETA=0:05:16
+flickr C1 seed12345 epoch 31/50 batch 301/562 total=1.8632 d_pos=0.000035 d_neg=0.000068 gap=0.000034 ETA=0:04:24
+flickr C1 seed12345 epoch 31/50 batch 351/562 total=2.2498 d_pos=0.000039 d_neg=0.000079 gap=0.000039 ETA=0:03:33
+flickr C1 seed12345 epoch 31/50 batch 401/562 total=2.5582 d_pos=0.000040 d_neg=0.000076 gap=0.000036 ETA=0:02:42
+flickr C1 seed12345 epoch 31/50 batch 451/562 total=2.4905 d_pos=0.000038 d_neg=0.000073 gap=0.000035 ETA=0:01:51
+flickr C1 seed12345 epoch 31/50 batch 501/562 total=2.1056 d_pos=0.000035 d_neg=0.000070 gap=0.000035 ETA=0:01:01
+flickr C1 seed12345 epoch 31/50 batch 551/562 total=2.4966 d_pos=0.000045 d_neg=0.000074 gap=0.000029 ETA=0:00:11
+flickr C1 seed12345 epoch 31/50 batch 562/562 total=2.8542 d_pos=0.000039 d_neg=0.000078 gap=0.000039 ETA=0:00:00
+{"epoch": 31, "learning_rate": 5e-05, "epoch_seconds": 566.8025650978088, "gradient_l2_mean": 91.48115180177363, "parameter_l2": 205.5370347292176, "info_loss": 1.9141691889202892, "recon_loss": 2.8309319358703506, "div_loss": 0.004541236157794201, "a2v_loss": 4.1087940565204363e-05, "v2a_loss": 0.0003582063659823009, "original_match_loss": 0.0003992943067287569, "d_pos": 4.1087940811188694e-05, "d_neg": 7.694742458346763e-05, "g_match": 3.585948388879784e-05, "cram_loss": 0.6931292454967295, "weighted_cram_loss": 0.06931292589130775, "total_loss": 2.3069588639557996, "AUD_cIoU": 0.788, "AUD_AUC": 0.5985999999999999, "IQR_cIoU": 0.812, "IQR_AUC": 0.5963999999999999}
+flickr C1 seed12345 epoch 32/50 batch 1/562 total=1.9552 d_pos=0.000040 d_neg=0.000081 gap=0.000041 ETA=0:47:10
+flickr C1 seed12345 epoch 32/50 batch 51/562 total=1.9870 d_pos=0.000045 d_neg=0.000084 gap=0.000040 ETA=0:09:09
+flickr C1 seed12345 epoch 32/50 batch 101/562 total=2.3992 d_pos=0.000039 d_neg=0.000078 gap=0.000039 ETA=0:07:58
+flickr C1 seed12345 epoch 32/50 batch 151/562 total=2.0585 d_pos=0.000045 d_neg=0.000081 gap=0.000036 ETA=0:07:00
+flickr C1 seed12345 epoch 32/50 batch 201/562 total=2.4912 d_pos=0.000043 d_neg=0.000075 gap=0.000032 ETA=0:06:07
+flickr C1 seed12345 epoch 32/50 batch 251/562 total=2.1638 d_pos=0.000038 d_neg=0.000073 gap=0.000035 ETA=0:05:15
+flickr C1 seed12345 epoch 32/50 batch 301/562 total=2.1701 d_pos=0.000040 d_neg=0.000078 gap=0.000038 ETA=0:04:23
+flickr C1 seed12345 epoch 32/50 batch 351/562 total=2.2843 d_pos=0.000045 d_neg=0.000082 gap=0.000037 ETA=0:03:32
+flickr C1 seed12345 epoch 32/50 batch 401/562 total=2.4843 d_pos=0.000052 d_neg=0.000092 gap=0.000041 ETA=0:02:42
+flickr C1 seed12345 epoch 32/50 batch 451/562 total=2.3910 d_pos=0.000038 d_neg=0.000079 gap=0.000041 ETA=0:01:51
+flickr C1 seed12345 epoch 32/50 batch 501/562 total=1.9887 d_pos=0.000040 d_neg=0.000082 gap=0.000042 ETA=0:01:01
+flickr C1 seed12345 epoch 32/50 batch 551/562 total=2.2988 d_pos=0.000039 d_neg=0.000078 gap=0.000039 ETA=0:00:11
+flickr C1 seed12345 epoch 32/50 batch 562/562 total=2.0396 d_pos=0.000043 d_neg=0.000085 gap=0.000043 ETA=0:00:00
+{"epoch": 32, "learning_rate": 5e-05, "epoch_seconds": 566.0331158638, "gradient_l2_mean": 83.69770527427248, "parameter_l2": 205.68152983433225, "info_loss": 1.8148811219850045, "recon_loss": 2.8132082338434947, "div_loss": 0.004684042497919177, "a2v_loss": 4.182021738257047e-05, "v2a_loss": 0.0003707207512219016, "original_match_loss": 0.0004125409696919817, "d_pos": 4.182021744082992e-05, "d_neg": 7.886065371772457e-05, "g_match": 3.704043630926101e-05, "cram_loss": 0.6931286558137669, "weighted_cram_loss": 0.06931286697604054, "total_loss": 2.2072373144991455, "AUD_cIoU": 0.8, "AUD_AUC": 0.5996, "IQR_cIoU": 0.808, "IQR_AUC": 0.596}
+flickr C1 seed12345 epoch 33/50 batch 1/562 total=1.8111 d_pos=0.000043 d_neg=0.000087 gap=0.000045 ETA=0:45:27
+flickr C1 seed12345 epoch 33/50 batch 51/562 total=1.8365 d_pos=0.000044 d_neg=0.000082 gap=0.000039 ETA=0:09:07
+flickr C1 seed12345 epoch 33/50 batch 101/562 total=2.0083 d_pos=0.000042 d_neg=0.000083 gap=0.000041 ETA=0:07:56
+flickr C1 seed12345 epoch 33/50 batch 151/562 total=2.2353 d_pos=0.000040 d_neg=0.000073 gap=0.000033 ETA=0:07:00
+flickr C1 seed12345 epoch 33/50 batch 201/562 total=1.8425 d_pos=0.000041 d_neg=0.000076 gap=0.000035 ETA=0:06:06
+flickr C1 seed12345 epoch 33/50 batch 251/562 total=2.2822 d_pos=0.000043 d_neg=0.000076 gap=0.000033 ETA=0:05:14
+flickr C1 seed12345 epoch 33/50 batch 301/562 total=2.1263 d_pos=0.000047 d_neg=0.000095 gap=0.000048 ETA=0:04:23
+flickr C1 seed12345 epoch 33/50 batch 351/562 total=2.1073 d_pos=0.000042 d_neg=0.000080 gap=0.000037 ETA=0:03:32
+flickr C1 seed12345 epoch 33/50 batch 401/562 total=1.9969 d_pos=0.000046 d_neg=0.000084 gap=0.000038 ETA=0:02:42
+flickr C1 seed12345 epoch 33/50 batch 451/562 total=2.0310 d_pos=0.000042 d_neg=0.000081 gap=0.000039 ETA=0:01:51
+flickr C1 seed12345 epoch 33/50 batch 501/562 total=2.1084 d_pos=0.000044 d_neg=0.000070 gap=0.000026 ETA=0:01:01
+flickr C1 seed12345 epoch 33/50 batch 551/562 total=2.2016 d_pos=0.000047 d_neg=0.000093 gap=0.000046 ETA=0:00:11
+flickr C1 seed12345 epoch 33/50 batch 562/562 total=2.0872 d_pos=0.000039 d_neg=0.000081 gap=0.000041 ETA=0:00:00
+{"epoch": 33, "learning_rate": 5e-05, "epoch_seconds": 565.8349182605743, "gradient_l2_mean": 80.3430382532799, "parameter_l2": 205.82610011244284, "info_loss": 1.7108641669843545, "recon_loss": 2.798576830969162, "div_loss": 0.004638533880586116, "a2v_loss": 4.3157072387686665e-05, "v2a_loss": 0.00035870841236576253, "original_match_loss": 0.00040186548452688465, "d_pos": 4.315707241357975e-05, "d_neg": 8.178002161300721e-05, "g_match": 3.862294906996202e-05, "cram_loss": 0.6931278646204395, "weighted_cram_loss": 0.06931278793625135, "total_loss": 2.1006850466609426, "AUD_cIoU": 0.82, "AUD_AUC": 0.6006, "IQR_cIoU": 0.82, "IQR_AUC": 0.6004}
+flickr C1 seed12345 epoch 34/50 batch 1/562 total=1.7893 d_pos=0.000042 d_neg=0.000083 gap=0.000041 ETA=0:54:13
+flickr C1 seed12345 epoch 34/50 batch 51/562 total=1.9824 d_pos=0.000041 d_neg=0.000082 gap=0.000040 ETA=0:09:17
+flickr C1 seed12345 epoch 34/50 batch 101/562 total=1.7478 d_pos=0.000041 d_neg=0.000082 gap=0.000041 ETA=0:08:01
+flickr C1 seed12345 epoch 34/50 batch 151/562 total=2.2942 d_pos=0.000047 d_neg=0.000094 gap=0.000047 ETA=0:07:02
+flickr C1 seed12345 epoch 34/50 batch 201/562 total=1.8303 d_pos=0.000048 d_neg=0.000083 gap=0.000034 ETA=0:06:08
+flickr C1 seed12345 epoch 34/50 batch 251/562 total=1.9748 d_pos=0.000042 d_neg=0.000082 gap=0.000039 ETA=0:05:15
+flickr C1 seed12345 epoch 34/50 batch 301/562 total=1.9486 d_pos=0.000041 d_neg=0.000073 gap=0.000031 ETA=0:04:24
+flickr C1 seed12345 epoch 34/50 batch 351/562 total=1.9011 d_pos=0.000045 d_neg=0.000090 gap=0.000045 ETA=0:03:33
+flickr C1 seed12345 epoch 34/50 batch 401/562 total=2.0211 d_pos=0.000045 d_neg=0.000083 gap=0.000037 ETA=0:02:42
+flickr C1 seed12345 epoch 34/50 batch 451/562 total=2.4491 d_pos=0.000051 d_neg=0.000087 gap=0.000037 ETA=0:01:51
+flickr C1 seed12345 epoch 34/50 batch 501/562 total=1.7796 d_pos=0.000038 d_neg=0.000069 gap=0.000030 ETA=0:01:01
+flickr C1 seed12345 epoch 34/50 batch 551/562 total=2.2244 d_pos=0.000043 d_neg=0.000078 gap=0.000036 ETA=0:00:11
+flickr C1 seed12345 epoch 34/50 batch 562/562 total=2.3831 d_pos=0.000042 d_neg=0.000082 gap=0.000039 ETA=0:00:00
+{"epoch": 34, "learning_rate": 5e-05, "epoch_seconds": 566.9254310131073, "gradient_l2_mean": 78.10766927646532, "parameter_l2": 205.96434142011498, "info_loss": 1.657940978045141, "recon_loss": 2.7813690977164436, "div_loss": 0.004724960202463899, "a2v_loss": 4.34901240523395e-05, "v2a_loss": 0.00035659302468494484, "original_match_loss": 0.0004000831490674212, "d_pos": 4.349012412354549e-05, "d_neg": 8.20515708637621e-05, "g_match": 3.856144696678113e-05, "cram_loss": 0.6931278961196913, "weighted_cram_loss": 0.06931279106496492, "total_loss": 2.0458714940793996, "AUD_cIoU": 0.796, "AUD_AUC": 0.5918, "IQR_cIoU": 0.784, "IQR_AUC": 0.5898}
+flickr C1 seed12345 epoch 35/50 batch 1/562 total=1.8553 d_pos=0.000039 d_neg=0.000076 gap=0.000036 ETA=0:43:57
+flickr C1 seed12345 epoch 35/50 batch 51/562 total=1.7934 d_pos=0.000050 d_neg=0.000102 gap=0.000052 ETA=0:09:06
+flickr C1 seed12345 epoch 35/50 batch 101/562 total=2.0667 d_pos=0.000047 d_neg=0.000094 gap=0.000046 ETA=0:07:56
+flickr C1 seed12345 epoch 35/50 batch 151/562 total=1.6090 d_pos=0.000044 d_neg=0.000085 gap=0.000042 ETA=0:06:59
+flickr C1 seed12345 epoch 35/50 batch 201/562 total=1.8994 d_pos=0.000045 d_neg=0.000081 gap=0.000037 ETA=0:06:06
+flickr C1 seed12345 epoch 35/50 batch 251/562 total=2.3263 d_pos=0.000048 d_neg=0.000095 gap=0.000047 ETA=0:05:14
+flickr C1 seed12345 epoch 35/50 batch 301/562 total=1.9133 d_pos=0.000051 d_neg=0.000105 gap=0.000054 ETA=0:04:23
+flickr C1 seed12345 epoch 35/50 batch 351/562 total=2.0377 d_pos=0.000043 d_neg=0.000071 gap=0.000028 ETA=0:03:32
+flickr C1 seed12345 epoch 35/50 batch 401/562 total=2.1642 d_pos=0.000048 d_neg=0.000086 gap=0.000038 ETA=0:02:42
+flickr C1 seed12345 epoch 35/50 batch 451/562 total=2.0891 d_pos=0.000043 d_neg=0.000083 gap=0.000040 ETA=0:01:51
+flickr C1 seed12345 epoch 35/50 batch 501/562 total=1.6587 d_pos=0.000045 d_neg=0.000089 gap=0.000044 ETA=0:01:01
+flickr C1 seed12345 epoch 35/50 batch 551/562 total=2.2779 d_pos=0.000046 d_neg=0.000090 gap=0.000044 ETA=0:00:11
+flickr C1 seed12345 epoch 35/50 batch 562/562 total=1.9916 d_pos=0.000041 d_neg=0.000084 gap=0.000043 ETA=0:00:00
+{"epoch": 35, "learning_rate": 5e-05, "epoch_seconds": 568.0082876682281, "gradient_l2_mean": 83.24655128626364, "parameter_l2": 206.10474480522174, "info_loss": 1.5746873594900044, "recon_loss": 2.764587052776296, "div_loss": 0.0038413278989699335, "a2v_loss": 4.466365756592514e-05, "v2a_loss": 0.0003549872522219167, "original_match_loss": 0.00039965090912756813, "d_pos": 4.466365746235279e-05, "d_neg": 8.48963201498394e-05, "g_match": 4.023266277811241e-05, "cram_loss": 0.6931270600637931, "weighted_cram_loss": 0.06931270741164897, "total_loss": 1.9608080062577733, "AUD_cIoU": 0.816, "AUD_AUC": 0.6028, "IQR_cIoU": 0.816, "IQR_AUC": 0.5974}
+flickr C1 seed12345 epoch 36/50 batch 1/562 total=2.0730 d_pos=0.000044 d_neg=0.000082 gap=0.000038 ETA=0:59:20
+flickr C1 seed12345 epoch 36/50 batch 51/562 total=1.6808 d_pos=0.000044 d_neg=0.000085 gap=0.000041 ETA=0:09:25
+flickr C1 seed12345 epoch 36/50 batch 101/562 total=1.5037 d_pos=0.000043 d_neg=0.000091 gap=0.000049 ETA=0:08:10
+flickr C1 seed12345 epoch 36/50 batch 151/562 total=1.8061 d_pos=0.000047 d_neg=0.000094 gap=0.000047 ETA=0:07:10
+flickr C1 seed12345 epoch 36/50 batch 201/562 total=1.9375 d_pos=0.000046 d_neg=0.000087 gap=0.000041 ETA=0:06:13
+flickr C1 seed12345 epoch 36/50 batch 251/562 total=2.1093 d_pos=0.000047 d_neg=0.000081 gap=0.000034 ETA=0:05:21
+flickr C1 seed12345 epoch 36/50 batch 301/562 total=2.0830 d_pos=0.000039 d_neg=0.000072 gap=0.000033 ETA=0:04:28
+flickr C1 seed12345 epoch 36/50 batch 351/562 total=1.8820 d_pos=0.000045 d_neg=0.000094 gap=0.000049 ETA=0:03:36
+flickr C1 seed12345 epoch 36/50 batch 401/562 total=2.0940 d_pos=0.000043 d_neg=0.000088 gap=0.000045 ETA=0:02:44
+flickr C1 seed12345 epoch 36/50 batch 451/562 total=2.0602 d_pos=0.000046 d_neg=0.000090 gap=0.000044 ETA=0:01:53
+flickr C1 seed12345 epoch 36/50 batch 501/562 total=1.8766 d_pos=0.000049 d_neg=0.000083 gap=0.000033 ETA=0:01:02
+flickr C1 seed12345 epoch 36/50 batch 551/562 total=1.9848 d_pos=0.000044 d_neg=0.000094 gap=0.000050 ETA=0:00:11
+flickr C1 seed12345 epoch 36/50 batch 562/562 total=1.9047 d_pos=0.000047 d_neg=0.000088 gap=0.000041 ETA=0:00:00
+{"epoch": 36, "learning_rate": 5e-05, "epoch_seconds": 577.3201372623444, "gradient_l2_mean": 77.58855440401862, "parameter_l2": 206.24113939490323, "info_loss": 1.503595201146136, "recon_loss": 2.7432185738112156, "div_loss": 0.0040764115552759305, "a2v_loss": 4.5105465137583265e-05, "v2a_loss": 0.0003515835477016846, "original_match_loss": 0.0003966890136484269, "d_pos": 4.5105465182896166e-05, "d_neg": 8.721644560061976e-05, "g_match": 4.2110980456563216e-05, "cram_loss": 0.6931261208133765, "weighted_cram_loss": 0.06931261340441229, "total_loss": 1.8873062224999018, "AUD_cIoU": 0.796, "AUD_AUC": 0.5970000000000001, "IQR_cIoU": 0.788, "IQR_AUC": 0.5958}
+flickr C1 seed12345 epoch 37/50 batch 1/562 total=1.8461 d_pos=0.000038 d_neg=0.000079 gap=0.000040 ETA=0:45:18
+flickr C1 seed12345 epoch 37/50 batch 51/562 total=2.0063 d_pos=0.000048 d_neg=0.000091 gap=0.000043 ETA=0:09:16
+flickr C1 seed12345 epoch 37/50 batch 101/562 total=1.7354 d_pos=0.000046 d_neg=0.000081 gap=0.000036 ETA=0:08:02
+flickr C1 seed12345 epoch 37/50 batch 151/562 total=1.9413 d_pos=0.000043 d_neg=0.000085 gap=0.000042 ETA=0:07:05
+flickr C1 seed12345 epoch 37/50 batch 201/562 total=1.7563 d_pos=0.000045 d_neg=0.000085 gap=0.000040 ETA=0:06:11
+flickr C1 seed12345 epoch 37/50 batch 251/562 total=2.1218 d_pos=0.000050 d_neg=0.000090 gap=0.000040 ETA=0:05:18
+flickr C1 seed12345 epoch 37/50 batch 301/562 total=2.1049 d_pos=0.000044 d_neg=0.000080 gap=0.000036 ETA=0:04:26
+flickr C1 seed12345 epoch 37/50 batch 351/562 total=1.8509 d_pos=0.000055 d_neg=0.000086 gap=0.000031 ETA=0:03:34
+flickr C1 seed12345 epoch 37/50 batch 401/562 total=2.2107 d_pos=0.000050 d_neg=0.000097 gap=0.000047 ETA=0:02:43
+flickr C1 seed12345 epoch 37/50 batch 451/562 total=1.8270 d_pos=0.000043 d_neg=0.000079 gap=0.000036 ETA=0:01:52
+flickr C1 seed12345 epoch 37/50 batch 501/562 total=1.8508 d_pos=0.000042 d_neg=0.000081 gap=0.000039 ETA=0:01:01
+flickr C1 seed12345 epoch 37/50 batch 551/562 total=1.9337 d_pos=0.000046 d_neg=0.000090 gap=0.000044 ETA=0:00:11
+flickr C1 seed12345 epoch 37/50 batch 562/562 total=1.8969 d_pos=0.000044 d_neg=0.000085 gap=0.000041 ETA=0:00:00
+{"epoch": 37, "learning_rate": 5e-05, "epoch_seconds": 572.0280783176422, "gradient_l2_mean": 78.57316318016404, "parameter_l2": 206.37915572686623, "info_loss": 1.4373623643905666, "recon_loss": 2.727548201737455, "div_loss": 0.003813733862550578, "a2v_loss": 4.61843424689835e-05, "v2a_loss": 0.00034164817434332906, "original_match_loss": 0.0003878325160743596, "d_pos": 4.618434271496784e-05, "d_neg": 8.86524818962758e-05, "g_match": 4.246813942405567e-05, "cram_loss": 0.6931259444387782, "weighted_cram_loss": 0.0693125959313425, "total_loss": 1.8185944160532697, "AUD_cIoU": 0.812, "AUD_AUC": 0.6048, "IQR_cIoU": 0.8, "IQR_AUC": 0.602}
+flickr C1 seed12345 epoch 38/50 batch 1/562 total=1.6599 d_pos=0.000047 d_neg=0.000092 gap=0.000045 ETA=0:45:46
+flickr C1 seed12345 epoch 38/50 batch 51/562 total=1.6059 d_pos=0.000043 d_neg=0.000084 gap=0.000041 ETA=0:09:23
+flickr C1 seed12345 epoch 38/50 batch 101/562 total=1.6207 d_pos=0.000041 d_neg=0.000079 gap=0.000039 ETA=0:08:07
+flickr C1 seed12345 epoch 38/50 batch 151/562 total=1.5367 d_pos=0.000048 d_neg=0.000097 gap=0.000049 ETA=0:07:06
+flickr C1 seed12345 epoch 38/50 batch 201/562 total=1.6481 d_pos=0.000045 d_neg=0.000090 gap=0.000044 ETA=0:06:11
+flickr C1 seed12345 epoch 38/50 batch 251/562 total=1.7496 d_pos=0.000043 d_neg=0.000081 gap=0.000038 ETA=0:05:18
+flickr C1 seed12345 epoch 38/50 batch 301/562 total=1.9688 d_pos=0.000042 d_neg=0.000085 gap=0.000043 ETA=0:04:26
+flickr C1 seed12345 epoch 38/50 batch 351/562 total=1.7982 d_pos=0.000043 d_neg=0.000082 gap=0.000040 ETA=0:03:34
+flickr C1 seed12345 epoch 38/50 batch 401/562 total=1.7254 d_pos=0.000045 d_neg=0.000086 gap=0.000041 ETA=0:02:43
+flickr C1 seed12345 epoch 38/50 batch 451/562 total=1.6730 d_pos=0.000048 d_neg=0.000090 gap=0.000042 ETA=0:01:55
+flickr C1 seed12345 epoch 38/50 batch 501/562 total=1.8589 d_pos=0.000050 d_neg=0.000095 gap=0.000045 ETA=0:01:03
+flickr C1 seed12345 epoch 38/50 batch 551/562 total=1.8468 d_pos=0.000043 d_neg=0.000089 gap=0.000046 ETA=0:00:11
+flickr C1 seed12345 epoch 38/50 batch 562/562 total=1.8064 d_pos=0.000044 d_neg=0.000089 gap=0.000045 ETA=0:00:00
+{"epoch": 38, "learning_rate": 5e-05, "epoch_seconds": 598.439043045044, "gradient_l2_mean": 75.54859511379692, "parameter_l2": 206.5129213900111, "info_loss": 1.385790695817445, "recon_loss": 2.720886146046513, "div_loss": 0.003772213165167706, "a2v_loss": 4.5633786376323333e-05, "v2a_loss": 0.00033372728801597557, "original_match_loss": 0.0003793610738291243, "d_pos": 4.5633786259804444e-05, "d_neg": 8.729369631985839e-05, "g_match": 4.1659910017977676e-05, "cram_loss": 0.693126348626147, "weighted_cram_loss": 0.06931263644553164, "total_loss": 1.7655052829043296, "AUD_cIoU": 0.808, "AUD_AUC": 0.5990000000000001, "IQR_cIoU": 0.8, "IQR_AUC": 0.5928000000000001}
+flickr C1 seed12345 epoch 39/50 batch 1/562 total=1.4726 d_pos=0.000042 d_neg=0.000084 gap=0.000043 ETA=0:52:48
+flickr C1 seed12345 epoch 39/50 batch 51/562 total=1.6900 d_pos=0.000044 d_neg=0.000087 gap=0.000043 ETA=0:09:16
+flickr C1 seed12345 epoch 39/50 batch 101/562 total=1.6519 d_pos=0.000042 d_neg=0.000092 gap=0.000050 ETA=0:08:01
+flickr C1 seed12345 epoch 39/50 batch 151/562 total=1.5775 d_pos=0.000041 d_neg=0.000084 gap=0.000043 ETA=0:07:03
+flickr C1 seed12345 epoch 39/50 batch 201/562 total=1.7302 d_pos=0.000043 d_neg=0.000092 gap=0.000049 ETA=0:06:08
+flickr C1 seed12345 epoch 39/50 batch 251/562 total=1.5505 d_pos=0.000046 d_neg=0.000086 gap=0.000040 ETA=0:05:16
+flickr C1 seed12345 epoch 39/50 batch 301/562 total=1.5602 d_pos=0.000049 d_neg=0.000088 gap=0.000040 ETA=0:04:24
+flickr C1 seed12345 epoch 39/50 batch 351/562 total=1.6465 d_pos=0.000045 d_neg=0.000089 gap=0.000044 ETA=0:03:33
+flickr C1 seed12345 epoch 39/50 batch 401/562 total=1.5641 d_pos=0.000048 d_neg=0.000091 gap=0.000043 ETA=0:02:42
+flickr C1 seed12345 epoch 39/50 batch 451/562 total=1.9421 d_pos=0.000040 d_neg=0.000085 gap=0.000044 ETA=0:01:52
+flickr C1 seed12345 epoch 39/50 batch 501/562 total=1.6486 d_pos=0.000046 d_neg=0.000093 gap=0.000047 ETA=0:01:01
+flickr C1 seed12345 epoch 39/50 batch 551/562 total=1.7436 d_pos=0.000044 d_neg=0.000089 gap=0.000045 ETA=0:00:11
+flickr C1 seed12345 epoch 39/50 batch 562/562 total=1.9826 d_pos=0.000043 d_neg=0.000095 gap=0.000052 ETA=0:00:00
+{"epoch": 39, "learning_rate": 5e-05, "epoch_seconds": 568.0243446826935, "gradient_l2_mean": 69.86496726136791, "parameter_l2": 206.64776422730336, "info_loss": 1.3084448862330345, "recon_loss": 2.71211684004692, "div_loss": 0.00373041500864398, "a2v_loss": 4.6055768368182806e-05, "v2a_loss": 0.00033245771595946384, "original_match_loss": 0.0003785134840104563, "d_pos": 4.60557684847017e-05, "d_neg": 9.086158011782686e-05, "g_match": 4.4805811555445894e-05, "cram_loss": 0.6931247748301971, "weighted_cram_loss": 0.0693124789360155, "total_loss": 1.6871934477968997, "AUD_cIoU": 0.816, "AUD_AUC": 0.6057999999999999, "IQR_cIoU": 0.808, "IQR_AUC": 0.6033999999999999}
+flickr C1 seed12345 epoch 40/50 batch 1/562 total=1.7016 d_pos=0.000047 d_neg=0.000096 gap=0.000049 ETA=0:43:14
+flickr C1 seed12345 epoch 40/50 batch 51/562 total=1.6148 d_pos=0.000045 d_neg=0.000092 gap=0.000047 ETA=0:09:06
+flickr C1 seed12345 epoch 40/50 batch 101/562 total=1.6675 d_pos=0.000049 d_neg=0.000090 gap=0.000041 ETA=0:07:56
+flickr C1 seed12345 epoch 40/50 batch 151/562 total=1.5838 d_pos=0.000043 d_neg=0.000086 gap=0.000043 ETA=0:06:59
+flickr C1 seed12345 epoch 40/50 batch 201/562 total=1.5070 d_pos=0.000039 d_neg=0.000086 gap=0.000046 ETA=0:06:06
+flickr C1 seed12345 epoch 40/50 batch 251/562 total=1.6237 d_pos=0.000047 d_neg=0.000087 gap=0.000040 ETA=0:05:14
+flickr C1 seed12345 epoch 40/50 batch 301/562 total=1.9922 d_pos=0.000050 d_neg=0.000096 gap=0.000047 ETA=0:04:23
+flickr C1 seed12345 epoch 40/50 batch 351/562 total=1.5215 d_pos=0.000045 d_neg=0.000090 gap=0.000045 ETA=0:03:32
+flickr C1 seed12345 epoch 40/50 batch 401/562 total=1.7932 d_pos=0.000049 d_neg=0.000106 gap=0.000057 ETA=0:02:42
+flickr C1 seed12345 epoch 40/50 batch 451/562 total=2.1969 d_pos=0.000054 d_neg=0.000125 gap=0.000071 ETA=0:01:51
+flickr C1 seed12345 epoch 40/50 batch 501/562 total=2.0065 d_pos=0.000051 d_neg=0.000091 gap=0.000040 ETA=0:01:01
+flickr C1 seed12345 epoch 40/50 batch 551/562 total=1.6741 d_pos=0.000047 d_neg=0.000098 gap=0.000051 ETA=0:00:11
+flickr C1 seed12345 epoch 40/50 batch 562/562 total=1.6346 d_pos=0.000047 d_neg=0.000094 gap=0.000048 ETA=0:00:00
+{"epoch": 40, "learning_rate": 5e-05, "epoch_seconds": 566.3621737957001, "gradient_l2_mean": 73.26736492123781, "parameter_l2": 206.78004024299437, "info_loss": 1.2848982754763336, "recon_loss": 2.6956143845867007, "div_loss": 0.0030283629227250653, "a2v_loss": 4.582126008549057e-05, "v2a_loss": 0.0003305337842540597, "original_match_loss": 0.00037635504441075625, "d_pos": 4.582126001428458e-05, "d_neg": 9.167960645194709e-05, "g_match": 4.5858346599494304e-05, "cram_loss": 0.6931242470851572, "weighted_cram_loss": 0.06931242610583102, "total_loss": 1.6617104862932632, "AUD_cIoU": 0.796, "AUD_AUC": 0.5996000000000001, "IQR_cIoU": 0.776, "IQR_AUC": 0.5954}
+flickr C1 seed12345 epoch 41/50 batch 1/562 total=1.6771 d_pos=0.000043 d_neg=0.000094 gap=0.000051 ETA=0:51:04
+flickr C1 seed12345 epoch 41/50 batch 51/562 total=1.5926 d_pos=0.000050 d_neg=0.000092 gap=0.000042 ETA=0:09:16
+flickr C1 seed12345 epoch 41/50 batch 101/562 total=1.5375 d_pos=0.000046 d_neg=0.000097 gap=0.000051 ETA=0:08:01
+flickr C1 seed12345 epoch 41/50 batch 151/562 total=1.4074 d_pos=0.000049 d_neg=0.000093 gap=0.000045 ETA=0:07:03
+flickr C1 seed12345 epoch 41/50 batch 201/562 total=1.5802 d_pos=0.000048 d_neg=0.000092 gap=0.000044 ETA=0:06:08
+flickr C1 seed12345 epoch 41/50 batch 251/562 total=1.5743 d_pos=0.000045 d_neg=0.000101 gap=0.000057 ETA=0:05:15
+flickr C1 seed12345 epoch 41/50 batch 301/562 total=1.4047 d_pos=0.000049 d_neg=0.000104 gap=0.000055 ETA=0:04:24
+flickr C1 seed12345 epoch 41/50 batch 351/562 total=1.7888 d_pos=0.000044 d_neg=0.000086 gap=0.000042 ETA=0:03:33
+flickr C1 seed12345 epoch 41/50 batch 401/562 total=1.5725 d_pos=0.000042 d_neg=0.000087 gap=0.000045 ETA=0:02:42
+flickr C1 seed12345 epoch 41/50 batch 451/562 total=1.5680 d_pos=0.000048 d_neg=0.000098 gap=0.000050 ETA=0:01:51
+flickr C1 seed12345 epoch 41/50 batch 501/562 total=1.9370 d_pos=0.000046 d_neg=0.000111 gap=0.000065 ETA=0:01:01
+flickr C1 seed12345 epoch 41/50 batch 551/562 total=1.4564 d_pos=0.000046 d_neg=0.000104 gap=0.000059 ETA=0:00:11
+flickr C1 seed12345 epoch 41/50 batch 562/562 total=1.5524 d_pos=0.000051 d_neg=0.000104 gap=0.000053 ETA=0:00:00
+{"epoch": 41, "learning_rate": 5e-05, "epoch_seconds": 567.1256861686707, "gradient_l2_mean": 68.69297886497108, "parameter_l2": 206.91114590778213, "info_loss": 1.2277193296422313, "recon_loss": 2.686166935119765, "div_loss": 0.0030458503513799127, "a2v_loss": 4.729877233667236e-05, "v2a_loss": 0.0003177403637354703, "original_match_loss": 0.0003650391365511648, "d_pos": 4.729877228488619e-05, "d_neg": 9.557202958791464e-05, "g_match": 4.827325708941048e-05, "cram_loss": 0.6931230412047105, "weighted_cram_loss": 0.06931230549127182, "total_loss": 1.6024568365137772, "AUD_cIoU": 0.768, "AUD_AUC": 0.59, "IQR_cIoU": 0.768, "IQR_AUC": 0.5842000000000002}
+flickr C1 seed12345 epoch 42/50 batch 1/562 total=1.5559 d_pos=0.000041 d_neg=0.000087 gap=0.000046 ETA=0:43:05
+flickr C1 seed12345 epoch 42/50 batch 51/562 total=1.4253 d_pos=0.000055 d_neg=0.000104 gap=0.000049 ETA=0:09:06
+flickr C1 seed12345 epoch 42/50 batch 101/562 total=1.5426 d_pos=0.000044 d_neg=0.000085 gap=0.000041 ETA=0:07:57
+flickr C1 seed12345 epoch 42/50 batch 151/562 total=1.2398 d_pos=0.000046 d_neg=0.000107 gap=0.000060 ETA=0:07:01
+flickr C1 seed12345 epoch 42/50 batch 201/562 total=1.6461 d_pos=0.000051 d_neg=0.000107 gap=0.000056 ETA=0:06:07
+flickr C1 seed12345 epoch 42/50 batch 251/562 total=1.6361 d_pos=0.000045 d_neg=0.000090 gap=0.000045 ETA=0:05:15
+flickr C1 seed12345 epoch 42/50 batch 301/562 total=1.4981 d_pos=0.000047 d_neg=0.000102 gap=0.000055 ETA=0:04:24
+flickr C1 seed12345 epoch 42/50 batch 351/562 total=1.8420 d_pos=0.000048 d_neg=0.000105 gap=0.000057 ETA=0:03:33
+flickr C1 seed12345 epoch 42/50 batch 401/562 total=1.7042 d_pos=0.000044 d_neg=0.000080 gap=0.000036 ETA=0:02:42
+flickr C1 seed12345 epoch 42/50 batch 451/562 total=1.5541 d_pos=0.000050 d_neg=0.000112 gap=0.000062 ETA=0:01:51
+flickr C1 seed12345 epoch 42/50 batch 501/562 total=1.5201 d_pos=0.000048 d_neg=0.000098 gap=0.000050 ETA=0:01:01
+flickr C1 seed12345 epoch 42/50 batch 551/562 total=1.7133 d_pos=0.000046 d_neg=0.000100 gap=0.000054 ETA=0:00:11
+flickr C1 seed12345 epoch 42/50 batch 562/562 total=1.6460 d_pos=0.000057 d_neg=0.000113 gap=0.000056 ETA=0:00:00
+{"epoch": 42, "learning_rate": 5e-05, "epoch_seconds": 567.8613696098328, "gradient_l2_mean": 69.49877859838149, "parameter_l2": 207.04145664057225, "info_loss": 1.1898507144951735, "recon_loss": 2.6688678973085938, "div_loss": 0.0032818406145834096, "a2v_loss": 4.738570535525446e-05, "v2a_loss": 0.0003287415572208455, "original_match_loss": 0.0003761272621423908, "d_pos": 4.738570537467427e-05, "d_neg": 9.66209572587855e-05, "g_match": 4.92352520265232e-05, "cram_loss": 0.6931225588525317, "weighted_cram_loss": 0.06931225734090042, "total_loss": 1.5639906826816843, "AUD_cIoU": 0.78, "AUD_AUC": 0.5912000000000001, "IQR_cIoU": 0.788, "IQR_AUC": 0.586}
+flickr C1 seed12345 epoch 43/50 batch 1/562 total=1.3377 d_pos=0.000053 d_neg=0.000102 gap=0.000048 ETA=0:41:56
+flickr C1 seed12345 epoch 43/50 batch 51/562 total=1.2917 d_pos=0.000047 d_neg=0.000086 gap=0.000039 ETA=0:09:06
+flickr C1 seed12345 epoch 43/50 batch 101/562 total=1.3694 d_pos=0.000047 d_neg=0.000094 gap=0.000047 ETA=0:08:12
+flickr C1 seed12345 epoch 43/50 batch 151/562 total=1.4536 d_pos=0.000039 d_neg=0.000085 gap=0.000046 ETA=0:07:09
+flickr C1 seed12345 epoch 43/50 batch 201/562 total=1.2555 d_pos=0.000044 d_neg=0.000104 gap=0.000060 ETA=0:06:13
+flickr C1 seed12345 epoch 43/50 batch 251/562 total=1.4988 d_pos=0.000049 d_neg=0.000097 gap=0.000048 ETA=0:05:19
+flickr C1 seed12345 epoch 43/50 batch 301/562 total=1.6942 d_pos=0.000051 d_neg=0.000106 gap=0.000055 ETA=0:04:27
+flickr C1 seed12345 epoch 43/50 batch 351/562 total=1.4665 d_pos=0.000049 d_neg=0.000084 gap=0.000035 ETA=0:03:35
+flickr C1 seed12345 epoch 43/50 batch 401/562 total=1.3295 d_pos=0.000050 d_neg=0.000094 gap=0.000044 ETA=0:02:43
+flickr C1 seed12345 epoch 43/50 batch 451/562 total=1.0976 d_pos=0.000045 d_neg=0.000084 gap=0.000039 ETA=0:01:52
+flickr C1 seed12345 epoch 43/50 batch 501/562 total=1.4667 d_pos=0.000045 d_neg=0.000092 gap=0.000047 ETA=0:01:01
+flickr C1 seed12345 epoch 43/50 batch 551/562 total=1.4119 d_pos=0.000043 d_neg=0.000087 gap=0.000044 ETA=0:00:11
+flickr C1 seed12345 epoch 43/50 batch 562/562 total=1.8309 d_pos=0.000050 d_neg=0.000093 gap=0.000043 ETA=0:00:00
+{"epoch": 43, "learning_rate": 5e-05, "epoch_seconds": 570.6472096443176, "gradient_l2_mean": 66.8673819409713, "parameter_l2": 207.1714702674662, "info_loss": 1.1591014062382572, "recon_loss": 2.6541254592535757, "div_loss": 0.0027381756071173636, "a2v_loss": 4.6778101463119826e-05, "v2a_loss": 0.00031083285401213177, "original_match_loss": 0.00035761095435537556, "d_pos": 4.677810145017328e-05, "d_neg": 9.46416263991604e-05, "g_match": 4.786352505255946e-05, "cram_loss": 0.6931232474876893, "weighted_cram_loss": 0.06931232619911326, "total_loss": 1.5298611994739952, "AUD_cIoU": 0.808, "AUD_AUC": 0.5934, "IQR_cIoU": 0.816, "IQR_AUC": 0.594}
+flickr C1 seed12345 epoch 44/50 batch 1/562 total=1.2944 d_pos=0.000044 d_neg=0.000088 gap=0.000044 ETA=0:50:03
+flickr C1 seed12345 epoch 44/50 batch 51/562 total=1.4421 d_pos=0.000041 d_neg=0.000091 gap=0.000050 ETA=0:09:18
+flickr C1 seed12345 epoch 44/50 batch 101/562 total=1.5793 d_pos=0.000046 d_neg=0.000105 gap=0.000058 ETA=0:08:02
+flickr C1 seed12345 epoch 44/50 batch 151/562 total=1.6891 d_pos=0.000046 d_neg=0.000087 gap=0.000041 ETA=0:07:03
+flickr C1 seed12345 epoch 44/50 batch 201/562 total=1.2522 d_pos=0.000041 d_neg=0.000088 gap=0.000047 ETA=0:06:09
+flickr C1 seed12345 epoch 44/50 batch 251/562 total=1.2491 d_pos=0.000043 d_neg=0.000093 gap=0.000050 ETA=0:05:17
+flickr C1 seed12345 epoch 44/50 batch 301/562 total=1.5944 d_pos=0.000044 d_neg=0.000093 gap=0.000048 ETA=0:04:25
+flickr C1 seed12345 epoch 44/50 batch 351/562 total=1.6436 d_pos=0.000042 d_neg=0.000086 gap=0.000044 ETA=0:03:33
+flickr C1 seed12345 epoch 44/50 batch 401/562 total=1.1838 d_pos=0.000041 d_neg=0.000089 gap=0.000048 ETA=0:02:42
+flickr C1 seed12345 epoch 44/50 batch 451/562 total=1.3902 d_pos=0.000049 d_neg=0.000094 gap=0.000045 ETA=0:01:52
+flickr C1 seed12345 epoch 44/50 batch 501/562 total=1.3376 d_pos=0.000044 d_neg=0.000085 gap=0.000041 ETA=0:01:01
+flickr C1 seed12345 epoch 44/50 batch 551/562 total=1.5629 d_pos=0.000044 d_neg=0.000098 gap=0.000054 ETA=0:00:11
+flickr C1 seed12345 epoch 44/50 batch 562/562 total=1.7190 d_pos=0.000049 d_neg=0.000101 gap=0.000052 ETA=0:00:00
+{"epoch": 44, "learning_rate": 5e-05, "epoch_seconds": 567.4898629188538, "gradient_l2_mean": 68.30111148536729, "parameter_l2": 207.2966353793516, "info_loss": 1.1027159449044495, "recon_loss": 2.6500790768246634, "div_loss": 0.002728366071368266, "a2v_loss": 4.625908854985908e-05, "v2a_loss": 0.0003113436693745314, "original_match_loss": 0.0003576027574324218, "d_pos": 4.6259088679324516e-05, "d_neg": 9.3926785326707e-05, "g_match": 4.7667696660329024e-05, "cram_loss": 0.6931233411369799, "weighted_cram_loss": 0.06931233551896764, "total_loss": 1.4730693082792479, "AUD_cIoU": 0.788, "AUD_AUC": 0.5923999999999999, "IQR_cIoU": 0.768, "IQR_AUC": 0.5872}
+flickr C1 seed12345 epoch 45/50 batch 1/562 total=1.7049 d_pos=0.000046 d_neg=0.000104 gap=0.000058 ETA=0:51:10
+flickr C1 seed12345 epoch 45/50 batch 51/562 total=1.2459 d_pos=0.000047 d_neg=0.000099 gap=0.000052 ETA=0:09:15
+flickr C1 seed12345 epoch 45/50 batch 101/562 total=1.4949 d_pos=0.000043 d_neg=0.000092 gap=0.000049 ETA=0:08:00
+flickr C1 seed12345 epoch 45/50 batch 151/562 total=1.2405 d_pos=0.000047 d_neg=0.000092 gap=0.000045 ETA=0:07:02
+flickr C1 seed12345 epoch 45/50 batch 201/562 total=1.6684 d_pos=0.000046 d_neg=0.000091 gap=0.000045 ETA=0:06:08
+flickr C1 seed12345 epoch 45/50 batch 251/562 total=1.2715 d_pos=0.000042 d_neg=0.000081 gap=0.000039 ETA=0:05:15
+flickr C1 seed12345 epoch 45/50 batch 301/562 total=1.3206 d_pos=0.000043 d_neg=0.000087 gap=0.000045 ETA=0:04:24
+flickr C1 seed12345 epoch 45/50 batch 351/562 total=1.7178 d_pos=0.000050 d_neg=0.000095 gap=0.000045 ETA=0:03:33
+flickr C1 seed12345 epoch 45/50 batch 401/562 total=1.5034 d_pos=0.000048 d_neg=0.000111 gap=0.000063 ETA=0:02:42
+flickr C1 seed12345 epoch 45/50 batch 451/562 total=1.4173 d_pos=0.000050 d_neg=0.000100 gap=0.000049 ETA=0:01:51
+flickr C1 seed12345 epoch 45/50 batch 501/562 total=1.4951 d_pos=0.000044 d_neg=0.000094 gap=0.000050 ETA=0:01:01
+flickr C1 seed12345 epoch 45/50 batch 551/562 total=1.7377 d_pos=0.000049 d_neg=0.000099 gap=0.000050 ETA=0:00:11
+flickr C1 seed12345 epoch 45/50 batch 562/562 total=1.5701 d_pos=0.000048 d_neg=0.000100 gap=0.000052 ETA=0:00:00
+{"epoch": 45, "learning_rate": 5e-05, "epoch_seconds": 566.5845193862915, "gradient_l2_mean": 65.48858376919074, "parameter_l2": 207.42353623207524, "info_loss": 1.0636530889735103, "recon_loss": 2.637830770312679, "div_loss": 0.002901206919061703, "a2v_loss": 4.5997401924382936e-05, "v2a_loss": 0.00030939810837037345, "original_match_loss": 0.00035539551050190105, "d_pos": 4.5997402021482016e-05, "d_neg": 9.566589724790351e-05, "g_match": 4.966849499338371e-05, "cram_loss": 0.69312234164557, "weighted_cram_loss": 0.06931223566527893, "total_loss": 1.4325780860045627, "AUD_cIoU": 0.792, "AUD_AUC": 0.5986, "IQR_cIoU": 0.788, "IQR_AUC": 0.5953999999999999}
+flickr C1 seed12345 epoch 46/50 batch 1/562 total=1.2707 d_pos=0.000051 d_neg=0.000116 gap=0.000065 ETA=0:52:25
+flickr C1 seed12345 epoch 46/50 batch 51/562 total=1.2260 d_pos=0.000045 d_neg=0.000089 gap=0.000044 ETA=0:09:15
+flickr C1 seed12345 epoch 46/50 batch 101/562 total=1.2772 d_pos=0.000053 d_neg=0.000097 gap=0.000044 ETA=0:08:00
+flickr C1 seed12345 epoch 46/50 batch 151/562 total=1.7148 d_pos=0.000044 d_neg=0.000093 gap=0.000049 ETA=0:07:02
+flickr C1 seed12345 epoch 46/50 batch 201/562 total=1.2887 d_pos=0.000044 d_neg=0.000099 gap=0.000054 ETA=0:06:08
+flickr C1 seed12345 epoch 46/50 batch 251/562 total=1.1358 d_pos=0.000049 d_neg=0.000097 gap=0.000048 ETA=0:05:15
+flickr C1 seed12345 epoch 46/50 batch 301/562 total=1.5693 d_pos=0.000047 d_neg=0.000104 gap=0.000056 ETA=0:04:24
+flickr C1 seed12345 epoch 46/50 batch 351/562 total=1.4370 d_pos=0.000050 d_neg=0.000103 gap=0.000053 ETA=0:03:33
+flickr C1 seed12345 epoch 46/50 batch 401/562 total=1.4134 d_pos=0.000048 d_neg=0.000093 gap=0.000046 ETA=0:02:42
+flickr C1 seed12345 epoch 46/50 batch 451/562 total=1.3596 d_pos=0.000053 d_neg=0.000093 gap=0.000040 ETA=0:01:51
+flickr C1 seed12345 epoch 46/50 batch 501/562 total=1.5120 d_pos=0.000045 d_neg=0.000102 gap=0.000057 ETA=0:01:01
+flickr C1 seed12345 epoch 46/50 batch 551/562 total=1.7698 d_pos=0.000050 d_neg=0.000102 gap=0.000052 ETA=0:00:11
+flickr C1 seed12345 epoch 46/50 batch 562/562 total=1.6339 d_pos=0.000049 d_neg=0.000113 gap=0.000063 ETA=0:00:00
+{"epoch": 46, "learning_rate": 5e-05, "epoch_seconds": 566.5958824157715, "gradient_l2_mean": 62.42189472522522, "parameter_l2": 207.54580023330132, "info_loss": 1.0273181065333696, "recon_loss": 2.628058834432283, "div_loss": 0.002658639590792835, "a2v_loss": 4.745610827850211e-05, "v2a_loss": 0.00030062312233962744, "original_match_loss": 0.00034807923015205394, "d_pos": 4.745610803899105e-05, "d_neg": 9.758405528674267e-05, "g_match": 5.012794719596544e-05, "cram_loss": 0.6931221148933804, "weighted_cram_loss": 0.0693122130881637, "total_loss": 1.394510000307789, "AUD_cIoU": 0.788, "AUD_AUC": 0.6000000000000001, "IQR_cIoU": 0.784, "IQR_AUC": 0.593}
+flickr C1 seed12345 epoch 47/50 batch 1/562 total=1.4234 d_pos=0.000054 d_neg=0.000108 gap=0.000054 ETA=0:46:17
+flickr C1 seed12345 epoch 47/50 batch 51/562 total=1.1168 d_pos=0.000049 d_neg=0.000099 gap=0.000050 ETA=0:09:08
+flickr C1 seed12345 epoch 47/50 batch 101/562 total=1.1502 d_pos=0.000053 d_neg=0.000096 gap=0.000043 ETA=0:07:58
+flickr C1 seed12345 epoch 47/50 batch 151/562 total=1.4361 d_pos=0.000049 d_neg=0.000091 gap=0.000042 ETA=0:07:01
+flickr C1 seed12345 epoch 47/50 batch 201/562 total=1.1421 d_pos=0.000044 d_neg=0.000094 gap=0.000050 ETA=0:06:07
+flickr C1 seed12345 epoch 47/50 batch 251/562 total=1.5956 d_pos=0.000050 d_neg=0.000107 gap=0.000057 ETA=0:05:15
+flickr C1 seed12345 epoch 47/50 batch 301/562 total=1.3003 d_pos=0.000043 d_neg=0.000103 gap=0.000060 ETA=0:04:23
+flickr C1 seed12345 epoch 47/50 batch 351/562 total=1.3984 d_pos=0.000048 d_neg=0.000091 gap=0.000043 ETA=0:03:32
+flickr C1 seed12345 epoch 47/50 batch 401/562 total=1.3484 d_pos=0.000046 d_neg=0.000100 gap=0.000054 ETA=0:02:42
+flickr C1 seed12345 epoch 47/50 batch 451/562 total=1.5674 d_pos=0.000052 d_neg=0.000118 gap=0.000065 ETA=0:01:51
+flickr C1 seed12345 epoch 47/50 batch 501/562 total=1.4828 d_pos=0.000050 d_neg=0.000091 gap=0.000041 ETA=0:01:01
+flickr C1 seed12345 epoch 47/50 batch 551/562 total=1.5545 d_pos=0.000048 d_neg=0.000116 gap=0.000067 ETA=0:00:11
+flickr C1 seed12345 epoch 47/50 batch 562/562 total=1.6381 d_pos=0.000044 d_neg=0.000096 gap=0.000053 ETA=0:00:00
+{"epoch": 47, "learning_rate": 5e-05, "epoch_seconds": 565.7580184936523, "gradient_l2_mean": 62.96685011562716, "parameter_l2": 207.6667488761539, "info_loss": 1.0139462868301894, "recon_loss": 2.6135575436188234, "div_loss": 0.0025348230310652765, "a2v_loss": 4.863860715714862e-05, "v2a_loss": 0.0003016482145041625, "original_match_loss": 0.0003502868218749291, "d_pos": 4.863860726719424e-05, "d_neg": 0.00010244113678107241, "g_match": 5.38025294361989e-05, "cram_loss": 0.6931202780733753, "weighted_cram_loss": 0.06931202922321299, "total_loss": 1.3798962453930403, "AUD_cIoU": 0.78, "AUD_AUC": 0.5894, "IQR_cIoU": 0.784, "IQR_AUC": 0.5856}
+flickr C1 seed12345 epoch 48/50 batch 1/562 total=1.5025 d_pos=0.000046 d_neg=0.000095 gap=0.000050 ETA=0:50:24
+flickr C1 seed12345 epoch 48/50 batch 51/562 total=1.0907 d_pos=0.000048 d_neg=0.000109 gap=0.000061 ETA=0:09:14
+flickr C1 seed12345 epoch 48/50 batch 101/562 total=1.3719 d_pos=0.000045 d_neg=0.000102 gap=0.000057 ETA=0:08:01
+flickr C1 seed12345 epoch 48/50 batch 151/562 total=1.0598 d_pos=0.000048 d_neg=0.000098 gap=0.000050 ETA=0:07:02
+flickr C1 seed12345 epoch 48/50 batch 201/562 total=1.6688 d_pos=0.000046 d_neg=0.000099 gap=0.000054 ETA=0:06:08
+flickr C1 seed12345 epoch 48/50 batch 251/562 total=1.3454 d_pos=0.000048 d_neg=0.000112 gap=0.000064 ETA=0:05:16
+flickr C1 seed12345 epoch 48/50 batch 301/562 total=1.2022 d_pos=0.000046 d_neg=0.000095 gap=0.000049 ETA=0:04:24
+flickr C1 seed12345 epoch 48/50 batch 351/562 total=1.1907 d_pos=0.000042 d_neg=0.000094 gap=0.000052 ETA=0:03:33
+flickr C1 seed12345 epoch 48/50 batch 401/562 total=1.1917 d_pos=0.000051 d_neg=0.000102 gap=0.000051 ETA=0:02:42
+flickr C1 seed12345 epoch 48/50 batch 451/562 total=1.3787 d_pos=0.000048 d_neg=0.000110 gap=0.000062 ETA=0:01:51
+flickr C1 seed12345 epoch 48/50 batch 501/562 total=1.3454 d_pos=0.000047 d_neg=0.000102 gap=0.000055 ETA=0:01:01
+flickr C1 seed12345 epoch 48/50 batch 551/562 total=1.4285 d_pos=0.000055 d_neg=0.000097 gap=0.000042 ETA=0:00:11
+flickr C1 seed12345 epoch 48/50 batch 562/562 total=1.2537 d_pos=0.000054 d_neg=0.000106 gap=0.000052 ETA=0:00:00
+{"epoch": 48, "learning_rate": 5e-05, "epoch_seconds": 566.4584476947784, "gradient_l2_mean": 64.45736980206335, "parameter_l2": 207.78814255617337, "info_loss": 0.9894293088505701, "recon_loss": 2.5999477906583466, "div_loss": 0.002600761189281251, "a2v_loss": 4.909076556177881e-05, "v2a_loss": 0.00031166340159608576, "original_match_loss": 0.00036075416716433784, "d_pos": 4.9090765755976965e-05, "d_neg": 0.00010307253758589575, "g_match": 5.398177195291095e-05, "cram_loss": 0.6931201874997692, "weighted_cram_loss": 0.06931202022153288, "total_loss": 1.3550716088123593, "AUD_cIoU": 0.752, "AUD_AUC": 0.5883999999999999, "IQR_cIoU": 0.764, "IQR_AUC": 0.5848}
+flickr C1 seed12345 epoch 49/50 batch 1/562 total=0.9736 d_pos=0.000048 d_neg=0.000101 gap=0.000053 ETA=0:42:56
+flickr C1 seed12345 epoch 49/50 batch 51/562 total=1.2869 d_pos=0.000046 d_neg=0.000110 gap=0.000064 ETA=0:09:08
+flickr C1 seed12345 epoch 49/50 batch 101/562 total=1.5464 d_pos=0.000047 d_neg=0.000105 gap=0.000058 ETA=0:07:57
+flickr C1 seed12345 epoch 49/50 batch 151/562 total=1.1630 d_pos=0.000055 d_neg=0.000107 gap=0.000052 ETA=0:07:01
+flickr C1 seed12345 epoch 49/50 batch 201/562 total=1.2066 d_pos=0.000052 d_neg=0.000113 gap=0.000061 ETA=0:06:07
+flickr C1 seed12345 epoch 49/50 batch 251/562 total=1.4242 d_pos=0.000052 d_neg=0.000102 gap=0.000050 ETA=0:05:15
+flickr C1 seed12345 epoch 49/50 batch 301/562 total=1.1116 d_pos=0.000054 d_neg=0.000096 gap=0.000043 ETA=0:04:24
+flickr C1 seed12345 epoch 49/50 batch 351/562 total=1.4387 d_pos=0.000049 d_neg=0.000105 gap=0.000055 ETA=0:03:33
+flickr C1 seed12345 epoch 49/50 batch 401/562 total=1.6497 d_pos=0.000058 d_neg=0.000110 gap=0.000052 ETA=0:02:42
+flickr C1 seed12345 epoch 49/50 batch 451/562 total=1.2033 d_pos=0.000056 d_neg=0.000121 gap=0.000065 ETA=0:01:51
+flickr C1 seed12345 epoch 49/50 batch 501/562 total=1.3421 d_pos=0.000046 d_neg=0.000100 gap=0.000055 ETA=0:01:01
+flickr C1 seed12345 epoch 49/50 batch 551/562 total=1.6552 d_pos=0.000058 d_neg=0.000119 gap=0.000061 ETA=0:00:11
+flickr C1 seed12345 epoch 49/50 batch 562/562 total=1.5220 d_pos=0.000054 d_neg=0.000111 gap=0.000057 ETA=0:00:00
+{"epoch": 49, "learning_rate": 5e-05, "epoch_seconds": 566.1196744441986, "gradient_l2_mean": 64.00858067823285, "parameter_l2": 207.90891483067847, "info_loss": 0.9427184665118248, "recon_loss": 2.592551475742109, "div_loss": 0.002029446332327677, "a2v_loss": 4.858878617668135e-05, "v2a_loss": 0.0003005332334762111, "original_match_loss": 0.00034912201886962656, "d_pos": 4.858878615726153e-05, "d_neg": 0.00010179632136310713, "g_match": 5.320753507638016e-05, "cram_loss": 0.693120574717844, "weighted_cram_loss": 0.06931205899902086, "total_loss": 1.3064008318020355, "AUD_cIoU": 0.768, "AUD_AUC": 0.5922, "IQR_cIoU": 0.772, "IQR_AUC": 0.5868}
+flickr C1 seed12345 epoch 50/50 batch 1/562 total=1.4560 d_pos=0.000049 d_neg=0.000099 gap=0.000051 ETA=0:48:54
+flickr C1 seed12345 epoch 50/50 batch 51/562 total=1.0010 d_pos=0.000050 d_neg=0.000104 gap=0.000054 ETA=0:09:11
+flickr C1 seed12345 epoch 50/50 batch 101/562 total=1.2605 d_pos=0.000057 d_neg=0.000114 gap=0.000058 ETA=0:07:59
+flickr C1 seed12345 epoch 50/50 batch 151/562 total=1.1326 d_pos=0.000049 d_neg=0.000103 gap=0.000054 ETA=0:07:01
+flickr C1 seed12345 epoch 50/50 batch 201/562 total=1.3103 d_pos=0.000057 d_neg=0.000108 gap=0.000052 ETA=0:06:07
+flickr C1 seed12345 epoch 50/50 batch 251/562 total=1.2383 d_pos=0.000046 d_neg=0.000102 gap=0.000056 ETA=0:05:15
+flickr C1 seed12345 epoch 50/50 batch 301/562 total=1.3573 d_pos=0.000048 d_neg=0.000092 gap=0.000045 ETA=0:04:24
+flickr C1 seed12345 epoch 50/50 batch 351/562 total=1.6592 d_pos=0.000048 d_neg=0.000109 gap=0.000060 ETA=0:03:33
+flickr C1 seed12345 epoch 50/50 batch 401/562 total=1.4245 d_pos=0.000059 d_neg=0.000112 gap=0.000053 ETA=0:02:42
+flickr C1 seed12345 epoch 50/50 batch 451/562 total=1.2404 d_pos=0.000052 d_neg=0.000110 gap=0.000058 ETA=0:01:51
+flickr C1 seed12345 epoch 50/50 batch 501/562 total=1.3782 d_pos=0.000049 d_neg=0.000103 gap=0.000054 ETA=0:01:01
+flickr C1 seed12345 epoch 50/50 batch 551/562 total=1.2010 d_pos=0.000044 d_neg=0.000105 gap=0.000061 ETA=0:00:11
+flickr C1 seed12345 epoch 50/50 batch 562/562 total=1.2474 d_pos=0.000052 d_neg=0.000107 gap=0.000055 ETA=0:00:00
+{"epoch": 50, "learning_rate": 5e-05, "epoch_seconds": 566.6912784576416, "gradient_l2_mean": 65.46794075741204, "parameter_l2": 208.02793757315447, "info_loss": 0.9228776993488502, "recon_loss": 2.586957261231446, "div_loss": 0.002240253196452542, "a2v_loss": 4.929154360542792e-05, "v2a_loss": 0.0003106875914344531, "original_match_loss": 0.00035997913495572847, "d_pos": 4.9291543819045886e-05, "d_neg": 0.00010430703674320023, "g_match": 5.501549343554281e-05, "cram_loss": 0.6931196716332351, "weighted_cram_loss": 0.06931196869055996, "total_loss": 1.2871073400634887, "AUD_cIoU": 0.8, "AUD_AUC": 0.5976, "IQR_cIoU": 0.788, "IQR_AUC": 0.5926}
+{
+  "dataset": "flickr",
+  "group": "C1",
+  "seed": 12345,
+  "lambda_cram": 0.1,
+  "epochs": 50,
+  "batch_size": 256,
+  "loss_weights": {
+    "info": 1.0,
+    "recon": 0.1,
+    "div": 0.1,
+    "match": 100.0,
+    "cram": 0.1
+  },
+  "initialization": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/initialization/flickr/seed12345.pth",
+    "sha256": "67b431174d6c32d9ed0e7e41d47e260823fb3d5baacba696793b716961e02298",
+    "size": 145859147,
+    "mtime_ns": 1789024142320609564
+  },
+  "orders": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/configs/flickr_seed12345_epoch_orders.npy",
+    "sha256": "44975bfe5657dfebac1089d36332c8026d60bfcc04bc920c4c7681015e6e09ac",
+    "size": 28800128,
+    "mtime_ns": 1789024142450608305
+  },
+  "negative_mapping": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/flickr_seed12345_negative_offsets.npy",
+    "sha256": "53a08171670160ed2ec6a77598c28f867b60c5176f3a9cc94d7da7d4376441cb",
+    "size": 57600128,
+    "mtime_ns": 1789092374164452990
+  },
+  "selected_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C1/flickr/seed12345/selected_best.pth",
+    "sha256": "62567c4cb267d64349c3c7307ddabc02918aee825d1fa131835f26b975d7a7d2",
+    "size": 145865943,
+    "mtime_ns": 1789099355978722732
+  },
+  "final_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C1/flickr/seed12345/final.pth",
+    "sha256": "c5322472e2fee25d4320d7108685960f06b062e6f898fd15cf516a6ac13c94d9",
+    "size": 145844607,
+    "mtime_ns": 1789121673176208057
+  },
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "elapsed_seconds": 28593.95477795601
+}

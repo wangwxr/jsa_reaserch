@@ -1,0 +1,30 @@
+{
+  "dataset": "vggss",
+  "limit": 32,
+  "shapes": {
+    "F34": [
+      32,
+      512,
+      14,
+      14
+    ],
+    "F4_UP": [
+      32,
+      512,
+      14,
+      14
+    ],
+    "FINE_KEYS": [
+      32,
+      196,
+      512
+    ],
+    "L4_KEYS": [
+      32,
+      49,
+      512
+    ]
+  },
+  "grad_enabled": false,
+  "requires_grad_any": false
+}

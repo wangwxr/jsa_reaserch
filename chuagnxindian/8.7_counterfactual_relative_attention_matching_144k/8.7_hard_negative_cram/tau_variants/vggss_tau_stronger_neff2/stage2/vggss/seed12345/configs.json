@@ -1,0 +1,75 @@
+{
+  "architecture": "multi_geometry_equivariant_l3_refine",
+  "experiment_key": "vggss_144k",
+  "experiment_name": "seed12345",
+  "base_experiment": "mufasa_ablation2_l3_l4_ablation_vggss_144k",
+  "base_checkpoint_path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/tau_variants/vggss_tau_stronger_neff2/stage1/vggss/seed12345/selected_best.pth",
+  "epochs": 50,
+  "batch_size": 256,
+  "workers": 16,
+  "optimizer": "AdamW",
+  "init_lr": 5e-05,
+  "weight_decay": 0.01,
+  "scheduler": false,
+  "lambda_equiv": 1.0,
+  "random_resized_crop_scale": [
+    0.6,
+    1.0
+  ],
+  "random_resized_crop_ratio": [
+    0.9,
+    1.1
+  ],
+  "flip_probability": 0.5,
+  "minimum_valid_ratio": 0.2,
+  "checkpoint_selection": "AUD_FINE_cIoU",
+  "test_time_augmentation": false,
+  "seed": 12345,
+  "train_data_path": "/home/wxr/datasets/JSA/VGGSound_144k_npy",
+  "train_manifest_path": "/data/wxr/audio_video/JSA/metadata_vggss/vggss_144k.csv",
+  "test_data_path": "/data/wxr/datasets/ACL-SSL/VGGSound",
+  "test_manifest_path": "/data/wxr/audio_video/JSA/metadata_vggss/vggss_test.csv",
+  "test_gt_path": "/data/wxr/audio_video/JSA/metadata_vggss/vggss.json",
+  "parameter_counts": {
+    "total_teacher_parameters": 36417282,
+    "frozen_teacher_parameters": 36417282,
+    "proj3_spatial_parameters": 131584,
+    "topdown_adapter_parameters": 1311488,
+    "spatial_student_parameters": 1443072,
+    "trainable_parameters": 1443072
+  },
+  "sanity_checks": {
+    "identity_inverse_max_abs_error": 2.384185791015625e-07,
+    "horizontal_flip_vs_experiment_f_max_abs_error": 3.5762786865234375e-07,
+    "horizontal_flip_inverse_max_abs_error": 4.76837158203125e-07,
+    "crop_resize_flip_valid_recovery_max_abs_error": 2.384185791015625e-07,
+    "crop_resize_flip_valid_ratio": 0.6122449040412903,
+    "teacher_aud_l4_reproduced": true,
+    "teacher_has_any_gradient": false,
+    "initial_adapter_gradient_l1": 0.11090828152373433,
+    "initial_proj3_spatial_gradient_l1": 0.0,
+    "second_step_adapter_gradient_l1": 0.11015713561573648,
+    "second_step_proj3_spatial_gradient_l1": 0.0008713072857062798,
+    "proj3_spatial_copy_max_abs_error": 0.0,
+    "zero_init_f34_minus_up_f4_max_abs": 0.0,
+    "f4_hook_minus_formal_tokens_max_abs": 0.0,
+    "probability_sum_max_errors": {
+      "AUD_L4_A": 5.960464477539063e-08,
+      "AUD_L4_B": 5.960464477539063e-08,
+      "AUD_FINE_A": 1.1920928955078125e-07,
+      "AUD_FINE_B": 5.960464477539063e-08
+    },
+    "sum_pool_probability_sum_max_error": 1.1920928955078125e-07,
+    "mean_valid_ratio": 0.735331654548645,
+    "skipped_small_overlap_samples": 0,
+    "loss_coarse": 2.8688182283076458e-05,
+    "loss_equiv": 0.000329081027302891,
+    "loss_total": 0.00035776919685304165,
+    "student_restored_after_temporary_gradient_audit": true
+  },
+  "forbidden_inputs": [
+    "GT localization",
+    "OGL",
+    "OBJ_PRIOR"
+  ]
+}

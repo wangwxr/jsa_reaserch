@@ -1,0 +1,9 @@
+{
+  "reference_iou_max_errors": {
+    "original_1.3g_final": 1.1102230246251565e-16,
+    "cram_c3_stage1": 1.1102230246251565e-16,
+    "cram_c3_stage2": 1.1102230246251565e-16
+  },
+  "sample_count": 5158,
+  "complete": true
+}

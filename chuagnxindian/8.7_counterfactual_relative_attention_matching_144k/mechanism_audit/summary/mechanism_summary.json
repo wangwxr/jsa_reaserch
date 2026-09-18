@@ -1,0 +1,739 @@
+{
+  "protocol": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/PROTOCOL.md",
+  "models": {
+    "original_1.3g_final": "1.3G",
+    "cram_c3_stage1": "8.7-S1",
+    "cram_c3_stage2": "8.7-S2"
+  },
+  "table": [
+    {
+      "dataset": "vggss",
+      "model": "original_1.3g_final",
+      "display": "1.3G",
+      "audio_swap_spearman": 0.9754615950822624,
+      "audio_map_difference": 0.0002032787160715,
+      "audio_swap_pearson": 0.9806626439094543,
+      "audio_swap_cosine": 0.9999000430107116,
+      "top10_jaccard": 0.8187680940059306,
+      "GT_response": 0.7979034993124157,
+      "NearFP_response": 0.7861899683628176,
+      "GT_NearFP_gap": 0.0149744018604015,
+      "GT_vs_NearFP_AUROC": 0.5919623857614168,
+      "S_CF_GT_vs_NearFP_AUROC": 0.522942003950785,
+      "AUD_matched_S_CF_GT_vs_NearFP_AUROC": 0.49994010287963,
+      "RemoveFP": 0.0,
+      "AddTP": 0.0,
+      "RemoveTP": 0.0,
+      "AddFP": 0.0,
+      "precision": 0.4964387039945127,
+      "coverage": 0.8677180259190166,
+      "cIoU": 0.4269096549050019,
+      "AUC": 0.4229740209383482
+    },
+    {
+      "dataset": "vggss",
+      "model": "cram_c3_stage1",
+      "display": "8.7-S1",
+      "audio_swap_spearman": 0.9733650007712136,
+      "audio_map_difference": 0.0003328395541757,
+      "audio_swap_pearson": 0.9791982769966124,
+      "audio_swap_cosine": 0.9997593760490416,
+      "top10_jaccard": 0.8191670720897127,
+      "GT_response": 0.7309336136763552,
+      "NearFP_response": 0.7034150089771289,
+      "GT_NearFP_gap": 0.0304102544802163,
+      "GT_vs_NearFP_AUROC": 0.5901137203816287,
+      "S_CF_GT_vs_NearFP_AUROC": 0.5351194739226237,
+      "AUD_matched_S_CF_GT_vs_NearFP_AUROC": 0.5007600764820488,
+      "RemoveFP": 4845.657813105855,
+      "AddTP": 351.7002714230322,
+      "RemoveTP": 2300.5252035672743,
+      "AddFP": 953.176424970919,
+      "precision": 0.5441795946042858,
+      "coverage": 0.7577253384851914,
+      "cIoU": 0.3912369135323769,
+      "AUC": 0.4132318728189221
+    },
+    {
+      "dataset": "vggss",
+      "model": "cram_c3_stage2",
+      "display": "8.7-S2",
+      "audio_swap_spearman": 0.977938764432128,
+      "audio_map_difference": 0.0002913419739343,
+      "audio_swap_pearson": 0.9826261401176452,
+      "audio_swap_cosine": 0.9998046159744264,
+      "top10_jaccard": 0.8382755550800292,
+      "GT_response": 0.7630600732678217,
+      "NearFP_response": 0.7203488923293616,
+      "GT_NearFP_gap": 0.045514206909781,
+      "GT_vs_NearFP_AUROC": 0.6255593936957632,
+      "S_CF_GT_vs_NearFP_AUROC": 0.5561120633527187,
+      "AUD_matched_S_CF_GT_vs_NearFP_AUROC": 0.5092451894307701,
+      "RemoveFP": 3887.74098487786,
+      "AddTP": 441.61147731678943,
+      "RemoveTP": 1497.0044590926716,
+      "AddFP": 1053.7047305157037,
+      "precision": 0.5375669992972066,
+      "coverage": 0.8109505163965264,
+      "cIoU": 0.4342768514928267,
+      "AUC": 0.4296238852268321
+    },
+    {
+      "dataset": "flickr",
+      "model": "original_1.3g_final",
+      "display": "1.3G",
+      "audio_swap_spearman": 0.9876314156834016,
+      "audio_map_difference": 0.0001714904938125,
+      "audio_swap_pearson": 0.992581307888031,
+      "audio_swap_cosine": 0.9999356269836426,
+      "top10_jaccard": 0.8455351315351315,
+      "GT_response": 0.8059670724868775,
+      "NearFP_response": 0.7639529941535672,
+      "GT_NearFP_gap": 0.0427062151885708,
+      "GT_vs_NearFP_AUROC": 0.6600211886019148,
+      "S_CF_GT_vs_NearFP_AUROC": 0.5334268074427687,
+      "AUD_matched_S_CF_GT_vs_NearFP_AUROC": 0.4877936588266347,
+      "RemoveFP": 0.0,
+      "AddTP": 0.0,
+      "RemoveTP": 0.0,
+      "AddFP": 0.0,
+      "precision": 0.644890094346536,
+      "coverage": 0.9113650997263852,
+      "cIoU": 0.812,
+      "AUC": 0.6356
+    },
+    {
+      "dataset": "flickr",
+      "model": "cram_c3_stage1",
+      "display": "8.7-S1",
+      "audio_swap_spearman": 0.9860376530612246,
+      "audio_map_difference": 0.0003033966640941,
+      "audio_swap_pearson": 0.9908174872398376,
+      "audio_swap_cosine": 0.9998133778572084,
+      "top10_jaccard": 0.8350920745920746,
+      "GT_response": 0.7131541931629181,
+      "NearFP_response": 0.6253758674932395,
+      "GT_NearFP_gap": 0.0889044537959311,
+      "GT_vs_NearFP_AUROC": 0.6731663717996365,
+      "S_CF_GT_vs_NearFP_AUROC": 0.5393263155765825,
+      "AUD_matched_S_CF_GT_vs_NearFP_AUROC": 0.4789274506322261,
+      "RemoveFP": 5175.376,
+      "AddTP": 222.364,
+      "RemoveTP": 4656.144,
+      "AddFP": 355.06,
+      "precision": 0.7492012545570964,
+      "coverage": 0.7655397488727091,
+      "cIoU": 0.864,
+      "AUC": 0.6184000000000001
+    },
+    {
+      "dataset": "flickr",
+      "model": "cram_c3_stage2",
+      "display": "8.7-S2",
+      "audio_swap_spearman": 0.989265955882774,
+      "audio_map_difference": 0.000260296073975,
+      "audio_swap_pearson": 0.9930059313774108,
+      "audio_swap_cosine": 0.9998573064804076,
+      "top10_jaccard": 0.8805698051948053,
+      "GT_response": 0.7562584300041199,
+      "NearFP_response": 0.658956853363678,
+      "GT_NearFP_gap": 0.0980745873711852,
+      "GT_vs_NearFP_AUROC": 0.7078278416012178,
+      "S_CF_GT_vs_NearFP_AUROC": 0.5690455725491759,
+      "AUD_matched_S_CF_GT_vs_NearFP_AUROC": 0.5090525860283335,
+      "RemoveFP": 4183.672,
+      "AddTP": 366.972,
+      "RemoveTP": 2734.844,
+      "AddFP": 529.024,
+      "precision": 0.7256452877149907,
+      "coverage": 0.8369354929139093,
+      "cIoU": 0.896,
+      "AUC": 0.6532
+    }
+  ],
+  "paired_evidence": {
+    "vggss": {
+      "cram_c3_stage1": {
+        "audio_swap_spearman": {
+          "mean": -0.0020965943110488,
+          "ci_low": -0.0026451805837814,
+          "ci_high": -0.001534967499293,
+          "median": -0.0026020408163265,
+          "q1": -0.0099107142857143,
+          "q3": 0.004626913265306
+        },
+        "audio_map_mae": {
+          "mean": 0.0001295608147091,
+          "ci_low": 0.0001271735107169,
+          "ci_high": 0.0001318286638329,
+          "median": 0.0001206058805109,
+          "q1": 7.938571070553735e-05,
+          "q3": 0.0001691451398073
+        },
+        "audio_swap_cosine": {
+          "mean": -0.0001407759787732,
+          "ci_low": -0.0001449039216742,
+          "ci_high": -0.0001369480533325,
+          "median": -0.000102013349533,
+          "q1": -0.000168964266777,
+          "q3": -6.139278411865234e-05
+        },
+        "gt_nearfp_gap": {
+          "mean": 0.0154358526198147,
+          "ci_low": 0.0134794572673994,
+          "ci_high": 0.0173269032406542,
+          "median": 0.0098437070846557,
+          "q1": -0.026236206293106,
+          "q3": 0.0508882999420166
+        },
+        "gt_vs_nearfp_auroc": {
+          "mean": -0.0018486653797881,
+          "ci_low": -0.0053968764627661,
+          "ci_high": 0.001793736720099,
+          "median": -0.012603759765625,
+          "q1": -0.0802383422851562,
+          "q3": 0.0641708374023437
+        },
+        "counterfactual_gt_vs_nearfp_auroc": {
+          "mean": 0.0121774699718387,
+          "ci_low": 0.0064265876630133,
+          "ci_high": 0.0182283781531449,
+          "median": 0.003570556640625,
+          "q1": -0.1185035705566406,
+          "q3": 0.1405830383300781
+        },
+        "counterfactual_gt_vs_nearfp_conditional_auroc": {
+          "mean": 0.0005978687608316,
+          "ci_low": -0.0071920261923547,
+          "ci_high": 0.0078830055183425,
+          "median": -0.0002068306026858,
+          "q1": -0.1725297266593371,
+          "q3": 0.1725382092170398
+        },
+        "iou": {
+          "mean": -0.0101113522712942,
+          "ci_low": -0.012899095077436,
+          "ci_high": -0.0072666131068566,
+          "median": 0.0004143591964745,
+          "q1": -0.0640627062279502,
+          "q3": 0.0495059488920549
+        },
+        "precision": {
+          "mean": 0.0477408906097729,
+          "ci_low": 0.0452390089708328,
+          "ci_high": 0.0500358081442164,
+          "median": 0.0331914124779924,
+          "q1": -0.00185341996757,
+          "q3": 0.0934919956847263
+        },
+        "coverage": {
+          "mean": -0.1099926874338251,
+          "ci_low": -0.1140812149219119,
+          "ci_high": -0.1058855496243682,
+          "median": -0.0840491709196745,
+          "q1": -0.1823485300658446,
+          "q3": -0.0011442742777584
+        }
+      },
+      "cram_c3_stage2": {
+        "audio_swap_spearman": {
+          "mean": 0.0024771693498656,
+          "ci_low": 0.0019746031968085,
+          "ci_high": 0.0030195653009684,
+          "median": 0.000829081632653,
+          "q1": -0.0049840561224489,
+          "q3": 0.0081401730713935
+        },
+        "audio_map_mae": {
+          "mean": 8.806325734088582e-05,
+          "ci_low": 8.57885578322851e-05,
+          "ci_high": 9.027319140479252e-05,
+          "median": 7.709269993938506e-05,
+          "q1": 3.858192212646827e-05,
+          "q3": 0.0001245086023118
+        },
+        "audio_swap_cosine": {
+          "mean": -9.551624680452912e-05,
+          "ci_low": -9.906393767974782e-05,
+          "ci_high": -9.180253596211552e-05,
+          "median": -5.97536563873291e-05,
+          "q1": -0.000117540359497,
+          "q3": -2.759695053100586e-05
+        },
+        "gt_nearfp_gap": {
+          "mean": 0.0305398050493794,
+          "ci_low": 0.0290825506727683,
+          "ci_high": 0.032153780218856,
+          "median": 0.0245774388313293,
+          "q1": -0.0029718875885009,
+          "q3": 0.0579282343387603
+        },
+        "gt_vs_nearfp_auroc": {
+          "mean": 0.0335970079343463,
+          "ci_low": 0.030420206705533,
+          "ci_high": 0.0366959642970789,
+          "median": 0.0181121826171875,
+          "q1": -0.0341415405273437,
+          "q3": 0.0863723754882812
+        },
+        "counterfactual_gt_vs_nearfp_auroc": {
+          "mean": 0.0331700594019336,
+          "ci_low": 0.0276413067133182,
+          "ci_high": 0.0388620354515873,
+          "median": 0.028564453125,
+          "q1": -0.0858650207519531,
+          "q3": 0.1537857055664062
+        },
+        "counterfactual_gt_vs_nearfp_conditional_auroc": {
+          "mean": 0.0091266463807779,
+          "ci_low": 0.0019935846502155,
+          "ci_high": 0.0160826678765442,
+          "median": 0.0084516824871277,
+          "q1": -0.1476100709976193,
+          "q3": 0.1726666156544642
+        },
+        "iou": {
+          "mean": 0.0068392045949643,
+          "ci_low": 0.0046111688050056,
+          "ci_high": 0.0091202159405418,
+          "median": 0.008407041253962,
+          "q1": -0.0343524856348135,
+          "q3": 0.0513907426863488
+        },
+        "precision": {
+          "mean": 0.0411282953026938,
+          "ci_low": 0.0389942614428069,
+          "ci_high": 0.0431588344953785,
+          "median": 0.0282731216174885,
+          "q1": -0.0001875399709052,
+          "q3": 0.081420772864786
+        },
+        "coverage": {
+          "mean": -0.0567675095224901,
+          "ci_low": -0.0597625932083905,
+          "ci_high": -0.0538212747110922,
+          "median": -0.0356676908363576,
+          "q1": -0.1118997067163349,
+          "q3": 0.0
+        }
+      }
+    },
+    "flickr": {
+      "cram_c3_stage1": {
+        "audio_swap_spearman": {
+          "mean": -0.001593762622177,
+          "ci_low": -0.0029254539487076,
+          "ci_high": -0.0002171741004965,
+          "median": -0.0016836734693877,
+          "q1": -0.0059885204081633,
+          "q3": 0.0027582908163265
+        },
+        "audio_map_mae": {
+          "mean": 0.0001319061706308,
+          "ci_low": 0.0001226628376956,
+          "ci_high": 0.0001420167762531,
+          "median": 0.000125683924125,
+          "q1": 8.380753024539445e-05,
+          "q3": 0.000171387757291
+        },
+        "audio_swap_cosine": {
+          "mean": -0.0001222977638244,
+          "ci_low": -0.0001342963457107,
+          "ci_high": -0.0001113110125064,
+          "median": -9.876489639282228e-05,
+          "q1": -0.0001613199710845,
+          "q3": -6.595253944396973e-05
+        },
+        "gt_nearfp_gap": {
+          "mean": 0.0461982386073602,
+          "ci_low": 0.0363352111265485,
+          "ci_high": 0.0556407101392021,
+          "median": 0.054086148738861,
+          "q1": 0.0029309093952178,
+          "q3": 0.0938402116298675
+        },
+        "gt_vs_nearfp_auroc": {
+          "mean": 0.0131451831977216,
+          "ci_low": -0.0029705404366558,
+          "ci_high": 0.0288859117433288,
+          "median": 0.0167083740234375,
+          "q1": -0.0578404744466145,
+          "q3": 0.1003494262695312
+        },
+        "counterfactual_gt_vs_nearfp_auroc": {
+          "mean": 0.0058995081338136,
+          "ci_low": -0.0286258475154059,
+          "ci_high": 0.0392449727628159,
+          "median": -0.0115127563476562,
+          "q1": -0.1834831237792968,
+          "q3": 0.1937294006347656
+        },
+        "counterfactual_gt_vs_nearfp_conditional_auroc": {
+          "mean": -0.0088662081944084,
+          "ci_low": -0.044969571181134,
+          "ci_high": 0.0267519680382511,
+          "median": -0.0152002774191933,
+          "q1": -0.204313243429351,
+          "q3": 0.1901822571947778
+        },
+        "iou": {
+          "mean": -0.0184930801074897,
+          "ci_low": -0.0331799543484979,
+          "ci_high": -0.0028126992776506,
+          "median": -0.0193471478237978,
+          "q1": -0.103232927293775,
+          "q3": 0.0688846568216372
+        },
+        "precision": {
+          "mean": 0.1043111602105604,
+          "ci_low": 0.0939029110627175,
+          "ci_high": 0.1146036330563898,
+          "median": 0.0935946498117362,
+          "q1": 0.0561658249123427,
+          "q3": 0.1612962533092236
+        },
+        "coverage": {
+          "mean": -0.1458253508536759,
+          "ci_low": -0.1596419914872672,
+          "ci_high": -0.1318894699999591,
+          "median": -0.1449352893615417,
+          "q1": -0.2173113706661343,
+          "q3": -0.0800390561905878
+        }
+      },
+      "cram_c3_stage2": {
+        "audio_swap_spearman": {
+          "mean": 0.0016345401993724,
+          "ci_low": 0.0004799863838712,
+          "ci_high": 0.0028386685002719,
+          "median": 0.0009406009994806,
+          "q1": -0.0025191326530612,
+          "q3": 0.0058227040816326
+        },
+        "audio_map_mae": {
+          "mean": 8.880559174576774e-05,
+          "ci_low": 8.044366730828188e-05,
+          "ci_high": 9.787014886460384e-05,
+          "median": 8.161737059708685e-05,
+          "q1": 4.4765256461687386e-05,
+          "q3": 0.000125686670799
+        },
+        "audio_swap_cosine": {
+          "mean": -7.825803756713867e-05,
+          "ci_low": -8.797853589057923e-05,
+          "ci_high": -6.84039294719696e-05,
+          "median": -5.963444709777832e-05,
+          "q1": -0.0001133233308792,
+          "q3": -2.92360782623291e-05
+        },
+        "gt_nearfp_gap": {
+          "mean": 0.0553683721826144,
+          "ci_low": 0.0482400804969221,
+          "ci_high": 0.0625114581664564,
+          "median": 0.0559710264205932,
+          "q1": 0.0214661955833435,
+          "q3": 0.0908853411674499
+        },
+        "gt_vs_nearfp_auroc": {
+          "mean": 0.0478066529993029,
+          "ci_low": 0.0333117987221799,
+          "ci_high": 0.0616515381641876,
+          "median": 0.041748046875,
+          "q1": -0.0193252563476562,
+          "q3": 0.118072509765625
+        },
+        "counterfactual_gt_vs_nearfp_auroc": {
+          "mean": 0.035618765106407,
+          "ci_low": 0.0040132968918032,
+          "ci_high": 0.0665967094019839,
+          "median": 0.0147018432617187,
+          "q1": -0.1352500915527343,
+          "q3": 0.209930419921875
+        },
+        "counterfactual_gt_vs_nearfp_conditional_auroc": {
+          "mean": 0.0212589272016988,
+          "ci_low": -0.0110713492668744,
+          "ci_high": 0.0551022600833693,
+          "median": 0.0005900518977571,
+          "q1": -0.1574553303115914,
+          "q3": 0.2046716126341501
+        },
+        "iou": {
+          "mean": 0.0170586472809627,
+          "ci_low": 0.0060853317716642,
+          "ci_high": 0.0285678385305838,
+          "median": 0.0184943452269679,
+          "q1": -0.0412795963551226,
+          "q3": 0.0686417461145983
+        },
+        "precision": {
+          "mean": 0.0807551933684547,
+          "ci_low": 0.0715457371576444,
+          "ci_high": 0.0900447169219692,
+          "median": 0.0730490160179627,
+          "q1": 0.0339423863359499,
+          "q3": 0.1236078298818291
+        },
+        "coverage": {
+          "mean": -0.0744296068124757,
+          "ci_low": -0.0850198041082097,
+          "ci_high": -0.0638338665838557,
+          "median": -0.0684019649774309,
+          "q1": -0.1309708314609731,
+          "q3": -0.0144894829589191
+        }
+      }
+    }
+  },
+  "formal_validation": {
+    "vggss": {
+      "baseline_ids_match_4_1": true,
+      "baseline_native_map_max_abs_error_vs_4_1": 4.0046870708465576e-07,
+      "stage2_ids_match_formal": true,
+      "stage2_iou_max_abs_error_vs_formal": 1.1102230246251565e-16,
+      "stage1_ids_match_formal": true,
+      "stage1_iou_max_abs_error_vs_formal": 8.996041741626826e-05,
+      "passed": true
+    },
+    "flickr": {
+      "baseline_ids_match_4_1": true,
+      "baseline_native_map_max_abs_error_vs_4_1": 0.0,
+      "stage2_ids_match_formal": true,
+      "stage2_iou_max_abs_error_vs_formal": 5.551115123125783e-17,
+      "stage1_ids_match_formal": true,
+      "stage1_iou_max_abs_error_vs_formal": 2.9895366218224417e-05,
+      "passed": true
+    }
+  },
+  "checkpoint_extraction": {
+    "vggss": {
+      "original_1.3g_final": {
+        "dataset": "vggss",
+        "model": "original_1.3g_final",
+        "tag": "full",
+        "sample_count": 5158,
+        "seed": 12345,
+        "teacher_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+          "sha256": "db25dd60a915d9980524ec2d73e26019a28efd1a825765392d24fbe898453a68",
+          "size": 145864158,
+          "mtime_ns": 1786771760890763333
+        },
+        "loaded_teacher_path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_144k/vggss_best.pth",
+        "stage2_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_vggss_144k_best/vggss_best.pth",
+          "sha256": "c6fb6e512a11fffcedbee66e1ce50a403849b042a7240643e3bbb109b512bc09",
+          "size": 17325621,
+          "mtime_ns": 1786899402431818162
+        },
+        "audio_query_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/features/vggss_144k_audio_queries.npy",
+          "sha256": "71fc9c6ae63c3f7e1de53a4d6db3d3042f54a92bed2708d967abb09fe459acb6",
+          "size": 21127296,
+          "mtime_ns": 1788936428181725701
+        },
+        "audio_query_id_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/features/vggss_144k_ids.npy",
+          "sha256": "fff32f4478d3d25d0f8468be2805dbdf0839cce95e31c39ad9e526b7058bd920",
+          "size": 371504,
+          "mtime_ns": 1788936431449833984
+        },
+        "counterfactual_index_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/vggss_144k_counterfactual_indices.npz",
+          "sha256": "8aec3d9163cb91b434443bbbd36b691555a43ce8416f6e12a4b680bff57badab",
+          "size": 612276,
+          "mtime_ns": 1788936526573609429
+        },
+        "wrong_audio_count": 8,
+        "same_video_overlap": 0,
+        "minimum_matched_wrong_query_max_abs_difference": 0.4892013669013977,
+        "matched_forward_replay_max_abs_error": 0.0,
+        "matched_probability_sum_max_error": 2.384185791015625e-07,
+        "wrong_probability_sum_max_error": 2.384185791015625e-07,
+        "all_parameters_eval": true,
+        "optimizer_created": false,
+        "backward_called": false,
+        "output": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/results/vggss/full/original_1.3g_final_maps.npz",
+          "sha256": "555abcade0a79f4be72b63524a09500f01bbe94548fb1ecdf4e6e05a453f029a",
+          "size": 30667413,
+          "mtime_ns": 1789273970009817063
+        },
+        "elapsed_seconds": 16.056695461273193
+      },
+      "cram_c3_stage2": {
+        "dataset": "vggss",
+        "model": "cram_c3_stage2",
+        "tag": "full",
+        "sample_count": 5158,
+        "seed": 12345,
+        "teacher_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+          "sha256": "ad1ab8bf55ca983c11fa6067a95686f72bc56edf6786f090b9a27cddc8eb1c04",
+          "size": 145865943,
+          "mtime_ns": 1789156431520379387
+        },
+        "loaded_teacher_path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+        "stage2_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2/C3/vggss/seed12345/vggss_best.pth",
+          "sha256": "47c41b637ae24fc9ee8bd57a0fa74e8e9ee935a24028c8d8ebca044d313630e6",
+          "size": 17325685,
+          "mtime_ns": 1789204897392063521
+        },
+        "audio_query_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/natural_localization/vggss/C3/seed12345/audio_queries.npy",
+          "sha256": "1e9f168cbc2fd6855bcaba869a14c6827eaaf4c03e809b800ee58ecbcebf434a",
+          "size": 21127296,
+          "mtime_ns": 1789188490996351750
+        },
+        "audio_query_id_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/natural_localization/vggss/C3/seed12345/natural_maps.npz",
+          "sha256": "47237b5c4ea7eb71ee4847b35e4becac5e11e940e33e36af6f09cfa42d9e3504",
+          "size": 5558972,
+          "mtime_ns": 1789188490984351867
+        },
+        "counterfactual_index_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/vggss_144k_counterfactual_indices.npz",
+          "sha256": "8aec3d9163cb91b434443bbbd36b691555a43ce8416f6e12a4b680bff57badab",
+          "size": 612276,
+          "mtime_ns": 1788936526573609429
+        },
+        "wrong_audio_count": 8,
+        "same_video_overlap": 0,
+        "minimum_matched_wrong_query_max_abs_difference": 0.4952278435230255,
+        "matched_forward_replay_max_abs_error": 0.0,
+        "matched_probability_sum_max_error": 2.384185791015625e-07,
+        "wrong_probability_sum_max_error": 2.384185791015625e-07,
+        "all_parameters_eval": true,
+        "optimizer_created": false,
+        "backward_called": false,
+        "output": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/results/vggss/full/cram_c3_stage2_maps.npz",
+          "sha256": "53276ac475c079dbb3d836a1252ba2ca6c345162cb5b709285a09f49a524af69",
+          "size": 31017022,
+          "mtime_ns": 1789273973188787239
+        },
+        "elapsed_seconds": 19.232009410858154
+      }
+    },
+    "flickr": {
+      "original_1.3g_final": {
+        "dataset": "flickr",
+        "model": "original_1.3g_final",
+        "tag": "full",
+        "sample_count": 250,
+        "seed": 12345,
+        "teacher_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+          "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+          "size": 145864497,
+          "mtime_ns": 1786772660768985716
+        },
+        "loaded_teacher_path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+        "stage2_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+          "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+          "size": 17325651,
+          "mtime_ns": 1786899904531667020
+        },
+        "audio_query_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/features/flickr_144k_audio_queries.npy",
+          "sha256": "c0bd34800bcafc199831fcda2f76e69047c065855bce67e9bdf79b3ae3117d90",
+          "size": 1024128,
+          "mtime_ns": 1788936392588485663
+        },
+        "audio_query_id_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/features/flickr_144k_ids.npy",
+          "sha256": "0d3550a5f4247d99dffbe5f522c187400bd0bd898a551ed936353d324bd58376",
+          "size": 11128,
+          "mtime_ns": 1788936392847495103
+        },
+        "counterfactual_index_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/flickr_144k_counterfactual_indices.npz",
+          "sha256": "663ed9c3a97dc0b5d79be1b62892fff877462ead943fb0c50cdd79c9ae74a7e7",
+          "size": 21813,
+          "mtime_ns": 1788936526596610017
+        },
+        "wrong_audio_count": 8,
+        "same_video_overlap": 0,
+        "minimum_matched_wrong_query_max_abs_difference": 0.6879264712333679,
+        "matched_forward_replay_max_abs_error": 0.0,
+        "matched_probability_sum_max_error": 1.7881393432617188e-07,
+        "wrong_probability_sum_max_error": 2.384185791015625e-07,
+        "all_parameters_eval": true,
+        "optimizer_created": false,
+        "backward_called": false,
+        "output": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/results/flickr/full/original_1.3g_final_maps.npz",
+          "sha256": "4049a690ee2420c46896e4f482c97b5ccabbb72336c9f33c62097a60c11c1bab",
+          "size": 1473589,
+          "mtime_ns": 1789273988411644326
+        },
+        "elapsed_seconds": 5.615882635116577
+      },
+      "cram_c3_stage2": {
+        "dataset": "flickr",
+        "model": "cram_c3_stage2",
+        "tag": "full",
+        "sample_count": 250,
+        "seed": 12345,
+        "teacher_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/flickr/seed12345/selected_best.pth",
+          "sha256": "c96f672f73d47b1d74395b15242d54f89ca9c30e9b95082648999e46a49eac3a",
+          "size": 145865943,
+          "mtime_ns": 1789159219301514512
+        },
+        "loaded_teacher_path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/flickr/seed12345/selected_best.pth",
+        "stage2_checkpoint": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2/C3/flickr/seed12345/flickr_best.pth",
+          "sha256": "cceee77deea71eb1191c3e3e3906f79f344975529631df1c57c67ae7363c3bd6",
+          "size": 17325715,
+          "mtime_ns": 1789197285740948305
+        },
+        "audio_query_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/natural_localization/flickr/C3/seed12345/audio_queries.npy",
+          "sha256": "6ec7833885ac265fa33dd27f1ccaa5c6ef70d7aaf5bf3e9db5d6463c6e9a6506",
+          "size": 1024128,
+          "mtime_ns": 1789188143792719367
+        },
+        "audio_query_id_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/natural_localization/flickr/C3/seed12345/natural_maps.npz",
+          "sha256": "0a8d41e9804c9e512797b0fec52e99029b3670be5f7341ab6d4e48fd1d216ee2",
+          "size": 344614,
+          "mtime_ns": 1789188143791719377
+        },
+        "counterfactual_index_file": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/flickr_144k_counterfactual_indices.npz",
+          "sha256": "663ed9c3a97dc0b5d79be1b62892fff877462ead943fb0c50cdd79c9ae74a7e7",
+          "size": 21813,
+          "mtime_ns": 1788936526596610017
+        },
+        "wrong_audio_count": 8,
+        "same_video_overlap": 0,
+        "minimum_matched_wrong_query_max_abs_difference": 1.0926802158355713,
+        "matched_forward_replay_max_abs_error": 0.0,
+        "matched_probability_sum_max_error": 2.384185791015625e-07,
+        "wrong_probability_sum_max_error": 2.384185791015625e-07,
+        "all_parameters_eval": true,
+        "optimizer_created": false,
+        "backward_called": false,
+        "output": {
+          "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/results/flickr/full/cram_c3_stage2_maps.npz",
+          "sha256": "217d005e9f3e523caff7b1fdc32166a993eb832a16b16914749d46cc19d2492e",
+          "size": 1494543,
+          "mtime_ns": 1789273988859640118
+        },
+        "elapsed_seconds": 5.611754417419434
+      }
+    }
+  },
+  "conclusion": {
+    "classification": "Case 2",
+    "classification_text": "object-level spatial discrimination is the primary confirmed repair; audio-conditioned spatial-ranking sensitivity is not consistently retained after Stage-2.",
+    "stage1_audio_conditioning": "Confirmed but small: both datasets show lower matched/wrong 7x7 Spearman, lower cosine, and larger per-pixel map difference for C3 Stage-1.",
+    "stage2_audio_conditioning": "Not a monotonic ranking effect: Stage-2 retains larger map difference and lower cosine than original 1.3G, but its Spearman and Top-10 overlap rise above original.",
+    "stage2_object_discrimination": "Confirmed on both datasets: GT-NearFP gap and matched-map GT-vs-NearFP AUROC increase; raw matched-minus-wrong GT-vs-NearFP AUROC also increases.",
+    "aud_matched_complementarity": "Not established across both datasets: the AUD-matched counterfactual AUROC improves with CI above zero on VGG-SS, but Flickr's paired CI crosses zero.",
+    "stage1_to_stage2_interpretation": "Stage-1 creates a reproducible counterfactual perturbation and improves the normalized GT-NearFP response gap. Stage-2 converts the representation into substantially stronger object ranking and final localization, but does not preserve a lower raw map Spearman."
+  }
+}

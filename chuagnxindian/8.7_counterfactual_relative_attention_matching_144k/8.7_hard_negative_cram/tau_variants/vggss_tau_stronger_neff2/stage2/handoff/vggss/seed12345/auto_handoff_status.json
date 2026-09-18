@@ -1,0 +1,8 @@
+{
+  "event": "stage2_finished_acceleration_validation_reused",
+  "dataset": "vggss",
+  "gpu": 0,
+  "stage1_parent_pid": 2483464,
+  "time": 1789487999.2778947,
+  "reason": "B=256 exactness and throughput already verified for this identical reuse path"
+}

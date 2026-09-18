@@ -1,0 +1,9 @@
+{
+  "phase_a": "A-NEGATIVE",
+  "phase_b": "P1 primary; P3-style AUD-path signature",
+  "training_authorized": false,
+  "main_direction": "Validate a label-free positive-map compactness/confidence signal before any positive-side CRAM weighting experiment.",
+  "stopped_routes": ["hard aggregation", "tau sweep", "negative mining", "negative-hardness adaptive gating", "sample-wise violation weighting"],
+  "frozen_variables": ["mean negative aggregation", "K=4", "lambda=1", "Stage-1-only CRAM", "vanilla Stage-2", "architecture", "seed", "data recipe"],
+  "success_standard": "VGG precision and RemoveFP rise without material coverage/RemoveTP loss, while Flickr AUD remains above OGL."
+}

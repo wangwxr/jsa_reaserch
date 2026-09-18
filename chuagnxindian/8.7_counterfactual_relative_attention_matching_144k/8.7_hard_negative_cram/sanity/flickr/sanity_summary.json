@@ -1,0 +1,21 @@
+{
+  "base_loss_mean": 3.2712350487709045,
+  "base_loss_hard": 3.2712350487709045,
+  "mean_cram_loss": 0.6931417882442474,
+  "hard_cram_loss": 0.6931458413600922,
+  "mean_grad_norm": 0.0005600648291874677,
+  "hard_grad_norm": 0.0005040387986809947,
+  "hard_to_mean_grad_ratio": 0.9078391053224024,
+  "gradient_cosine": 0.8139623552560806,
+  "mean_max_parameter_grad": 3.4552776014606934e-05,
+  "hard_max_parameter_grad": 3.196435955032939e-05,
+  "mean_mean_parameter_grad": 3.968189865588556e-08,
+  "hard_mean_parameter_grad": 3.734265341392984e-08,
+  "hard_neff": 2.506696045398712,
+  "hardest_weight": 0.5629220604896545,
+  "dataset": "flickr",
+  "tau": 8.700235267679427e-06,
+  "batches": 4,
+  "microbatch": 64,
+  "finite": true
+}

@@ -1,0 +1,32 @@
+{
+  "dataset": "vggss",
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/vggss/seed12345/selected_best.pth",
+  "teacher_epoch": 7,
+  "tau": 2.6128406021282223e-05,
+  "K": 4,
+  "batch_size": 256,
+  "negative_mapping": "frozen_8.7_batch_offsets",
+  "exactness": {
+    "d_pos_max_abs": 0.0,
+    "d_neg_max_abs": 0.0,
+    "loss_max_abs": 0.0,
+    "gradient_cosine": 1.0,
+    "gradient_relative_l2": 0.0,
+    "gradient_max_abs": 0.0
+  },
+  "throughput": {
+    "reference": {
+      "mean_step_seconds": 0.9806003904280564,
+      "median_step_seconds": 0.9771140778902918,
+      "steps": 12
+    },
+    "reuse": {
+      "mean_step_seconds": 0.43215000388833386,
+      "median_step_seconds": 0.4320714194327593,
+      "steps": 12
+    },
+    "speedup_reference_over_reuse": 2.2691204017238427
+  },
+  "passed": true,
+  "criterion": "all attention-distance/loss abs<2e-6, grad cosine>.9999, relative L2<2e-4, speedup>1"
+}

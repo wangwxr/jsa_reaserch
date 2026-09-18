@@ -1,0 +1,40 @@
+{
+  "dataset": "flickr",
+  "seed": 12345,
+  "batch_size": 256,
+  "gradient_scale": 65536.0,
+  "raw_gradient_l2": {
+    "info": 12.266990456344548,
+    "match": 0.004197949645546899,
+    "cram": 7.598355420017634e-05
+  },
+  "weighted_gradient_l2": {
+    "info": 12.266990456344548,
+    "original_match": 0.4197949645546899,
+    "cram_lambda_0_1": 7.598355420017635e-06,
+    "cram_lambda_0_5": 3.799177710008817e-05,
+    "cram_lambda_1_0": 7.598355420017634e-05
+  },
+  "c3_allowed": true,
+  "c3_rule": "allow lambda=1.0 only when 0.1*||grad L_CRAM|| is below 1% of 100*||grad original L_match||",
+  "initialization": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/initialization/flickr/seed12345.pth",
+    "sha256": "67b431174d6c32d9ed0e7e41d47e260823fb3d5baacba696793b716961e02298",
+    "size": 145859147,
+    "mtime_ns": 1789024142320609564
+  },
+  "negative_mapping": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/flickr_seed12345_negative_offsets.npy",
+    "sha256": "53a08171670160ed2ec6a77598c28f867b60c5176f3a9cc94d7da7d4376441cb",
+    "size": 57600128,
+    "mtime_ns": 1789092374164452990
+  },
+  "model_state_restored": true,
+  "optimizer_created": false,
+  "test_data_used": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  }
+}

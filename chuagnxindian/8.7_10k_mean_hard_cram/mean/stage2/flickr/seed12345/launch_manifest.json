@@ -1,0 +1,18 @@
+{
+  "method": "mean",
+  "dataset": "flickr",
+  "seed": 12345,
+  "gpu": 1,
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/mean/stage1/flickr/seed12345/selected_best.pth",
+  "teacher_sha256": "433db6ce9722dc499aa6a7759a1f382f26627a4994af1fe88133e32b743b30e9",
+  "stage1_epoch": 5,
+  "stage1_expected_aud": [
+    0.748,
+    0.597
+  ],
+  "stage2": "unchanged original 1.3G refinement",
+  "stage2_epochs": 100,
+  "batch_size": 256,
+  "experiment_key": "flickr_10k",
+  "git_commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54"
+}

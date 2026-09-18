@@ -1,0 +1,7 @@
+{
+  "group": "C1",
+  "lambda_cram": 0.1,
+  "negative_count": 4,
+  "negative_sampler": "uniform different-video within fixed batch",
+  "original_match": "A2V_plus_V2A_retained"
+}

@@ -1,0 +1,54 @@
+{
+  "dataset": "vggss",
+  "model": "cram_c3_stage2",
+  "tag": "full",
+  "sample_count": 5158,
+  "seed": 12345,
+  "teacher_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+    "sha256": "ad1ab8bf55ca983c11fa6067a95686f72bc56edf6786f090b9a27cddc8eb1c04",
+    "size": 145865943,
+    "mtime_ns": 1789156431520379387
+  },
+  "loaded_teacher_path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+  "stage2_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2/C3/vggss/seed12345/vggss_best.pth",
+    "sha256": "47c41b637ae24fc9ee8bd57a0fa74e8e9ee935a24028c8d8ebca044d313630e6",
+    "size": 17325685,
+    "mtime_ns": 1789204897392063521
+  },
+  "audio_query_file": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/natural_localization/vggss/C3/seed12345/audio_queries.npy",
+    "sha256": "1e9f168cbc2fd6855bcaba869a14c6827eaaf4c03e809b800ee58ecbcebf434a",
+    "size": 21127296,
+    "mtime_ns": 1789188490996351750
+  },
+  "audio_query_id_file": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/natural_localization/vggss/C3/seed12345/natural_maps.npz",
+    "sha256": "47237b5c4ea7eb71ee4847b35e4becac5e11e940e33e36af6f09cfa42d9e3504",
+    "size": 5558972,
+    "mtime_ns": 1789188490984351867
+  },
+  "counterfactual_index_file": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/vggss_144k_counterfactual_indices.npz",
+    "sha256": "8aec3d9163cb91b434443bbbd36b691555a43ce8416f6e12a4b680bff57badab",
+    "size": 612276,
+    "mtime_ns": 1788936526573609429
+  },
+  "wrong_audio_count": 8,
+  "same_video_overlap": 0,
+  "minimum_matched_wrong_query_max_abs_difference": 0.4952278435230255,
+  "matched_forward_replay_max_abs_error": 0.0,
+  "matched_probability_sum_max_error": 2.384185791015625e-07,
+  "wrong_probability_sum_max_error": 2.384185791015625e-07,
+  "all_parameters_eval": true,
+  "optimizer_created": false,
+  "backward_called": false,
+  "output": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/results/vggss/full/cram_c3_stage2_maps.npz",
+    "sha256": "53276ac475c079dbb3d836a1252ba2ca6c345162cb5b709285a09f49a524af69",
+    "size": 31017022,
+    "mtime_ns": 1789273973188787239
+  },
+  "elapsed_seconds": 19.232009410858154
+}

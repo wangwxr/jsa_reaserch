@@ -1,0 +1,34 @@
+{
+  "dataset": "flickr",
+  "different_video_rule": "VGGSound strips trailing _frame; Flickr uses its sample/video ID",
+  "dropped_tail_per_epoch": 128,
+  "epochs": 50,
+  "full_batches_per_epoch": 562,
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "negative_count": 4,
+  "offsets": {
+    "mtime_ns": 1789092374164452990,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/flickr_seed12345_negative_offsets.npy",
+    "sha256": "53a08171670160ed2ec6a77598c28f867b60c5176f3a9cc94d7da7d4376441cb",
+    "size": 57600128
+  },
+  "orders": {
+    "mtime_ns": 1789024142450608305,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/configs/flickr_seed12345_epoch_orders.npy",
+    "sha256": "44975bfe5657dfebac1089d36332c8026d60bfcc04bc920c4c7681015e6e09ac",
+    "size": 28800128
+  },
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "same_video_violations": 0,
+  "sampler": "uniform_without_replacement_within_fixed_training_batch",
+  "seed": 12345,
+  "train_sample_ids": {
+    "mtime_ns": 1789092374171453067,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/flickr_seed12345_train_sample_ids.npy",
+    "sha256": "dc182f0e9ddf823fe2b8efa4bdf3e8658888f80b4013fa1f577ca0ed5f047c2e",
+    "size": 6336128
+  }
+}

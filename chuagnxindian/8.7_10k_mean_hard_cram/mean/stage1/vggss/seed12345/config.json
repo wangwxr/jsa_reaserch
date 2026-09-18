@@ -1,0 +1,51 @@
+{
+  "batch_size": 256,
+  "dataset": "vggss",
+  "elapsed_seconds": 3524.45006275177,
+  "epochs": 100,
+  "final_checkpoint": {
+    "mtime_ns": 1789525543892949256,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/mean/stage1/vggss/seed12345/final.pth",
+    "sha256": "fa3c082fba176082e729691a5bcfe7f6f89caa5b60cc46d735421fb34944b3ba",
+    "size": 145844543
+  },
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C3",
+  "initialization": {
+    "mtime_ns": 1789521557457421019,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/checkpoints/initialization/vggss/seed12345.pth",
+    "sha256": "ce9ce4d1ac77d870e534823ebfcdf8799a46e847a39fc61577731b889ee3d556",
+    "size": 145859147
+  },
+  "lambda_cram": 1.0,
+  "loss_weights": {
+    "cram": 1.0,
+    "div": 0.1,
+    "info": 1.0,
+    "match": 100.0,
+    "recon": 0.1
+  },
+  "negative_mapping": {
+    "mtime_ns": 1789521568356292734,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/configs/vggss_seed12345_negative_offsets.npy",
+    "sha256": "43ce070e7cc162010c15fb3a2583a88b48624ba7a9955a76952f42d507512c1c",
+    "size": 8000128
+  },
+  "orders": {
+    "mtime_ns": 1789521557477420784,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/configs/vggss_seed12345_epoch_orders.npy",
+    "sha256": "cc4177d7330c651f5076b5841efa3d5a090e7c1254c5eb5e0d7ff97907ec612c",
+    "size": 4000128
+  },
+  "protocol_sha256": "889a5f30cae61e1753a32f5b49d5d2a90d112c4fbfa0d322ce68cd2f5e5b916b",
+  "seed": 12345,
+  "selected_checkpoint": {
+    "mtime_ns": 1789525538735001529,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/mean/stage1/vggss/seed12345/selected_best.pth",
+    "sha256": "b61574f990f1a78ec5dd0179cd3bb20701d343fdc3e0f9e9a8cf06c26cab7942",
+    "size": 145865879
+  }
+}

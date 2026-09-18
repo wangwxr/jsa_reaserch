@@ -1,0 +1,14 @@
+{
+  "read_only_evaluation": true,
+  "scale": "10k",
+  "dataset": "flickr",
+  "method": "baseline",
+  "seed": 12345,
+  "teacher": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_10k_frame8_center5/flickr_best.pth",
+  "teacher_sha256": "930dcb260df63326bddcfe62e88b125245dbdff6bb8d5ff8b21a7e8980ae4805",
+  "student": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_10k_frame8_center5_best/flickr_best.pth",
+  "student_sha256": "be4e6dda11e562de0a4160f131ad798976837330325b1016201f7e97190b198e",
+  "student_epoch": 3,
+  "num_samples": 250,
+  "offline_replay_max_abs_error": 1.3969838619232178e-09
+}

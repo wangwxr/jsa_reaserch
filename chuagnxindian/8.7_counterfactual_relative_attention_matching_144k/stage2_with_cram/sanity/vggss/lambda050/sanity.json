@@ -1,0 +1,22 @@
+{
+  "dataset": "vggss",
+  "variant": "lambda050",
+  "lambda_stage2_cram": 0.5,
+  "teacher_checkpoint": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+  "teacher_sha256": "ad1ab8bf55ca983c11fa6067a95686f72bc56edf6786f090b9a27cddc8eb1c04",
+  "batch_size": 256,
+  "wrong_audio_k": 4,
+  "different_video_negatives": true,
+  "teacher_has_gradient": false,
+  "student_gradient_l2_scaled": 7.117109714924655,
+  "loss_coarse": 4.235063533997163e-05,
+  "loss_equiv": 0.000634220486972481,
+  "original_loss": 0.0006765711004845798,
+  "d_pos": 1.2901304913270906e-08,
+  "d_neg": 2.6029587374409857e-08,
+  "g_match": 1.3128282461138951e-08,
+  "cram_loss": 0.6931471824645996,
+  "total_loss": 0.34725016355514526,
+  "finite": true,
+  "optimizer_created": false
+}

@@ -1,0 +1,29 @@
+{
+  "method": "Hard-CRAM Stage-1 -> unchanged vanilla 1.3G Stage-2",
+  "dataset": "vggss",
+  "seed": 12345,
+  "gpu": 0,
+  "stage1_selected_teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/vggss/seed12345/selected_best.pth",
+  "stage1_selected_sha256": "f83d26ed833f22e773864fc333f4e348c779c46b68513b6012829460dbc8a146",
+  "stage1_final_sha256": "6777ebd7fba762738bd3ac95bca00146918a0ad47bd67855f60d169623b18a35",
+  "teacher_epoch": 7,
+  "teacher_expected_aud": [
+    0.3801861186506398,
+    0.40944164404808064
+  ],
+  "stage2_epochs": 50,
+  "batch_size": 256,
+  "loss": "unchanged coarse anchoring + equivariance; no CRAM",
+  "recipe": "/data/wxr/audio_video/JSA/chuagnxindian/1mufasaslot/1.3G-multigeom_equivariant_l3_refine",
+  "recipe_hashes": {
+    "curves.py": "6ccb3a7117304e8081eb3e45a2efd8effc664f7d831d8ba7d127f95673bbeb68",
+    "visualize.py": "d5736e1a6f9fde03a7e99fb84243536b70ca4667bcb1dfacbc0d81779e88b0ff",
+    "geometry.py": "1d1de4e268cc4daca5d6feccd74cf02c4821ef9e53f34e20561ea6e2d3b97dc6",
+    "train.py": "377070ced97f948beccf71559a1ce7be00227839eab7d337d74d4a4229b119b5",
+    "protocol.py": "5c848a5fcd6b300af7e7db2532c2770339d20b9df53f81ed0c0a957d91cd6403",
+    "model.py": "e4fa65b4d2633bbd4d2a5132cb9aba4a0d0929d5bdabbf84db4f7dea3975281e",
+    "evaluate_full.py": "26e095a310289d4f94996f648dfbafcdd0a77b88642e12fc00533b9a5512fe17",
+    "common.py": "55606bb7536ed790c2f79689f340f7cb8fe37d4f181ea1c54c1b00a57cecfad9"
+  },
+  "git_commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54"
+}

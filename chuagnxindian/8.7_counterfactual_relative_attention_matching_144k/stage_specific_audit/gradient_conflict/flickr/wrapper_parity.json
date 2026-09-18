@@ -1,0 +1,17 @@
+[
+  {
+    "state": "initial",
+    "max_output_error": 0.0,
+    "original_loss_error": 0.0
+  },
+  {
+    "state": "epoch1",
+    "max_output_error": 0.0,
+    "original_loss_error": 0.0
+  },
+  {
+    "state": "late",
+    "max_output_error": 0.0,
+    "original_loss_error": 0.0
+  }
+]

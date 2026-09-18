@@ -1,0 +1,20 @@
+{
+  "counterfactual_indices": {
+    "mtime_ns": 1788936526573609429,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/vggss_144k_counterfactual_indices.npz",
+    "sha256": "8aec3d9163cb91b434443bbbd36b691555a43ce8416f6e12a4b680bff57badab",
+    "size": 612276
+  },
+  "dataset": "vggss",
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C1",
+  "matched_replay_max_abs_error": 9.313225746154785e-09,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "reference_sample_ids_match": true,
+  "sample_mismatch": 0,
+  "seed": 12345,
+  "wrong_audio_ids_match": true
+}

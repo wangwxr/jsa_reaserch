@@ -1,0 +1,32 @@
+{
+  "dataset": "flickr",
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/flickr/seed12345/selected_best.pth",
+  "teacher_epoch": 16,
+  "tau": 8.700235267679427e-06,
+  "K": 4,
+  "batch_size": 256,
+  "negative_mapping": "frozen_8.7_batch_offsets",
+  "exactness": {
+    "d_pos_max_abs": 0.0,
+    "d_neg_max_abs": 0.0,
+    "loss_max_abs": 0.0,
+    "gradient_cosine": 1.0,
+    "gradient_relative_l2": 0.0,
+    "gradient_max_abs": 0.0
+  },
+  "throughput": {
+    "reference": {
+      "mean_step_seconds": 0.9911049860529602,
+      "median_step_seconds": 0.9854391899425536,
+      "steps": 12
+    },
+    "reuse": {
+      "mean_step_seconds": 0.4406458178612714,
+      "median_step_seconds": 0.4397610917221755,
+      "steps": 12
+    },
+    "speedup_reference_over_reuse": 2.2492100137552877
+  },
+  "passed": true,
+  "criterion": "all attention-distance/loss abs<2e-6, grad cosine>.9999, relative L2<2e-4, speedup>1"
+}

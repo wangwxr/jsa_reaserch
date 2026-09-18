@@ -1,0 +1,51 @@
+{
+  "batch_size": 256,
+  "dataset": "flickr",
+  "elapsed_seconds": 13598.027723312378,
+  "epochs": 50,
+  "final_checkpoint": {
+    "mtime_ns": 1789473953601481891,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/tau_variants/flickr_tau_weaker_neff3_08/stage1/flickr/seed12345/final.pth",
+    "sha256": "96e566ac8ad6ff16a72f4216d5766de10d33601d69a04314579a0eab7a389956",
+    "size": 145844607
+  },
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C3",
+  "initialization": {
+    "mtime_ns": 1789024142320609564,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/initialization/flickr/seed12345.pth",
+    "sha256": "67b431174d6c32d9ed0e7e41d47e260823fb3d5baacba696793b716961e02298",
+    "size": 145859147
+  },
+  "lambda_cram": 1.0,
+  "loss_weights": {
+    "cram": 1.0,
+    "div": 0.1,
+    "info": 1.0,
+    "match": 100.0,
+    "recon": 0.1
+  },
+  "negative_mapping": {
+    "mtime_ns": 1789092374164452990,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/flickr_seed12345_negative_offsets.npy",
+    "sha256": "53a08171670160ed2ec6a77598c28f867b60c5176f3a9cc94d7da7d4376441cb",
+    "size": 57600128
+  },
+  "orders": {
+    "mtime_ns": 1789024142450608305,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/configs/flickr_seed12345_epoch_orders.npy",
+    "sha256": "44975bfe5657dfebac1089d36332c8026d60bfcc04bc920c4c7681015e6e09ac",
+    "size": 28800128
+  },
+  "protocol_sha256": "2159663031e2073db4e95265cb07fa0be00f4dcc867bb193ce5a16a0d5457c1f",
+  "seed": 12345,
+  "selected_checkpoint": {
+    "mtime_ns": 1789462316604997021,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/tau_variants/flickr_tau_weaker_neff3_08/stage1/flickr/seed12345/selected_best.pth",
+    "sha256": "2dafc524fca0790d8b931cc141359f679618e539b95d974beb9659b1e9a13024",
+    "size": 145865943
+  }
+}

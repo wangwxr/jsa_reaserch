@@ -1,0 +1,8 @@
+{
+  "event": "acceleration_validation_finished",
+  "dataset": "flickr",
+  "gpu": 1,
+  "stage1_parent_pid": 2337432,
+  "time": 1789451735.6700847,
+  "returncode": 0
+}

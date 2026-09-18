@@ -1,0 +1,54 @@
+{
+  "dataset": "flickr",
+  "model": "original_1.3g_final",
+  "tag": "full",
+  "sample_count": 250,
+  "seed": 12345,
+  "teacher_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+    "sha256": "1cd166543821553378c1c8e2ddb29d7504e35fdd16471c286dc95741de911bc0",
+    "size": 145864497,
+    "mtime_ns": 1786772660768985716
+  },
+  "loaded_teacher_path": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5/flickr_best.pth",
+  "stage2_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_flickr_144k_frame8_center5_best/flickr_best.pth",
+    "sha256": "347751d78089074ff7b72acf0102ee02bfe82c64d2a99bf10244a54f8a7ed06f",
+    "size": 17325651,
+    "mtime_ns": 1786899904531667020
+  },
+  "audio_query_file": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/features/flickr_144k_audio_queries.npy",
+    "sha256": "c0bd34800bcafc199831fcda2f76e69047c065855bce67e9bdf79b3ae3117d90",
+    "size": 1024128,
+    "mtime_ns": 1788936392588485663
+  },
+  "audio_query_id_file": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/features/flickr_144k_ids.npy",
+    "sha256": "0d3550a5f4247d99dffbe5f522c187400bd0bd898a551ed936353d324bd58376",
+    "size": 11128,
+    "mtime_ns": 1788936392847495103
+  },
+  "counterfactual_index_file": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/flickr_144k_counterfactual_indices.npz",
+    "sha256": "663ed9c3a97dc0b5d79be1b62892fff877462ead943fb0c50cdd79c9ae74a7e7",
+    "size": 21813,
+    "mtime_ns": 1788936526596610017
+  },
+  "wrong_audio_count": 8,
+  "same_video_overlap": 0,
+  "minimum_matched_wrong_query_max_abs_difference": 0.6879264712333679,
+  "matched_forward_replay_max_abs_error": 0.0,
+  "matched_probability_sum_max_error": 1.7881393432617188e-07,
+  "wrong_probability_sum_max_error": 2.384185791015625e-07,
+  "all_parameters_eval": true,
+  "optimizer_created": false,
+  "backward_called": false,
+  "output": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/mechanism_audit/results/flickr/full/original_1.3g_final_maps.npz",
+    "sha256": "4049a690ee2420c46896e4f482c97b5ccabbb72336c9f33c62097a60c11c1bab",
+    "size": 1473589,
+    "mtime_ns": 1789273988411644326
+  },
+  "elapsed_seconds": 5.615882635116577
+}

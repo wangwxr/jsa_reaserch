@@ -1,0 +1,32 @@
+{
+  "phase_B": "completed: full-set exact cached AUD/OGL metrics plus native-grid IMG/IQR readout replay",
+  "visual_similarity": {
+    "left": {
+      "n": 428,
+      "mean": 0.9138792358706179,
+      "median": 0.9395686203828774,
+      "p10": 0.8347854483238966,
+      "p25": 0.8929339155959548,
+      "p75": 0.9634857112319526,
+      "p90": 0.9781583828638312,
+      "bootstrap_mean_ci_low": 0.9048844691476416,
+      "bootstrap_mean_ci_high": 0.9236131232730846
+    },
+    "right": {
+      "n": 4730,
+      "mean": 0.8969721322158368,
+      "median": 0.9322504451686374,
+      "p10": 0.7993190234427621,
+      "p25": 0.8731938057988562,
+      "p75": 0.9679601864548283,
+      "p90": 0.9842886244239771,
+      "bootstrap_mean_ci_low": 0.8929780016744371,
+      "bootstrap_mean_ci_high": 0.9010856320350039
+    },
+    "mean_diff_left_minus_right": 0.016907103654781097,
+    "bootstrap_ci_low": 0.006941685042893389,
+    "bootstrap_ci_high": 0.02534789097945413,
+    "mannwhitney_p": 0.3454102973458276,
+    "rank_biserial": 0.027499950603623757
+  }
+}

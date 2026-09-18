@@ -1,0 +1,10 @@
+{
+  "dataset": "flickr",
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/flickr/seed12345/selected_best.pth",
+  "teacher_sha256": "73b586627301bf4436c65661f4eb72800943b15c3b51555379def80a1f058632",
+  "student": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage2/flickr/seed12345/flickr_best.pth",
+  "student_sha256": "1c6b3b51819b1f025ef6413764468eab67c6b141f9787fc88585ca6b199b59b2",
+  "student_epoch": 37,
+  "ids": 250,
+  "offline_replay_max_abs_error": 1.3969838619232178e-09
+}

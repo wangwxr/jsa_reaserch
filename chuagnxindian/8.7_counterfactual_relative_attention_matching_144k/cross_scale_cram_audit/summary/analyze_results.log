@@ -1,0 +1,45 @@
+dataset scale  hard_effect_cIoU  hard_effect_AUC  hard_effect_gt_nearfp_gap  hard_effect_gt_vs_nearfp_auroc  hard_effect_coverage  hard_effect_precision  hard_effect_pred_area_ratio
+  vggss   10k         -0.009694        -0.002705                  -0.005373                       -0.001965              0.022103              -0.016395                     0.034491
+  vggss  144k         -0.006786        -0.001299                   0.000916                        0.000466             -0.008046               0.004713                    -0.006646
+ flickr   10k          0.012000         0.006200                  -0.000913                        0.009164              0.025294              -0.010221                     0.027701
+ flickr  144k         -0.024000        -0.010200                  -0.014334                       -0.015200             -0.007722              -0.010903                     0.000669
+dataset scale         model      group   n  cIoU_success_count      iou  gt_response  nearfp_response  gt_nearfp_gap  gt_vs_nearfp_auroc  precision  coverage  pred_area_ratio    RemoveFP    RemoveTP      AddTP       AddFP  vs_mean_RemoveFP  vs_mean_RemoveTP  vs_mean_AddTP  vs_mean_AddFP
+  vggss  144k      baseline A_ogl_help 428                 125 0.410513     0.825870         0.791094       0.036533            0.649832   0.444938  0.911585         0.517062    0.000000    0.000000   0.000000    0.000000       1950.964953        313.761682    1164.971963    4204.642523
+  vggss  144k hard_adjusted A_ogl_help 428                 138 0.424369     0.790096         0.728925       0.062846            0.676552   0.482187  0.853852         0.438002 4656.855140 1207.768692 302.591121 1595.144860       2152.721963        442.621495     388.654206    1344.689252
+  vggss  144k  hard_default A_ogl_help 428                 140 0.429229     0.790910         0.724147       0.068360            0.689932   0.489251  0.855873         0.434645 4797.252336 1236.214953 324.378505 1573.771028       2177.420561        415.642523     355.016355    1207.616822
+  vggss  144k          mean A_ogl_help 428                 126 0.410639     0.797423         0.733907       0.064922            0.687604   0.465202  0.860751         0.455182 4204.642523 1164.971963 313.761682 1950.964953               NaN               NaN            NaN            NaN
+scale dataset           comparison                             signal     mean   median        ci_low   ci_high      n  mean_difference  mannwhitney_p  rank_biserial  n_left  n_right
+  10k   vggss    margin_diagnostic     violation_pos_ge_mean_fraction 0.243117 0.000000  2.314851e-01  0.254949 5158.0              NaN            NaN            NaN     NaN      NaN
+  10k   vggss    margin_diagnostic        hard_but_mean_easy_fraction 0.415471 0.000000  4.017061e-01  0.428659 5158.0              NaN            NaN            NaN     NaN      NaN
+  10k   vggss    margin_diagnostic mean_pairwise_negative_correlation 0.410612 0.412540  4.005610e-01  0.419659    6.0              NaN            NaN            NaN     NaN      NaN
+  10k  flickr    margin_diagnostic     violation_pos_ge_mean_fraction 0.516000 1.000000  4.559000e-01  0.576000  250.0              NaN            NaN            NaN     NaN      NaN
+  10k  flickr    margin_diagnostic        hard_but_mean_easy_fraction 0.316000 0.000000  2.560000e-01  0.372000  250.0              NaN            NaN            NaN     NaN      NaN
+  10k  flickr    margin_diagnostic mean_pairwise_negative_correlation 0.942697 0.937959  9.339910e-01  0.952677    6.0              NaN            NaN            NaN     NaN      NaN
+ 144k   vggss       GroupA_vs_nonA                              D_min      NaN      NaN -2.067306e-06  0.000008    NaN     2.419480e-06       0.986194      -0.000505   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                             D_mean      NaN      NaN -1.943470e-06  0.000015    NaN     6.044142e-06       0.220689      -0.035695   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                              D_max      NaN      NaN -1.454332e-06  0.000028    NaN     1.247049e-05       0.097496      -0.048298   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                              D_std      NaN      NaN -6.967940e-07  0.000009    NaN     3.781740e-06       0.073794      -0.052109   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                     mean_minus_min      NaN      NaN -1.802557e-06  0.000010    NaN     3.624662e-06       0.077323      -0.051484   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                      pos_minus_min      NaN      NaN -1.500244e-06  0.000010    NaN     3.991758e-06       0.410667      -0.023979   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                     pos_minus_mean      NaN      NaN -6.617279e-06  0.000007    NaN     3.670960e-07       0.626228       0.014196   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                        negative_cv      NaN      NaN -2.980164e-03  0.039753    NaN     1.827340e-02       0.141147      -0.042889   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                         weight_max      NaN      NaN -8.272383e-03  0.028810    NaN     1.060340e-02       0.108923      -0.046722   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                              N_eff      NaN      NaN -1.363252e-01  0.018648    NaN    -6.072872e-02       0.092025       0.049105   428.0   4730.0
+ 144k   vggss       GroupA_vs_nonA                     weight_entropy      NaN      NaN -5.021318e-02  0.015299    NaN    -1.718400e-02       0.095363       0.048608   428.0   4730.0
+ 144k   vggss OGLhelp_vs_AUDbetter                              D_min      NaN      NaN -3.669145e-06  0.000011    NaN     3.572622e-06       0.820959      -0.010328   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                             D_mean      NaN      NaN -2.329792e-06  0.000022    NaN     9.951569e-06       0.089615      -0.077403   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                              D_max      NaN      NaN  1.220934e-06  0.000041    NaN     2.121140e-05       0.028732      -0.099731   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                              D_std      NaN      NaN  2.160513e-07  0.000013    NaN     6.666216e-06       0.013835      -0.112240   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                     mean_minus_min      NaN      NaN -1.231128e-06  0.000014    NaN     6.378947e-06       0.010206      -0.117132   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                      pos_minus_min      NaN      NaN -5.503926e-06  0.000009    NaN     1.695480e-06       0.448276      -0.034583   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                     pos_minus_mean      NaN      NaN -1.297579e-05  0.000005    NaN    -4.683467e-06       0.144467       0.066548   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                        negative_cv      NaN      NaN  3.432428e-03  0.067327    NaN     3.536596e-02       0.052538      -0.088403   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                         weight_max      NaN      NaN  3.146207e-04  0.056768    NaN     2.848642e-02       0.009578      -0.118132   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                              N_eff      NaN      NaN -2.731647e-01 -0.002825    NaN    -1.437987e-01       0.013990       0.112059   428.0    257.0
+ 144k   vggss OGLhelp_vs_AUDbetter                     weight_entropy      NaN      NaN -9.048930e-02  0.008904    NaN    -4.118904e-02       0.018681       0.107240   428.0    257.0
+ 144k   vggss    margin_diagnostic     violation_pos_ge_mean_fraction 0.203180 0.000000  1.927104e-01  0.213654 5158.0              NaN            NaN            NaN     NaN      NaN
+ 144k   vggss    margin_diagnostic        hard_but_mean_easy_fraction 0.394145 0.000000  3.809616e-01  0.407716 5158.0              NaN            NaN            NaN     NaN      NaN
+ 144k   vggss    margin_diagnostic mean_pairwise_negative_correlation 0.596902 0.609606  5.790182e-01  0.613795    6.0              NaN            NaN            NaN     NaN      NaN
+ 144k  flickr    margin_diagnostic     violation_pos_ge_mean_fraction 0.276000 0.000000  2.200000e-01  0.332000  250.0              NaN            NaN            NaN     NaN      NaN
+ 144k  flickr    margin_diagnostic        hard_but_mean_easy_fraction 0.332000 0.000000  2.760000e-01  0.392000  250.0              NaN            NaN            NaN     NaN      NaN
+ 144k  flickr    margin_diagnostic mean_pairwise_negative_correlation 0.716403 0.704010  6.641854e-01  0.770635    6.0              NaN            NaN            NaN     NaN      NaN

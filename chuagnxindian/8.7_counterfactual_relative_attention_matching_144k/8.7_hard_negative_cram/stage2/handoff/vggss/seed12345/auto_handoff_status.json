@@ -1,0 +1,8 @@
+{
+  "event": "acceleration_validation_finished",
+  "dataset": "vggss",
+  "gpu": 0,
+  "stage1_parent_pid": 2337431,
+  "time": 1789457950.5751398,
+  "returncode": 0
+}

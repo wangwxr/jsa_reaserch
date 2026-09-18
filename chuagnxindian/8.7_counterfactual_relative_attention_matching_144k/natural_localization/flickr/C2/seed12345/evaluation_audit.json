@@ -1,0 +1,24 @@
+{
+  "all_parameters_frozen": true,
+  "backward_called": false,
+  "checkpoint": {
+    "mtime_ns": 1789132193812017670,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C2/flickr/seed12345/selected_best.pth",
+    "sha256": "ed24966850acda712a95945682e55f691f4379878509b20da494b1e5a520f027",
+    "size": 145865943
+  },
+  "dataset": "flickr",
+  "elapsed_seconds": 11.092220544815063,
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C2",
+  "kind": "best",
+  "model_state_unchanged": true,
+  "optimizer_created": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "sample_mismatch": 0,
+  "samples": 250,
+  "seed": 12345
+}

@@ -1,0 +1,14 @@
+{
+  "read_only_evaluation": true,
+  "scale": "10k",
+  "dataset": "vggss",
+  "method": "baseline",
+  "seed": 12345,
+  "teacher": "/data/wxr/audio_video/JSA/checkpoints/mufasa_ablation2_l3_l4_ablation_vggss_10k/vggss_best.pth",
+  "teacher_sha256": "fcc3652450441f3721492c3b603851c78a8695ca71c53452a8cd9ccd4b6567e7",
+  "student": "/data/wxr/audio_video/JSA/checkpoints/1.3G-multigeom_equivariant_l3_refine_vggss_10k_best/vggss_best.pth",
+  "student_sha256": "626aab5c202960001b3a89c35036a4c5d0b4078c4ef4ceba7baeca365aa25017",
+  "student_epoch": 3,
+  "num_samples": 5158,
+  "offline_replay_max_abs_error": 1.862645149230957e-09
+}

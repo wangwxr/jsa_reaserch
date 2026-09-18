@@ -1,0 +1,50 @@
+{
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+  "teacher_sha256": "ad1ab8bf55ca983c11fa6067a95686f72bc56edf6786f090b9a27cddc8eb1c04",
+  "checkpoints": {
+    "short_step000": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage_specific_audit/gradient_conflict/vggss/step000.pth",
+      "sha256": "133fe66affee7ac24453cc8851c67baa91b5befeeccc9f8a0e89b1db56a716b2",
+      "epoch": 0
+    },
+    "short_step016": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage_specific_audit/gradient_conflict/vggss/step016.pth",
+      "sha256": "e847dd76875ee6974dde701fef4e4b9c9f028102e1103c188027392f1fff6563",
+      "epoch": 0
+    },
+    "short_step064": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage_specific_audit/gradient_conflict/vggss/step064.pth",
+      "sha256": "c57edec861268cc8e414695026a88b758823474c08816e55b26c3145a0ba6ace",
+      "epoch": 0
+    },
+    "lambda025k_best": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2_with_cram/checkpoints/lambda025k/vggss/seed12345/vggss_best.pth",
+      "sha256": "c11d22280bf4bfed1e16533e98162e51cdede8ab673d61e83812c45ba25a985a",
+      "epoch": 1
+    },
+    "lambda025k_latest": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2_with_cram/checkpoints/lambda025k/vggss/seed12345/latest.pth",
+      "sha256": "bcc78b6faf55cfd83a172a1c1263a606b3f8031a15f32d55fecd81a49d38fd6e",
+      "epoch": 39
+    },
+    "lambda050k_best": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2_with_cram/checkpoints/lambda050k/vggss/seed12345/vggss_best.pth",
+      "sha256": "47842813495384165c073817ec9f3ea0052229f47dd294e776191a29fa543420",
+      "epoch": 1
+    },
+    "lambda050k_latest": {
+      "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2_with_cram/checkpoints/lambda050k/vggss/seed12345/latest.pth",
+      "sha256": "6a5bebd4926ff6f5a94d2a07d5f4c258a46c8c529cec584e6858e6435a7215a3",
+      "epoch": 32
+    }
+  },
+  "replay_max_error": 0.0,
+  "all_ids_verified": true,
+  "training_used": false,
+  "original_audio_query_shape": [
+    5158,
+    2,
+    512
+  ],
+  "infer_sharpening": 0.1
+}

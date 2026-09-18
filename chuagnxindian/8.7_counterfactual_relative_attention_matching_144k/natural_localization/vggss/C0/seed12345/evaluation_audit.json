@@ -1,0 +1,24 @@
+{
+  "all_parameters_frozen": true,
+  "backward_called": false,
+  "checkpoint": {
+    "mtime_ns": 1789028082297018598,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/M0/vggss/seed12345/selected_best.pth",
+    "sha256": "c9a39e81c0d790a0e8e92c92855fe1dd1373f4893a145771f5759e3eeee2c052",
+    "size": 145865559
+  },
+  "dataset": "vggss",
+  "elapsed_seconds": 103.75338125228882,
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C0",
+  "kind": "best",
+  "model_state_unchanged": true,
+  "optimizer_created": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "sample_mismatch": 0,
+  "samples": 5158,
+  "seed": 12345
+}

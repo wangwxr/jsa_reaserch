@@ -1,0 +1,9 @@
+{
+  "baseline_ids_match_4_1": true,
+  "baseline_native_map_max_abs_error_vs_4_1": 0.0,
+  "stage2_ids_match_formal": true,
+  "stage2_iou_max_abs_error_vs_formal": 5.551115123125783e-17,
+  "stage1_ids_match_formal": true,
+  "stage1_iou_max_abs_error_vs_formal": 2.9895366218224417e-05,
+  "passed": true
+}

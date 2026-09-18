@@ -1,0 +1,45 @@
+{
+  "baseline_metrics": {
+    "AUD_L4": {
+      "cIoU": 0.3912369135323769,
+      "AUC": 0.4132318728189221,
+      "mean_sample_cIoU": 0.4128224930818603,
+      "num_samples": 5158
+    },
+    "AUD_FINE": {
+      "cIoU": 0.38813493602171384,
+      "AUC": 0.4126308646762311,
+      "mean_sample_cIoU": 0.4120342321273628,
+      "num_samples": 5158
+    }
+  },
+  "checks": {
+    "identity_inverse_max_abs_error": 2.384185791015625e-07,
+    "horizontal_flip_vs_experiment_f_max_abs_error": 3.5762786865234375e-07,
+    "horizontal_flip_inverse_max_abs_error": 4.76837158203125e-07,
+    "crop_resize_flip_valid_recovery_max_abs_error": 2.384185791015625e-07,
+    "crop_resize_flip_valid_ratio": 0.6122449040412903,
+    "teacher_aud_l4_reproduced": true,
+    "teacher_has_any_gradient": false,
+    "initial_adapter_gradient_l1": 0.11577595607377589,
+    "initial_proj3_spatial_gradient_l1": 0.0,
+    "second_step_adapter_gradient_l1": 0.11523884693087894,
+    "second_step_proj3_spatial_gradient_l1": 0.0009792995278985472,
+    "proj3_spatial_copy_max_abs_error": 0.0,
+    "zero_init_f34_minus_up_f4_max_abs": 0.0,
+    "f4_hook_minus_formal_tokens_max_abs": 0.0,
+    "probability_sum_max_errors": {
+      "AUD_L4_A": 1.1920928955078125e-07,
+      "AUD_L4_B": 5.960464477539063e-08,
+      "AUD_FINE_A": 1.1920928955078125e-07,
+      "AUD_FINE_B": 5.960464477539063e-08
+    },
+    "sum_pool_probability_sum_max_error": 0.0,
+    "mean_valid_ratio": 0.735331654548645,
+    "skipped_small_overlap_samples": 0,
+    "loss_coarse": 3.153830039082095e-05,
+    "loss_equiv": 0.0003942944167647511,
+    "loss_total": 0.00042583272443152964,
+    "student_restored_after_temporary_gradient_audit": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "read_only_evaluation": true,
+  "scale": "144k",
+  "dataset": "vggss",
+  "method": "hard_adjusted",
+  "seed": 12345,
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/8.7_hard_negative_cram/tau_variants/vggss_tau_stronger_neff2/stage1/vggss/seed12345/selected_best.pth",
+  "teacher_sha256": "f842bacaa91c17af030ae008d8b8be59e72019b006b228a5bba55afe9ba9a0a8",
+  "student": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/8.7_hard_negative_cram/tau_variants/vggss_tau_stronger_neff2/stage2/vggss/seed12345/vggss_best.pth",
+  "student_sha256": "8baa091893848752ad4c2ed936207e1ef1802f2c26edb9da7c9423bb15e60554",
+  "student_epoch": 36,
+  "num_samples": 5158,
+  "offline_replay_max_abs_error": 1.862645149230957e-09
+}

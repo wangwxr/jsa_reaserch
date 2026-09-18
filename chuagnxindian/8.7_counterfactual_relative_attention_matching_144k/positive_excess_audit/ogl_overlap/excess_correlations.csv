@@ -1,0 +1,13 @@
+subset,signal,outcome,rho,p
+VGG_GroupA,positive_excess_total_mass,ogl_minus_aud_iou,-0.04947297225526121,0.30718954893498657
+VGG_GroupA,positive_excess_aud_mass_ratio,ogl_minus_aud_iou,-0.06912483869738352,0.15340943521509204
+VGG_GroupA,excess_fp_ratio,ogl_minus_aud_iou,0.06246075052571146,0.19716227948209689
+VGG_GroupA,overlap_removefp_excess,ogl_minus_aud_iou,-0.01943631791351342,0.688446917996192
+VGG_all,positive_excess_total_mass,ogl_minus_aud_iou,0.01344697385044257,0.33426403719898834
+VGG_all,positive_excess_aud_mass_ratio,ogl_minus_aud_iou,0.019412673554779013,0.16331867319530774
+VGG_all,excess_fp_ratio,ogl_minus_aud_iou,0.26217646214378054,7.855139634937987e-82
+VGG_all,overlap_removefp_excess,ogl_minus_aud_iou,0.016335345466436314,0.2408015636536196
+Flickr_all,positive_excess_total_mass,ogl_minus_aud_iou,0.0476371141938271,0.4533390239177245
+Flickr_all,positive_excess_aud_mass_ratio,ogl_minus_aud_iou,0.05713205011280179,0.3683624888599225
+Flickr_all,excess_fp_ratio,ogl_minus_aud_iou,0.3133133010128162,4.259195820124603e-07
+Flickr_all,overlap_removefp_excess,ogl_minus_aud_iou,-0.10339984432954112,0.10287416709475387

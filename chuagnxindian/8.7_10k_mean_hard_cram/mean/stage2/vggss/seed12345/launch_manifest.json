@@ -1,0 +1,18 @@
+{
+  "method": "mean",
+  "dataset": "vggss",
+  "seed": 12345,
+  "gpu": 0,
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/mean/stage1/vggss/seed12345/selected_best.pth",
+  "teacher_sha256": "b61574f990f1a78ec5dd0179cd3bb20701d343fdc3e0f9e9a8cf06c26cab7942",
+  "stage1_epoch": 100,
+  "stage1_expected_aud": [
+    0.4133385032958511,
+    0.414162466072121
+  ],
+  "stage2": "unchanged original 1.3G refinement",
+  "stage2_epochs": 100,
+  "batch_size": 256,
+  "experiment_key": "vggss_10k",
+  "git_commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54"
+}

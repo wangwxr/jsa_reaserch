@@ -1,0 +1,95 @@
+{
+  "seed": 12345,
+  "batches": 64,
+  "lambda_cram": 25000,
+  "config": {
+    "alpha": 0.6,
+    "architecture": "mufasa_ablation2_l3_l4_ablation",
+    "aud_length": 5.0,
+    "batch_size": 256,
+    "checkpoint_selection": "IQR_cIoU",
+    "epochs": 50,
+    "eval_during_training": true,
+    "experiment_name": "mufasa_ablation2_l3_l4_ablation_flickr_144k_frame8_center5",
+    "gpu": 1,
+    "hard_aud": true,
+    "hard_img": true,
+    "infer_sharpening": 0.1,
+    "init_lr": 5e-05,
+    "iters": 5,
+    "lam1": 0.1,
+    "lam2": 0.1,
+    "lam3": 100.0,
+    "mask_ratio": 0.1,
+    "model": "jsa",
+    "model_dir": "./checkpoints",
+    "num_slots": 2,
+    "optimizer": "adam",
+    "out_dim": 512,
+    "rand_aud": false,
+    "reciprocal_k": 20,
+    "resume": false,
+    "save_visualizations": false,
+    "scheduler": false,
+    "seed": 12345,
+    "slot_alignment": "none",
+    "spatial_attention": "l4_only",
+    "tau": 0.03,
+    "test_data_path": "/data/wxr/datasets/FlickrSoundNet/test/Dataset",
+    "test_gt_path": "/data/wxr/datasets/FlickrSoundNet/test/Dataset/Annotations",
+    "test_manifest_path": "/data/wxr/audio_video/JSA/metadata_flickr/flickr_test_SLAVC.csv",
+    "testset": "flickr",
+    "train_data_path": "/home/wxr/datasets/JSA/FlickrSoundNet_144k_frame8_center5_npy",
+    "train_manifest_path": "/data/wxr/audio_video/JSA/metadata_flickr/flickr_144k.csv",
+    "train_metadata_path": "/data/wxr/audio_video/JSA/metadata_flickr/flickr_144k.csv",
+    "trainset": "flickr_144k",
+    "visual_levels": [
+      "layer3",
+      "layer4"
+    ],
+    "wandb": false,
+    "warmup": -1,
+    "weight_decay": 0.01,
+    "workers": 12
+  },
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/flickr/seed12345/selected_best.pth",
+  "teacher_sha256": "c96f672f73d47b1d74395b15242d54f89ca9c30e9b95082648999e46a49eac3a",
+  "git_commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+  "source_hashes": {
+    "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage_specific_audit/gradient_conflict/run.py": "d8ca1eb1e13e1444a17aceca2d7a234e4b6ef09dd2a646324146ad6691e66474",
+    "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2_with_cram/train.py": "baba0093b9eb0055b46f36b7d03ac25545eb848f0ac63dbb2655c1b148f5399a",
+    "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2_with_cram/model.py": "07a9259dab2fdf7d5488aa04c72ca2f4a0e8eadb1f6f56b9d7d20fb9654f8563",
+    "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage_specific_audit/PROTOCOL.md": "51ba830b5c14030882a9b0207b0925d0c7a167e5105d6d591a8fe5b1b0fae10b"
+  },
+  "parameter_groups": {
+    "proj3_spatial.weight": [
+      512,
+      256,
+      1,
+      1
+    ],
+    "proj3_spatial.bias": [
+      512
+    ],
+    "adapter.layers.0.weight": [
+      256,
+      512,
+      1,
+      1
+    ],
+    "adapter.layers.0.bias": [
+      256
+    ],
+    "adapter.layers.2.weight": [
+      512,
+      256,
+      3,
+      3
+    ],
+    "adapter.layers.2.bias": [
+      512
+    ]
+  },
+  "frozen_audio": true,
+  "frozen_key_projection": true
+}

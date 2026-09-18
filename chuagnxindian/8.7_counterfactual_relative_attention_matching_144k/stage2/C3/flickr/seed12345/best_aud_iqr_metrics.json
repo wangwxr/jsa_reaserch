@@ -1,0 +1,20 @@
+{
+  "checkpoint": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/stage2/C3/flickr/seed12345/flickr_best.pth",
+  "checkpoint_sha256": "cceee77deea71eb1191c3e3e3906f79f344975529631df1c57c67ae7363c3bd6",
+  "epoch": 30,
+  "metrics": {
+    "AUD": {
+      "cIoU": 0.896,
+      "AUC": 0.6532,
+      "mean_sample_cIoU": 0.6539349271637312,
+      "num_samples": 250
+    },
+    "IQR": {
+      "cIoU": 0.884,
+      "AUC": 0.6414000000000001,
+      "mean_sample_cIoU": 0.640008958361984,
+      "num_samples": 250
+    }
+  },
+  "teacher_sha256": "c96f672f73d47b1d74395b15242d54f89ca9c30e9b95082648999e46a49eac3a"
+}

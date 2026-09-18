@@ -1,0 +1,14 @@
+{
+  "AUD_L4": {
+    "cIoU": 0.82,
+    "AUC": 0.6290000000000001,
+    "mean_sample_cIoU": 0.6306247073983086,
+    "num_samples": 250
+  },
+  "AUD_FINE": {
+    "cIoU": 0.848,
+    "AUC": 0.6558000000000002,
+    "mean_sample_cIoU": 0.6554535686097032,
+    "num_samples": 250
+  }
+}

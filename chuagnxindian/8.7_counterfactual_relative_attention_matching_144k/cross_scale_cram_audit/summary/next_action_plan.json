@@ -1,0 +1,7 @@
+{
+  "main_direction": "negative_relevance_with_mean_aggregation",
+  "backup_direction": "smooth_samplewise_mean_violation_weighting",
+  "frozen_variables": ["two_stage_structure", "stage2", "architecture", "K=4", "lambda=1.0", "seed=12345", "data_order", "Mean aggregation"],
+  "not_supported": ["global_softmin", "additional_tau_sweeps", "D_distance_only_adaptive_gate", "second_module"],
+  "success": {"vgg_aud_ciou": ">=0.4523", "vgg_aud_auc": ">=0.4401", "flickr_aud_ge_ogl": true, "no_coverage_collapse": true}
+}

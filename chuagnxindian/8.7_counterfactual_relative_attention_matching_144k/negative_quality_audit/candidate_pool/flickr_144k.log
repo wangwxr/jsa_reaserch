@@ -1,0 +1,12 @@
+/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/negative_quality_audit/run_pool_audit.py:61: UserWarning: Using a target size (torch.Size([32, 1, 49])) that is different to the input size (torch.Size([32, 32, 49])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  _logits,prob=objective.attention(qflat,keys);prob=prob[:,0].reshape(b,32,49);dist=F.mse_loss(prob,target_v[:,None],reduction='none').mean(2).float().cpu().numpy();dpos_np=dpos.float().cpu().numpy()
+144k/flickr: 32/250
+144k/flickr: 64/250
+144k/flickr: 96/250
+144k/flickr: 128/250
+144k/flickr: 160/250
+144k/flickr: 192/250
+144k/flickr: 224/250
+/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/negative_quality_audit/run_pool_audit.py:61: UserWarning: Using a target size (torch.Size([26, 1, 49])) that is different to the input size (torch.Size([26, 32, 49])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  _logits,prob=objective.attention(qflat,keys);prob=prob[:,0].reshape(b,32,49);dist=F.mse_loss(prob,target_v[:,None],reduction='none').mean(2).float().cpu().numpy();dpos_np=dpos.float().cpu().numpy()
+144k/flickr: 250/250

@@ -1,0 +1,8 @@
+{
+  "event": "stage2_finished_acceleration_validation_reused",
+  "dataset": "flickr",
+  "gpu": 1,
+  "stage1_parent_pid": 2483466,
+  "time": 1789480902.3798485,
+  "reason": "B=256 exactness and throughput already verified for this identical reuse path"
+}

@@ -1,0 +1,5 @@
+dataset,comparison,metric,mean,median,q1,q3,iqr,ci_low,ci_high,valid
+flickr,Hard transition relative to Mean,RemoveFP,1144.72,406.0,35.5,1555.75,1520.25,929.9481000000001,1392.7745999999995,250
+flickr,Hard transition relative to Mean,RemoveTP,1170.196,556.0,61.5,1576.0,1514.5,977.8298,1370.1227,250
+flickr,Hard transition relative to Mean,AddTP,1018.724,468.5,88.25,1525.75,1437.5,864.621,1184.1782999999998,250
+flickr,Hard transition relative to Mean,AddFP,1329.772,743.5,164.25,1891.25,1727.0,1113.9189999999999,1564.7508999999995,250

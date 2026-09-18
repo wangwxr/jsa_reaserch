@@ -1,0 +1,10 @@
+{
+  "dataset": "vggss",
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/vggss/seed12345/selected_best.pth",
+  "teacher_sha256": "f83d26ed833f22e773864fc333f4e348c779c46b68513b6012829460dbc8a146",
+  "student": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage2/vggss/seed12345/vggss_best.pth",
+  "student_sha256": "126c02006a2f83ba182040ae06b328d3c457bec63a472d002acfd40fa01422f9",
+  "student_epoch": 48,
+  "ids": 5158,
+  "offline_replay_max_abs_error": 1.862645149230957e-09
+}

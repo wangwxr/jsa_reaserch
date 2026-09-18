@@ -1,0 +1,13 @@
+dataset,model,readout,cIoU,AUC
+flickr,mean_cram,AUD,0.896,0.6532
+flickr,mean_cram,IMG_QUERY,0.824,0.6054
+flickr,mean_cram,IQR,0.884,0.6414000000000001
+flickr,mean_cram,OBJ_PRIOR,0.448,0.4668
+flickr,mean_cram,OGL,0.888,0.643
+flickr,mean_cram,EXTRA_IQR_OGL,0.908,0.6506000000000001
+flickr,hard_cram,AUD,0.872,0.6429999999999999
+flickr,hard_cram,IMG_QUERY,0.796,0.5973999999999999
+flickr,hard_cram,IQR,0.852,0.6304000000000001
+flickr,hard_cram,OBJ_PRIOR,0.448,0.4668
+flickr,hard_cram,OGL,0.88,0.6452
+flickr,hard_cram,EXTRA_IQR_OGL,0.88,0.6484

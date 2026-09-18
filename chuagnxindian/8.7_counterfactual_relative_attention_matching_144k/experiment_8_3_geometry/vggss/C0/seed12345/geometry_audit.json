@@ -1,0 +1,46 @@
+{
+  "backward_called": false,
+  "checkpoint": {
+    "mtime_ns": 1789028082297018598,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/M0/vggss/seed12345/selected_best.pth",
+    "sha256": "c9a39e81c0d790a0e8e92c92855fe1dd1373f4893a145771f5759e3eeee2c052",
+    "size": 145865559
+  },
+  "counterfactual_indices": {
+    "mtime_ns": 1788936526573609429,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/vggss_144k_counterfactual_indices.npz",
+    "sha256": "8aec3d9163cb91b434443bbbd36b691555a43ce8416f6e12a4b680bff57badab",
+    "size": 612276
+  },
+  "dataset": "vggss",
+  "decision_rms_norm": 19.191126208564835,
+  "fixed_regions": {
+    "mtime_ns": 1788934365568409717,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.0_audio_only_residual_audit/results/vggss_144k_sample_indices.npz",
+    "sha256": "ae8d122601edd8a0839876c69166b976b346ff9eb9ce0a2f985e4985916d933a",
+    "size": 12653057
+  },
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C0",
+  "kind": "best",
+  "mean_specific_audio_switch_spearman": -0.0007824965719639188,
+  "median_common_specific_std_ratio": 5.668650831847218,
+  "median_full_common_spearman": 0.9890816326530613,
+  "model_state_unchanged": true,
+  "mu_norm": 16.376756898743885,
+  "mu_over_rms": 0.853350487134782,
+  "optimizer_created": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "reference_count": 8192,
+  "reference_indices": {
+    "mtime_ns": 1788950343180039590,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.3_common_specific_decision_decomposition/reference_indices.json",
+    "sha256": "e4eb1bc352ec287ca36e2ab7be96debd0e1bfc7f08ef38023d3deb29c3af263b",
+    "size": 657596
+  },
+  "sample_mismatch": 0,
+  "seed": 12345
+}

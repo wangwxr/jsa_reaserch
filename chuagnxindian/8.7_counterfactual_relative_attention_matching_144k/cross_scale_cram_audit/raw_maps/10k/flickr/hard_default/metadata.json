@@ -1,0 +1,14 @@
+{
+  "read_only_evaluation": true,
+  "scale": "10k",
+  "dataset": "flickr",
+  "method": "hard_default",
+  "seed": 12345,
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/hard_default/stage1/flickr/seed12345/selected_best.pth",
+  "teacher_sha256": "ab70f25cfd0ad092b74d3c219b41ac358ff9be814783bd1e0f9e9360913ded53",
+  "student": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/hard_default/stage2/flickr/seed12345/flickr_best.pth",
+  "student_sha256": "bc3dfa9a91576d1bcdc107bda47937776d1218f1e074902ddf7bcaaf1330b290",
+  "student_epoch": 6,
+  "num_samples": 250,
+  "offline_replay_max_abs_error": 1.3969838619232178e-09
+}

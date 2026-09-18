@@ -1,0 +1,40 @@
+{
+  "dataset": "vggss",
+  "seed": 12345,
+  "batch_size": 256,
+  "gradient_scale": 65536.0,
+  "raw_gradient_l2": {
+    "info": 11.597567240734381,
+    "match": 0.004208194597702333,
+    "cram": 7.908213088687831e-05
+  },
+  "weighted_gradient_l2": {
+    "info": 11.597567240734381,
+    "original_match": 0.42081945977023333,
+    "cram_lambda_0_1": 7.908213088687831e-06,
+    "cram_lambda_0_5": 3.9541065443439154e-05,
+    "cram_lambda_1_0": 7.908213088687831e-05
+  },
+  "c3_allowed": true,
+  "c3_rule": "allow lambda=1.0 only when 0.1*||grad L_CRAM|| is below 1% of 100*||grad original L_match||",
+  "initialization": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/initialization/vggss/seed12345.pth",
+    "sha256": "4d0d3c1b49410c4f476cb0d08e88ee8b83084b62c94d73ccab149680a944693b",
+    "size": 145859147,
+    "mtime_ns": 1789022847690119792
+  },
+  "negative_mapping": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/vggss_seed12345_negative_offsets.npy",
+    "sha256": "4e64b81d1a8b26e2002967b10f3229ff7799266a926ad00a83aa0169650c7cd0",
+    "size": 57600128,
+    "mtime_ns": 1789092257353930866
+  },
+  "model_state_restored": true,
+  "optimizer_created": false,
+  "test_data_used": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  }
+}

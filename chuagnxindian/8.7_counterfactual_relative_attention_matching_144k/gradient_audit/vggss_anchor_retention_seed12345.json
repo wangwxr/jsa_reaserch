@@ -1,0 +1,60 @@
+{
+  "batch_size": 256,
+  "fixed_train_epoch": 0,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "rows": [
+    {
+      "checkpoint": {
+        "mtime_ns": 1789028082297018598,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/M0/vggss/seed12345/selected_best.pth",
+        "sha256": "c9a39e81c0d790a0e8e92c92855fe1dd1373f4893a145771f5759e3eeee2c052",
+        "size": 145865559
+      },
+      "d_pos_mean": 4.7679895942565054e-05,
+      "d_pos_median": 3.363327050465159e-05,
+      "dataset": "vggss",
+      "group": "C0",
+      "seed": 12345
+    },
+    {
+      "checkpoint": {
+        "mtime_ns": 1789097292577211810,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C1/vggss/seed12345/selected_best.pth",
+        "sha256": "dfc86d0ac57eec25b6a0736adf8478e3efdbc22ad56edd2b9aab91002f00dd32",
+        "size": 145865943
+      },
+      "d_pos_mean": 3.7540641642408445e-05,
+      "d_pos_median": 2.8977547117392533e-05,
+      "dataset": "vggss",
+      "group": "C1",
+      "seed": 12345
+    },
+    {
+      "checkpoint": {
+        "mtime_ns": 1789127106229488444,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C2/vggss/seed12345/selected_best.pth",
+        "sha256": "ea03624bc530e0bf4faad78399cb0741768b122d01e3526ffaa561ba93a619cd",
+        "size": 145865943
+      },
+      "d_pos_mean": 4.371494287624955e-05,
+      "d_pos_median": 3.0327906642924063e-05,
+      "dataset": "vggss",
+      "group": "C2",
+      "seed": 12345
+    },
+    {
+      "checkpoint": {
+        "mtime_ns": 1789156431520379387,
+        "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C3/vggss/seed12345/selected_best.pth",
+        "sha256": "ad1ab8bf55ca983c11fa6067a95686f72bc56edf6786f090b9a27cddc8eb1c04",
+        "size": 145865943
+      },
+      "d_pos_mean": 4.2592131649143994e-05,
+      "d_pos_median": 3.0161441827658564e-05,
+      "dataset": "vggss",
+      "group": "C3",
+      "seed": 12345
+    }
+  ],
+  "test_data_used": false
+}

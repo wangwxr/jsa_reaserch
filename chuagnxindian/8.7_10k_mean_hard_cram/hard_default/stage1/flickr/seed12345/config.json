@@ -1,0 +1,51 @@
+{
+  "batch_size": 256,
+  "dataset": "flickr",
+  "elapsed_seconds": 2624.15096116066,
+  "epochs": 100,
+  "final_checkpoint": {
+    "mtime_ns": 1789528625996606860,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/hard_default/stage1/flickr/seed12345/final.pth",
+    "sha256": "e6acf42d50c15ddcfe7b424e82fd59e4959b346cf5d836b3b8294d9317f3b287",
+    "size": 145844543
+  },
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C3",
+  "initialization": {
+    "mtime_ns": 1789521563382351261,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/checkpoints/initialization/flickr/seed12345.pth",
+    "sha256": "74549cfd753a8c6bfe3280cc243af2e39908dbc25e28e811cdb4bbba4a7bf4c0",
+    "size": 145859147
+  },
+  "lambda_cram": 1.0,
+  "loss_weights": {
+    "cram": 1.0,
+    "div": 0.1,
+    "info": 1.0,
+    "match": 100.0,
+    "recon": 0.1
+  },
+  "negative_mapping": {
+    "mtime_ns": 1789521619907687928,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/configs/flickr_seed12345_negative_offsets.npy",
+    "sha256": "837a297b4ef438139f8c5d0a1f6710a57afb149fca07d293037713b6683d77e5",
+    "size": 8000128
+  },
+  "orders": {
+    "mtime_ns": 1789521563394351119,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/configs/flickr_seed12345_epoch_orders.npy",
+    "sha256": "cc4177d7330c651f5076b5841efa3d5a090e7c1254c5eb5e0d7ff97907ec612c",
+    "size": 4000128
+  },
+  "protocol_sha256": "889a5f30cae61e1753a32f5b49d5d2a90d112c4fbfa0d322ce68cd2f5e5b916b",
+  "seed": 12345,
+  "selected_checkpoint": {
+    "mtime_ns": 1789526134962933264,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/hard_default/stage1/flickr/seed12345/selected_best.pth",
+    "sha256": "ab70f25cfd0ad092b74d3c219b41ac358ff9be814783bd1e0f9e9360913ded53",
+    "size": 145865879
+  }
+}

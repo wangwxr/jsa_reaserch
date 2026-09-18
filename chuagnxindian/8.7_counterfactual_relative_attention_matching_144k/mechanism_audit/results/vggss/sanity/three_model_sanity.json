@@ -1,0 +1,23 @@
+{
+  "sample_ids_equal_across_three_models": true,
+  "wrong_indices_equal_across_three_models": true,
+  "original_matched_wrong_max_abs_difference": 0.00033949315547943115,
+  "stage1_matched_wrong_max_abs_difference": 0.002407556399703026,
+  "stage2_matched_wrong_max_abs_difference": 0.000538709107786417,
+  "original_vs_stage2_matched_max_abs_difference": 0.0004836185835301876,
+  "native_shapes": {
+    "original_final": [
+      8,
+      196
+    ],
+    "cram_stage1": [
+      8,
+      49
+    ],
+    "cram_stage2": [
+      8,
+      196
+    ]
+  },
+  "passed": true
+}

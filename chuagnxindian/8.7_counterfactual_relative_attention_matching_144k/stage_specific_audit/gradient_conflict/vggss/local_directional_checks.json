@@ -1,0 +1,74 @@
+[
+  {
+    "state": "initial",
+    "direction": "base",
+    "parameter_step_l2": 0.001,
+    "base_before": 0.0005904909339733422,
+    "base_after": 0.0005903943092562258,
+    "base_delta": -9.66247171163559e-08,
+    "dpos_before": 1.2644287394891762e-08,
+    "dpos_after": 1.2643589286653878e-08,
+    "dneg_before": 2.5361957867175988e-08,
+    "dneg_after": 2.5360728628243123e-08
+  },
+  {
+    "state": "initial",
+    "direction": "cram_weighted",
+    "parameter_step_l2": 0.001,
+    "base_before": 0.0005904909339733422,
+    "base_after": 0.0005904310382902622,
+    "base_delta": -5.989568307995796e-08,
+    "dpos_before": 1.2644287394891762e-08,
+    "dpos_after": 1.2643566194014966e-08,
+    "dneg_before": 2.5361957867175988e-08,
+    "dneg_after": 2.5361176270166652e-08
+  },
+  {
+    "state": "epoch1",
+    "direction": "base",
+    "parameter_step_l2": 0.001,
+    "base_before": 0.0007617825176566839,
+    "base_after": 0.0007612123154103756,
+    "base_delta": -5.702022463083267e-07,
+    "dpos_before": 1.6054503504392414e-08,
+    "dpos_after": 1.6054508833462933e-08,
+    "dneg_before": 6.294720833466272e-08,
+    "dneg_after": 6.294649779192696e-08
+  },
+  {
+    "state": "epoch1",
+    "direction": "cram_weighted",
+    "parameter_step_l2": 0.001,
+    "base_before": 0.0007617825176566839,
+    "base_after": 0.0007622235571034253,
+    "base_delta": 4.4103944674134254e-07,
+    "dpos_before": 1.6054503504392414e-08,
+    "dpos_after": 1.606194999226318e-08,
+    "dneg_before": 6.294720833466272e-08,
+    "dneg_after": 6.298581922692392e-08
+  },
+  {
+    "state": "late",
+    "direction": "base",
+    "parameter_step_l2": 0.001,
+    "base_before": 0.004818628542125225,
+    "base_after": 0.0048033627681434155,
+    "base_delta": -1.5265773981809616e-05,
+    "dpos_before": 1.1704958069458371e-07,
+    "dpos_after": 1.1682080014452367e-07,
+    "dneg_before": 6.208638296811841e-07,
+    "dneg_after": 6.199015842867084e-07
+  },
+  {
+    "state": "late",
+    "direction": "cram_weighted",
+    "parameter_step_l2": 0.001,
+    "base_before": 0.004818628542125225,
+    "base_after": 0.004833514336496592,
+    "base_delta": 1.4885794371366501e-05,
+    "dpos_before": 1.1704958069458371e-07,
+    "dpos_after": 1.1727015447604572e-07,
+    "dneg_before": 6.208638296811841e-07,
+    "dneg_after": 6.217973123057163e-07
+  }
+]

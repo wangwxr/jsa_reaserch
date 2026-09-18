@@ -1,0 +1,51 @@
+{
+  "batch_size": 256,
+  "dataset": "vggss",
+  "elapsed_seconds": 29771.768131017685,
+  "epochs": 50,
+  "final_checkpoint": {
+    "mtime_ns": 1789407674262725820,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/vggss/seed12345/final.pth",
+    "sha256": "6777ebd7fba762738bd3ac95bca00146918a0ad47bd67855f60d169623b18a35",
+    "size": 145844607
+  },
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C3",
+  "initialization": {
+    "mtime_ns": 1789022847690119792,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/initialization/vggss/seed12345.pth",
+    "sha256": "4d0d3c1b49410c4f476cb0d08e88ee8b83084b62c94d73ccab149680a944693b",
+    "size": 145859147
+  },
+  "lambda_cram": 1.0,
+  "loss_weights": {
+    "cram": 1.0,
+    "div": 0.1,
+    "info": 1.0,
+    "match": 100.0,
+    "recon": 0.1
+  },
+  "negative_mapping": {
+    "mtime_ns": 1789092257353930866,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/vggss_seed12345_negative_offsets.npy",
+    "sha256": "4e64b81d1a8b26e2002967b10f3229ff7799266a926ad00a83aa0169650c7cd0",
+    "size": 57600128
+  },
+  "orders": {
+    "mtime_ns": 1789022847794118791,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/configs/vggss_seed12345_epoch_orders.npy",
+    "sha256": "44975bfe5657dfebac1089d36332c8026d60bfcc04bc920c4c7681015e6e09ac",
+    "size": 28800128
+  },
+  "protocol_sha256": "2159663031e2073db4e95265cb07fa0be00f4dcc867bb193ce5a16a0d5457c1f",
+  "seed": 12345,
+  "selected_checkpoint": {
+    "mtime_ns": 1789382092473070398,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/8.7_hard_negative_cram/stage1/vggss/seed12345/selected_best.pth",
+    "sha256": "f83d26ed833f22e773864fc333f4e348c779c46b68513b6012829460dbc8a146",
+    "size": 145865943
+  }
+}

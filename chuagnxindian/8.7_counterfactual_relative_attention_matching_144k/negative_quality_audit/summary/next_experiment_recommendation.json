@@ -1,0 +1,8 @@
+{
+  "decision": "Case C",
+  "training_authorized": false,
+  "main_direction": "Read-only sample-wise Mean-CRAM margin/violation diagnostic before any intervention.",
+  "rejected_direction": "Confusion-aware top-K negative construction is not supported by fixed Group-A enrichment.",
+  "frozen_variables": ["K=4", "mean aggregation", "lambda=1", "Stage-1-only CRAM", "vanilla Stage-2", "architecture", "seed", "data recipe"],
+  "success_requirement_before_training": "A label-free violation signal must show predeclared, robust enrichment for fixed VGG Group-A/OGL residual failure."
+}

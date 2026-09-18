@@ -1,0 +1,14 @@
+{
+  "read_only_evaluation": true,
+  "scale": "10k",
+  "dataset": "vggss",
+  "method": "hard_default",
+  "seed": 12345,
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/hard_default/stage1/vggss/seed12345/selected_best.pth",
+  "teacher_sha256": "dc188ad24eda038c1b4da4c5051dc850a944b59f6eee7ad6bdeeba67fc782fe1",
+  "student": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_10k_mean_hard_cram/hard_default/stage2/vggss/seed12345/vggss_best.pth",
+  "student_sha256": "990fe6c8cf8cf5766eb7b0cce8205d6b3f0d28fd87e5bd322d8f27d3fbaa9ed7",
+  "student_epoch": 5,
+  "num_samples": 5158,
+  "offline_replay_max_abs_error": 1.862645149230957e-09
+}

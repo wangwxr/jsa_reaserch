@@ -1,0 +1,20 @@
+{
+  "counterfactual_indices": {
+    "mtime_ns": 1788936526596610017,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/flickr_144k_counterfactual_indices.npz",
+    "sha256": "663ed9c3a97dc0b5d79be1b62892fff877462ead943fb0c50cdd79c9ae74a7e7",
+    "size": 21813
+  },
+  "dataset": "flickr",
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C3",
+  "matched_replay_max_abs_error": 7.450580596923828e-09,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "reference_sample_ids_match": true,
+  "sample_mismatch": 0,
+  "seed": 12345,
+  "wrong_audio_ids_match": true
+}

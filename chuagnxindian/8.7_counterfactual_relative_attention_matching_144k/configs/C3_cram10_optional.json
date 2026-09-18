@@ -1,0 +1,7 @@
+{
+  "group": "C3",
+  "lambda_cram": 1.0,
+  "execution_rule": "only if pre-training weighted-gradient audit permits",
+  "negative_count": 4,
+  "original_match": "A2V_plus_V2A_retained"
+}

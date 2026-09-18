@@ -1,0 +1,7 @@
+{
+  "group": "C0",
+  "source_experiment": "8.6_loss_to_decision_causal_ablation",
+  "source_group": "M0",
+  "reuse": "exact Stage-1 M0 selected checkpoint, initialization, epoch orders, and recipe",
+  "lambda_cram": 0.0
+}

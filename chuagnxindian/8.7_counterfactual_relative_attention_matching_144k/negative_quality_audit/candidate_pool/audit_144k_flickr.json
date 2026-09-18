@@ -1,0 +1,13 @@
+{
+  "read_only": true,
+  "scale": "144k",
+  "dataset": "flickr",
+  "M": 32,
+  "K_random": 4,
+  "random4_source": "Experiment 8.1 set1 prefix",
+  "tail_seed_scheme": "sha256(negative_quality_M32_tail_v1,dataset,sample_index)",
+  "different_video": true,
+  "query_replay_max_abs_error": 0.0,
+  "teacher": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/checkpoints/C3/flickr/seed12345/selected_best.pth",
+  "teacher_epoch": 30
+}

@@ -1,0 +1,15 @@
+{
+  "phase_A": "A-NEGATIVE",
+  "rule": "Group-A margin CI wholly below 0 AND Group-A violation CI wholly above 0 AND rho(margin,OGL-AUD)<-0.1 with CI wholly below 0",
+  "observed_margin_diff": -3.670959979225883e-07,
+  "observed_violation_diff": -0.01773527494023039,
+  "observed_rho_margin_ogl_gain": {
+    "margin_metric": "margin",
+    "outcome": "delta_iou",
+    "n": 5158,
+    "spearman_rho": 0.022035867827952263,
+    "p_value": 0.11355661074087701,
+    "bootstrap_ci_low": -0.005943285144191564,
+    "bootstrap_ci_high": 0.046951268242741366
+  }
+}

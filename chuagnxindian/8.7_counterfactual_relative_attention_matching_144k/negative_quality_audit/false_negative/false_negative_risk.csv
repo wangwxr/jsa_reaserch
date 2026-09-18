@@ -1,0 +1,5 @@
+dataset,candidate_set,semantic_class_available,n,anchor_audio_cosine_mean,anchor_audio_cosine_median,pairwise_audio_cosine_mean,same_semantic_class_rate,unique_semantic_class_count,same_video_or_self_count
+vggss,random4,True,5158,0.60531986,0.60536814,0.60347116,0.005089181853431562,3.9765412950756107,0
+vggss,top4_confusing,True,5158,0.66068053,0.66016537,0.67510456,0.012795657231485071,3.927879022877084,0
+flickr,random4,False,250,0.6113778,0.61239505,0.61299545,,,0
+flickr,top4_confusing,False,250,0.6491537,0.65680903,0.6769089,,,0

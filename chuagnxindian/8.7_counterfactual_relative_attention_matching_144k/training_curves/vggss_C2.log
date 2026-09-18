@@ -1,0 +1,751 @@
+vggss C2 seed12345 epoch 1/50 batch 1/562 total=13.0086 d_pos=0.000010 d_neg=0.000009 gap=-0.000001 ETA=3:30:25
+vggss C2 seed12345 epoch 1/50 batch 51/562 total=11.5033 d_pos=0.000027 d_neg=0.000027 gap=-0.000000 ETA=0:12:01
+vggss C2 seed12345 epoch 1/50 batch 101/562 total=11.1087 d_pos=0.000035 d_neg=0.000035 gap=-0.000000 ETA=0:09:15
+vggss C2 seed12345 epoch 1/50 batch 151/562 total=10.8297 d_pos=0.000011 d_neg=0.000011 gap=0.000000 ETA=0:07:46
+vggss C2 seed12345 epoch 1/50 batch 201/562 total=10.6254 d_pos=0.000010 d_neg=0.000011 gap=0.000001 ETA=0:06:37
+vggss C2 seed12345 epoch 1/50 batch 251/562 total=10.5812 d_pos=0.000012 d_neg=0.000014 gap=0.000002 ETA=0:05:35
+vggss C2 seed12345 epoch 1/50 batch 301/562 total=10.1923 d_pos=0.000015 d_neg=0.000020 gap=0.000005 ETA=0:04:37
+vggss C2 seed12345 epoch 1/50 batch 351/562 total=10.3323 d_pos=0.000012 d_neg=0.000015 gap=0.000004 ETA=0:03:42
+vggss C2 seed12345 epoch 1/50 batch 401/562 total=10.0966 d_pos=0.000011 d_neg=0.000015 gap=0.000004 ETA=0:02:48
+vggss C2 seed12345 epoch 1/50 batch 451/562 total=9.9571 d_pos=0.000013 d_neg=0.000019 gap=0.000007 ETA=0:01:55
+vggss C2 seed12345 epoch 1/50 batch 501/562 total=9.6759 d_pos=0.000016 d_neg=0.000022 gap=0.000007 ETA=0:01:03
+vggss C2 seed12345 epoch 1/50 batch 551/562 total=9.7016 d_pos=0.000016 d_neg=0.000023 gap=0.000008 ETA=0:00:11
+vggss C2 seed12345 epoch 1/50 batch 562/562 total=9.8328 d_pos=0.000016 d_neg=0.000026 gap=0.000010 ETA=0:00:00
+{"epoch": 1, "learning_rate": 5e-05, "epoch_seconds": 589.7072579860687, "gradient_l2_mean": 15.73965443919719, "parameter_l2": 199.35924411278623, "info_loss": 9.564019030099237, "recon_loss": 5.90880131806343, "div_loss": 0.04000764054841167, "a2v_loss": 1.5595425039299247e-05, "v2a_loss": 1.6327071824338535e-05, "original_match_loss": 3.192249685402902e-05, "d_pos": 1.5595425110505238e-05, "d_neg": 1.8768827803117046e-05, "g_match": 3.173402694283858e-06, "cram_loss": 0.6931455888357875, "weighted_cram_loss": 0.34657279441789374, "total_loss": 10.508665006780115, "AUD_cIoU": 0.36041101202016285, "AUD_AUC": 0.39286545172547505, "IQR_cIoU": 0.37029856533540134, "IQR_AUC": 0.39644241954245835}
+vggss C2 seed12345 epoch 2/50 batch 1/562 total=9.5937 d_pos=0.000016 d_neg=0.000026 gap=0.000010 ETA=0:57:14
+vggss C2 seed12345 epoch 2/50 batch 51/562 total=9.4230 d_pos=0.000018 d_neg=0.000029 gap=0.000011 ETA=0:09:19
+vggss C2 seed12345 epoch 2/50 batch 101/562 total=9.6630 d_pos=0.000021 d_neg=0.000032 gap=0.000011 ETA=0:08:02
+vggss C2 seed12345 epoch 2/50 batch 151/562 total=9.2317 d_pos=0.000025 d_neg=0.000043 gap=0.000019 ETA=0:07:02
+vggss C2 seed12345 epoch 2/50 batch 201/562 total=9.0570 d_pos=0.000022 d_neg=0.000037 gap=0.000016 ETA=0:06:08
+vggss C2 seed12345 epoch 2/50 batch 251/562 total=9.0852 d_pos=0.000023 d_neg=0.000037 gap=0.000015 ETA=0:05:15
+vggss C2 seed12345 epoch 2/50 batch 301/562 total=8.8201 d_pos=0.000024 d_neg=0.000040 gap=0.000016 ETA=0:04:24
+vggss C2 seed12345 epoch 2/50 batch 351/562 total=9.0113 d_pos=0.000027 d_neg=0.000050 gap=0.000024 ETA=0:03:32
+vggss C2 seed12345 epoch 2/50 batch 401/562 total=8.9512 d_pos=0.000024 d_neg=0.000041 gap=0.000017 ETA=0:02:42
+vggss C2 seed12345 epoch 2/50 batch 451/562 total=8.7442 d_pos=0.000029 d_neg=0.000053 gap=0.000024 ETA=0:01:51
+vggss C2 seed12345 epoch 2/50 batch 501/562 total=8.6842 d_pos=0.000028 d_neg=0.000046 gap=0.000018 ETA=0:01:01
+vggss C2 seed12345 epoch 2/50 batch 551/562 total=8.7200 d_pos=0.000031 d_neg=0.000061 gap=0.000030 ETA=0:00:11
+vggss C2 seed12345 epoch 2/50 batch 562/562 total=8.5082 d_pos=0.000029 d_neg=0.000052 gap=0.000023 ETA=0:00:00
+{"epoch": 2, "learning_rate": 5e-05, "epoch_seconds": 571.1160705089569, "gradient_l2_mean": 25.43428721503909, "parameter_l2": 199.7300140999549, "info_loss": 8.233097005993447, "recon_loss": 4.8414879778526005, "div_loss": 0.0007698224058699565, "a2v_loss": 2.392671834890817e-05, "v2a_loss": 1.2411134002346619e-05, "original_match_loss": 3.63378523706746e-05, "d_pos": 2.3926718405549297e-05, "d_neg": 4.122816670107141e-05, "g_match": 1.7301448161201718e-05, "cram_loss": 0.6931385283368338, "weighted_cram_loss": 0.3465692641684169, "total_loss": 9.067525816133438, "AUD_cIoU": 0.3644823575029081, "AUD_AUC": 0.3982648313299729, "IQR_cIoU": 0.3726250484683986, "IQR_AUC": 0.4001454051958124}
+vggss C2 seed12345 epoch 3/50 batch 1/562 total=8.3323 d_pos=0.000029 d_neg=0.000049 gap=0.000020 ETA=0:58:37
+vggss C2 seed12345 epoch 3/50 batch 51/562 total=8.5621 d_pos=0.000033 d_neg=0.000055 gap=0.000022 ETA=0:09:20
+vggss C2 seed12345 epoch 3/50 batch 101/562 total=8.1728 d_pos=0.000034 d_neg=0.000056 gap=0.000022 ETA=0:08:02
+vggss C2 seed12345 epoch 3/50 batch 151/562 total=8.0266 d_pos=0.000035 d_neg=0.000060 gap=0.000025 ETA=0:07:02
+vggss C2 seed12345 epoch 3/50 batch 201/562 total=7.9609 d_pos=0.000032 d_neg=0.000046 gap=0.000014 ETA=0:06:08
+vggss C2 seed12345 epoch 3/50 batch 251/562 total=8.2290 d_pos=0.000030 d_neg=0.000054 gap=0.000023 ETA=0:05:15
+vggss C2 seed12345 epoch 3/50 batch 301/562 total=8.2789 d_pos=0.000032 d_neg=0.000061 gap=0.000029 ETA=0:04:24
+vggss C2 seed12345 epoch 3/50 batch 351/562 total=8.2132 d_pos=0.000039 d_neg=0.000073 gap=0.000034 ETA=0:03:33
+vggss C2 seed12345 epoch 3/50 batch 401/562 total=8.4533 d_pos=0.000036 d_neg=0.000065 gap=0.000029 ETA=0:02:42
+vggss C2 seed12345 epoch 3/50 batch 451/562 total=7.9179 d_pos=0.000037 d_neg=0.000063 gap=0.000026 ETA=0:01:51
+vggss C2 seed12345 epoch 3/50 batch 501/562 total=7.8999 d_pos=0.000036 d_neg=0.000066 gap=0.000031 ETA=0:01:01
+vggss C2 seed12345 epoch 3/50 batch 551/562 total=8.1465 d_pos=0.000037 d_neg=0.000070 gap=0.000032 ETA=0:00:11
+vggss C2 seed12345 epoch 3/50 batch 562/562 total=8.0027 d_pos=0.000035 d_neg=0.000060 gap=0.000025 ETA=0:00:00
+{"epoch": 3, "learning_rate": 5e-05, "epoch_seconds": 571.0498087406158, "gradient_l2_mean": 28.1841591541716, "parameter_l2": 200.0554037188336, "info_loss": 7.471402059670445, "recon_loss": 4.483965778690216, "div_loss": 0.0011846877442295016, "a2v_loss": 3.364572767880343e-05, "v2a_loss": 2.519548464328201e-05, "original_match_loss": 5.8841212307520585e-05, "d_pos": 3.3645727542864726e-05, "d_neg": 5.908432402169528e-05, "g_match": 2.5438596357456702e-05, "cram_loss": 0.6931344560244753, "weighted_cram_loss": 0.34656722801223766, "total_loss": 8.272368498968484, "AUD_cIoU": 0.358278402481582, "AUD_AUC": 0.396733229934083, "IQR_cIoU": 0.3683598293912369, "IQR_AUC": 0.4013377278014734}
+vggss C2 seed12345 epoch 4/50 batch 1/562 total=7.6629 d_pos=0.000037 d_neg=0.000066 gap=0.000029 ETA=1:06:47
+vggss C2 seed12345 epoch 4/50 batch 51/562 total=7.7275 d_pos=0.000037 d_neg=0.000068 gap=0.000031 ETA=0:09:30
+vggss C2 seed12345 epoch 4/50 batch 101/562 total=8.0882 d_pos=0.000033 d_neg=0.000055 gap=0.000021 ETA=0:08:06
+vggss C2 seed12345 epoch 4/50 batch 151/562 total=7.4433 d_pos=0.000043 d_neg=0.000079 gap=0.000036 ETA=0:07:05
+vggss C2 seed12345 epoch 4/50 batch 201/562 total=7.9426 d_pos=0.000038 d_neg=0.000063 gap=0.000025 ETA=0:06:10
+vggss C2 seed12345 epoch 4/50 batch 251/562 total=7.8729 d_pos=0.000040 d_neg=0.000074 gap=0.000034 ETA=0:05:17
+vggss C2 seed12345 epoch 4/50 batch 301/562 total=8.0755 d_pos=0.000042 d_neg=0.000074 gap=0.000032 ETA=0:04:24
+vggss C2 seed12345 epoch 4/50 batch 351/562 total=7.8086 d_pos=0.000045 d_neg=0.000083 gap=0.000038 ETA=0:03:33
+vggss C2 seed12345 epoch 4/50 batch 401/562 total=7.7972 d_pos=0.000043 d_neg=0.000078 gap=0.000035 ETA=0:02:42
+vggss C2 seed12345 epoch 4/50 batch 451/562 total=7.9625 d_pos=0.000041 d_neg=0.000074 gap=0.000033 ETA=0:01:51
+vggss C2 seed12345 epoch 4/50 batch 501/562 total=7.3229 d_pos=0.000048 d_neg=0.000087 gap=0.000040 ETA=0:01:01
+vggss C2 seed12345 epoch 4/50 batch 551/562 total=7.5344 d_pos=0.000041 d_neg=0.000075 gap=0.000033 ETA=0:00:11
+vggss C2 seed12345 epoch 4/50 batch 562/562 total=7.3832 d_pos=0.000042 d_neg=0.000076 gap=0.000034 ETA=0:00:00
+{"epoch": 4, "learning_rate": 5e-05, "epoch_seconds": 571.8473780155182, "gradient_l2_mean": 33.40774830378897, "parameter_l2": 200.3730191503428, "info_loss": 6.910186210985286, "recon_loss": 4.274004262537295, "div_loss": 0.001608116207544914, "a2v_loss": 4.096734015010272e-05, "v2a_loss": 5.320198989042008e-05, "original_match_loss": 9.416933000168318e-05, "d_pos": 4.0967340273094894e-05, "d_neg": 7.276790965082509e-05, "g_match": 3.180056936802029e-05, "cram_loss": 0.6931312779939047, "weighted_cram_loss": 0.34656563899695236, "total_loss": 7.69373003952868, "AUD_cIoU": 0.34994183792167505, "AUD_AUC": 0.3944552151996898, "IQR_cIoU": 0.3571151609150834, "IQR_AUC": 0.39811942613416057}
+vggss C2 seed12345 epoch 5/50 batch 1/562 total=7.4966 d_pos=0.000046 d_neg=0.000081 gap=0.000035 ETA=1:05:33
+vggss C2 seed12345 epoch 5/50 batch 51/562 total=7.0949 d_pos=0.000047 d_neg=0.000083 gap=0.000036 ETA=0:09:27
+vggss C2 seed12345 epoch 5/50 batch 101/562 total=6.4800 d_pos=0.000047 d_neg=0.000093 gap=0.000046 ETA=0:08:05
+vggss C2 seed12345 epoch 5/50 batch 151/562 total=7.5384 d_pos=0.000050 d_neg=0.000100 gap=0.000051 ETA=0:07:04
+vggss C2 seed12345 epoch 5/50 batch 201/562 total=7.2760 d_pos=0.000058 d_neg=0.000108 gap=0.000050 ETA=0:06:09
+vggss C2 seed12345 epoch 5/50 batch 251/562 total=6.8828 d_pos=0.000052 d_neg=0.000091 gap=0.000039 ETA=0:05:16
+vggss C2 seed12345 epoch 5/50 batch 301/562 total=6.8485 d_pos=0.000058 d_neg=0.000102 gap=0.000044 ETA=0:04:24
+vggss C2 seed12345 epoch 5/50 batch 351/562 total=7.2558 d_pos=0.000053 d_neg=0.000096 gap=0.000043 ETA=0:03:33
+vggss C2 seed12345 epoch 5/50 batch 401/562 total=6.7304 d_pos=0.000043 d_neg=0.000082 gap=0.000039 ETA=0:02:42
+vggss C2 seed12345 epoch 5/50 batch 451/562 total=7.6238 d_pos=0.000055 d_neg=0.000098 gap=0.000044 ETA=0:01:51
+vggss C2 seed12345 epoch 5/50 batch 501/562 total=7.1889 d_pos=0.000046 d_neg=0.000088 gap=0.000042 ETA=0:01:01
+vggss C2 seed12345 epoch 5/50 batch 551/562 total=7.0335 d_pos=0.000051 d_neg=0.000093 gap=0.000042 ETA=0:00:11
+vggss C2 seed12345 epoch 5/50 batch 562/562 total=6.9581 d_pos=0.000054 d_neg=0.000085 gap=0.000030 ETA=0:00:00
+{"epoch": 5, "learning_rate": 5e-05, "epoch_seconds": 571.7361459732056, "gradient_l2_mean": 30.30678236209432, "parameter_l2": 200.6560290044377, "info_loss": 6.437762810242134, "recon_loss": 4.111449864835501, "div_loss": 0.0017004481167118214, "a2v_loss": 4.891038361974715e-05, "v2a_loss": 8.597525935277246e-05, "original_match_loss": 0.00013488564328323666, "d_pos": 4.8910383606800606e-05, "d_neg": 9.050078925316626e-05, "g_match": 4.159040533241197e-05, "cram_loss": 0.6931263833071414, "weighted_cram_loss": 0.3465631916535707, "total_loss": 7.209129590580896, "AUD_cIoU": 0.3505234587049244, "AUD_AUC": 0.3970434276851493, "IQR_cIoU": 0.358278402481582, "IQR_AUC": 0.39997091896083753}
+vggss C2 seed12345 epoch 6/50 batch 1/562 total=6.4391 d_pos=0.000049 d_neg=0.000087 gap=0.000038 ETA=1:14:57
+vggss C2 seed12345 epoch 6/50 batch 51/562 total=6.8118 d_pos=0.000049 d_neg=0.000091 gap=0.000043 ETA=0:09:38
+vggss C2 seed12345 epoch 6/50 batch 101/562 total=7.2730 d_pos=0.000051 d_neg=0.000088 gap=0.000037 ETA=0:08:10
+vggss C2 seed12345 epoch 6/50 batch 151/562 total=6.2230 d_pos=0.000053 d_neg=0.000093 gap=0.000040 ETA=0:07:07
+vggss C2 seed12345 epoch 6/50 batch 201/562 total=6.4999 d_pos=0.000051 d_neg=0.000094 gap=0.000043 ETA=0:06:11
+vggss C2 seed12345 epoch 6/50 batch 251/562 total=7.0844 d_pos=0.000053 d_neg=0.000100 gap=0.000047 ETA=0:05:17
+vggss C2 seed12345 epoch 6/50 batch 301/562 total=7.0458 d_pos=0.000049 d_neg=0.000098 gap=0.000049 ETA=0:04:25
+vggss C2 seed12345 epoch 6/50 batch 351/562 total=6.7761 d_pos=0.000052 d_neg=0.000090 gap=0.000038 ETA=0:03:34
+vggss C2 seed12345 epoch 6/50 batch 401/562 total=7.1965 d_pos=0.000057 d_neg=0.000094 gap=0.000037 ETA=0:02:42
+vggss C2 seed12345 epoch 6/50 batch 451/562 total=7.2076 d_pos=0.000050 d_neg=0.000097 gap=0.000046 ETA=0:01:52
+vggss C2 seed12345 epoch 6/50 batch 501/562 total=6.9445 d_pos=0.000056 d_neg=0.000098 gap=0.000042 ETA=0:01:01
+vggss C2 seed12345 epoch 6/50 batch 551/562 total=6.6176 d_pos=0.000056 d_neg=0.000101 gap=0.000044 ETA=0:00:11
+vggss C2 seed12345 epoch 6/50 batch 562/562 total=6.7783 d_pos=0.000062 d_neg=0.000108 gap=0.000046 ETA=0:00:00
+{"epoch": 6, "learning_rate": 5e-05, "epoch_seconds": 573.6828360557556, "gradient_l2_mean": 29.906061420763056, "parameter_l2": 200.92642186105485, "info_loss": 6.027667302678064, "recon_loss": 3.9769423847945133, "div_loss": 0.0019658975973493318, "a2v_loss": 5.2404537808833216e-05, "v2a_loss": 0.00011199532398230892, "original_match_loss": 0.00016439986144158546, "d_pos": 5.2404537659947964e-05, "d_neg": 9.826666707770809e-05, "g_match": 4.586212929153133e-05, "cram_loss": 0.6931242484639124, "weighted_cram_loss": 0.3465621242319562, "total_loss": 6.788560225021797, "AUD_cIoU": 0.3621558743699108, "AUD_AUC": 0.4021519968980225, "IQR_cIoU": 0.3720434276851493, "IQR_AUC": 0.405990694067468}
+vggss C2 seed12345 epoch 7/50 batch 1/562 total=6.0570 d_pos=0.000047 d_neg=0.000099 gap=0.000052 ETA=1:06:27
+vggss C2 seed12345 epoch 7/50 batch 51/562 total=6.4830 d_pos=0.000054 d_neg=0.000102 gap=0.000048 ETA=0:09:29
+vggss C2 seed12345 epoch 7/50 batch 101/562 total=6.3997 d_pos=0.000062 d_neg=0.000122 gap=0.000060 ETA=0:08:06
+vggss C2 seed12345 epoch 7/50 batch 151/562 total=6.3356 d_pos=0.000056 d_neg=0.000108 gap=0.000052 ETA=0:07:05
+vggss C2 seed12345 epoch 7/50 batch 201/562 total=6.6353 d_pos=0.000058 d_neg=0.000100 gap=0.000042 ETA=0:06:10
+vggss C2 seed12345 epoch 7/50 batch 251/562 total=5.6873 d_pos=0.000059 d_neg=0.000117 gap=0.000058 ETA=0:05:17
+vggss C2 seed12345 epoch 7/50 batch 301/562 total=6.1723 d_pos=0.000057 d_neg=0.000111 gap=0.000054 ETA=0:04:25
+vggss C2 seed12345 epoch 7/50 batch 351/562 total=6.1265 d_pos=0.000055 d_neg=0.000109 gap=0.000054 ETA=0:03:33
+vggss C2 seed12345 epoch 7/50 batch 401/562 total=6.8520 d_pos=0.000061 d_neg=0.000106 gap=0.000045 ETA=0:02:42
+vggss C2 seed12345 epoch 7/50 batch 451/562 total=7.1451 d_pos=0.000053 d_neg=0.000095 gap=0.000043 ETA=0:01:52
+vggss C2 seed12345 epoch 7/50 batch 501/562 total=6.9463 d_pos=0.000065 d_neg=0.000118 gap=0.000053 ETA=0:01:01
+vggss C2 seed12345 epoch 7/50 batch 551/562 total=5.9308 d_pos=0.000052 d_neg=0.000116 gap=0.000064 ETA=0:00:11
+vggss C2 seed12345 epoch 7/50 batch 562/562 total=6.7027 d_pos=0.000059 d_neg=0.000112 gap=0.000053 ETA=0:00:00
+{"epoch": 7, "learning_rate": 5e-05, "epoch_seconds": 573.2029621601105, "gradient_l2_mean": 32.84076449972219, "parameter_l2": 201.19329115663575, "info_loss": 5.657817313679597, "recon_loss": 3.8624040422914714, "div_loss": 0.0019292114468231745, "a2v_loss": 5.695154216084372e-05, "v2a_loss": 0.00014435164620832614, "original_match_loss": 0.00020130318837564313, "d_pos": 5.695154236151515e-05, "d_neg": 0.00010592206602388317, "g_match": 4.897052378536018e-05, "cram_loss": 0.693122692379663, "weighted_cram_loss": 0.3465613461898315, "total_loss": 6.410942300782933, "AUD_cIoU": 0.3850329585110508, "AUD_AUC": 0.41088600232648315, "IQR_cIoU": 0.38871655680496314, "IQR_AUC": 0.4130089181853432}
+vggss C2 seed12345 epoch 8/50 batch 1/562 total=5.8901 d_pos=0.000061 d_neg=0.000120 gap=0.000059 ETA=1:14:11
+vggss C2 seed12345 epoch 8/50 batch 51/562 total=5.9112 d_pos=0.000065 d_neg=0.000121 gap=0.000056 ETA=0:09:37
+vggss C2 seed12345 epoch 8/50 batch 101/562 total=6.1469 d_pos=0.000055 d_neg=0.000119 gap=0.000064 ETA=0:08:09
+vggss C2 seed12345 epoch 8/50 batch 151/562 total=6.0285 d_pos=0.000058 d_neg=0.000101 gap=0.000043 ETA=0:07:07
+vggss C2 seed12345 epoch 8/50 batch 201/562 total=6.2210 d_pos=0.000058 d_neg=0.000113 gap=0.000055 ETA=0:06:11
+vggss C2 seed12345 epoch 8/50 batch 251/562 total=5.4858 d_pos=0.000057 d_neg=0.000106 gap=0.000049 ETA=0:05:17
+vggss C2 seed12345 epoch 8/50 batch 301/562 total=6.0873 d_pos=0.000077 d_neg=0.000143 gap=0.000066 ETA=0:04:25
+vggss C2 seed12345 epoch 8/50 batch 351/562 total=6.8285 d_pos=0.000068 d_neg=0.000133 gap=0.000065 ETA=0:03:33
+vggss C2 seed12345 epoch 8/50 batch 401/562 total=6.1767 d_pos=0.000073 d_neg=0.000135 gap=0.000062 ETA=0:02:42
+vggss C2 seed12345 epoch 8/50 batch 451/562 total=6.2076 d_pos=0.000067 d_neg=0.000133 gap=0.000066 ETA=0:01:52
+vggss C2 seed12345 epoch 8/50 batch 501/562 total=6.1432 d_pos=0.000062 d_neg=0.000129 gap=0.000067 ETA=0:01:01
+vggss C2 seed12345 epoch 8/50 batch 551/562 total=6.1071 d_pos=0.000063 d_neg=0.000129 gap=0.000066 ETA=0:00:11
+vggss C2 seed12345 epoch 8/50 batch 562/562 total=5.8542 d_pos=0.000056 d_neg=0.000109 gap=0.000053 ETA=0:00:00
+{"epoch": 8, "learning_rate": 5e-05, "epoch_seconds": 572.9332263469696, "gradient_l2_mean": 35.20145664273976, "parameter_l2": 201.4495062510788, "info_loss": 5.308150467923528, "recon_loss": 3.7622995376586914, "div_loss": 0.0020432847363914086, "a2v_loss": 6.115930192076205e-05, "v2a_loss": 0.00016841550956132615, "original_match_loss": 0.0002295748113461495, "d_pos": 6.115930212790675e-05, "d_neg": 0.00011637123818503066, "g_match": 5.52119359664981e-05, "cram_loss": 0.6931195703477622, "weighted_cram_loss": 0.3465597851738811, "total_loss": 6.054102028816196, "AUD_cIoU": 0.34955409073284216, "AUD_AUC": 0.39784800310197754, "IQR_cIoU": 0.363125242341993, "IQR_AUC": 0.401473439317565}
+vggss C2 seed12345 epoch 9/50 batch 1/562 total=5.2727 d_pos=0.000062 d_neg=0.000121 gap=0.000059 ETA=0:57:01
+vggss C2 seed12345 epoch 9/50 batch 51/562 total=5.8774 d_pos=0.000066 d_neg=0.000108 gap=0.000042 ETA=0:09:19
+vggss C2 seed12345 epoch 9/50 batch 101/562 total=5.6343 d_pos=0.000058 d_neg=0.000110 gap=0.000052 ETA=0:08:01
+vggss C2 seed12345 epoch 9/50 batch 151/562 total=5.4966 d_pos=0.000057 d_neg=0.000115 gap=0.000058 ETA=0:07:02
+vggss C2 seed12345 epoch 9/50 batch 201/562 total=6.2947 d_pos=0.000063 d_neg=0.000126 gap=0.000063 ETA=0:06:08
+vggss C2 seed12345 epoch 9/50 batch 251/562 total=6.2059 d_pos=0.000073 d_neg=0.000136 gap=0.000063 ETA=0:05:15
+vggss C2 seed12345 epoch 9/50 batch 301/562 total=5.3580 d_pos=0.000079 d_neg=0.000154 gap=0.000076 ETA=0:04:24
+vggss C2 seed12345 epoch 9/50 batch 351/562 total=5.8519 d_pos=0.000063 d_neg=0.000117 gap=0.000054 ETA=0:03:33
+vggss C2 seed12345 epoch 9/50 batch 401/562 total=5.7636 d_pos=0.000064 d_neg=0.000115 gap=0.000051 ETA=0:02:42
+vggss C2 seed12345 epoch 9/50 batch 451/562 total=5.8581 d_pos=0.000060 d_neg=0.000109 gap=0.000050 ETA=0:01:51
+vggss C2 seed12345 epoch 9/50 batch 501/562 total=5.1503 d_pos=0.000071 d_neg=0.000131 gap=0.000060 ETA=0:01:01
+vggss C2 seed12345 epoch 9/50 batch 551/562 total=5.0736 d_pos=0.000058 d_neg=0.000118 gap=0.000060 ETA=0:00:11
+vggss C2 seed12345 epoch 9/50 batch 562/562 total=5.3834 d_pos=0.000064 d_neg=0.000125 gap=0.000061 ETA=0:00:00
+{"epoch": 9, "learning_rate": 5e-05, "epoch_seconds": 571.2604863643646, "gradient_l2_mean": 34.99209054405642, "parameter_l2": 201.69730567794045, "info_loss": 4.998052802374355, "recon_loss": 3.672941881990942, "div_loss": 0.0021926282591839385, "a2v_loss": 6.387137505836914e-05, "v2a_loss": 0.00019908353689543446, "original_match_loss": 0.0002629549121738948, "d_pos": 6.387137512957513e-05, "d_neg": 0.00012101920750528637, "g_match": 5.714783226566562e-05, "cram_loss": 0.6931186045828239, "weighted_cram_loss": 0.34655930229141196, "total_loss": 5.738421037103782, "AUD_cIoU": 0.3251260178363707, "AUD_AUC": 0.38968592477704533, "IQR_cIoU": 0.32822799534703373, "IQR_AUC": 0.3910818146568438}
+vggss C2 seed12345 epoch 10/50 batch 1/562 total=5.5217 d_pos=0.000074 d_neg=0.000139 gap=0.000065 ETA=0:57:22
+vggss C2 seed12345 epoch 10/50 batch 51/562 total=5.4222 d_pos=0.000069 d_neg=0.000148 gap=0.000078 ETA=0:09:22
+vggss C2 seed12345 epoch 10/50 batch 101/562 total=5.6971 d_pos=0.000071 d_neg=0.000142 gap=0.000071 ETA=0:08:03
+vggss C2 seed12345 epoch 10/50 batch 151/562 total=5.1466 d_pos=0.000068 d_neg=0.000136 gap=0.000067 ETA=0:07:03
+vggss C2 seed12345 epoch 10/50 batch 201/562 total=5.8734 d_pos=0.000067 d_neg=0.000128 gap=0.000061 ETA=0:06:08
+vggss C2 seed12345 epoch 10/50 batch 251/562 total=5.7944 d_pos=0.000076 d_neg=0.000154 gap=0.000078 ETA=0:05:16
+vggss C2 seed12345 epoch 10/50 batch 301/562 total=5.9919 d_pos=0.000081 d_neg=0.000145 gap=0.000064 ETA=0:04:24
+vggss C2 seed12345 epoch 10/50 batch 351/562 total=5.8350 d_pos=0.000073 d_neg=0.000142 gap=0.000069 ETA=0:03:33
+vggss C2 seed12345 epoch 10/50 batch 401/562 total=5.8814 d_pos=0.000072 d_neg=0.000144 gap=0.000073 ETA=0:02:42
+vggss C2 seed12345 epoch 10/50 batch 451/562 total=5.2329 d_pos=0.000074 d_neg=0.000130 gap=0.000056 ETA=0:01:51
+vggss C2 seed12345 epoch 10/50 batch 501/562 total=5.1690 d_pos=0.000060 d_neg=0.000131 gap=0.000071 ETA=0:01:01
+vggss C2 seed12345 epoch 10/50 batch 551/562 total=5.0695 d_pos=0.000069 d_neg=0.000136 gap=0.000067 ETA=0:00:11
+vggss C2 seed12345 epoch 10/50 batch 562/562 total=5.2375 d_pos=0.000082 d_neg=0.000149 gap=0.000067 ETA=0:00:00
+{"epoch": 10, "learning_rate": 5e-05, "epoch_seconds": 570.7990758419037, "gradient_l2_mean": 44.47839023909746, "parameter_l2": 201.94564165696937, "info_loss": 4.6865732767403765, "recon_loss": 3.597445075622233, "div_loss": 0.001956849460062501, "a2v_loss": 6.921266622383982e-05, "v2a_loss": 0.00022411627007865435, "original_match_loss": 0.00029332893679446284, "d_pos": 6.921266621736655e-05, "d_neg": 0.00013540789195855507, "g_match": 6.619522598717284e-05, "cram_loss": 0.6931140802508996, "weighted_cram_loss": 0.3465570401254498, "total_loss": 5.422403397509211, "AUD_cIoU": 0.3456766188445134, "AUD_AUC": 0.40017448623497487, "IQR_cIoU": 0.3575029081039163, "IQR_AUC": 0.4032279953470338}
+vggss C2 seed12345 epoch 11/50 batch 1/562 total=5.0227 d_pos=0.000063 d_neg=0.000128 gap=0.000066 ETA=1:06:58
+vggss C2 seed12345 epoch 11/50 batch 51/562 total=4.9682 d_pos=0.000076 d_neg=0.000142 gap=0.000066 ETA=0:09:31
+vggss C2 seed12345 epoch 11/50 batch 101/562 total=5.0105 d_pos=0.000066 d_neg=0.000123 gap=0.000057 ETA=0:08:06
+vggss C2 seed12345 epoch 11/50 batch 151/562 total=5.0349 d_pos=0.000068 d_neg=0.000135 gap=0.000066 ETA=0:07:05
+vggss C2 seed12345 epoch 11/50 batch 201/562 total=4.8512 d_pos=0.000064 d_neg=0.000120 gap=0.000056 ETA=0:06:10
+vggss C2 seed12345 epoch 11/50 batch 251/562 total=5.4136 d_pos=0.000073 d_neg=0.000136 gap=0.000063 ETA=0:05:16
+vggss C2 seed12345 epoch 11/50 batch 301/562 total=5.3036 d_pos=0.000073 d_neg=0.000139 gap=0.000066 ETA=0:04:24
+vggss C2 seed12345 epoch 11/50 batch 351/562 total=5.5852 d_pos=0.000071 d_neg=0.000137 gap=0.000066 ETA=0:03:33
+vggss C2 seed12345 epoch 11/50 batch 401/562 total=5.3853 d_pos=0.000091 d_neg=0.000170 gap=0.000079 ETA=0:02:42
+vggss C2 seed12345 epoch 11/50 batch 451/562 total=5.2578 d_pos=0.000081 d_neg=0.000179 gap=0.000098 ETA=0:01:51
+vggss C2 seed12345 epoch 11/50 batch 501/562 total=5.8891 d_pos=0.000074 d_neg=0.000133 gap=0.000060 ETA=0:01:01
+vggss C2 seed12345 epoch 11/50 batch 551/562 total=4.9169 d_pos=0.000073 d_neg=0.000155 gap=0.000082 ETA=0:00:11
+vggss C2 seed12345 epoch 11/50 batch 562/562 total=5.2596 d_pos=0.000075 d_neg=0.000136 gap=0.000061 ETA=0:00:00
+{"epoch": 11, "learning_rate": 5e-05, "epoch_seconds": 571.8734052181244, "gradient_l2_mean": 44.72401685772266, "parameter_l2": 202.18809178452946, "info_loss": 4.374876261605911, "recon_loss": 3.530486950670697, "div_loss": 0.002387849756125427, "a2v_loss": 7.185563341001035e-05, "v2a_loss": 0.000256650659113375, "original_match_loss": 0.0003285062928082093, "d_pos": 7.185563363657487e-05, "d_neg": 0.00014043735849606436, "g_match": 6.858172485301622e-05, "cram_loss": 0.6931128884761784, "weighted_cram_loss": 0.3465564442380892, "total_loss": 5.107570797523145, "AUD_cIoU": 0.3623497479643273, "AUD_AUC": 0.4047305157037611, "IQR_cIoU": 0.36991081814656845, "IQR_AUC": 0.40767739433889105}
+vggss C2 seed12345 epoch 12/50 batch 1/562 total=4.5433 d_pos=0.000069 d_neg=0.000143 gap=0.000074 ETA=1:02:08
+vggss C2 seed12345 epoch 12/50 batch 51/562 total=4.2427 d_pos=0.000068 d_neg=0.000129 gap=0.000061 ETA=0:09:24
+vggss C2 seed12345 epoch 12/50 batch 101/562 total=4.5040 d_pos=0.000075 d_neg=0.000158 gap=0.000083 ETA=0:08:03
+vggss C2 seed12345 epoch 12/50 batch 151/562 total=4.6711 d_pos=0.000083 d_neg=0.000155 gap=0.000072 ETA=0:07:03
+vggss C2 seed12345 epoch 12/50 batch 201/562 total=5.3658 d_pos=0.000076 d_neg=0.000152 gap=0.000077 ETA=0:06:08
+vggss C2 seed12345 epoch 12/50 batch 251/562 total=4.8061 d_pos=0.000093 d_neg=0.000171 gap=0.000077 ETA=0:05:16
+vggss C2 seed12345 epoch 12/50 batch 301/562 total=4.4592 d_pos=0.000077 d_neg=0.000148 gap=0.000071 ETA=0:04:24
+vggss C2 seed12345 epoch 12/50 batch 351/562 total=4.6189 d_pos=0.000075 d_neg=0.000152 gap=0.000078 ETA=0:03:33
+vggss C2 seed12345 epoch 12/50 batch 401/562 total=4.9404 d_pos=0.000071 d_neg=0.000166 gap=0.000095 ETA=0:02:42
+vggss C2 seed12345 epoch 12/50 batch 451/562 total=4.3499 d_pos=0.000078 d_neg=0.000155 gap=0.000077 ETA=0:01:51
+vggss C2 seed12345 epoch 12/50 batch 501/562 total=4.8830 d_pos=0.000083 d_neg=0.000165 gap=0.000083 ETA=0:01:01
+vggss C2 seed12345 epoch 12/50 batch 551/562 total=4.4634 d_pos=0.000076 d_neg=0.000169 gap=0.000093 ETA=0:00:11
+vggss C2 seed12345 epoch 12/50 batch 562/562 total=4.5959 d_pos=0.000072 d_neg=0.000139 gap=0.000067 ETA=0:00:00
+{"epoch": 12, "learning_rate": 5e-05, "epoch_seconds": 571.4448790550232, "gradient_l2_mean": 43.669842911865054, "parameter_l2": 202.42407236106934, "info_loss": 4.089653383794628, "recon_loss": 3.4630888759877756, "div_loss": 0.0023591299686295864, "a2v_loss": 7.626416142599067e-05, "v2a_loss": 0.0002746885141429866, "original_match_loss": 0.0003509526750770086, "d_pos": 7.626416119295288e-05, "d_neg": 0.00015289792544506757, "g_match": 7.663376469877043e-05, "cram_loss": 0.6931088670717015, "weighted_cram_loss": 0.34655443353585075, "total_loss": 4.817847879331731, "AUD_cIoU": 0.34858472276075997, "AUD_AUC": 0.40017448623497487, "IQR_cIoU": 0.3530438154323381, "IQR_AUC": 0.4021326095385808}
+vggss C2 seed12345 epoch 13/50 batch 1/562 total=4.4152 d_pos=0.000066 d_neg=0.000153 gap=0.000087 ETA=1:00:27
+vggss C2 seed12345 epoch 13/50 batch 51/562 total=4.5260 d_pos=0.000078 d_neg=0.000157 gap=0.000079 ETA=0:09:23
+vggss C2 seed12345 epoch 13/50 batch 101/562 total=4.6305 d_pos=0.000075 d_neg=0.000153 gap=0.000078 ETA=0:08:04
+vggss C2 seed12345 epoch 13/50 batch 151/562 total=4.8100 d_pos=0.000080 d_neg=0.000171 gap=0.000092 ETA=0:07:03
+vggss C2 seed12345 epoch 13/50 batch 201/562 total=4.8802 d_pos=0.000076 d_neg=0.000151 gap=0.000075 ETA=0:06:08
+vggss C2 seed12345 epoch 13/50 batch 251/562 total=4.4647 d_pos=0.000074 d_neg=0.000158 gap=0.000084 ETA=0:05:16
+vggss C2 seed12345 epoch 13/50 batch 301/562 total=4.4991 d_pos=0.000081 d_neg=0.000170 gap=0.000089 ETA=0:04:24
+vggss C2 seed12345 epoch 13/50 batch 351/562 total=4.6714 d_pos=0.000078 d_neg=0.000149 gap=0.000071 ETA=0:03:33
+vggss C2 seed12345 epoch 13/50 batch 401/562 total=4.6885 d_pos=0.000064 d_neg=0.000160 gap=0.000096 ETA=0:02:42
+vggss C2 seed12345 epoch 13/50 batch 451/562 total=4.4266 d_pos=0.000079 d_neg=0.000153 gap=0.000074 ETA=0:01:51
+vggss C2 seed12345 epoch 13/50 batch 501/562 total=3.9288 d_pos=0.000081 d_neg=0.000173 gap=0.000092 ETA=0:01:01
+vggss C2 seed12345 epoch 13/50 batch 551/562 total=4.7644 d_pos=0.000075 d_neg=0.000159 gap=0.000084 ETA=0:00:11
+vggss C2 seed12345 epoch 13/50 batch 562/562 total=4.3243 d_pos=0.000077 d_neg=0.000151 gap=0.000074 ETA=0:00:00
+{"epoch": 13, "learning_rate": 5e-05, "epoch_seconds": 571.300877571106, "gradient_l2_mean": 43.100691819806, "parameter_l2": 202.64989930282343, "info_loss": 3.829386498155967, "recon_loss": 3.412256559018987, "div_loss": 0.002436291708137005, "a2v_loss": 7.935367021055104e-05, "v2a_loss": 0.00028839596829213885, "original_match_loss": 0.0003677496384250106, "d_pos": 7.935367054716117e-05, "d_neg": 0.00016269139903870965, "g_match": 8.333772875695263e-05, "cram_loss": 0.693105511924126, "weighted_cram_loss": 0.346552755962063, "total_loss": 4.55418351578967, "AUD_cIoU": 0.3464521132221791, "AUD_AUC": 0.39553121364870114, "IQR_cIoU": 0.3458704924389298, "IQR_AUC": 0.39689802248933703}
+vggss C2 seed12345 epoch 14/50 batch 1/562 total=3.5692 d_pos=0.000070 d_neg=0.000146 gap=0.000075 ETA=1:08:48
+vggss C2 seed12345 epoch 14/50 batch 51/562 total=4.3103 d_pos=0.000090 d_neg=0.000169 gap=0.000079 ETA=0:09:31
+vggss C2 seed12345 epoch 14/50 batch 101/562 total=3.9121 d_pos=0.000076 d_neg=0.000154 gap=0.000078 ETA=0:08:07
+vggss C2 seed12345 epoch 14/50 batch 151/562 total=3.9529 d_pos=0.000093 d_neg=0.000179 gap=0.000086 ETA=0:07:05
+vggss C2 seed12345 epoch 14/50 batch 201/562 total=4.2184 d_pos=0.000084 d_neg=0.000171 gap=0.000087 ETA=0:06:10
+vggss C2 seed12345 epoch 14/50 batch 251/562 total=4.2887 d_pos=0.000082 d_neg=0.000156 gap=0.000073 ETA=0:05:17
+vggss C2 seed12345 epoch 14/50 batch 301/562 total=4.1573 d_pos=0.000080 d_neg=0.000160 gap=0.000080 ETA=0:04:24
+vggss C2 seed12345 epoch 14/50 batch 351/562 total=4.3171 d_pos=0.000084 d_neg=0.000176 gap=0.000091 ETA=0:03:33
+vggss C2 seed12345 epoch 14/50 batch 401/562 total=4.4088 d_pos=0.000077 d_neg=0.000167 gap=0.000090 ETA=0:02:42
+vggss C2 seed12345 epoch 14/50 batch 451/562 total=4.2171 d_pos=0.000079 d_neg=0.000175 gap=0.000096 ETA=0:01:51
+vggss C2 seed12345 epoch 14/50 batch 501/562 total=4.6574 d_pos=0.000087 d_neg=0.000183 gap=0.000096 ETA=0:01:01
+vggss C2 seed12345 epoch 14/50 batch 551/562 total=5.0354 d_pos=0.000090 d_neg=0.000174 gap=0.000084 ETA=0:00:11
+vggss C2 seed12345 epoch 14/50 batch 562/562 total=4.8898 d_pos=0.000081 d_neg=0.000167 gap=0.000087 ETA=0:00:00
+{"epoch": 14, "learning_rate": 5e-05, "epoch_seconds": 571.9963743686676, "gradient_l2_mean": 47.786216898461845, "parameter_l2": 202.86110475059866, "info_loss": 3.560553123094009, "recon_loss": 3.367211447915997, "div_loss": 0.0024065757580466066, "a2v_loss": 8.033564468776125e-05, "v2a_loss": 0.00033529293548884996, "original_match_loss": 0.00041562858004714576, "d_pos": 8.033564454534926e-05, "d_neg": 0.00016590859585613994, "g_match": 8.557295074761601e-05, "cram_loss": 0.6931043969354596, "weighted_cram_loss": 0.3465521984677298, "total_loss": 4.285629988140907, "AUD_cIoU": 0.29294300116324157, "AUD_AUC": 0.38047692904226443, "IQR_cIoU": 0.3016673129119814, "IQR_AUC": 0.3832396277626987}
+vggss C2 seed12345 epoch 15/50 batch 1/562 total=3.8313 d_pos=0.000081 d_neg=0.000196 gap=0.000115 ETA=1:14:22
+vggss C2 seed12345 epoch 15/50 batch 51/562 total=4.2087 d_pos=0.000084 d_neg=0.000155 gap=0.000071 ETA=0:09:40
+vggss C2 seed12345 epoch 15/50 batch 101/562 total=4.3908 d_pos=0.000082 d_neg=0.000151 gap=0.000069 ETA=0:08:10
+vggss C2 seed12345 epoch 15/50 batch 151/562 total=4.1349 d_pos=0.000082 d_neg=0.000159 gap=0.000077 ETA=0:07:07
+vggss C2 seed12345 epoch 15/50 batch 201/562 total=4.5482 d_pos=0.000082 d_neg=0.000182 gap=0.000100 ETA=0:06:11
+vggss C2 seed12345 epoch 15/50 batch 251/562 total=4.2111 d_pos=0.000088 d_neg=0.000174 gap=0.000086 ETA=0:05:18
+vggss C2 seed12345 epoch 15/50 batch 301/562 total=3.9777 d_pos=0.000082 d_neg=0.000189 gap=0.000107 ETA=0:04:25
+vggss C2 seed12345 epoch 15/50 batch 351/562 total=4.0788 d_pos=0.000076 d_neg=0.000148 gap=0.000072 ETA=0:03:34
+vggss C2 seed12345 epoch 15/50 batch 401/562 total=3.6903 d_pos=0.000085 d_neg=0.000173 gap=0.000088 ETA=0:02:43
+vggss C2 seed12345 epoch 15/50 batch 451/562 total=4.2856 d_pos=0.000086 d_neg=0.000182 gap=0.000096 ETA=0:01:52
+vggss C2 seed12345 epoch 15/50 batch 501/562 total=4.2095 d_pos=0.000079 d_neg=0.000160 gap=0.000082 ETA=0:01:01
+vggss C2 seed12345 epoch 15/50 batch 551/562 total=4.2058 d_pos=0.000083 d_neg=0.000148 gap=0.000065 ETA=0:00:11
+vggss C2 seed12345 epoch 15/50 batch 562/562 total=4.3415 d_pos=0.000088 d_neg=0.000172 gap=0.000085 ETA=0:00:00
+{"epoch": 15, "learning_rate": 5e-05, "epoch_seconds": 573.4206128120422, "gradient_l2_mean": 51.495294049962354, "parameter_l2": 203.07075200007574, "info_loss": 3.3175084612123484, "recon_loss": 3.3228439835042716, "div_loss": 0.002714951694164147, "a2v_loss": 8.174717009473124e-05, "v2a_loss": 0.0003298791066898378, "original_match_loss": 0.0004116262764867985, "d_pos": 8.174716988758654e-05, "d_neg": 0.00016957587554008497, "g_match": 8.782870550361317e-05, "cram_loss": 0.6931032675228933, "weighted_cram_loss": 0.34655163376144665, "total_loss": 4.037778611284982, "AUD_cIoU": 0.3617681271810779, "AUD_AUC": 0.4025979061651803, "IQR_cIoU": 0.3619620007754944, "IQR_AUC": 0.40321830166731293}
+vggss C2 seed12345 epoch 16/50 batch 1/562 total=3.3258 d_pos=0.000078 d_neg=0.000168 gap=0.000090 ETA=1:03:43
+vggss C2 seed12345 epoch 16/50 batch 51/562 total=3.5753 d_pos=0.000094 d_neg=0.000175 gap=0.000081 ETA=0:09:26
+vggss C2 seed12345 epoch 16/50 batch 101/562 total=3.4370 d_pos=0.000072 d_neg=0.000162 gap=0.000090 ETA=0:08:04
+vggss C2 seed12345 epoch 16/50 batch 151/562 total=4.1220 d_pos=0.000086 d_neg=0.000179 gap=0.000093 ETA=0:07:04
+vggss C2 seed12345 epoch 16/50 batch 201/562 total=3.7433 d_pos=0.000076 d_neg=0.000171 gap=0.000094 ETA=0:06:09
+vggss C2 seed12345 epoch 16/50 batch 251/562 total=4.0466 d_pos=0.000079 d_neg=0.000174 gap=0.000096 ETA=0:05:16
+vggss C2 seed12345 epoch 16/50 batch 301/562 total=3.8038 d_pos=0.000085 d_neg=0.000203 gap=0.000117 ETA=0:04:24
+vggss C2 seed12345 epoch 16/50 batch 351/562 total=3.5500 d_pos=0.000072 d_neg=0.000165 gap=0.000093 ETA=0:03:33
+vggss C2 seed12345 epoch 16/50 batch 401/562 total=4.0036 d_pos=0.000075 d_neg=0.000160 gap=0.000085 ETA=0:02:42
+vggss C2 seed12345 epoch 16/50 batch 451/562 total=3.7764 d_pos=0.000079 d_neg=0.000169 gap=0.000090 ETA=0:01:51
+vggss C2 seed12345 epoch 16/50 batch 501/562 total=3.9463 d_pos=0.000088 d_neg=0.000162 gap=0.000074 ETA=0:01:01
+vggss C2 seed12345 epoch 16/50 batch 551/562 total=3.9611 d_pos=0.000085 d_neg=0.000199 gap=0.000115 ETA=0:00:11
+vggss C2 seed12345 epoch 16/50 batch 562/562 total=3.9607 d_pos=0.000086 d_neg=0.000195 gap=0.000109 ETA=0:00:00
+{"epoch": 16, "learning_rate": 5e-05, "epoch_seconds": 571.3311750888824, "gradient_l2_mean": 46.01273035952795, "parameter_l2": 203.27593447257624, "info_loss": 3.0759435013944145, "recon_loss": 3.2782083906737087, "div_loss": 0.002542600972375756, "a2v_loss": 8.07639413434114e-05, "v2a_loss": 0.0003520573787500972, "original_match_loss": 0.00043282132024886715, "d_pos": 8.076394123983904e-05, "d_neg": 0.00017001996962026297, "g_match": 8.925602797908109e-05, "cram_loss": 0.6931025541762016, "weighted_cram_loss": 0.3465512770881008, "total_loss": 3.79385200386794, "AUD_cIoU": 0.3297789841023653, "AUD_AUC": 0.393359829391237, "IQR_cIoU": 0.33074835207444747, "IQR_AUC": 0.39367002714230326}
+vggss C2 seed12345 epoch 17/50 batch 1/562 total=3.4944 d_pos=0.000084 d_neg=0.000178 gap=0.000094 ETA=1:09:18
+vggss C2 seed12345 epoch 17/50 batch 51/562 total=3.6730 d_pos=0.000087 d_neg=0.000195 gap=0.000108 ETA=0:09:32
+vggss C2 seed12345 epoch 17/50 batch 101/562 total=3.3056 d_pos=0.000082 d_neg=0.000170 gap=0.000088 ETA=0:08:07
+vggss C2 seed12345 epoch 17/50 batch 151/562 total=3.7159 d_pos=0.000080 d_neg=0.000167 gap=0.000087 ETA=0:07:06
+vggss C2 seed12345 epoch 17/50 batch 201/562 total=3.3237 d_pos=0.000083 d_neg=0.000171 gap=0.000088 ETA=0:06:10
+vggss C2 seed12345 epoch 17/50 batch 251/562 total=3.6817 d_pos=0.000086 d_neg=0.000170 gap=0.000083 ETA=0:05:17
+vggss C2 seed12345 epoch 17/50 batch 301/562 total=3.3628 d_pos=0.000075 d_neg=0.000164 gap=0.000089 ETA=0:04:25
+vggss C2 seed12345 epoch 17/50 batch 351/562 total=3.4985 d_pos=0.000072 d_neg=0.000167 gap=0.000095 ETA=0:03:33
+vggss C2 seed12345 epoch 17/50 batch 401/562 total=3.5597 d_pos=0.000091 d_neg=0.000170 gap=0.000079 ETA=0:02:42
+vggss C2 seed12345 epoch 17/50 batch 451/562 total=4.0120 d_pos=0.000073 d_neg=0.000159 gap=0.000086 ETA=0:01:51
+vggss C2 seed12345 epoch 17/50 batch 501/562 total=3.6719 d_pos=0.000072 d_neg=0.000150 gap=0.000078 ETA=0:01:01
+vggss C2 seed12345 epoch 17/50 batch 551/562 total=3.7733 d_pos=0.000081 d_neg=0.000169 gap=0.000088 ETA=0:00:11
+vggss C2 seed12345 epoch 17/50 batch 562/562 total=3.7391 d_pos=0.000087 d_neg=0.000175 gap=0.000089 ETA=0:00:00
+{"epoch": 17, "learning_rate": 5e-05, "epoch_seconds": 572.7665688991547, "gradient_l2_mean": 47.979659459948635, "parameter_l2": 203.4727974305665, "info_loss": 2.8505885338019645, "recon_loss": 3.2326205553109113, "div_loss": 0.002909434205285701, "a2v_loss": 8.15757105222885e-05, "v2a_loss": 0.0003648501896677254, "original_match_loss": 0.00044642590035831896, "d_pos": 8.157571053523504e-05, "d_neg": 0.00017190990924277573, "g_match": 9.033419828030472e-05, "cram_loss": 0.6931020152950627, "weighted_cram_loss": 0.34655100764753133, "total_loss": 3.5653351303521426, "AUD_cIoU": 0.34742148119426136, "AUD_AUC": 0.39725668863900737, "IQR_cIoU": 0.34393175649476543, "IQR_AUC": 0.3973730127956572}
+vggss C2 seed12345 epoch 18/50 batch 1/562 total=3.0273 d_pos=0.000086 d_neg=0.000178 gap=0.000092 ETA=1:04:44
+vggss C2 seed12345 epoch 18/50 batch 51/562 total=3.5949 d_pos=0.000088 d_neg=0.000177 gap=0.000089 ETA=0:09:28
+vggss C2 seed12345 epoch 18/50 batch 101/562 total=3.2322 d_pos=0.000078 d_neg=0.000160 gap=0.000082 ETA=0:08:06
+vggss C2 seed12345 epoch 18/50 batch 151/562 total=3.5313 d_pos=0.000074 d_neg=0.000156 gap=0.000082 ETA=0:07:05
+vggss C2 seed12345 epoch 18/50 batch 201/562 total=3.1997 d_pos=0.000082 d_neg=0.000170 gap=0.000089 ETA=0:06:09
+vggss C2 seed12345 epoch 18/50 batch 251/562 total=3.2153 d_pos=0.000081 d_neg=0.000184 gap=0.000103 ETA=0:05:16
+vggss C2 seed12345 epoch 18/50 batch 301/562 total=3.6906 d_pos=0.000085 d_neg=0.000169 gap=0.000084 ETA=0:04:24
+vggss C2 seed12345 epoch 18/50 batch 351/562 total=3.1648 d_pos=0.000079 d_neg=0.000173 gap=0.000094 ETA=0:03:33
+vggss C2 seed12345 epoch 18/50 batch 401/562 total=3.2770 d_pos=0.000087 d_neg=0.000174 gap=0.000087 ETA=0:02:42
+vggss C2 seed12345 epoch 18/50 batch 451/562 total=3.7782 d_pos=0.000084 d_neg=0.000171 gap=0.000088 ETA=0:01:51
+vggss C2 seed12345 epoch 18/50 batch 501/562 total=4.0626 d_pos=0.000086 d_neg=0.000171 gap=0.000085 ETA=0:01:01
+vggss C2 seed12345 epoch 18/50 batch 551/562 total=3.3435 d_pos=0.000078 d_neg=0.000156 gap=0.000078 ETA=0:00:11
+vggss C2 seed12345 epoch 18/50 batch 562/562 total=3.4063 d_pos=0.000079 d_neg=0.000156 gap=0.000077 ETA=0:00:00
+{"epoch": 18, "learning_rate": 5e-05, "epoch_seconds": 572.2454614639282, "gradient_l2_mean": 47.98398038514551, "parameter_l2": 203.66313087874028, "info_loss": 2.6567736079260125, "recon_loss": 3.2031067143131406, "div_loss": 0.002982814412636954, "a2v_loss": 8.044488405107829e-05, "v2a_loss": 0.00038467508443884775, "original_match_loss": 0.00046511996916314633, "d_pos": 8.044488412875756e-05, "d_neg": 0.00017090137480149954, "g_match": 9.04564906468489e-05, "cram_loss": 0.6931019549480112, "weighted_cram_loss": 0.3465509774740056, "total_loss": 3.3704455335793546, "AUD_cIoU": 0.3365645599069407, "AUD_AUC": 0.3961806901899962, "IQR_cIoU": 0.34354400930593254, "IQR_AUC": 0.39915664986428856}
+vggss C2 seed12345 epoch 19/50 batch 1/562 total=2.9089 d_pos=0.000077 d_neg=0.000163 gap=0.000086 ETA=1:02:31
+vggss C2 seed12345 epoch 19/50 batch 51/562 total=2.8711 d_pos=0.000076 d_neg=0.000170 gap=0.000095 ETA=0:09:24
+vggss C2 seed12345 epoch 19/50 batch 101/562 total=3.0009 d_pos=0.000075 d_neg=0.000167 gap=0.000091 ETA=0:08:03
+vggss C2 seed12345 epoch 19/50 batch 151/562 total=2.7357 d_pos=0.000073 d_neg=0.000180 gap=0.000107 ETA=0:07:03
+vggss C2 seed12345 epoch 19/50 batch 201/562 total=2.8286 d_pos=0.000082 d_neg=0.000177 gap=0.000095 ETA=0:06:08
+vggss C2 seed12345 epoch 19/50 batch 251/562 total=3.4812 d_pos=0.000078 d_neg=0.000164 gap=0.000087 ETA=0:05:16
+vggss C2 seed12345 epoch 19/50 batch 301/562 total=3.5269 d_pos=0.000082 d_neg=0.000172 gap=0.000090 ETA=0:04:24
+vggss C2 seed12345 epoch 19/50 batch 351/562 total=3.2108 d_pos=0.000083 d_neg=0.000174 gap=0.000092 ETA=0:03:33
+vggss C2 seed12345 epoch 19/50 batch 401/562 total=3.5787 d_pos=0.000077 d_neg=0.000152 gap=0.000075 ETA=0:02:42
+vggss C2 seed12345 epoch 19/50 batch 451/562 total=3.3162 d_pos=0.000089 d_neg=0.000186 gap=0.000097 ETA=0:01:51
+vggss C2 seed12345 epoch 19/50 batch 501/562 total=3.3744 d_pos=0.000077 d_neg=0.000174 gap=0.000097 ETA=0:01:01
+vggss C2 seed12345 epoch 19/50 batch 551/562 total=3.4655 d_pos=0.000083 d_neg=0.000179 gap=0.000096 ETA=0:00:11
+vggss C2 seed12345 epoch 19/50 batch 562/562 total=3.0856 d_pos=0.000081 d_neg=0.000182 gap=0.000101 ETA=0:00:00
+{"epoch": 19, "learning_rate": 5e-05, "epoch_seconds": 572.0281722545624, "gradient_l2_mean": 50.71662431549064, "parameter_l2": 203.85153407113464, "info_loss": 2.475269587650842, "recon_loss": 3.1799689056186065, "div_loss": 0.0029002206931984403, "a2v_loss": 8.207675463611548e-05, "v2a_loss": 0.00037874727285370976, "original_match_loss": 0.0004608240274250925, "d_pos": 8.207675470084821e-05, "d_neg": 0.00017464117460231233, "g_match": 9.256442008271574e-05, "cram_loss": 0.6931008997761058, "weighted_cram_loss": 0.3465504498880529, "total_loss": 3.1861893608901, "AUD_cIoU": 0.330554478480031, "AUD_AUC": 0.3933792167506785, "IQR_cIoU": 0.33229934082977897, "IQR_AUC": 0.3945036835982939}
+vggss C2 seed12345 epoch 20/50 batch 1/562 total=2.9581 d_pos=0.000089 d_neg=0.000190 gap=0.000102 ETA=0:59:26
+vggss C2 seed12345 epoch 20/50 batch 51/562 total=2.6900 d_pos=0.000091 d_neg=0.000199 gap=0.000108 ETA=0:09:21
+vggss C2 seed12345 epoch 20/50 batch 101/562 total=3.1136 d_pos=0.000079 d_neg=0.000185 gap=0.000106 ETA=0:08:02
+vggss C2 seed12345 epoch 20/50 batch 151/562 total=2.7227 d_pos=0.000078 d_neg=0.000185 gap=0.000107 ETA=0:07:03
+vggss C2 seed12345 epoch 20/50 batch 201/562 total=3.0057 d_pos=0.000081 d_neg=0.000186 gap=0.000106 ETA=0:06:08
+vggss C2 seed12345 epoch 20/50 batch 251/562 total=2.9884 d_pos=0.000088 d_neg=0.000185 gap=0.000096 ETA=0:05:15
+vggss C2 seed12345 epoch 20/50 batch 301/562 total=2.7823 d_pos=0.000092 d_neg=0.000187 gap=0.000095 ETA=0:04:24
+vggss C2 seed12345 epoch 20/50 batch 351/562 total=3.1608 d_pos=0.000084 d_neg=0.000195 gap=0.000111 ETA=0:03:32
+vggss C2 seed12345 epoch 20/50 batch 401/562 total=2.8369 d_pos=0.000082 d_neg=0.000181 gap=0.000099 ETA=0:02:42
+vggss C2 seed12345 epoch 20/50 batch 451/562 total=3.1495 d_pos=0.000087 d_neg=0.000173 gap=0.000086 ETA=0:01:51
+vggss C2 seed12345 epoch 20/50 batch 501/562 total=2.8304 d_pos=0.000087 d_neg=0.000187 gap=0.000100 ETA=0:01:01
+vggss C2 seed12345 epoch 20/50 batch 551/562 total=3.3817 d_pos=0.000082 d_neg=0.000185 gap=0.000104 ETA=0:00:11
+vggss C2 seed12345 epoch 20/50 batch 562/562 total=3.1099 d_pos=0.000088 d_neg=0.000202 gap=0.000114 ETA=0:00:00
+{"epoch": 20, "learning_rate": 5e-05, "epoch_seconds": 571.3020675182343, "gradient_l2_mean": 53.574066126192186, "parameter_l2": 204.0341002975003, "info_loss": 2.3126098286638905, "recon_loss": 3.1542350439838667, "div_loss": 0.0032086919552358232, "a2v_loss": 8.40972582626304e-05, "v2a_loss": 0.00039466341765426774, "original_match_loss": 0.00047876067525662444, "d_pos": 8.409725836620275e-05, "d_neg": 0.00018340937547891954, "g_match": 9.931211746227347e-05, "cram_loss": 0.69309752967434, "weighted_cram_loss": 0.34654876483717, "total_loss": 3.022779030307756, "AUD_cIoU": 0.3276463745637844, "AUD_AUC": 0.39450368359829385, "IQR_cIoU": 0.33637068631252426, "IQR_AUC": 0.39840054284606435}
+vggss C2 seed12345 epoch 21/50 batch 1/562 total=2.7959 d_pos=0.000077 d_neg=0.000204 gap=0.000127 ETA=0:57:19
+vggss C2 seed12345 epoch 21/50 batch 51/562 total=2.5926 d_pos=0.000088 d_neg=0.000178 gap=0.000090 ETA=0:09:19
+vggss C2 seed12345 epoch 21/50 batch 101/562 total=2.6317 d_pos=0.000079 d_neg=0.000174 gap=0.000095 ETA=0:08:01
+vggss C2 seed12345 epoch 21/50 batch 151/562 total=2.5112 d_pos=0.000080 d_neg=0.000171 gap=0.000091 ETA=0:07:02
+vggss C2 seed12345 epoch 21/50 batch 201/562 total=2.8061 d_pos=0.000081 d_neg=0.000187 gap=0.000106 ETA=0:06:07
+vggss C2 seed12345 epoch 21/50 batch 251/562 total=3.0422 d_pos=0.000079 d_neg=0.000179 gap=0.000100 ETA=0:05:15
+vggss C2 seed12345 epoch 21/50 batch 301/562 total=2.8477 d_pos=0.000086 d_neg=0.000178 gap=0.000093 ETA=0:04:23
+vggss C2 seed12345 epoch 21/50 batch 351/562 total=3.3945 d_pos=0.000089 d_neg=0.000178 gap=0.000089 ETA=0:03:32
+vggss C2 seed12345 epoch 21/50 batch 401/562 total=2.9531 d_pos=0.000098 d_neg=0.000187 gap=0.000089 ETA=0:02:42
+vggss C2 seed12345 epoch 21/50 batch 451/562 total=3.0961 d_pos=0.000083 d_neg=0.000179 gap=0.000095 ETA=0:01:51
+vggss C2 seed12345 epoch 21/50 batch 501/562 total=2.6001 d_pos=0.000078 d_neg=0.000196 gap=0.000117 ETA=0:01:01
+vggss C2 seed12345 epoch 21/50 batch 551/562 total=3.5444 d_pos=0.000094 d_neg=0.000187 gap=0.000093 ETA=0:00:11
+vggss C2 seed12345 epoch 21/50 batch 562/562 total=3.2382 d_pos=0.000088 d_neg=0.000188 gap=0.000100 ETA=0:00:00
+{"epoch": 21, "learning_rate": 5e-05, "epoch_seconds": 570.7935245037079, "gradient_l2_mean": 48.74350503244878, "parameter_l2": 204.20876352232003, "info_loss": 2.1276564142033725, "recon_loss": 3.12091922081238, "div_loss": 0.003325734531516839, "a2v_loss": 8.415514119833233e-05, "v2a_loss": 0.0004047899200619129, "original_match_loss": 0.0004889450604705061, "d_pos": 8.415514109475999e-05, "d_neg": 0.00018606162725308135, "g_match": 0.00010190648588644394, "cram_loss": 0.6930962302506606, "weighted_cram_loss": 0.3465481151253303, "total_loss": 2.8355235378937365, "AUD_cIoU": 0.3185343156262117, "AUD_AUC": 0.39073284218689414, "IQR_cIoU": 0.319115936409461, "IQR_AUC": 0.3912659945715393}
+vggss C2 seed12345 epoch 22/50 batch 1/562 total=2.9978 d_pos=0.000083 d_neg=0.000186 gap=0.000102 ETA=1:10:35
+vggss C2 seed12345 epoch 22/50 batch 51/562 total=2.6576 d_pos=0.000091 d_neg=0.000203 gap=0.000113 ETA=0:09:35
+vggss C2 seed12345 epoch 22/50 batch 101/562 total=2.2687 d_pos=0.000087 d_neg=0.000191 gap=0.000103 ETA=0:08:09
+vggss C2 seed12345 epoch 22/50 batch 151/562 total=2.5291 d_pos=0.000087 d_neg=0.000204 gap=0.000117 ETA=0:07:07
+vggss C2 seed12345 epoch 22/50 batch 201/562 total=2.6400 d_pos=0.000089 d_neg=0.000191 gap=0.000102 ETA=0:06:11
+vggss C2 seed12345 epoch 22/50 batch 251/562 total=2.6189 d_pos=0.000083 d_neg=0.000179 gap=0.000096 ETA=0:05:17
+vggss C2 seed12345 epoch 22/50 batch 301/562 total=2.4410 d_pos=0.000084 d_neg=0.000175 gap=0.000092 ETA=0:04:25
+vggss C2 seed12345 epoch 22/50 batch 351/562 total=3.0095 d_pos=0.000085 d_neg=0.000187 gap=0.000102 ETA=0:03:33
+vggss C2 seed12345 epoch 22/50 batch 401/562 total=2.8428 d_pos=0.000092 d_neg=0.000180 gap=0.000088 ETA=0:02:42
+vggss C2 seed12345 epoch 22/50 batch 451/562 total=2.6494 d_pos=0.000085 d_neg=0.000194 gap=0.000109 ETA=0:01:52
+vggss C2 seed12345 epoch 22/50 batch 501/562 total=3.3530 d_pos=0.000090 d_neg=0.000206 gap=0.000116 ETA=0:01:01
+vggss C2 seed12345 epoch 22/50 batch 551/562 total=3.3869 d_pos=0.000089 d_neg=0.000193 gap=0.000105 ETA=0:00:11
+vggss C2 seed12345 epoch 22/50 batch 562/562 total=2.6162 d_pos=0.000076 d_neg=0.000177 gap=0.000101 ETA=0:00:00
+{"epoch": 22, "learning_rate": 5e-05, "epoch_seconds": 603.7243220806122, "gradient_l2_mean": 50.14750001397482, "parameter_l2": 204.3799976571602, "info_loss": 1.9983388092169982, "recon_loss": 3.0958282217860646, "div_loss": 0.0036449182581395124, "a2v_loss": 8.415637937988804e-05, "v2a_loss": 0.00041529483238924496, "original_match_loss": 0.0004994512115231486, "d_pos": 8.415637982007054e-05, "d_neg": 0.00018633290097549114, "g_match": 0.00010217652088354319, "cram_loss": 0.6930960967235293, "weighted_cram_loss": 0.34654804836176467, "total_loss": 2.7047792919165725, "AUD_cIoU": 0.330554478480031, "AUD_AUC": 0.3942904226444358, "IQR_cIoU": 0.33307483520744474, "IQR_AUC": 0.3966459868165956}
+vggss C2 seed12345 epoch 23/50 batch 1/562 total=2.3826 d_pos=0.000069 d_neg=0.000166 gap=0.000097 ETA=1:17:19
+vggss C2 seed12345 epoch 23/50 batch 51/562 total=2.5634 d_pos=0.000075 d_neg=0.000179 gap=0.000104 ETA=0:09:39
+vggss C2 seed12345 epoch 23/50 batch 101/562 total=2.3799 d_pos=0.000081 d_neg=0.000175 gap=0.000094 ETA=0:08:10
+vggss C2 seed12345 epoch 23/50 batch 151/562 total=2.5521 d_pos=0.000081 d_neg=0.000182 gap=0.000101 ETA=0:07:07
+vggss C2 seed12345 epoch 23/50 batch 201/562 total=2.4767 d_pos=0.000076 d_neg=0.000178 gap=0.000102 ETA=0:06:11
+vggss C2 seed12345 epoch 23/50 batch 251/562 total=2.3077 d_pos=0.000077 d_neg=0.000174 gap=0.000098 ETA=0:05:17
+vggss C2 seed12345 epoch 23/50 batch 301/562 total=2.7407 d_pos=0.000091 d_neg=0.000188 gap=0.000097 ETA=0:04:25
+vggss C2 seed12345 epoch 23/50 batch 351/562 total=2.7655 d_pos=0.000081 d_neg=0.000185 gap=0.000104 ETA=0:03:33
+vggss C2 seed12345 epoch 23/50 batch 401/562 total=2.5397 d_pos=0.000082 d_neg=0.000180 gap=0.000098 ETA=0:02:42
+vggss C2 seed12345 epoch 23/50 batch 451/562 total=2.7400 d_pos=0.000088 d_neg=0.000177 gap=0.000089 ETA=0:01:52
+vggss C2 seed12345 epoch 23/50 batch 501/562 total=2.4957 d_pos=0.000075 d_neg=0.000182 gap=0.000107 ETA=0:01:01
+vggss C2 seed12345 epoch 23/50 batch 551/562 total=2.6021 d_pos=0.000082 d_neg=0.000178 gap=0.000096 ETA=0:00:11
+vggss C2 seed12345 epoch 23/50 batch 562/562 total=2.7054 d_pos=0.000087 d_neg=0.000218 gap=0.000131 ETA=0:00:00
+{"epoch": 23, "learning_rate": 5e-05, "epoch_seconds": 578.5396118164062, "gradient_l2_mean": 51.28519987168036, "parameter_l2": 204.54935614427782, "info_loss": 1.8890258958331207, "recon_loss": 3.077655458365471, "div_loss": 0.0035851478971892247, "a2v_loss": 8.39134875498132e-05, "v2a_loss": 0.00042017216104815226, "original_match_loss": 0.0005040856488827894, "d_pos": 8.391348797704916e-05, "d_neg": 0.00018793422624893864, "g_match": 0.00010402073758572267, "cram_loss": 0.6930951733818258, "weighted_cram_loss": 0.3465475866909129, "total_loss": 2.594106108692617, "AUD_cIoU": 0.3348196975571927, "AUD_AUC": 0.3963842574641334, "IQR_cIoU": 0.33249321442419544, "IQR_AUC": 0.39616130283055445}
+vggss C2 seed12345 epoch 24/50 batch 1/562 total=2.2371 d_pos=0.000078 d_neg=0.000196 gap=0.000118 ETA=1:00:50
+vggss C2 seed12345 epoch 24/50 batch 51/562 total=2.5311 d_pos=0.000083 d_neg=0.000191 gap=0.000109 ETA=0:09:24
+vggss C2 seed12345 epoch 24/50 batch 101/562 total=2.2987 d_pos=0.000091 d_neg=0.000220 gap=0.000129 ETA=0:08:04
+vggss C2 seed12345 epoch 24/50 batch 151/562 total=2.5230 d_pos=0.000088 d_neg=0.000198 gap=0.000110 ETA=0:07:04
+vggss C2 seed12345 epoch 24/50 batch 201/562 total=2.2724 d_pos=0.000087 d_neg=0.000191 gap=0.000104 ETA=0:06:09
+vggss C2 seed12345 epoch 24/50 batch 251/562 total=1.9776 d_pos=0.000088 d_neg=0.000178 gap=0.000090 ETA=0:05:16
+vggss C2 seed12345 epoch 24/50 batch 301/562 total=2.5468 d_pos=0.000080 d_neg=0.000185 gap=0.000105 ETA=0:04:24
+vggss C2 seed12345 epoch 24/50 batch 351/562 total=2.5330 d_pos=0.000098 d_neg=0.000222 gap=0.000124 ETA=0:03:33
+vggss C2 seed12345 epoch 24/50 batch 401/562 total=2.6083 d_pos=0.000088 d_neg=0.000184 gap=0.000096 ETA=0:02:42
+vggss C2 seed12345 epoch 24/50 batch 451/562 total=2.5694 d_pos=0.000084 d_neg=0.000188 gap=0.000104 ETA=0:01:51
+vggss C2 seed12345 epoch 24/50 batch 501/562 total=2.2996 d_pos=0.000078 d_neg=0.000210 gap=0.000132 ETA=0:01:01
+vggss C2 seed12345 epoch 24/50 batch 551/562 total=2.7246 d_pos=0.000085 d_neg=0.000189 gap=0.000103 ETA=0:00:11
+vggss C2 seed12345 epoch 24/50 batch 562/562 total=2.2340 d_pos=0.000085 d_neg=0.000182 gap=0.000097 ETA=0:00:00
+{"epoch": 24, "learning_rate": 5e-05, "epoch_seconds": 571.7781646251678, "gradient_l2_mean": 48.34288891180929, "parameter_l2": 204.71066773488255, "info_loss": 1.7527214575068382, "recon_loss": 3.051538062689567, "div_loss": 0.003521656959310996, "a2v_loss": 8.444897839031016e-05, "v2a_loss": 0.00043751128362591157, "original_match_loss": 0.0005219602612782687, "d_pos": 8.444897859745486e-05, "d_neg": 0.00019249564176135336, "g_match": 0.00010804666331925701, "cram_loss": 0.6930931609296289, "weighted_cram_loss": 0.34654658046481446, "total_loss": 2.456970044938695, "AUD_cIoU": 0.32493214424195427, "AUD_AUC": 0.39318534315626213, "IQR_cIoU": 0.3280341217526173, "IQR_AUC": 0.39447460255913147}
+vggss C2 seed12345 epoch 25/50 batch 1/562 total=2.7931 d_pos=0.000089 d_neg=0.000203 gap=0.000113 ETA=1:09:33
+vggss C2 seed12345 epoch 25/50 batch 51/562 total=2.1782 d_pos=0.000083 d_neg=0.000180 gap=0.000097 ETA=0:09:32
+vggss C2 seed12345 epoch 25/50 batch 101/562 total=2.3509 d_pos=0.000082 d_neg=0.000204 gap=0.000122 ETA=0:08:07
+vggss C2 seed12345 epoch 25/50 batch 151/562 total=2.1469 d_pos=0.000077 d_neg=0.000188 gap=0.000110 ETA=0:07:05
+vggss C2 seed12345 epoch 25/50 batch 201/562 total=2.1277 d_pos=0.000088 d_neg=0.000214 gap=0.000125 ETA=0:06:10
+vggss C2 seed12345 epoch 25/50 batch 251/562 total=2.4807 d_pos=0.000098 d_neg=0.000219 gap=0.000121 ETA=0:05:17
+vggss C2 seed12345 epoch 25/50 batch 301/562 total=2.3358 d_pos=0.000075 d_neg=0.000210 gap=0.000136 ETA=0:04:24
+vggss C2 seed12345 epoch 25/50 batch 351/562 total=2.0983 d_pos=0.000071 d_neg=0.000167 gap=0.000096 ETA=0:03:33
+vggss C2 seed12345 epoch 25/50 batch 401/562 total=2.3847 d_pos=0.000082 d_neg=0.000181 gap=0.000099 ETA=0:02:42
+vggss C2 seed12345 epoch 25/50 batch 451/562 total=2.4997 d_pos=0.000083 d_neg=0.000203 gap=0.000121 ETA=0:01:51
+vggss C2 seed12345 epoch 25/50 batch 501/562 total=2.5177 d_pos=0.000080 d_neg=0.000206 gap=0.000126 ETA=0:01:01
+vggss C2 seed12345 epoch 25/50 batch 551/562 total=2.9041 d_pos=0.000078 d_neg=0.000177 gap=0.000099 ETA=0:00:11
+vggss C2 seed12345 epoch 25/50 batch 562/562 total=2.5335 d_pos=0.000077 d_neg=0.000169 gap=0.000092 ETA=0:00:00
+{"epoch": 25, "learning_rate": 5e-05, "epoch_seconds": 572.6524977684021, "gradient_l2_mean": 47.784677963840544, "parameter_l2": 204.86961855877072, "info_loss": 1.658575476806783, "recon_loss": 3.0411682574350216, "div_loss": 0.0035808126133903065, "a2v_loss": 8.279701633583108e-05, "v2a_loss": 0.0004343131499210028, "original_match_loss": 0.0005171101674867556, "d_pos": 8.279701658181542e-05, "d_neg": 0.00019129092523474347, "g_match": 0.00010849390829042481, "cram_loss": 0.6930929356622526, "weighted_cram_loss": 0.3465464678311263, "total_loss": 2.3613078751173733, "AUD_cIoU": 0.3070957735556417, "AUD_AUC": 0.38945327646374567, "IQR_cIoU": 0.3119426134160527, "IQR_AUC": 0.39106242729740215}
+vggss C2 seed12345 epoch 26/50 batch 1/562 total=2.1805 d_pos=0.000069 d_neg=0.000170 gap=0.000101 ETA=1:06:09
+vggss C2 seed12345 epoch 26/50 batch 51/562 total=2.5769 d_pos=0.000081 d_neg=0.000181 gap=0.000100 ETA=0:09:28
+vggss C2 seed12345 epoch 26/50 batch 101/562 total=2.6579 d_pos=0.000088 d_neg=0.000210 gap=0.000123 ETA=0:08:05
+vggss C2 seed12345 epoch 26/50 batch 151/562 total=2.1170 d_pos=0.000082 d_neg=0.000213 gap=0.000131 ETA=0:07:04
+vggss C2 seed12345 epoch 26/50 batch 201/562 total=2.2331 d_pos=0.000083 d_neg=0.000184 gap=0.000101 ETA=0:06:09
+vggss C2 seed12345 epoch 26/50 batch 251/562 total=2.0736 d_pos=0.000084 d_neg=0.000188 gap=0.000104 ETA=0:05:16
+vggss C2 seed12345 epoch 26/50 batch 301/562 total=2.5301 d_pos=0.000083 d_neg=0.000189 gap=0.000106 ETA=0:04:24
+vggss C2 seed12345 epoch 26/50 batch 351/562 total=2.4349 d_pos=0.000076 d_neg=0.000179 gap=0.000103 ETA=0:03:33
+vggss C2 seed12345 epoch 26/50 batch 401/562 total=2.2787 d_pos=0.000074 d_neg=0.000186 gap=0.000112 ETA=0:02:42
+vggss C2 seed12345 epoch 26/50 batch 451/562 total=2.3236 d_pos=0.000087 d_neg=0.000175 gap=0.000088 ETA=0:01:51
+vggss C2 seed12345 epoch 26/50 batch 501/562 total=1.8936 d_pos=0.000084 d_neg=0.000234 gap=0.000150 ETA=0:01:01
+vggss C2 seed12345 epoch 26/50 batch 551/562 total=2.6597 d_pos=0.000085 d_neg=0.000192 gap=0.000108 ETA=0:00:11
+vggss C2 seed12345 epoch 26/50 batch 562/562 total=2.1985 d_pos=0.000072 d_neg=0.000187 gap=0.000115 ETA=0:00:00
+{"epoch": 26, "learning_rate": 5e-05, "epoch_seconds": 578.0276715755463, "gradient_l2_mean": 51.722400807841204, "parameter_l2": 205.06883536084393, "info_loss": 1.5721787215339755, "recon_loss": 3.011070460611391, "div_loss": 0.003737674189608849, "a2v_loss": 8.280364351624249e-05, "v2a_loss": 0.0004338793144490921, "original_match_loss": 0.0005166829581077465, "d_pos": 8.280364365865447e-05, "d_neg": 0.00019316638236139565, "g_match": 0.00011036273951837346, "cram_loss": 0.6930920030934955, "weighted_cram_loss": 0.34654600154674775, "total_loss": 2.2718738393851448, "AUD_cIoU": 0.33229934082977897, "AUD_AUC": 0.39610314075222963, "IQR_cIoU": 0.3344319503683598, "IQR_AUC": 0.3978673904614191}
+vggss C2 seed12345 epoch 27/50 batch 1/562 total=2.1336 d_pos=0.000077 d_neg=0.000192 gap=0.000115 ETA=1:05:11
+vggss C2 seed12345 epoch 27/50 batch 51/562 total=2.2616 d_pos=0.000079 d_neg=0.000191 gap=0.000112 ETA=0:09:28
+vggss C2 seed12345 epoch 27/50 batch 101/562 total=2.2295 d_pos=0.000086 d_neg=0.000210 gap=0.000123 ETA=0:08:06
+vggss C2 seed12345 epoch 27/50 batch 151/562 total=2.0574 d_pos=0.000092 d_neg=0.000183 gap=0.000091 ETA=0:07:05
+vggss C2 seed12345 epoch 27/50 batch 201/562 total=2.1447 d_pos=0.000079 d_neg=0.000204 gap=0.000125 ETA=0:06:10
+vggss C2 seed12345 epoch 27/50 batch 251/562 total=2.0012 d_pos=0.000076 d_neg=0.000199 gap=0.000123 ETA=0:05:16
+vggss C2 seed12345 epoch 27/50 batch 301/562 total=2.1658 d_pos=0.000088 d_neg=0.000208 gap=0.000120 ETA=0:04:24
+vggss C2 seed12345 epoch 27/50 batch 351/562 total=2.0988 d_pos=0.000079 d_neg=0.000196 gap=0.000117 ETA=0:03:33
+vggss C2 seed12345 epoch 27/50 batch 401/562 total=2.3787 d_pos=0.000076 d_neg=0.000173 gap=0.000097 ETA=0:02:42
+vggss C2 seed12345 epoch 27/50 batch 451/562 total=2.3421 d_pos=0.000084 d_neg=0.000198 gap=0.000115 ETA=0:01:51
+vggss C2 seed12345 epoch 27/50 batch 501/562 total=2.4534 d_pos=0.000089 d_neg=0.000192 gap=0.000102 ETA=0:01:01
+vggss C2 seed12345 epoch 27/50 batch 551/562 total=2.1274 d_pos=0.000096 d_neg=0.000212 gap=0.000116 ETA=0:00:11
+vggss C2 seed12345 epoch 27/50 batch 562/562 total=2.3685 d_pos=0.000080 d_neg=0.000204 gap=0.000124 ETA=0:00:00
+{"epoch": 27, "learning_rate": 5e-05, "epoch_seconds": 573.5220386981964, "gradient_l2_mean": 44.98461047739667, "parameter_l2": 205.26769930958795, "info_loss": 1.4717048260240793, "recon_loss": 2.9879428020999947, "div_loss": 0.004077257818022074, "a2v_loss": 8.11599006527725e-05, "v2a_loss": 0.0004291836004244376, "original_match_loss": 0.0005103435019964147, "d_pos": 8.115990060098631e-05, "d_neg": 0.00019187970957768505, "g_match": 0.00011071980904143145, "cram_loss": 0.6930918225826318, "weighted_cram_loss": 0.3465459112913159, "total_loss": 2.1684870982933724, "AUD_cIoU": 0.33152384645211325, "AUD_AUC": 0.39524040325707643, "IQR_cIoU": 0.33307483520744474, "IQR_AUC": 0.39661690577743314}
+vggss C2 seed12345 epoch 28/50 batch 1/562 total=2.1971 d_pos=0.000084 d_neg=0.000194 gap=0.000110 ETA=1:08:41
+vggss C2 seed12345 epoch 28/50 batch 51/562 total=1.9159 d_pos=0.000073 d_neg=0.000184 gap=0.000111 ETA=0:09:32
+vggss C2 seed12345 epoch 28/50 batch 101/562 total=2.0168 d_pos=0.000086 d_neg=0.000208 gap=0.000122 ETA=0:08:07
+vggss C2 seed12345 epoch 28/50 batch 151/562 total=2.0934 d_pos=0.000083 d_neg=0.000189 gap=0.000106 ETA=0:07:05
+vggss C2 seed12345 epoch 28/50 batch 201/562 total=1.9517 d_pos=0.000078 d_neg=0.000179 gap=0.000101 ETA=0:06:10
+vggss C2 seed12345 epoch 28/50 batch 251/562 total=1.8210 d_pos=0.000083 d_neg=0.000197 gap=0.000114 ETA=0:05:16
+vggss C2 seed12345 epoch 28/50 batch 301/562 total=2.0981 d_pos=0.000078 d_neg=0.000185 gap=0.000106 ETA=0:04:24
+vggss C2 seed12345 epoch 28/50 batch 351/562 total=2.1485 d_pos=0.000080 d_neg=0.000197 gap=0.000116 ETA=0:03:33
+vggss C2 seed12345 epoch 28/50 batch 401/562 total=2.1239 d_pos=0.000076 d_neg=0.000200 gap=0.000125 ETA=0:02:42
+vggss C2 seed12345 epoch 28/50 batch 451/562 total=2.3274 d_pos=0.000084 d_neg=0.000192 gap=0.000108 ETA=0:01:53
+vggss C2 seed12345 epoch 28/50 batch 501/562 total=2.0327 d_pos=0.000070 d_neg=0.000169 gap=0.000099 ETA=0:01:02
+vggss C2 seed12345 epoch 28/50 batch 551/562 total=2.2100 d_pos=0.000075 d_neg=0.000172 gap=0.000097 ETA=0:00:11
+vggss C2 seed12345 epoch 28/50 batch 562/562 total=2.1014 d_pos=0.000082 d_neg=0.000217 gap=0.000135 ETA=0:00:00
+{"epoch": 28, "learning_rate": 5e-05, "epoch_seconds": 581.4026291370392, "gradient_l2_mean": 46.945571602819, "parameter_l2": 205.45362843213397, "info_loss": 1.401159706276931, "recon_loss": 2.967102415196836, "div_loss": 0.003509553921163692, "a2v_loss": 8.10553135781829e-05, "v2a_loss": 0.0004218107013688903, "original_match_loss": 0.0005028660134064345, "d_pos": 8.10553132545193e-05, "d_neg": 0.00019063846875368235, "g_match": 0.00010958315540853726, "cram_loss": 0.6930923932811968, "weighted_cram_loss": 0.3465461966405984, "total_loss": 2.09505370312314, "AUD_cIoU": 0.32144241954245834, "AUD_AUC": 0.3916634354400931, "IQR_cIoU": 0.3280341217526173, "IQR_AUC": 0.3938832880961613}
+vggss C2 seed12345 epoch 29/50 batch 1/562 total=1.9650 d_pos=0.000073 d_neg=0.000174 gap=0.000102 ETA=1:04:40
+vggss C2 seed12345 epoch 29/50 batch 51/562 total=2.0115 d_pos=0.000089 d_neg=0.000196 gap=0.000106 ETA=0:09:27
+vggss C2 seed12345 epoch 29/50 batch 101/562 total=2.0466 d_pos=0.000081 d_neg=0.000194 gap=0.000114 ETA=0:08:05
+vggss C2 seed12345 epoch 29/50 batch 151/562 total=2.0605 d_pos=0.000081 d_neg=0.000185 gap=0.000104 ETA=0:07:04
+vggss C2 seed12345 epoch 29/50 batch 201/562 total=2.0642 d_pos=0.000077 d_neg=0.000176 gap=0.000099 ETA=0:06:09
+vggss C2 seed12345 epoch 29/50 batch 251/562 total=1.8006 d_pos=0.000075 d_neg=0.000168 gap=0.000093 ETA=0:05:16
+vggss C2 seed12345 epoch 29/50 batch 301/562 total=2.1208 d_pos=0.000081 d_neg=0.000182 gap=0.000102 ETA=0:04:24
+vggss C2 seed12345 epoch 29/50 batch 351/562 total=2.2396 d_pos=0.000079 d_neg=0.000172 gap=0.000093 ETA=0:03:33
+vggss C2 seed12345 epoch 29/50 batch 401/562 total=1.8709 d_pos=0.000083 d_neg=0.000210 gap=0.000127 ETA=0:02:42
+vggss C2 seed12345 epoch 29/50 batch 451/562 total=2.2361 d_pos=0.000082 d_neg=0.000200 gap=0.000118 ETA=0:01:51
+vggss C2 seed12345 epoch 29/50 batch 501/562 total=1.8691 d_pos=0.000081 d_neg=0.000197 gap=0.000116 ETA=0:01:01
+vggss C2 seed12345 epoch 29/50 batch 551/562 total=2.0343 d_pos=0.000098 d_neg=0.000208 gap=0.000110 ETA=0:00:11
+vggss C2 seed12345 epoch 29/50 batch 562/562 total=1.7605 d_pos=0.000077 d_neg=0.000190 gap=0.000112 ETA=0:00:00
+{"epoch": 29, "learning_rate": 5e-05, "epoch_seconds": 572.1012885570526, "gradient_l2_mean": 47.44162628563125, "parameter_l2": 205.62978420750224, "info_loss": 1.3344930209935348, "recon_loss": 2.949727621366969, "div_loss": 0.003648704521480643, "a2v_loss": 8.202769590930739e-05, "v2a_loss": 0.0004243998456554938, "original_match_loss": 0.0005064275404384519, "d_pos": 8.202769594814702e-05, "d_neg": 0.00019369939242400977, "g_match": 0.00011167169663122129, "cram_loss": 0.6930913457454736, "weighted_cram_loss": 0.3465456728727368, "total_loss": 2.0270190851968377, "AUD_cIoU": 0.3237689026754556, "AUD_AUC": 0.39312718107793715, "IQR_cIoU": 0.33152384645211325, "IQR_AUC": 0.3963357890655293}
+vggss C2 seed12345 epoch 30/50 batch 1/562 total=1.6421 d_pos=0.000082 d_neg=0.000196 gap=0.000114 ETA=1:01:29
+vggss C2 seed12345 epoch 30/50 batch 51/562 total=2.2924 d_pos=0.000093 d_neg=0.000204 gap=0.000111 ETA=0:09:24
+vggss C2 seed12345 epoch 30/50 batch 101/562 total=1.8081 d_pos=0.000080 d_neg=0.000206 gap=0.000126 ETA=0:08:04
+vggss C2 seed12345 epoch 30/50 batch 151/562 total=1.5908 d_pos=0.000085 d_neg=0.000209 gap=0.000124 ETA=0:07:04
+vggss C2 seed12345 epoch 30/50 batch 201/562 total=2.1055 d_pos=0.000084 d_neg=0.000196 gap=0.000113 ETA=0:06:09
+vggss C2 seed12345 epoch 30/50 batch 251/562 total=1.9291 d_pos=0.000078 d_neg=0.000194 gap=0.000116 ETA=0:05:16
+vggss C2 seed12345 epoch 30/50 batch 301/562 total=1.8471 d_pos=0.000075 d_neg=0.000173 gap=0.000098 ETA=0:04:24
+vggss C2 seed12345 epoch 30/50 batch 351/562 total=2.0885 d_pos=0.000089 d_neg=0.000197 gap=0.000108 ETA=0:03:33
+vggss C2 seed12345 epoch 30/50 batch 401/562 total=2.1178 d_pos=0.000096 d_neg=0.000197 gap=0.000102 ETA=0:02:42
+vggss C2 seed12345 epoch 30/50 batch 451/562 total=1.8176 d_pos=0.000083 d_neg=0.000191 gap=0.000108 ETA=0:01:51
+vggss C2 seed12345 epoch 30/50 batch 501/562 total=2.0975 d_pos=0.000079 d_neg=0.000200 gap=0.000121 ETA=0:01:01
+vggss C2 seed12345 epoch 30/50 batch 551/562 total=2.2519 d_pos=0.000079 d_neg=0.000193 gap=0.000114 ETA=0:00:11
+vggss C2 seed12345 epoch 30/50 batch 562/562 total=2.1027 d_pos=0.000088 d_neg=0.000196 gap=0.000108 ETA=0:00:00
+{"epoch": 30, "learning_rate": 5e-05, "epoch_seconds": 573.3734700679779, "gradient_l2_mean": 45.84462910184513, "parameter_l2": 205.79745644559046, "info_loss": 1.2706104438500048, "recon_loss": 2.9277638735720273, "div_loss": 0.0037679026670608125, "a2v_loss": 8.298408576327515e-05, "v2a_loss": 0.00042339153428316725, "original_match_loss": 0.0005063756214317226, "d_pos": 8.298408615167147e-05, "d_neg": 0.0001976853697711943, "g_match": 0.0001147012833088058, "cram_loss": 0.6930898336753302, "weighted_cram_loss": 0.3465449168376651, "total_loss": 1.9609461150983898, "AUD_cIoU": 0.3150445909267158, "AUD_AUC": 0.3905292749127569, "IQR_cIoU": 0.320860798759209, "IQR_AUC": 0.3914889492051183}
+vggss C2 seed12345 epoch 31/50 batch 1/562 total=1.6274 d_pos=0.000079 d_neg=0.000207 gap=0.000128 ETA=1:09:14
+vggss C2 seed12345 epoch 31/50 batch 51/562 total=1.6550 d_pos=0.000082 d_neg=0.000196 gap=0.000115 ETA=0:09:31
+vggss C2 seed12345 epoch 31/50 batch 101/562 total=1.4435 d_pos=0.000079 d_neg=0.000193 gap=0.000115 ETA=0:08:07
+vggss C2 seed12345 epoch 31/50 batch 151/562 total=1.5633 d_pos=0.000084 d_neg=0.000175 gap=0.000091 ETA=0:07:05
+vggss C2 seed12345 epoch 31/50 batch 201/562 total=2.0504 d_pos=0.000075 d_neg=0.000188 gap=0.000113 ETA=0:06:10
+vggss C2 seed12345 epoch 31/50 batch 251/562 total=1.8678 d_pos=0.000088 d_neg=0.000200 gap=0.000112 ETA=0:05:16
+vggss C2 seed12345 epoch 31/50 batch 301/562 total=1.9395 d_pos=0.000082 d_neg=0.000182 gap=0.000100 ETA=0:04:24
+vggss C2 seed12345 epoch 31/50 batch 351/562 total=1.9899 d_pos=0.000085 d_neg=0.000210 gap=0.000125 ETA=0:03:33
+vggss C2 seed12345 epoch 31/50 batch 401/562 total=1.8262 d_pos=0.000085 d_neg=0.000205 gap=0.000119 ETA=0:02:42
+vggss C2 seed12345 epoch 31/50 batch 451/562 total=1.8169 d_pos=0.000079 d_neg=0.000201 gap=0.000122 ETA=0:01:51
+vggss C2 seed12345 epoch 31/50 batch 501/562 total=1.9379 d_pos=0.000074 d_neg=0.000187 gap=0.000113 ETA=0:01:01
+vggss C2 seed12345 epoch 31/50 batch 551/562 total=1.8200 d_pos=0.000074 d_neg=0.000195 gap=0.000121 ETA=0:00:11
+vggss C2 seed12345 epoch 31/50 batch 562/562 total=1.8248 d_pos=0.000075 d_neg=0.000197 gap=0.000122 ETA=0:00:00
+{"epoch": 31, "learning_rate": 5e-05, "epoch_seconds": 573.3629021644592, "gradient_l2_mean": 44.020040861701574, "parameter_l2": 205.95824652595465, "info_loss": 1.199349827931869, "recon_loss": 2.9138060163348594, "div_loss": 0.0037572173106739317, "a2v_loss": 8.092127390619321e-05, "v2a_loss": 0.00042791473048488905, "original_match_loss": 0.0005088360042616168, "d_pos": 8.092127459236003e-05, "d_neg": 0.00019210445764225996, "g_match": 0.00011118318347713589, "cram_loss": 0.6930915921184092, "weighted_cram_loss": 0.3465457960592046, "total_loss": 1.8885355576925855, "AUD_cIoU": 0.30632027917797594, "AUD_AUC": 0.3885905389685925, "IQR_cIoU": 0.3012795657231485, "IQR_AUC": 0.38856145792943}
+vggss C2 seed12345 epoch 32/50 batch 1/562 total=1.9575 d_pos=0.000077 d_neg=0.000195 gap=0.000118 ETA=0:58:34
+vggss C2 seed12345 epoch 32/50 batch 51/562 total=1.7869 d_pos=0.000076 d_neg=0.000204 gap=0.000128 ETA=0:09:27
+vggss C2 seed12345 epoch 32/50 batch 101/562 total=1.6955 d_pos=0.000071 d_neg=0.000188 gap=0.000117 ETA=0:08:05
+vggss C2 seed12345 epoch 32/50 batch 151/562 total=1.6981 d_pos=0.000085 d_neg=0.000197 gap=0.000112 ETA=0:07:04
+vggss C2 seed12345 epoch 32/50 batch 201/562 total=2.0407 d_pos=0.000081 d_neg=0.000196 gap=0.000116 ETA=0:06:09
+vggss C2 seed12345 epoch 32/50 batch 251/562 total=1.9196 d_pos=0.000080 d_neg=0.000218 gap=0.000138 ETA=0:05:16
+vggss C2 seed12345 epoch 32/50 batch 301/562 total=1.9720 d_pos=0.000080 d_neg=0.000194 gap=0.000113 ETA=0:04:24
+vggss C2 seed12345 epoch 32/50 batch 351/562 total=1.7652 d_pos=0.000071 d_neg=0.000203 gap=0.000131 ETA=0:03:33
+vggss C2 seed12345 epoch 32/50 batch 401/562 total=1.8563 d_pos=0.000080 d_neg=0.000191 gap=0.000111 ETA=0:02:42
+vggss C2 seed12345 epoch 32/50 batch 451/562 total=1.8322 d_pos=0.000082 d_neg=0.000197 gap=0.000115 ETA=0:01:51
+vggss C2 seed12345 epoch 32/50 batch 501/562 total=1.5707 d_pos=0.000081 d_neg=0.000206 gap=0.000125 ETA=0:01:01
+vggss C2 seed12345 epoch 32/50 batch 551/562 total=1.7749 d_pos=0.000085 d_neg=0.000205 gap=0.000120 ETA=0:00:11
+vggss C2 seed12345 epoch 32/50 batch 562/562 total=1.7366 d_pos=0.000081 d_neg=0.000216 gap=0.000135 ETA=0:00:00
+{"epoch": 32, "learning_rate": 5e-05, "epoch_seconds": 572.3630945682526, "gradient_l2_mean": 41.87319552601166, "parameter_l2": 206.11759940044655, "info_loss": 1.1565498129540914, "recon_loss": 2.9008253825516888, "div_loss": 0.00371384628910863, "a2v_loss": 8.1703548890425e-05, "v2a_loss": 0.0004304222146536346, "original_match_loss": 0.0005121257623659242, "d_pos": 8.170354894221117e-05, "d_neg": 0.00019720233243548731, "g_match": 0.00011549878316961256, "cram_loss": 0.6930894352150981, "weighted_cram_loss": 0.34654471760754907, "total_loss": 1.8447610396507372, "AUD_cIoU": 0.3189220628150446, "AUD_AUC": 0.39272004652966264, "IQR_cIoU": 0.31388134936021717, "IQR_AUC": 0.39258433501357115}
+vggss C2 seed12345 epoch 33/50 batch 1/562 total=1.6943 d_pos=0.000091 d_neg=0.000206 gap=0.000114 ETA=1:06:45
+vggss C2 seed12345 epoch 33/50 batch 51/562 total=1.6567 d_pos=0.000092 d_neg=0.000226 gap=0.000134 ETA=0:09:30
+vggss C2 seed12345 epoch 33/50 batch 101/562 total=1.9445 d_pos=0.000083 d_neg=0.000194 gap=0.000112 ETA=0:08:06
+vggss C2 seed12345 epoch 33/50 batch 151/562 total=1.8947 d_pos=0.000078 d_neg=0.000181 gap=0.000103 ETA=0:07:05
+vggss C2 seed12345 epoch 33/50 batch 201/562 total=1.5232 d_pos=0.000083 d_neg=0.000187 gap=0.000105 ETA=0:06:09
+vggss C2 seed12345 epoch 33/50 batch 251/562 total=1.5896 d_pos=0.000080 d_neg=0.000201 gap=0.000120 ETA=0:05:16
+vggss C2 seed12345 epoch 33/50 batch 301/562 total=1.7832 d_pos=0.000086 d_neg=0.000189 gap=0.000103 ETA=0:04:24
+vggss C2 seed12345 epoch 33/50 batch 351/562 total=1.6953 d_pos=0.000088 d_neg=0.000216 gap=0.000128 ETA=0:03:33
+vggss C2 seed12345 epoch 33/50 batch 401/562 total=1.7508 d_pos=0.000081 d_neg=0.000198 gap=0.000117 ETA=0:02:42
+vggss C2 seed12345 epoch 33/50 batch 451/562 total=1.9320 d_pos=0.000083 d_neg=0.000236 gap=0.000153 ETA=0:01:51
+vggss C2 seed12345 epoch 33/50 batch 501/562 total=1.5852 d_pos=0.000084 d_neg=0.000196 gap=0.000112 ETA=0:01:01
+vggss C2 seed12345 epoch 33/50 batch 551/562 total=1.6795 d_pos=0.000092 d_neg=0.000220 gap=0.000127 ETA=0:00:11
+vggss C2 seed12345 epoch 33/50 batch 562/562 total=2.0443 d_pos=0.000082 d_neg=0.000190 gap=0.000108 ETA=0:00:00
+{"epoch": 33, "learning_rate": 5e-05, "epoch_seconds": 571.8647301197052, "gradient_l2_mean": 42.8812846635034, "parameter_l2": 206.27116760759714, "info_loss": 1.1075814613455979, "recon_loss": 2.8832686558312792, "div_loss": 0.0032850054790368602, "a2v_loss": 8.134350324177193e-05, "v2a_loss": 0.0004184825657212318, "original_match_loss": 0.0004998260689112175, "d_pos": 8.134350326766502e-05, "d_neg": 0.0001995928804170559, "g_match": 0.00011824937639849134, "cram_loss": 0.6930880585811316, "weighted_cram_loss": 0.3465440292905658, "total_loss": 1.7927634735124391, "AUD_cIoU": 0.30903450949980615, "AUD_AUC": 0.3895889879798372, "IQR_cIoU": 0.31426909654905, "IQR_AUC": 0.3919154711128344}
+vggss C2 seed12345 epoch 34/50 batch 1/562 total=1.8185 d_pos=0.000076 d_neg=0.000182 gap=0.000106 ETA=1:10:47
+vggss C2 seed12345 epoch 34/50 batch 51/562 total=1.8246 d_pos=0.000080 d_neg=0.000195 gap=0.000115 ETA=0:09:33
+vggss C2 seed12345 epoch 34/50 batch 101/562 total=1.5187 d_pos=0.000078 d_neg=0.000185 gap=0.000107 ETA=0:08:08
+vggss C2 seed12345 epoch 34/50 batch 151/562 total=1.5695 d_pos=0.000075 d_neg=0.000187 gap=0.000112 ETA=0:07:06
+vggss C2 seed12345 epoch 34/50 batch 201/562 total=2.0269 d_pos=0.000094 d_neg=0.000220 gap=0.000127 ETA=0:06:10
+vggss C2 seed12345 epoch 34/50 batch 251/562 total=1.3290 d_pos=0.000070 d_neg=0.000175 gap=0.000105 ETA=0:05:17
+vggss C2 seed12345 epoch 34/50 batch 301/562 total=1.7471 d_pos=0.000081 d_neg=0.000201 gap=0.000120 ETA=0:04:25
+vggss C2 seed12345 epoch 34/50 batch 351/562 total=1.6413 d_pos=0.000071 d_neg=0.000179 gap=0.000108 ETA=0:03:33
+vggss C2 seed12345 epoch 34/50 batch 401/562 total=1.8730 d_pos=0.000077 d_neg=0.000192 gap=0.000115 ETA=0:02:42
+vggss C2 seed12345 epoch 34/50 batch 451/562 total=1.7484 d_pos=0.000073 d_neg=0.000202 gap=0.000130 ETA=0:01:51
+vggss C2 seed12345 epoch 34/50 batch 501/562 total=1.5917 d_pos=0.000070 d_neg=0.000181 gap=0.000111 ETA=0:01:01
+vggss C2 seed12345 epoch 34/50 batch 551/562 total=2.3049 d_pos=0.000084 d_neg=0.000185 gap=0.000100 ETA=0:00:11
+vggss C2 seed12345 epoch 34/50 batch 562/562 total=1.6140 d_pos=0.000073 d_neg=0.000186 gap=0.000113 ETA=0:00:00
+{"epoch": 34, "learning_rate": 5e-05, "epoch_seconds": 573.6126630306244, "gradient_l2_mean": 43.994423115062524, "parameter_l2": 206.4234907570193, "info_loss": 1.0807368508225235, "recon_loss": 2.871423144781717, "div_loss": 0.0032120984904401772, "a2v_loss": 7.873485923340392e-05, "v2a_loss": 0.00043736138729895613, "original_match_loss": 0.0005160962464805739, "d_pos": 7.87348586378629e-05, "d_neg": 0.00019552276967017948, "g_match": 0.00011678791099347695, "cram_loss": 0.6930887890031754, "weighted_cram_loss": 0.3465443945015877, "total_loss": 1.7663543990074104, "AUD_cIoU": 0.32202404032570764, "AUD_AUC": 0.3938154323381156, "IQR_cIoU": 0.3175649476541295, "IQR_AUC": 0.39367972082202407}
+vggss C2 seed12345 epoch 35/50 batch 1/562 total=1.4407 d_pos=0.000075 d_neg=0.000193 gap=0.000117 ETA=1:12:37
+vggss C2 seed12345 epoch 35/50 batch 51/562 total=1.6554 d_pos=0.000088 d_neg=0.000184 gap=0.000096 ETA=0:09:36
+vggss C2 seed12345 epoch 35/50 batch 101/562 total=1.8127 d_pos=0.000083 d_neg=0.000209 gap=0.000126 ETA=0:08:10
+vggss C2 seed12345 epoch 35/50 batch 151/562 total=1.6921 d_pos=0.000072 d_neg=0.000202 gap=0.000129 ETA=0:07:07
+vggss C2 seed12345 epoch 35/50 batch 201/562 total=1.9013 d_pos=0.000080 d_neg=0.000192 gap=0.000112 ETA=0:06:11
+vggss C2 seed12345 epoch 35/50 batch 251/562 total=1.7582 d_pos=0.000071 d_neg=0.000201 gap=0.000129 ETA=0:05:17
+vggss C2 seed12345 epoch 35/50 batch 301/562 total=1.6768 d_pos=0.000079 d_neg=0.000193 gap=0.000115 ETA=0:04:25
+vggss C2 seed12345 epoch 35/50 batch 351/562 total=1.9332 d_pos=0.000080 d_neg=0.000188 gap=0.000108 ETA=0:03:33
+vggss C2 seed12345 epoch 35/50 batch 401/562 total=1.7448 d_pos=0.000073 d_neg=0.000190 gap=0.000117 ETA=0:02:42
+vggss C2 seed12345 epoch 35/50 batch 451/562 total=1.5988 d_pos=0.000078 d_neg=0.000205 gap=0.000127 ETA=0:01:52
+vggss C2 seed12345 epoch 35/50 batch 501/562 total=1.7134 d_pos=0.000072 d_neg=0.000197 gap=0.000125 ETA=0:01:01
+vggss C2 seed12345 epoch 35/50 batch 551/562 total=1.7784 d_pos=0.000069 d_neg=0.000181 gap=0.000112 ETA=0:00:11
+vggss C2 seed12345 epoch 35/50 batch 562/562 total=1.8848 d_pos=0.000075 d_neg=0.000187 gap=0.000112 ETA=0:00:00
+{"epoch": 35, "learning_rate": 5e-05, "epoch_seconds": 573.3425755500793, "gradient_l2_mean": 43.55539011831653, "parameter_l2": 206.56925470017558, "info_loss": 1.0255999448460615, "recon_loss": 2.854039505283179, "div_loss": 0.003263970805096748, "a2v_loss": 7.808837958901964e-05, "v2a_loss": 0.00042588023099720184, "original_match_loss": 0.0005039686111429229, "d_pos": 7.808837921356988e-05, "d_neg": 0.0001946741917712889, "g_match": 0.00011658581210458999, "cram_loss": 0.6930888910310549, "weighted_cram_loss": 0.34654444551552743, "total_loss": 1.7082716090823409, "AUD_cIoU": 0.3080651415277239, "AUD_AUC": 0.3881349360217139, "IQR_cIoU": 0.30922838309422257, "IQR_AUC": 0.38976347421481194}
+vggss C2 seed12345 epoch 36/50 batch 1/562 total=1.7455 d_pos=0.000076 d_neg=0.000185 gap=0.000108 ETA=1:09:34
+vggss C2 seed12345 epoch 36/50 batch 51/562 total=1.4527 d_pos=0.000077 d_neg=0.000201 gap=0.000124 ETA=0:09:32
+vggss C2 seed12345 epoch 36/50 batch 101/562 total=1.5534 d_pos=0.000074 d_neg=0.000195 gap=0.000121 ETA=0:08:07
+vggss C2 seed12345 epoch 36/50 batch 151/562 total=1.7563 d_pos=0.000085 d_neg=0.000189 gap=0.000104 ETA=0:07:05
+vggss C2 seed12345 epoch 36/50 batch 201/562 total=1.5663 d_pos=0.000085 d_neg=0.000221 gap=0.000136 ETA=0:06:10
+vggss C2 seed12345 epoch 36/50 batch 251/562 total=1.6581 d_pos=0.000089 d_neg=0.000231 gap=0.000142 ETA=0:05:17
+vggss C2 seed12345 epoch 36/50 batch 301/562 total=1.7645 d_pos=0.000086 d_neg=0.000201 gap=0.000115 ETA=0:04:25
+vggss C2 seed12345 epoch 36/50 batch 351/562 total=1.7234 d_pos=0.000077 d_neg=0.000194 gap=0.000117 ETA=0:03:33
+vggss C2 seed12345 epoch 36/50 batch 401/562 total=1.7173 d_pos=0.000089 d_neg=0.000204 gap=0.000114 ETA=0:02:42
+vggss C2 seed12345 epoch 36/50 batch 451/562 total=1.8056 d_pos=0.000075 d_neg=0.000188 gap=0.000113 ETA=0:01:51
+vggss C2 seed12345 epoch 36/50 batch 501/562 total=1.7707 d_pos=0.000076 d_neg=0.000178 gap=0.000102 ETA=0:01:01
+vggss C2 seed12345 epoch 36/50 batch 551/562 total=1.7137 d_pos=0.000070 d_neg=0.000178 gap=0.000108 ETA=0:00:11
+vggss C2 seed12345 epoch 36/50 batch 562/562 total=1.6789 d_pos=0.000071 d_neg=0.000188 gap=0.000116 ETA=0:00:00
+{"epoch": 36, "learning_rate": 5e-05, "epoch_seconds": 572.6458833217621, "gradient_l2_mean": 39.5942595918981, "parameter_l2": 206.71430278150976, "info_loss": 0.9753713780662767, "recon_loss": 2.841907306498056, "div_loss": 0.003128946508575907, "a2v_loss": 7.809462347405538e-05, "v2a_loss": 0.0004223056541597537, "original_match_loss": 0.000500400276869963, "d_pos": 7.809462348700192e-05, "d_neg": 0.0001960473589123114, "g_match": 0.00011795273467440993, "cram_loss": 0.6930882082290921, "weighted_cram_loss": 0.34654410411454606, "total_loss": 1.6564591465471479, "AUD_cIoU": 0.31640170608763085, "AUD_AUC": 0.3940383869716945, "IQR_cIoU": 0.32008530438154326, "IQR_AUC": 0.39506591702210164}
+vggss C2 seed12345 epoch 37/50 batch 1/562 total=1.4330 d_pos=0.000076 d_neg=0.000204 gap=0.000128 ETA=1:05:12
+vggss C2 seed12345 epoch 37/50 batch 51/562 total=1.5368 d_pos=0.000075 d_neg=0.000195 gap=0.000120 ETA=0:09:27
+vggss C2 seed12345 epoch 37/50 batch 101/562 total=1.5311 d_pos=0.000077 d_neg=0.000177 gap=0.000100 ETA=0:08:06
+vggss C2 seed12345 epoch 37/50 batch 151/562 total=1.8743 d_pos=0.000083 d_neg=0.000204 gap=0.000121 ETA=0:07:05
+vggss C2 seed12345 epoch 37/50 batch 201/562 total=1.5679 d_pos=0.000078 d_neg=0.000208 gap=0.000130 ETA=0:06:10
+vggss C2 seed12345 epoch 37/50 batch 251/562 total=1.4778 d_pos=0.000076 d_neg=0.000196 gap=0.000120 ETA=0:05:16
+vggss C2 seed12345 epoch 37/50 batch 301/562 total=1.4879 d_pos=0.000088 d_neg=0.000216 gap=0.000129 ETA=0:04:25
+vggss C2 seed12345 epoch 37/50 batch 351/562 total=1.4807 d_pos=0.000082 d_neg=0.000195 gap=0.000112 ETA=0:03:33
+vggss C2 seed12345 epoch 37/50 batch 401/562 total=1.6136 d_pos=0.000072 d_neg=0.000187 gap=0.000115 ETA=0:02:42
+vggss C2 seed12345 epoch 37/50 batch 451/562 total=1.8682 d_pos=0.000082 d_neg=0.000198 gap=0.000115 ETA=0:01:51
+vggss C2 seed12345 epoch 37/50 batch 501/562 total=1.6558 d_pos=0.000078 d_neg=0.000192 gap=0.000114 ETA=0:01:01
+vggss C2 seed12345 epoch 37/50 batch 551/562 total=1.7036 d_pos=0.000079 d_neg=0.000202 gap=0.000123 ETA=0:00:11
+vggss C2 seed12345 epoch 37/50 batch 562/562 total=1.8314 d_pos=0.000077 d_neg=0.000207 gap=0.000130 ETA=0:00:00
+{"epoch": 37, "learning_rate": 5e-05, "epoch_seconds": 573.1226439476013, "gradient_l2_mean": 41.32286359935791, "parameter_l2": 206.85742014953934, "info_loss": 0.9479908539094959, "recon_loss": 2.835296898974218, "div_loss": 0.002996391543018171, "a2v_loss": 7.787037998807842e-05, "v2a_loss": 0.0004140579749024689, "original_match_loss": 0.0004919283550329593, "d_pos": 7.787038037647473e-05, "d_neg": 0.00019514651203571962, "g_match": 0.00011727613243603751, "cram_loss": 0.6930885463422728, "weighted_cram_loss": 0.3465442731711364, "total_loss": 1.6275572976183637, "AUD_cIoU": 0.3185343156262117, "AUD_AUC": 0.3920221015897635, "IQR_cIoU": 0.32163629313687475, "IQR_AUC": 0.3937281892206282}
+vggss C2 seed12345 epoch 38/50 batch 1/562 total=1.3736 d_pos=0.000071 d_neg=0.000196 gap=0.000125 ETA=1:04:15
+vggss C2 seed12345 epoch 38/50 batch 51/562 total=1.5650 d_pos=0.000070 d_neg=0.000192 gap=0.000122 ETA=0:09:27
+vggss C2 seed12345 epoch 38/50 batch 101/562 total=1.7864 d_pos=0.000080 d_neg=0.000212 gap=0.000132 ETA=0:08:05
+vggss C2 seed12345 epoch 38/50 batch 151/562 total=1.4540 d_pos=0.000075 d_neg=0.000190 gap=0.000115 ETA=0:07:04
+vggss C2 seed12345 epoch 38/50 batch 201/562 total=1.7108 d_pos=0.000082 d_neg=0.000187 gap=0.000105 ETA=0:06:09
+vggss C2 seed12345 epoch 38/50 batch 251/562 total=1.6801 d_pos=0.000077 d_neg=0.000183 gap=0.000106 ETA=0:05:16
+vggss C2 seed12345 epoch 38/50 batch 301/562 total=1.6597 d_pos=0.000077 d_neg=0.000189 gap=0.000111 ETA=0:04:24
+vggss C2 seed12345 epoch 38/50 batch 351/562 total=1.5330 d_pos=0.000074 d_neg=0.000198 gap=0.000123 ETA=0:03:33
+vggss C2 seed12345 epoch 38/50 batch 401/562 total=1.5485 d_pos=0.000074 d_neg=0.000195 gap=0.000120 ETA=0:02:42
+vggss C2 seed12345 epoch 38/50 batch 451/562 total=1.6385 d_pos=0.000073 d_neg=0.000178 gap=0.000105 ETA=0:01:51
+vggss C2 seed12345 epoch 38/50 batch 501/562 total=1.7599 d_pos=0.000084 d_neg=0.000203 gap=0.000119 ETA=0:01:01
+vggss C2 seed12345 epoch 38/50 batch 551/562 total=1.8315 d_pos=0.000072 d_neg=0.000178 gap=0.000106 ETA=0:00:11
+vggss C2 seed12345 epoch 38/50 batch 562/562 total=1.6769 d_pos=0.000080 d_neg=0.000216 gap=0.000136 ETA=0:00:00
+{"epoch": 38, "learning_rate": 5e-05, "epoch_seconds": 572.77397108078, "gradient_l2_mean": 45.0331859135296, "parameter_l2": 206.99969585057696, "info_loss": 0.9051854949828992, "recon_loss": 2.821017933485771, "div_loss": 0.0029817664095952946, "a2v_loss": 7.722051193541184e-05, "v2a_loss": 0.0004201346680126733, "original_match_loss": 0.0004973551805306796, "d_pos": 7.72205123367547e-05, "d_neg": 0.0001949755071717881, "g_match": 0.00011775499532700208, "cram_loss": 0.6930883061207062, "weighted_cram_loss": 0.3465441530603531, "total_loss": 1.5838651411049731, "AUD_cIoU": 0.31775882124854593, "AUD_AUC": 0.3930399379604498, "IQR_cIoU": 0.31678945327646374, "IQR_AUC": 0.3931174873982164}
+vggss C2 seed12345 epoch 39/50 batch 1/562 total=1.5875 d_pos=0.000075 d_neg=0.000199 gap=0.000124 ETA=1:15:59
+vggss C2 seed12345 epoch 39/50 batch 51/562 total=1.3378 d_pos=0.000080 d_neg=0.000205 gap=0.000125 ETA=0:09:39
+vggss C2 seed12345 epoch 39/50 batch 101/562 total=1.6409 d_pos=0.000079 d_neg=0.000249 gap=0.000170 ETA=0:08:10
+vggss C2 seed12345 epoch 39/50 batch 151/562 total=1.3479 d_pos=0.000078 d_neg=0.000204 gap=0.000126 ETA=0:07:08
+vggss C2 seed12345 epoch 39/50 batch 201/562 total=1.2226 d_pos=0.000070 d_neg=0.000205 gap=0.000134 ETA=0:06:11
+vggss C2 seed12345 epoch 39/50 batch 251/562 total=1.5077 d_pos=0.000068 d_neg=0.000195 gap=0.000127 ETA=0:05:18
+vggss C2 seed12345 epoch 39/50 batch 301/562 total=1.7764 d_pos=0.000071 d_neg=0.000185 gap=0.000114 ETA=0:04:26
+vggss C2 seed12345 epoch 39/50 batch 351/562 total=1.6534 d_pos=0.000076 d_neg=0.000178 gap=0.000103 ETA=0:03:34
+vggss C2 seed12345 epoch 39/50 batch 401/562 total=1.4829 d_pos=0.000072 d_neg=0.000188 gap=0.000116 ETA=0:02:43
+vggss C2 seed12345 epoch 39/50 batch 451/562 total=1.6814 d_pos=0.000077 d_neg=0.000193 gap=0.000116 ETA=0:01:52
+vggss C2 seed12345 epoch 39/50 batch 501/562 total=1.5599 d_pos=0.000071 d_neg=0.000180 gap=0.000109 ETA=0:01:01
+vggss C2 seed12345 epoch 39/50 batch 551/562 total=1.6016 d_pos=0.000080 d_neg=0.000208 gap=0.000128 ETA=0:00:11
+vggss C2 seed12345 epoch 39/50 batch 562/562 total=1.4525 d_pos=0.000074 d_neg=0.000200 gap=0.000125 ETA=0:00:00
+{"epoch": 39, "learning_rate": 5e-05, "epoch_seconds": 574.5855100154877, "gradient_l2_mean": 39.586408964067324, "parameter_l2": 207.1389626518305, "info_loss": 0.8916226496581929, "recon_loss": 2.806437435947703, "div_loss": 0.0027738530797804324, "a2v_loss": 7.689344784012064e-05, "v2a_loss": 0.0004051464486136383, "original_match_loss": 0.0004820398971528723, "d_pos": 7.689344765886904e-05, "d_neg": 0.00019680100192876824, "g_match": 0.00011990755477481441, "cram_loss": 0.693087226873615, "weighted_cram_loss": 0.3465436134368075, "total_loss": 1.5672913936109305, "AUD_cIoU": 0.29817758821248547, "AUD_AUC": 0.3876211709965103, "IQR_cIoU": 0.30011632415664985, "IQR_AUC": 0.38797014346645986}
+vggss C2 seed12345 epoch 40/50 batch 1/562 total=1.5691 d_pos=0.000068 d_neg=0.000190 gap=0.000122 ETA=1:03:38
+vggss C2 seed12345 epoch 40/50 batch 51/562 total=1.5717 d_pos=0.000087 d_neg=0.000195 gap=0.000108 ETA=0:09:28
+vggss C2 seed12345 epoch 40/50 batch 101/562 total=1.3421 d_pos=0.000079 d_neg=0.000217 gap=0.000138 ETA=0:08:05
+vggss C2 seed12345 epoch 40/50 batch 151/562 total=1.3233 d_pos=0.000075 d_neg=0.000212 gap=0.000137 ETA=0:07:04
+vggss C2 seed12345 epoch 40/50 batch 201/562 total=1.2907 d_pos=0.000084 d_neg=0.000221 gap=0.000137 ETA=0:06:09
+vggss C2 seed12345 epoch 40/50 batch 251/562 total=1.3535 d_pos=0.000079 d_neg=0.000180 gap=0.000101 ETA=0:05:16
+vggss C2 seed12345 epoch 40/50 batch 301/562 total=1.2796 d_pos=0.000081 d_neg=0.000223 gap=0.000142 ETA=0:04:24
+vggss C2 seed12345 epoch 40/50 batch 351/562 total=1.5377 d_pos=0.000084 d_neg=0.000185 gap=0.000101 ETA=0:03:33
+vggss C2 seed12345 epoch 40/50 batch 401/562 total=1.7440 d_pos=0.000079 d_neg=0.000188 gap=0.000109 ETA=0:02:42
+vggss C2 seed12345 epoch 40/50 batch 451/562 total=1.5357 d_pos=0.000081 d_neg=0.000189 gap=0.000108 ETA=0:01:51
+vggss C2 seed12345 epoch 40/50 batch 501/562 total=1.4999 d_pos=0.000067 d_neg=0.000189 gap=0.000122 ETA=0:01:01
+vggss C2 seed12345 epoch 40/50 batch 551/562 total=1.4989 d_pos=0.000071 d_neg=0.000192 gap=0.000121 ETA=0:00:11
+vggss C2 seed12345 epoch 40/50 batch 562/562 total=1.5797 d_pos=0.000083 d_neg=0.000203 gap=0.000120 ETA=0:00:00
+{"epoch": 40, "learning_rate": 5e-05, "epoch_seconds": 571.5429470539093, "gradient_l2_mean": 39.934952350088906, "parameter_l2": 207.27629971540043, "info_loss": 0.8613368214449424, "recon_loss": 2.8004929251518114, "div_loss": 0.002834555766299977, "a2v_loss": 7.815327538267272e-05, "v2a_loss": 0.0004181735722693611, "original_match_loss": 0.0004963268478980181, "d_pos": 7.815327555097778e-05, "d_neg": 0.00020110184561670011, "g_match": 0.000122948569677326, "cram_loss": 0.6930857085460446, "weighted_cram_loss": 0.3465428542730223, "total_loss": 1.5378451158567679, "AUD_cIoU": 0.3156262117099651, "AUD_AUC": 0.3937475765800698, "IQR_cIoU": 0.319115936409461, "IQR_AUC": 0.39500775494377666}
+vggss C2 seed12345 epoch 41/50 batch 1/562 total=1.3176 d_pos=0.000073 d_neg=0.000197 gap=0.000124 ETA=1:06:15
+vggss C2 seed12345 epoch 41/50 batch 51/562 total=1.5175 d_pos=0.000076 d_neg=0.000191 gap=0.000115 ETA=0:09:28
+vggss C2 seed12345 epoch 41/50 batch 101/562 total=1.6704 d_pos=0.000090 d_neg=0.000210 gap=0.000120 ETA=0:08:05
+vggss C2 seed12345 epoch 41/50 batch 151/562 total=1.4729 d_pos=0.000073 d_neg=0.000197 gap=0.000123 ETA=0:07:04
+vggss C2 seed12345 epoch 41/50 batch 201/562 total=1.4580 d_pos=0.000079 d_neg=0.000223 gap=0.000144 ETA=0:06:09
+vggss C2 seed12345 epoch 41/50 batch 251/562 total=1.7083 d_pos=0.000065 d_neg=0.000185 gap=0.000120 ETA=0:05:16
+vggss C2 seed12345 epoch 41/50 batch 301/562 total=1.1622 d_pos=0.000080 d_neg=0.000230 gap=0.000150 ETA=0:04:24
+vggss C2 seed12345 epoch 41/50 batch 351/562 total=1.5646 d_pos=0.000077 d_neg=0.000209 gap=0.000132 ETA=0:03:33
+vggss C2 seed12345 epoch 41/50 batch 401/562 total=1.6454 d_pos=0.000072 d_neg=0.000197 gap=0.000125 ETA=0:02:42
+vggss C2 seed12345 epoch 41/50 batch 451/562 total=1.2267 d_pos=0.000074 d_neg=0.000194 gap=0.000119 ETA=0:01:51
+vggss C2 seed12345 epoch 41/50 batch 501/562 total=1.5432 d_pos=0.000087 d_neg=0.000211 gap=0.000124 ETA=0:01:01
+vggss C2 seed12345 epoch 41/50 batch 551/562 total=1.6082 d_pos=0.000077 d_neg=0.000195 gap=0.000118 ETA=0:00:11
+vggss C2 seed12345 epoch 41/50 batch 562/562 total=1.3795 d_pos=0.000082 d_neg=0.000226 gap=0.000144 ETA=0:00:00
+{"epoch": 41, "learning_rate": 5e-05, "epoch_seconds": 571.9725563526154, "gradient_l2_mean": 38.3934654321221, "parameter_l2": 207.4057164837878, "info_loss": 0.8222678033270445, "recon_loss": 2.7858162600798964, "div_loss": 0.0028329540045726447, "a2v_loss": 7.728173245126515e-05, "v2a_loss": 0.00039850292396748245, "original_match_loss": 0.0004757846566517854, "d_pos": 7.728173263251675e-05, "d_neg": 0.00020241219281290205, "g_match": 0.0001251304600379733, "cram_loss": 0.6930846208143064, "weighted_cram_loss": 0.3465423104071532, "total_loss": 1.495253504171066, "AUD_cIoU": 0.32745250096936795, "AUD_AUC": 0.394716944552152, "IQR_cIoU": 0.3243505234587049, "IQR_AUC": 0.39446490887941066}
+vggss C2 seed12345 epoch 42/50 batch 1/562 total=1.2784 d_pos=0.000077 d_neg=0.000197 gap=0.000120 ETA=0:59:20
+vggss C2 seed12345 epoch 42/50 batch 51/562 total=1.2403 d_pos=0.000077 d_neg=0.000203 gap=0.000127 ETA=0:09:22
+vggss C2 seed12345 epoch 42/50 batch 101/562 total=1.6264 d_pos=0.000077 d_neg=0.000221 gap=0.000144 ETA=0:08:02
+vggss C2 seed12345 epoch 42/50 batch 151/562 total=1.5803 d_pos=0.000070 d_neg=0.000218 gap=0.000148 ETA=0:07:04
+vggss C2 seed12345 epoch 42/50 batch 201/562 total=1.7246 d_pos=0.000077 d_neg=0.000194 gap=0.000117 ETA=0:06:09
+vggss C2 seed12345 epoch 42/50 batch 251/562 total=1.3240 d_pos=0.000075 d_neg=0.000213 gap=0.000138 ETA=0:05:16
+vggss C2 seed12345 epoch 42/50 batch 301/562 total=1.4466 d_pos=0.000075 d_neg=0.000203 gap=0.000128 ETA=0:04:24
+vggss C2 seed12345 epoch 42/50 batch 351/562 total=1.3714 d_pos=0.000076 d_neg=0.000210 gap=0.000134 ETA=0:03:33
+vggss C2 seed12345 epoch 42/50 batch 401/562 total=1.4764 d_pos=0.000076 d_neg=0.000217 gap=0.000141 ETA=0:02:42
+vggss C2 seed12345 epoch 42/50 batch 451/562 total=1.2376 d_pos=0.000080 d_neg=0.000236 gap=0.000156 ETA=0:01:51
+vggss C2 seed12345 epoch 42/50 batch 501/562 total=1.6488 d_pos=0.000079 d_neg=0.000231 gap=0.000152 ETA=0:01:01
+vggss C2 seed12345 epoch 42/50 batch 551/562 total=1.5954 d_pos=0.000078 d_neg=0.000193 gap=0.000115 ETA=0:00:11
+vggss C2 seed12345 epoch 42/50 batch 562/562 total=1.8329 d_pos=0.000079 d_neg=0.000204 gap=0.000125 ETA=0:00:00
+{"epoch": 42, "learning_rate": 5e-05, "epoch_seconds": 572.501307964325, "gradient_l2_mean": 39.06856050376727, "parameter_l2": 207.53741600098678, "info_loss": 0.8078892455300403, "recon_loss": 2.7779905626358086, "div_loss": 0.002919016620541966, "a2v_loss": 7.7501851543838e-05, "v2a_loss": 0.00040012338485409673, "original_match_loss": 0.00047762523648856053, "d_pos": 7.750185168624998e-05, "d_neg": 0.00020354222021048252, "g_match": 0.00012604036880905652, "cram_loss": 0.6930841640221267, "weighted_cram_loss": 0.34654208201106335, "total_loss": 1.4802848166418245, "AUD_cIoU": 0.3235750290810392, "AUD_AUC": 0.39638425746413336, "IQR_cIoU": 0.32745250096936795, "IQR_AUC": 0.3982842186894145}
+vggss C2 seed12345 epoch 43/50 batch 1/562 total=1.2219 d_pos=0.000075 d_neg=0.000205 gap=0.000129 ETA=0:58:07
+vggss C2 seed12345 epoch 43/50 batch 51/562 total=1.2512 d_pos=0.000075 d_neg=0.000203 gap=0.000127 ETA=0:09:19
+vggss C2 seed12345 epoch 43/50 batch 101/562 total=1.4086 d_pos=0.000078 d_neg=0.000199 gap=0.000121 ETA=0:08:02
+vggss C2 seed12345 epoch 43/50 batch 151/562 total=1.2516 d_pos=0.000079 d_neg=0.000210 gap=0.000131 ETA=0:07:02
+vggss C2 seed12345 epoch 43/50 batch 201/562 total=1.5908 d_pos=0.000081 d_neg=0.000236 gap=0.000155 ETA=0:06:08
+vggss C2 seed12345 epoch 43/50 batch 251/562 total=1.3972 d_pos=0.000072 d_neg=0.000205 gap=0.000133 ETA=0:05:15
+vggss C2 seed12345 epoch 43/50 batch 301/562 total=1.4283 d_pos=0.000066 d_neg=0.000184 gap=0.000119 ETA=0:04:23
+vggss C2 seed12345 epoch 43/50 batch 351/562 total=1.3123 d_pos=0.000077 d_neg=0.000235 gap=0.000158 ETA=0:03:32
+vggss C2 seed12345 epoch 43/50 batch 401/562 total=1.6519 d_pos=0.000087 d_neg=0.000203 gap=0.000115 ETA=0:02:42
+vggss C2 seed12345 epoch 43/50 batch 451/562 total=1.3639 d_pos=0.000075 d_neg=0.000245 gap=0.000170 ETA=0:01:51
+vggss C2 seed12345 epoch 43/50 batch 501/562 total=1.5152 d_pos=0.000081 d_neg=0.000212 gap=0.000131 ETA=0:01:01
+vggss C2 seed12345 epoch 43/50 batch 551/562 total=1.3652 d_pos=0.000081 d_neg=0.000201 gap=0.000120 ETA=0:00:11
+vggss C2 seed12345 epoch 43/50 batch 562/562 total=1.3310 d_pos=0.000070 d_neg=0.000187 gap=0.000118 ETA=0:00:00
+{"epoch": 43, "learning_rate": 5e-05, "epoch_seconds": 571.8397197723389, "gradient_l2_mean": 38.90479092989287, "parameter_l2": 207.66906733636682, "info_loss": 0.7803693832663879, "recon_loss": 2.7685487906703745, "div_loss": 0.002664462025641891, "a2v_loss": 7.744372557561589e-05, "v2a_loss": 0.0003982488502204763, "original_match_loss": 0.0004756925754465355, "d_pos": 7.744372532963156e-05, "d_neg": 0.00020415579811694742, "g_match": 0.00012671207300740713, "cram_loss": 0.6930838282422239, "weighted_cram_loss": 0.34654191412111196, "total_loss": 1.451601892391558, "AUD_cIoU": 0.3065141527723924, "AUD_AUC": 0.3892787902287709, "IQR_cIoU": 0.3080651415277239, "IQR_AUC": 0.38948235750290805}
+vggss C2 seed12345 epoch 44/50 batch 1/562 total=1.2635 d_pos=0.000069 d_neg=0.000198 gap=0.000129 ETA=1:01:15
+vggss C2 seed12345 epoch 44/50 batch 51/562 total=1.2918 d_pos=0.000080 d_neg=0.000219 gap=0.000139 ETA=0:09:26
+vggss C2 seed12345 epoch 44/50 batch 101/562 total=1.5359 d_pos=0.000079 d_neg=0.000205 gap=0.000125 ETA=0:08:04
+vggss C2 seed12345 epoch 44/50 batch 151/562 total=1.3972 d_pos=0.000073 d_neg=0.000187 gap=0.000114 ETA=0:07:04
+vggss C2 seed12345 epoch 44/50 batch 201/562 total=1.6249 d_pos=0.000074 d_neg=0.000220 gap=0.000146 ETA=0:06:09
+vggss C2 seed12345 epoch 44/50 batch 251/562 total=1.4349 d_pos=0.000081 d_neg=0.000235 gap=0.000155 ETA=0:05:16
+vggss C2 seed12345 epoch 44/50 batch 301/562 total=1.4653 d_pos=0.000078 d_neg=0.000222 gap=0.000144 ETA=0:04:24
+vggss C2 seed12345 epoch 44/50 batch 351/562 total=1.4837 d_pos=0.000085 d_neg=0.000214 gap=0.000129 ETA=0:03:33
+vggss C2 seed12345 epoch 44/50 batch 401/562 total=1.4824 d_pos=0.000072 d_neg=0.000190 gap=0.000118 ETA=0:02:42
+vggss C2 seed12345 epoch 44/50 batch 451/562 total=1.3433 d_pos=0.000076 d_neg=0.000210 gap=0.000134 ETA=0:01:51
+vggss C2 seed12345 epoch 44/50 batch 501/562 total=1.3973 d_pos=0.000087 d_neg=0.000223 gap=0.000137 ETA=0:01:01
+vggss C2 seed12345 epoch 44/50 batch 551/562 total=1.6636 d_pos=0.000076 d_neg=0.000204 gap=0.000128 ETA=0:00:11
+vggss C2 seed12345 epoch 44/50 batch 562/562 total=1.6275 d_pos=0.000074 d_neg=0.000211 gap=0.000137 ETA=0:00:00
+{"epoch": 44, "learning_rate": 5e-05, "epoch_seconds": 571.5260059833527, "gradient_l2_mean": 36.03635423893481, "parameter_l2": 207.79987313382165, "info_loss": 0.7565716102560219, "recon_loss": 2.7570424041714108, "div_loss": 0.0026228104629371566, "a2v_loss": 7.7430492473018e-05, "v2a_loss": 0.0003886939265874622, "original_match_loss": 0.00046612441909931986, "d_pos": 7.743049266721616e-05, "d_neg": 0.00020896197557474197, "g_match": 0.00013153148343833412, "cram_loss": 0.6930814181782597, "weighted_cram_loss": 0.3465407090891299, "total_loss": 1.4256912902580885, "AUD_cIoU": 0.32648313299728576, "AUD_AUC": 0.39336952307095774, "IQR_cIoU": 0.32221791392012405, "IQR_AUC": 0.39385420705699886}
+vggss C2 seed12345 epoch 45/50 batch 1/562 total=1.2195 d_pos=0.000074 d_neg=0.000229 gap=0.000155 ETA=1:12:10
+vggss C2 seed12345 epoch 45/50 batch 51/562 total=1.1564 d_pos=0.000077 d_neg=0.000211 gap=0.000135 ETA=0:09:36
+vggss C2 seed12345 epoch 45/50 batch 101/562 total=1.5811 d_pos=0.000091 d_neg=0.000217 gap=0.000126 ETA=0:08:09
+vggss C2 seed12345 epoch 45/50 batch 151/562 total=1.6245 d_pos=0.000073 d_neg=0.000199 gap=0.000127 ETA=0:07:06
+vggss C2 seed12345 epoch 45/50 batch 201/562 total=1.2920 d_pos=0.000086 d_neg=0.000216 gap=0.000130 ETA=0:06:11
+vggss C2 seed12345 epoch 45/50 batch 251/562 total=1.1961 d_pos=0.000067 d_neg=0.000189 gap=0.000122 ETA=0:05:17
+vggss C2 seed12345 epoch 45/50 batch 301/562 total=1.4489 d_pos=0.000075 d_neg=0.000216 gap=0.000141 ETA=0:04:25
+vggss C2 seed12345 epoch 45/50 batch 351/562 total=1.6188 d_pos=0.000076 d_neg=0.000203 gap=0.000127 ETA=0:03:33
+vggss C2 seed12345 epoch 45/50 batch 401/562 total=1.5355 d_pos=0.000076 d_neg=0.000196 gap=0.000120 ETA=0:02:42
+vggss C2 seed12345 epoch 45/50 batch 451/562 total=1.2595 d_pos=0.000065 d_neg=0.000209 gap=0.000144 ETA=0:01:51
+vggss C2 seed12345 epoch 45/50 batch 501/562 total=1.4484 d_pos=0.000081 d_neg=0.000206 gap=0.000125 ETA=0:01:01
+vggss C2 seed12345 epoch 45/50 batch 551/562 total=1.5964 d_pos=0.000069 d_neg=0.000200 gap=0.000132 ETA=0:00:11
+vggss C2 seed12345 epoch 45/50 batch 562/562 total=1.4655 d_pos=0.000073 d_neg=0.000201 gap=0.000128 ETA=0:00:00
+{"epoch": 45, "learning_rate": 5e-05, "epoch_seconds": 572.653112411499, "gradient_l2_mean": 36.922608441843145, "parameter_l2": 207.93369211172268, "info_loss": 0.7529640273055148, "recon_loss": 2.747616142140589, "div_loss": 0.002488562057136137, "a2v_loss": 7.540019385396914e-05, "v2a_loss": 0.00040842731099234385, "original_match_loss": 0.00048382750537712127, "d_pos": 7.540019393812167e-05, "d_neg": 0.0002062093002567966, "g_match": 0.00013080910667470486, "cram_loss": 0.6930817782454644, "weighted_cram_loss": 0.3465408891227322, "total_loss": 1.4228981453328795, "AUD_cIoU": 0.3065141527723924, "AUD_AUC": 0.39015122140364483, "IQR_cIoU": 0.3032183016673129, "IQR_AUC": 0.38987010469174105}
+vggss C2 seed12345 epoch 46/50 batch 1/562 total=1.2522 d_pos=0.000070 d_neg=0.000190 gap=0.000121 ETA=1:04:17
+vggss C2 seed12345 epoch 46/50 batch 51/562 total=1.3321 d_pos=0.000071 d_neg=0.000212 gap=0.000141 ETA=0:09:28
+vggss C2 seed12345 epoch 46/50 batch 101/562 total=1.2569 d_pos=0.000074 d_neg=0.000211 gap=0.000137 ETA=0:08:06
+vggss C2 seed12345 epoch 46/50 batch 151/562 total=1.2697 d_pos=0.000073 d_neg=0.000207 gap=0.000133 ETA=0:07:05
+vggss C2 seed12345 epoch 46/50 batch 201/562 total=1.6273 d_pos=0.000078 d_neg=0.000205 gap=0.000127 ETA=0:06:09
+vggss C2 seed12345 epoch 46/50 batch 251/562 total=1.2721 d_pos=0.000080 d_neg=0.000206 gap=0.000126 ETA=0:05:16
+vggss C2 seed12345 epoch 46/50 batch 301/562 total=1.4017 d_pos=0.000078 d_neg=0.000207 gap=0.000129 ETA=0:04:24
+vggss C2 seed12345 epoch 46/50 batch 351/562 total=1.2037 d_pos=0.000077 d_neg=0.000205 gap=0.000128 ETA=0:03:33
+vggss C2 seed12345 epoch 46/50 batch 401/562 total=1.1443 d_pos=0.000078 d_neg=0.000228 gap=0.000150 ETA=0:02:42
+vggss C2 seed12345 epoch 46/50 batch 451/562 total=1.5067 d_pos=0.000075 d_neg=0.000215 gap=0.000141 ETA=0:01:51
+vggss C2 seed12345 epoch 46/50 batch 501/562 total=1.4979 d_pos=0.000083 d_neg=0.000218 gap=0.000135 ETA=0:01:01
+vggss C2 seed12345 epoch 46/50 batch 551/562 total=1.3436 d_pos=0.000071 d_neg=0.000195 gap=0.000124 ETA=0:00:11
+vggss C2 seed12345 epoch 46/50 batch 562/562 total=1.3978 d_pos=0.000073 d_neg=0.000205 gap=0.000133 ETA=0:00:00
+{"epoch": 46, "learning_rate": 5e-05, "epoch_seconds": 573.2142698764801, "gradient_l2_mean": 35.172766983670535, "parameter_l2": 208.06168248659012, "info_loss": 0.7273780236358744, "recon_loss": 2.736680408813775, "div_loss": 0.002257093957051953, "a2v_loss": 7.641383698848126e-05, "v2a_loss": 0.0004093554118454284, "original_match_loss": 0.0004857692494035576, "d_pos": 7.641383716973287e-05, "d_neg": 0.00020603210792886724, "g_match": 0.0001296182711863703, "cram_loss": 0.6930823762009577, "weighted_cram_loss": 0.34654118810047885, "total_loss": 1.3963898997289854, "AUD_cIoU": 0.3357890655292749, "AUD_AUC": 0.3989627762698721, "IQR_cIoU": 0.3328809616130283, "IQR_AUC": 0.39889492051182635}
+vggss C2 seed12345 epoch 47/50 batch 1/562 total=1.2559 d_pos=0.000075 d_neg=0.000206 gap=0.000131 ETA=1:15:13
+vggss C2 seed12345 epoch 47/50 batch 51/562 total=1.4573 d_pos=0.000074 d_neg=0.000205 gap=0.000131 ETA=0:09:37
+vggss C2 seed12345 epoch 47/50 batch 101/562 total=1.3045 d_pos=0.000076 d_neg=0.000220 gap=0.000144 ETA=0:08:09
+vggss C2 seed12345 epoch 47/50 batch 151/562 total=1.6628 d_pos=0.000071 d_neg=0.000197 gap=0.000125 ETA=0:07:07
+vggss C2 seed12345 epoch 47/50 batch 201/562 total=1.4242 d_pos=0.000069 d_neg=0.000207 gap=0.000138 ETA=0:06:11
+vggss C2 seed12345 epoch 47/50 batch 251/562 total=1.3708 d_pos=0.000080 d_neg=0.000203 gap=0.000123 ETA=0:05:17
+vggss C2 seed12345 epoch 47/50 batch 301/562 total=1.3591 d_pos=0.000077 d_neg=0.000199 gap=0.000122 ETA=0:04:25
+vggss C2 seed12345 epoch 47/50 batch 351/562 total=1.3440 d_pos=0.000073 d_neg=0.000209 gap=0.000136 ETA=0:03:33
+vggss C2 seed12345 epoch 47/50 batch 401/562 total=1.3469 d_pos=0.000074 d_neg=0.000231 gap=0.000157 ETA=0:02:42
+vggss C2 seed12345 epoch 47/50 batch 451/562 total=1.5789 d_pos=0.000075 d_neg=0.000192 gap=0.000117 ETA=0:01:51
+vggss C2 seed12345 epoch 47/50 batch 501/562 total=1.3450 d_pos=0.000074 d_neg=0.000220 gap=0.000146 ETA=0:01:01
+vggss C2 seed12345 epoch 47/50 batch 551/562 total=1.3586 d_pos=0.000073 d_neg=0.000211 gap=0.000138 ETA=0:00:11
+vggss C2 seed12345 epoch 47/50 batch 562/562 total=1.4077 d_pos=0.000080 d_neg=0.000214 gap=0.000135 ETA=0:00:00
+{"epoch": 47, "learning_rate": 5e-05, "epoch_seconds": 573.7014558315277, "gradient_l2_mean": 36.52790170151052, "parameter_l2": 208.18367155590474, "info_loss": 0.6922590272282366, "recon_loss": 2.72066548710616, "div_loss": 0.0024651560776625028, "a2v_loss": 7.640064603982998e-05, "v2a_loss": 0.0003973288635360375, "original_match_loss": 0.0004737295098089053, "d_pos": 7.640064598804379e-05, "d_neg": 0.00020673482659566166, "g_match": 0.00013033417998618377, "cram_loss": 0.6930820165579854, "weighted_cram_loss": 0.3465410082789927, "total_loss": 1.358486058873214, "AUD_cIoU": 0.3195036835982939, "AUD_AUC": 0.39398022489336953, "IQR_cIoU": 0.3175649476541295, "IQR_AUC": 0.3941547111283444}
+vggss C2 seed12345 epoch 48/50 batch 1/562 total=1.2692 d_pos=0.000066 d_neg=0.000205 gap=0.000139 ETA=1:03:07
+vggss C2 seed12345 epoch 48/50 batch 51/562 total=1.2306 d_pos=0.000077 d_neg=0.000209 gap=0.000132 ETA=0:09:27
+vggss C2 seed12345 epoch 48/50 batch 101/562 total=1.3257 d_pos=0.000069 d_neg=0.000200 gap=0.000131 ETA=0:08:05
+vggss C2 seed12345 epoch 48/50 batch 151/562 total=1.2450 d_pos=0.000084 d_neg=0.000235 gap=0.000151 ETA=0:07:04
+vggss C2 seed12345 epoch 48/50 batch 201/562 total=1.4808 d_pos=0.000075 d_neg=0.000219 gap=0.000145 ETA=0:06:09
+vggss C2 seed12345 epoch 48/50 batch 251/562 total=1.5493 d_pos=0.000073 d_neg=0.000200 gap=0.000128 ETA=0:05:16
+vggss C2 seed12345 epoch 48/50 batch 301/562 total=1.3236 d_pos=0.000078 d_neg=0.000206 gap=0.000128 ETA=0:04:24
+vggss C2 seed12345 epoch 48/50 batch 351/562 total=1.4935 d_pos=0.000077 d_neg=0.000214 gap=0.000137 ETA=0:03:33
+vggss C2 seed12345 epoch 48/50 batch 401/562 total=1.2333 d_pos=0.000070 d_neg=0.000205 gap=0.000135 ETA=0:02:42
+vggss C2 seed12345 epoch 48/50 batch 451/562 total=1.4412 d_pos=0.000084 d_neg=0.000208 gap=0.000124 ETA=0:01:51
+vggss C2 seed12345 epoch 48/50 batch 501/562 total=1.4146 d_pos=0.000073 d_neg=0.000201 gap=0.000128 ETA=0:01:01
+vggss C2 seed12345 epoch 48/50 batch 551/562 total=1.2572 d_pos=0.000075 d_neg=0.000198 gap=0.000122 ETA=0:00:11
+vggss C2 seed12345 epoch 48/50 batch 562/562 total=1.6418 d_pos=0.000077 d_neg=0.000207 gap=0.000130 ETA=0:00:00
+{"epoch": 48, "learning_rate": 5e-05, "epoch_seconds": 572.2061071395874, "gradient_l2_mean": 35.72943712702568, "parameter_l2": 208.30824907973582, "info_loss": 0.6777720020228858, "recon_loss": 2.716749791572951, "div_loss": 0.002430480512959412, "a2v_loss": 7.612513733463895e-05, "v2a_loss": 0.0003991644421229437, "original_match_loss": 0.0004752895796776739, "d_pos": 7.61251376712491e-05, "d_neg": 0.0002106066351570852, "g_match": 0.00013448149745994302, "cram_loss": 0.6930799439708534, "weighted_cram_loss": 0.3465399719854267, "total_loss": 1.3437589655143085, "AUD_cIoU": 0.3237689026754556, "AUD_AUC": 0.3921384257464134, "IQR_cIoU": 0.3204730515703761, "IQR_AUC": 0.3920608763086468}
+vggss C2 seed12345 epoch 49/50 batch 1/562 total=1.4081 d_pos=0.000081 d_neg=0.000223 gap=0.000142 ETA=1:10:37
+vggss C2 seed12345 epoch 49/50 batch 51/562 total=1.3469 d_pos=0.000074 d_neg=0.000227 gap=0.000153 ETA=0:09:34
+vggss C2 seed12345 epoch 49/50 batch 101/562 total=1.3017 d_pos=0.000069 d_neg=0.000199 gap=0.000130 ETA=0:08:08
+vggss C2 seed12345 epoch 49/50 batch 151/562 total=1.5532 d_pos=0.000083 d_neg=0.000207 gap=0.000123 ETA=0:07:06
+vggss C2 seed12345 epoch 49/50 batch 201/562 total=1.2310 d_pos=0.000076 d_neg=0.000199 gap=0.000123 ETA=0:06:10
+vggss C2 seed12345 epoch 49/50 batch 251/562 total=1.4374 d_pos=0.000075 d_neg=0.000209 gap=0.000134 ETA=0:05:17
+vggss C2 seed12345 epoch 49/50 batch 301/562 total=1.4889 d_pos=0.000071 d_neg=0.000194 gap=0.000124 ETA=0:04:25
+vggss C2 seed12345 epoch 49/50 batch 351/562 total=1.3088 d_pos=0.000068 d_neg=0.000188 gap=0.000120 ETA=0:03:33
+vggss C2 seed12345 epoch 49/50 batch 401/562 total=1.0556 d_pos=0.000075 d_neg=0.000229 gap=0.000154 ETA=0:02:42
+vggss C2 seed12345 epoch 49/50 batch 451/562 total=1.6759 d_pos=0.000066 d_neg=0.000189 gap=0.000123 ETA=0:01:51
+vggss C2 seed12345 epoch 49/50 batch 501/562 total=1.2720 d_pos=0.000074 d_neg=0.000217 gap=0.000144 ETA=0:01:01
+vggss C2 seed12345 epoch 49/50 batch 551/562 total=1.2936 d_pos=0.000078 d_neg=0.000200 gap=0.000122 ETA=0:00:11
+vggss C2 seed12345 epoch 49/50 batch 562/562 total=1.3465 d_pos=0.000073 d_neg=0.000213 gap=0.000140 ETA=0:00:00
+{"epoch": 49, "learning_rate": 5e-05, "epoch_seconds": 572.7339549064636, "gradient_l2_mean": 36.466208372978755, "parameter_l2": 208.43586207614092, "info_loss": 0.6549014226927876, "recon_loss": 2.709833374227069, "div_loss": 0.0022272890399697358, "a2v_loss": 7.530109207462801e-05, "v2a_loss": 0.000391539583076703, "original_match_loss": 0.0004668406751901707, "d_pos": 7.53010919840022e-05, "d_neg": 0.00020744856678465634, "g_match": 0.0001321474746194025, "cram_loss": 0.693081110609808, "weighted_cram_loss": 0.346540555304904, "total_loss": 1.3193321202573403, "AUD_cIoU": 0.3406359053896859, "AUD_AUC": 0.3973439317564948, "IQR_cIoU": 0.3390849166343544, "IQR_AUC": 0.39748933695230715}
+vggss C2 seed12345 epoch 50/50 batch 1/562 total=1.3126 d_pos=0.000070 d_neg=0.000201 gap=0.000131 ETA=1:03:27
+vggss C2 seed12345 epoch 50/50 batch 51/562 total=1.2188 d_pos=0.000073 d_neg=0.000201 gap=0.000127 ETA=0:09:25
+vggss C2 seed12345 epoch 50/50 batch 101/562 total=1.2283 d_pos=0.000080 d_neg=0.000219 gap=0.000139 ETA=0:08:04
+vggss C2 seed12345 epoch 50/50 batch 151/562 total=1.3896 d_pos=0.000085 d_neg=0.000193 gap=0.000107 ETA=0:07:04
+vggss C2 seed12345 epoch 50/50 batch 201/562 total=1.2195 d_pos=0.000072 d_neg=0.000216 gap=0.000144 ETA=0:06:09
+vggss C2 seed12345 epoch 50/50 batch 251/562 total=1.4205 d_pos=0.000075 d_neg=0.000193 gap=0.000118 ETA=0:05:16
+vggss C2 seed12345 epoch 50/50 batch 301/562 total=1.3650 d_pos=0.000080 d_neg=0.000218 gap=0.000137 ETA=0:04:30
+vggss C2 seed12345 epoch 50/50 batch 351/562 total=1.7136 d_pos=0.000086 d_neg=0.000222 gap=0.000136 ETA=0:03:37
+vggss C2 seed12345 epoch 50/50 batch 401/562 total=1.3845 d_pos=0.000067 d_neg=0.000192 gap=0.000125 ETA=0:02:45
+vggss C2 seed12345 epoch 50/50 batch 451/562 total=1.2880 d_pos=0.000081 d_neg=0.000215 gap=0.000134 ETA=0:01:53
+vggss C2 seed12345 epoch 50/50 batch 501/562 total=1.2875 d_pos=0.000073 d_neg=0.000208 gap=0.000135 ETA=0:01:02
+vggss C2 seed12345 epoch 50/50 batch 551/562 total=1.3444 d_pos=0.000087 d_neg=0.000234 gap=0.000147 ETA=0:00:11
+vggss C2 seed12345 epoch 50/50 batch 562/562 total=1.4274 d_pos=0.000079 d_neg=0.000201 gap=0.000122 ETA=0:00:00
+{"epoch": 50, "learning_rate": 5e-05, "epoch_seconds": 579.9165103435516, "gradient_l2_mean": 37.75692341955112, "parameter_l2": 208.5595226293341, "info_loss": 0.6442825037495521, "recon_loss": 2.6999348486869783, "div_loss": 0.0023436460389633035, "a2v_loss": 7.548589776004946e-05, "v2a_loss": 0.00038738796340170715, "original_match_loss": 0.0004628738611099705, "d_pos": 7.548589783772872e-05, "d_neg": 0.00020834192351601335, "g_match": 0.0001328560260796275, "cram_loss": 0.6930807560576239, "weighted_cram_loss": 0.34654037802881194, "total_loss": 1.3073381258711696, "AUD_cIoU": 0.34276851492826677, "AUD_AUC": 0.39862349747964326, "IQR_cIoU": 0.3355951919348585, "IQR_AUC": 0.3979934082977899}
+{
+  "dataset": "vggss",
+  "group": "C2",
+  "seed": 12345,
+  "lambda_cram": 0.5,
+  "epochs": 50,
+  "batch_size": 256,
+  "loss_weights": {
+    "info": 1.0,
+    "recon": 0.1,
+    "div": 0.1,
+    "match": 100.0,
+    "cram": 0.5
+  },
+  "initialization": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/checkpoints/initialization/vggss/seed12345.pth",
+    "sha256": "4d0d3c1b49410c4f476cb0d08e88ee8b83084b62c94d73ccab149680a944693b",
+    "size": 145859147,
+    "mtime_ns": 1789022847690119792
+  },
+  "orders": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.6_loss_to_decision_causal_ablation/configs/vggss_seed12345_epoch_orders.npy",
+    "sha256": "44975bfe5657dfebac1089d36332c8026d60bfcc04bc920c4c7681015e6e09ac",
+    "size": 28800128,
+    "mtime_ns": 1789022847794118791
+  },
+  "negative_mapping": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/configs/vggss_seed12345_negative_offsets.npy",
+    "sha256": "4e64b81d1a8b26e2002967b10f3229ff7799266a926ad00a83aa0169650c7cd0",
+    "size": 57600128,
+    "mtime_ns": 1789092257353930866
+  },
+  "selected_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C2/vggss/seed12345/selected_best.pth",
+    "sha256": "ea03624bc530e0bf4faad78399cb0741768b122d01e3526ffaa561ba93a619cd",
+    "size": 145865943,
+    "mtime_ns": 1789127106229488444
+  },
+  "final_checkpoint": {
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C2/vggss/seed12345/final.pth",
+    "sha256": "16ff62c2c36530ddcc55740147251567b16a31e8b1157b62f8988d3548db7dd4",
+    "size": 145844607,
+    "mtime_ns": 1789151929091031790
+  },
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "elapsed_seconds": 28867.74102830887
+}

@@ -1,0 +1,15 @@
+scale,dataset,method,stage1_selected,stage2_best,AUD,six_readouts,mechanism_metrics,per_sample_iou,checkpoint_config_tau,source
+10k,vggss,baseline,yes,yes,yes,yes,yes,yes,yes,existing_1.3G_plus_readonly_replay
+10k,vggss,mean,yes,yes,yes,yes,yes,yes,yes,completed_8.7_10k_plus_readonly_replay
+10k,vggss,hard_default,yes,yes,yes,yes,yes,yes,yes,completed_8.7_10k_plus_readonly_replay
+10k,flickr,baseline,yes,yes,yes,yes,yes,yes,yes,existing_1.3G_plus_readonly_replay
+10k,flickr,mean,yes,yes,yes,yes,yes,yes,yes,completed_8.7_10k_plus_readonly_replay
+10k,flickr,hard_default,yes,yes,yes,yes,yes,yes,yes,completed_8.7_10k_plus_readonly_replay
+144k,vggss,baseline,yes,yes,yes,yes,yes,yes,yes,existing_1.3G_and_prior_cache
+144k,vggss,mean,yes,yes,yes,yes,yes,yes,yes,existing_8.7_mechanism_cache
+144k,vggss,hard_default,yes,yes,yes,yes,yes,yes,yes,existing_hard_mechanism_cache
+144k,vggss,hard_adjusted,yes,yes,yes,yes,yes,yes,yes,completed_tau_variant_plus_readonly_replay
+144k,flickr,baseline,yes,yes,yes,yes,yes,yes,yes,existing_1.3G_and_prior_cache
+144k,flickr,mean,yes,yes,yes,yes,yes,yes,yes,existing_8.7_mechanism_cache
+144k,flickr,hard_default,yes,yes,yes,yes,yes,yes,yes,existing_hard_mechanism_cache
+144k,flickr,hard_adjusted,yes,yes,yes,yes,yes,yes,yes,completed_tau_variant_plus_readonly_replay

@@ -1,0 +1,11 @@
+{
+  "dataset": "vggss",
+  "seed": 12345,
+  "gpu": 0,
+  "cram_negative_aggregation": "softmin",
+  "cram_softmin_tau": 1.3987111388194196e-05,
+  "run_tag": "vggss_tau_stronger_neff2",
+  "resume": false,
+  "source_train": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/train.py",
+  "lambda_cram": 1.0
+}

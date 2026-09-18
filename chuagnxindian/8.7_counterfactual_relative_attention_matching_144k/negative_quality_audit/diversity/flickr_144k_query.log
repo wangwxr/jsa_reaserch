@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/negative_quality_audit/cache_audio_queries.py", line 20, in <module>
+    if __name__=='__main__':main()
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching_144k/negative_quality_audit/cache_audio_queries.py", line 16, in main
+    e=load('nq_eval',EXP/'cross_scale_cram_audit/evaluate_existing.py');c=load('nq_cache',ROOT/'chuagnxindian/8.6_loss_to_decision_causal_ablation/common.py');torch.cuda.set_device(a.gpu);dev=torch.device(f'cuda:{a.gpu}');_C,w,_t,_s,_k=evaluator=e.build(a.dataset,a.scale,'mean',dev);m=w.teacher.eval();d=c.test_dataset(a.dataset);loader=DataLoader(d,batch_size=128 if a.dataset=='vggss' else 32,shuffle=False,num_workers=8,pin_memory=True,persistent_workers=True);qs=[];ids=[];labels=[]
+  File "/home/wxr/miniconda3/envs/wwww/lib/python3.10/site-packages/torch/cuda/__init__.py", line 529, in set_device
+    torch._C._cuda_setDevice(device)
+RuntimeError: CUDA error: invalid device ordinal
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+

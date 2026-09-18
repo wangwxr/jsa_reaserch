@@ -1,0 +1,46 @@
+{
+  "backward_called": false,
+  "checkpoint": {
+    "mtime_ns": 1789099355978722732,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.7_counterfactual_relative_attention_matching/checkpoints/C1/flickr/seed12345/selected_best.pth",
+    "sha256": "62567c4cb267d64349c3c7307ddabc02918aee825d1fa131835f26b975d7a7d2",
+    "size": 145865943
+  },
+  "counterfactual_indices": {
+    "mtime_ns": 1788936526596610017,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.1_same_image_audio_counterfactual_audit/results/flickr_144k_counterfactual_indices.npz",
+    "sha256": "663ed9c3a97dc0b5d79be1b62892fff877462ead943fb0c50cdd79c9ae74a7e7",
+    "size": 21813
+  },
+  "dataset": "flickr",
+  "decision_rms_norm": 16.40050619978355,
+  "fixed_regions": {
+    "mtime_ns": 1788934377325028660,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.0_audio_only_residual_audit/results/flickr_144k_sample_indices.npz",
+    "sha256": "dfc0258eda4a77d9a8aa7d083c459e0a06084914bbeb4ec99afd928c0dfef770",
+    "size": 587022
+  },
+  "git": {
+    "commit": "e24178ea1e8064345f6496fad6bd7d5d958c7e54",
+    "dirty": true
+  },
+  "group": "C1",
+  "kind": "best",
+  "mean_specific_audio_switch_spearman": 0.06599535714285715,
+  "median_common_specific_std_ratio": 9.625308797429437,
+  "median_full_common_spearman": 0.9940816326530613,
+  "model_state_unchanged": true,
+  "mu_norm": 13.732535497483111,
+  "mu_over_rms": 0.8373238807509703,
+  "optimizer_created": false,
+  "protocol_sha256": "768f53f1f90367b80a4db55fdcbff5aa269aaf22efe648a33e4137634997a328",
+  "reference_count": 8192,
+  "reference_indices": {
+    "mtime_ns": 1788950343180039590,
+    "path": "/data/wxr/audio_video/JSA/chuagnxindian/8.3_common_specific_decision_decomposition/reference_indices.json",
+    "sha256": "e4eb1bc352ec287ca36e2ab7be96debd0e1bfc7f08ef38023d3deb29c3af263b",
+    "size": 657596
+  },
+  "sample_mismatch": 0,
+  "seed": 12345
+}
